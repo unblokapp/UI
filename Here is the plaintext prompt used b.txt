@@ -1,0 +1,47 @@
+Here is the plaintext prompt used by VibeBoard to generate AI themes. It is divided into two parts: the System Instruction (which sets the AI's persona) and the User Prompt (which contains the design logic and style catalog).
+1. System Instruction
+This is the hidden "pre-prompt" that establishes the AI's expertise:
+"You are a world-class UI designer. Create highly distinct themes based on the requested Design System."
+2. User Prompt
+This is the main instruction set sent to Gemini 3 Flash. It includes a catalog of design systems to ensure the AI uses specific technical CSS patterns:
+Generate a UI theme based on this description: "${description}".
+You are an expert UI designer capable of implementing these specific Design Systems. Choose the one that best fits the user's description, or mix them creatively:
+Glassmorphism:
+Translucency using background blur.
+Vivid gradient backgrounds.
+'glassPanelBg': Semi-transparent (e.g., rgba(255,255,255,0.1)).
+'keyboardContainerBg': Usually transparent or very dark semi-transparent.
+'keyBorder': Thin, white semi-transparent (1px solid rgba(255,255,255,0.2)).
+'keyShadow': Subtle (0 4px 30px rgba(0,0,0,0.1)).
+Neumorphism (Soft UI):
+Elements appear extruded from the background.
+'keyBg': Must match 'keyboardLayerBg' closely (low contrast).
+'keyShadow': Complex light/dark shadows (e.g., "5px 5px 10px #bebebe, -5px -5px 10px #ffffff").
+'borderRadius': Soft (12px+).
+Claymorphism:
+Fluffy, 3D, friendly.
+'borderRadius': High (16px+ or 999px).
+'keyShadow': Inner shadow to create depth (e.g., "inset -2px -2px 4px rgba(0,0,0,0.1), inset 2px 2px 4px rgba(255,255,255,0.5), 4px 4px 8px rgba(0,0,0,0.1)").
+Colors: Pastel or bright.
+Neubrutalism (Retro-Raw):
+High contrast, unrefined.
+'keyBorder': Thick black (e.g., "2px solid #000000").
+'keyShadow': Hard offset (e.g., "4px 4px 0px #000000").
+'borderRadius': Often 0px or very small.
+Colors: Clashing, vibrant, or raw beige/grey.
+Skeuomorphism 2.0:
+Physical realism (Leather, Metal, Wood).
+'cssBackground': Use linear/radial gradients to simulate texture (e.g., brushed metal, leather grain).
+'keyBg': Gradient to look like physical buttons.
+'keyBorder': Beveled (e.g., "1px solid #666").
+Liquid Glass:
+Dynamic motion, fluid physics.
+'animationStyle': Must be 'liquid'.
+'cssBackground': Fluid gradients (e.g., conic-gradients or swirling radial gradients).
+'glassPanelBg': Highly transparent to show the ripples.
+Map these styles to the provided JSON schema properties. Ensure browser/input/suggestion colors align with the chosen style.
+Detailed Logic Breakdown
+Technical Constraints: By using the terms 'glassPanelBg', 'keyShadow', and 'keyBorder', we are using the exact names of the JSON properties the app expects. This forces the AI to think in terms of the final implementation code.
+Visual Anchoring: The numbered list acts as a Design Catalog. Without this, the AI might just return "blue" for a ocean theme. With this, it knows to use Liquid Glass physics and Glassmorphism translucency.
+Complex Shadows: For styles like Neumorphism and Claymorphism, the prompt explicitly provides examples of multi-layered CSS shadows. This is why the generated keys look "3D" and not just flat buttons.
+Schema Enforcement: Because responseMimeType: "application/json" and a responseSchema are used, Gemini is strictly forbidden from adding any conversational text. It functions as a pure design-to-data compiler.
