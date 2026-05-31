@@ -1,0 +1,616 @@
+--------- beginning of system
+05-31 11:34:11.482 27458 27458 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of crash
+05-31 11:34:19.798 27458 27717 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 27717 (Gecko), pid 27458 (AndroidUI)
+05-31 11:34:21.295 28672 28672 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+05-31 11:34:21.295 28672 28672 F DEBUG   : keyProcess: 0
+05-31 11:34:21.295 28672 28672 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-31 11:34:21.295 28672 28672 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+05-31 11:34:21.295 28672 28672 F DEBUG   : Revision: '0'
+05-31 11:34:21.295 28672 28672 F DEBUG   : ABI: 'arm64'
+05-31 11:34:21.295 28672 28672 F DEBUG   : Timestamp: 2026-05-31 11:34:20.182011518-0400
+05-31 11:34:21.295 28672 28672 F DEBUG   : Process uptime: 0s
+05-31 11:34:21.295 28672 28672 F DEBUG   : Cmdline: com.vibekey.keyboard
+05-31 11:34:21.295 28672 28672 F DEBUG   : pid: 27458, tid: 27717, name: Gecko  >>> com.vibekey.keyboard <<<
+05-31 11:34:21.295 28672 28672 F DEBUG   : uid: 13848
+05-31 11:34:21.295 28672 28672 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+05-31 11:34:21.295 28672 28672 F DEBUG   : Cause: null pointer dereference
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x0  0000000000000000  x1  0000000000006c45  x2  000000000000000b  x3  00000078252b6da0
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x4  00000078250ad400  x5  00000078250ad400  x6  00000078250ad400  x7  0000000000000000
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x8  00000000000000f0  x9  4bc237a8fa2bc0c7  x10 00000078437c368c  x11 0000000000000000
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0022c75db5f88db8  x15 00003d139454f144
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x16 000000772b451410  x17 0000007834f35f10  x18 000000746a0d2000  x19 000000000000000b
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x20 00000078252b6da0  x21 0000000000006b42  x22 00000078252b6b90  x23 0000000000000001
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x24 000000745bd752d8  x25 000000746aa02000  x26 00000078250ae698  x27 00000078250ad408
+05-31 11:34:21.295 28672 28672 F DEBUG   :     x28 0000000000000400  x29 00000078252b6bb0
+05-31 11:34:21.295 28672 28672 F DEBUG   :     lr  0000007725679da0  sp  00000078252b6b90  pc  0000007834f35f34  pst 0000000000000000
+05-31 11:34:21.295 28672 28672 F DEBUG   : backtrace:
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #05 pc 0000000000006f94  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1148) (BuildId: 1d71636c1517ecf3fa421563ba6710f3)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #07 pc 00000000045b52d4  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #08 pc 00000000045b51dc  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #09 pc 0000000003266d38  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #10 pc 0000000002f1f7fc  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #11 pc 0000000002f1e7ac  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #12 pc 00000000041b0ae4  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #13 pc 0000000003f73378  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #14 pc 0000000004626ad0  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #15 pc 00000000042d59cc  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #16 pc 00000000043bf100  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #17 pc 000000000462ccdc  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #18 pc 000000000009a1d4  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/lib/arm64/libmozglue.so (Java_org_mozilla_gecko_mozglue_GeckoLoader_nativeRun+956) (BuildId: 8d82c5d136d7c01bbfb799da8ac843daefd5a4ec)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #19 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #20 pc 0000000000668468  /apex/com.android.art/lib64/libart.so (nterp_helper+152) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #21 pc 0000000000a5c1ac  /data/app/~~hRgZlBzFczr46wjimXh5cA==/com.vibekey.keyboard-m0d_7XpPhnQFwkmaFs7HIA==/oat/arm64/base.vdex (org.mozilla.gecko.GeckoThread.run+1552)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #22 pc 00000000002aad94  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #23 pc 00000000002707ac  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+220) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #24 pc 00000000004bdc28  /apex/com.android.art/lib64/libart.so (art::Thread::CreateCallback(void*)+1184) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #25 pc 00000000000deb44  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+05-31 11:34:21.295 28672 28672 F DEBUG   :       #26 pc 000000000007b2fc  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+05-31 11:34:25.571 28696 28696 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+05-31 11:34:35.970 29589 29589 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+05-31 11:34:44.269 30229 30229 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of main
+05-31 11:43:15.288 30229 30229 W GeckoEventDispatcher: No listener for GeckoView:DismissClipboardPermissionRequest
+05-31 11:43:15.290 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.290 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.290 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.290 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.290 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.291 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.291 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.291 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.291 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.291 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.298 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.298 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.298 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.298 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.298 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.298 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.298 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.298 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.298 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.298 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.298 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.298 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.298 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.298 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.298 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.306 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.306 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.306 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.306 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.306 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.307 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.307 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.307 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.307 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.307 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.319 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.319 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.319 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.319 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.319 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.319 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.319 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.319 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.319 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.319 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.319 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.319 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.319 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.319 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.319 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.319 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.319 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.319 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.319 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.319 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.319 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.319 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.319 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.319 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.319 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.403 30229 30229 W GeckoEventDispatcher: No listener for GeckoView:DismissClipboardPermissionRequest
+05-31 11:43:15.405 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.405 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.405 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.405 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.405 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.405 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.405 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.405 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.405 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.405 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.405 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.405 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.405 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.405 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.405 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.406 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.406 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.406 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.406 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.406 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.407 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.407 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.407 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.407 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.407 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.419 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.419 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.419 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.419 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.419 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:15.419 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:15.419 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:15.419 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:15.419 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:15.419 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:17.017 19293 19319 W VibeKeyLlama: Assist system-prefix KV mismatch; replaying full prompt
+05-31 11:43:18.029 30229 30229 W GeckoEventDispatcher: No listener for GeckoView:DismissClipboardPermissionRequest
+05-31 11:43:18.044 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.044 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:358)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.044 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:358)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.044 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:358)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.044 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:358)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.044 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.044 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.045 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.045 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.045 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.045 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.045 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:400)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.045 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.046 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:444)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+05-31 11:43:18.046 30229 30229 W LayerDrawable: java.lang.RuntimeException
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at y7.r3.j(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:83)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.k(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.panels.MenuPanelView.r(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:444)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at v7.b.u(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:199)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:36)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at g7.m.a(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:266)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-017af8926fce1dc0ad65912574719f65206f610252a0ea8190fe010c9cd2c4a0:45)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+05-31 11:43:18.046 30229 30229 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+05-31 11:43:18.048 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.048 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.048 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.048 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.048 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.049 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.049 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.049 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.049 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.049 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.050 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.050 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.050 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.050 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.050 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.050 30229 30422 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+05-31 11:43:18.050 30229 30422 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+05-31 11:43:18.050 30229 30422 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+05-31 11:43:18.050 30229 30422 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+05-31 11:43:18.050 30229 30422 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+05-31 11:43:18.881 30229 30229 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-31 11:43:24.102 30229 30300 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+05-31 11:43:25.134 30229 30300 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+
+2026-05-31 11:34:43.909506 W f0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-05-31 11:34:43.926023 I startup: Starting com.vibekey.keyboard version 4.1.114 (4214) on Android 12 (SDK 31)
+2026-05-31 11:34:43.929710 I LatinIME: Hardware accelerated drawing: true
+2026-05-31 11:34:43.980115 I SymSpellProvider: Detected asset languages: []
+2026-05-31 11:34:43.981568 I NgramPredictor: Detected bigram asset languages: []
+2026-05-31 11:34:43.982414 I RecencyTracker: init loaded 0 language file(s)
+2026-05-31 11:34:43.982925 I AdaptiveTouchModel: Loaded touch model: 0 keys
+2026-05-31 11:34:43.983618 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-05-31 11:34:43.998302 W u: No editor info for this field. Bug?
+2026-05-31 11:34:43.998435 I c: loadSettings
+2026-05-31 11:34:44.006664 I p: resetDictionaries, force reloading main dictionary: false
+2026-05-31 11:34:44.021202 I NgramPredictor: Detected bigram asset languages: []
+2026-05-31 11:34:44.022382 I SymSpellProvider: Detected asset languages: []
+2026-05-31 11:34:44.023618 I ConsentManager: UMP hydrate skipped: q6.k.getConsentInformation [class android.content.Context]
+2026-05-31 11:34:44.024099 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-05-31 11:34:44.090926 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-05-31 11:34:44.092253 I LatinIME: ringer mode changed, zen_mode on: false
+2026-05-31 11:34:44.115979 I AdManager: MobileAds initialization complete
+2026-05-31 11:34:44.116120 I ConsentManager: UMP hydrate skipped: q6.k.getConsentInformation [class android.content.Context]
+2026-05-31 11:34:44.116263 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-05-31 11:34:44.262704 I c: loadSettings
+2026-05-31 11:34:44.290071 I StickerImageManager: Sticker cache outdated and no bitmaps in memory — clearing disk
+2026-05-31 11:34:44.290238 I StickerImageManager: Stickers cleared from memory and disk
+2026-05-31 11:34:44.351340 I StickerImageManager: Sticker cache outdated and no bitmaps in memory — clearing disk
+2026-05-31 11:34:44.351507 I StickerImageManager: Stickers cleared from memory and disk
+2026-05-31 11:34:44.355701 I StickerImageManager: Sticker cache outdated and no bitmaps in memory — clearing disk
+2026-05-31 11:34:44.355832 I StickerImageManager: Stickers cleared from memory and disk
+2026-05-31 11:34:44.357070 I StickerImageManager: Sticker cache outdated and no bitmaps in memory — clearing disk
+2026-05-31 11:34:44.357220 I StickerImageManager: Stickers cleared from memory and disk
+2026-05-31 11:34:44.413867 I LatinIME: Starting input. Cursor position = 0,0
+2026-05-31 11:34:44.414096 I c: loadSettings
+2026-05-31 11:34:46.477215 I AdManager: Native ad loaded
+2026-05-31 11:34:46.674919 I AdManager: Native ad view created
+2026-05-31 11:34:46.969572 I AdManager: Interstitial ad loaded
+2026-05-31 11:34:47.351653 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-05-31 11:34:47.785221 I c: loadSettings
+2026-05-31 11:34:48.244620 I AdManager: Native ad loaded
+2026-05-31 11:34:49.497286 I SymSpellProvider: Built runtime SymSpell for en with 79998 words
+2026-05-31 11:34:49.497382 I p: Built runtime SymSpell for en with 80000 words
+2026-05-31 11:35:06.252161 I LatinIME: onFinishInputView
+2026-05-31 11:35:06.252686 I LatinIME: onFinishInput
+2026-05-31 11:39:15.359306 I LatinIME: Starting input. Cursor position = 0,0
+2026-05-31 11:39:15.359518 I c: loadSettings
+2026-05-31 11:39:23.486747 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.21ms | locales=1 | typedLen=5 | candidates=18
+2026-05-31 11:39:31.315960 W VibeKeyProfiler: Slow Kotlin Suggest: Total=30.46ms | locales=1 | typedLen=0 | candidates=17
+2026-05-31 11:39:31.595452 W VibeKeyProfiler: Slow Kotlin Suggest: Total=22.13ms | locales=1 | typedLen=0 | candidates=17
+2026-05-31 11:39:34.075640 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.43ms | locales=1 | typedLen=0 | candidates=18
+2026-05-31 11:39:45.331171 I LatinIME: onFinishInputView
+2026-05-31 11:39:45.331663 I LatinIME: onFinishInput
+2026-05-31 11:39:51.335940 I LatinIME: Starting input. Cursor position = 11,11
+2026-05-31 11:39:51.336176 I c: loadSettings
+2026-05-31 11:39:56.602746 W VibeKeyProfiler: Slow Kotlin Suggest: Total=16.79ms | locales=1 | typedLen=3 | candidates=18
+2026-05-31 11:40:00.566257 I LatinIME: Restarting input. Cursor position = 0,0
+2026-05-31 11:40:03.208725 I QuotaManager: Unified AI quota schema v2 applied (calendar-day pool)
+2026-05-31 11:40:10.353924 I QuotaManager: Daily assist quota reset
+2026-05-31 11:40:34.100002 I LatinIME: onFinishInputView
+2026-05-31 11:40:34.100663 I LatinIME: onFinishInput
+2026-05-31 11:43:15.318472 I LatinIME: Starting input. Cursor position = 52,52
+2026-05-31 11:43:15.318686 I c: loadSettings
+2026-05-31 11:43:18.722794 I LatinIME: requestHideSelf: 0
+2026-05-31 11:43:18.758717 I LatinIME: hideWindow
+2026-05-31 11:43:18.766416 I LatinIME: onFinishInputView
+2026-05-31 11:43:18.766731 I LatinIME: onWindowHidden
+2026-05-31 11:43:18.821015 I u: InputType.TYPE_NULL is specified
+2026-05-31 11:43:18.821118 I c: loadSettings
+2026-05-31 11:43:19.077589 I LatinIME: requestHideSelf: 100
+2026-05-31 11:43:19.088430 I LatinIME: onFinishInput
+2026-05-31 11:43:24.792985 I LatinIME: onFinishInput
+2026-05-31 11:43:26.556235 I LatinIME: onFinishInput
