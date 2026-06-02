@@ -1,0 +1,964 @@
+--------- beginning of crash
+06-02 13:44:20.688   436  1522 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 1522 (launcher), pid 436 (AndroidUI)
+06-02 13:44:22.272  9865  9865 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 13:44:22.272  9865  9865 F DEBUG   : keyProcess: 0
+06-02 13:44:22.272  9865  9865 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 13:44:22.272  9865  9865 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 13:44:22.272  9865  9865 F DEBUG   : Revision: '0'
+06-02 13:44:22.272  9865  9865 F DEBUG   : ABI: 'arm64'
+06-02 13:44:22.272  9865  9865 F DEBUG   : Timestamp: 2026-06-02 13:44:20.918582528-0400
+06-02 13:44:22.272  9865  9865 F DEBUG   : Process uptime: 0s
+06-02 13:44:22.272  9865  9865 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 13:44:22.272  9865  9865 F DEBUG   : pid: 436, tid: 1522, name: launcher  >>> com.vibekey.keyboard <<<
+06-02 13:44:22.272  9865  9865 F DEBUG   : uid: 13891
+06-02 13:44:22.272  9865  9865 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+06-02 13:44:22.272  9865  9865 F DEBUG   : Cause: null pointer dereference
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x0  0000000000000000  x1  00000000000005f2  x2  000000000000000b  x3  000000766d603da0
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x4  0000007694d1c400  x5  0000007694d1c400  x6  0000007694d1c400  x7  0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000007696b4068c  x11 0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 00000075bb24b0f0  x15 00000076756011fc
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 00000074711fe000  x19 000000000000000b
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x20 000000766d603da0  x21 00000000000001b4  x22 000000766d603b90  x23 0000000000000001
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x24 0000007488642610  x25 00000075bb24c000  x26 0000007694d1d698  x27 0000007694d1c408
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x28 0000000000000400  x29 000000766d603bb0
+06-02 13:44:22.272  9865  9865 F DEBUG   :     lr  0000007576c73da0  sp  000000766d603b90  pc  00000076790b8f34  pst 0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   : backtrace:
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #05 pc 0000000000006f94  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1148) (BuildId: 1d71636c1517ecf3fa421563ba6710f3)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #07 pc 00000000044f860c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #08 pc 00000000038cb360  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #09 pc 000000000394a4ac  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #10 pc 0000000003946cfc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #11 pc 0000000002f16118  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #12 pc 0000000002f1ef68  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #13 pc 0000000002f1e3e8  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #14 pc 00000000041b0ae4  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #15 pc 00000000041b0668  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #16 pc 00000000001dae5c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libnss3.so (BuildId: b089d343de37b8a21215387a791de798513aaf64)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #17 pc 000000000009e0bc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libmozglue.so (BuildId: 8d82c5d136d7c01bbfb799da8ac843daefd5a4ec)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #18 pc 00000000000deb44  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #19 pc 000000000007b2fc  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+--------- beginning of system
+06-02 14:19:11.009  9939 25001 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-02 14:19:11.009  9939 25001 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-02 14:20:29.576  9939 25001 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-02 14:20:29.577  9939 25001 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+06-02 14:20:51.002  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.023  9939 22510 E BLASTBufferQueue: [SurfaceView[InputMethod]#28](f:0,a:0) rejecting buffer:active_size=1440x1853, requested_size=1440x1853 buffer{size=1440x1861 transform=0}
+06-02 14:20:51.024  9939 22510 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:20:51.025  1850  1850 E .keyboard:tab3: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:20:51.027  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.031  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.033  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.034  9939 32382 W Ads     : Not retrying to fetch app settings
+06-02 14:20:51.038  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... .......D 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.043  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.045  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.061  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.066  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.077  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.083  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.093  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.094  1850  1989 E GeckoLibLoad: Load sqlite start
+06-02 14:20:51.096  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.097  1850  1989 E GeckoLibLoad: Load sqlite done
+06-02 14:20:51.097  1850  1989 E GeckoLibLoad: Load nss start
+06-02 14:20:51.097  1850  1989 E GeckoLibLoad: Load nss done
+06-02 14:20:51.111  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.116  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.123  1850  1989 E GeckoLibLoad: Loaded libs in 25.800625ms total, 11ms(15ms) user, 8ms(7ms) system, 0(0) faults
+06-02 14:20:51.124  1850  1989 W GeckoThread: zerdatime 101293985 - runGecko
+06-02 14:20:51.126  1994  1994 E .keyboard:tab1: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:20:51.127  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.132  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.143  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.148  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.161  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.165  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.177  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.182  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.193  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.196  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.206  1994  2089 E GeckoLibLoad: Load sqlite start
+06-02 14:20:51.209  1994  2089 E GeckoLibLoad: Load sqlite done
+06-02 14:20:51.210  1994  2089 E GeckoLibLoad: Load nss start
+06-02 14:20:51.210  1994  2089 E GeckoLibLoad: Load nss done
+06-02 14:20:51.210  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.215  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.216  1850  1989 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:20:51.216  1850  1989 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:20:51.216  1850  1989 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:20:51.216  1850  1989 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:20:51.216  1850  1989 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:20:51.217  1850  1989 W GeckoEditableChild: No editable parent
+06-02 14:20:51.227  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.233  1994  2089 E GeckoLibLoad: Loaded libs in 22.885104ms total, 8ms(8ms) user, 11ms(13ms) system, 0(0) faults
+06-02 14:20:51.233  1994  2089 W GeckoThread: zerdatime 101294094 - runGecko
+06-02 14:20:51.233  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.241  1850  1989 W Isolated Web Content: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/" line: 65}]
+06-02 14:20:51.244  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.250  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.260  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.266  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.277  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.283  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... .......D 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.293  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.296  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.310  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.315  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.327  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.333  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.349  9939 29465 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:20:51.351  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.355  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.360  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.366  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.382  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.385  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=1 domain=com.google.android.gms.ads message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/3310587093. You must wait a few seconds before making another ad request.
+06-02 14:20:51.386  9939  9939 W AdManager: Interstitial ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/8371342086. You must wait a few seconds before making another ad request.
+06-02 14:20:51.386  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.395  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.400  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.411  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.418  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... .......D 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.428  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.432  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.444  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.448  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.451  1850  1989 W Isolated Web Content: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/xjs/_/js/k=xjs.hm.en.FrGEQgohjYs.2019.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAgAAAAAgQAAAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAAAAAAAIiAAAAAAAAAAAAAAAEABAAABAAAAAAAABgAQAAAEEACAAQAAwAAAAAAAAAAAAAAAAAAECACAAAABAAA4A8AjAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAYAEAAEADAAAAEAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAgAAAAAAIAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAAAAEFAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAwAAAAAAEAAAAAAAAAAAAAAAAAADgAACAgAAAAAAAAgUAAgAAAAABAAuCBgCGaAgAAAAAAAAAAAAAAAAAAAA" line: 187}]
+06-02 14:20:51.461  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.465  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.477  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.480  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.494  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.496  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.501  9939 32382 W Ads     : Not retrying to fetch app settings
+06-02 14:20:51.510  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.511  9939 32389 W Ads     : Not retrying to fetch app settings
+06-02 14:20:51.515  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.527  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.531  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.544  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:20:51.549  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.552  9939 22510 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:20:51.590  9939  9939 E GeckoView: Failed to detach WindowInsetsListener: 
+06-02 14:20:51.590  9939  9939 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:25)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at t3.m.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:29)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 14:20:51.590  9939  9939 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 14:20:51.592  9939  9939 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{beeb106 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:20:51.614  9939 10165 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:20:51.614  9939 10165 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:20:51.614  9939 10165 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:20:51.614  9939 10165 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:20:51.614  9939 10165 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:20:51.615  9939 10165 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:20:51.615  9939 10165 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:20:51.615  9939 10165 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:20:51.615  9939 10165 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:20:51.615  9939 10165 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:20:51.656  9939  9939 W AdManager: Native ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/4767072755. You must wait a few seconds before making another ad request.
+06-02 14:20:51.996  9939 32391 W Ads     : Not retrying to fetch app settings
+06-02 14:20:52.067  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=1 domain=com.google.android.gms.ads message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/3310587093. You must wait a few seconds before making another ad request.
+06-02 14:20:52.072  9939  9939 W AdManager: Interstitial ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/8371342086. You must wait a few seconds before making another ad request.
+06-02 14:20:52.212  9939 32310 W Ads     : Not retrying to fetch app settings
+06-02 14:20:52.530  9939  9939 W AdManager: Native ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/4767072755. You must wait a few seconds before making another ad request.
+06-02 14:20:52.812  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=1 domain=com.google.android.gms.ads message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/3310587093. You must wait a few seconds before making another ad request.
+06-02 14:20:52.995  9939 32310 W Ads     : Not retrying to fetch app settings
+06-02 14:20:52.999  9939 32392 W Ads     : Not retrying to fetch app settings
+06-02 14:20:53.033  9939  9939 W AdManager: Interstitial ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/8371342086. You must wait a few seconds before making another ad request.
+06-02 14:20:53.491  9939 32310 W Ads     : Not retrying to fetch app settings
+06-02 14:20:53.529  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=1 domain=com.google.android.gms.ads message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/3310587093. You must wait a few seconds before making another ad request.
+06-02 14:20:53.542  9939  9939 W AdManager: Native ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/4767072755. You must wait a few seconds before making another ad request.
+06-02 14:20:53.995  9939 32389 W Ads     : Not retrying to fetch app settings
+06-02 14:20:54.005  9939 32384 W Ads     : Not retrying to fetch app settings
+06-02 14:20:54.030  9939  9939 W AdManager: Interstitial ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/8371342086. You must wait a few seconds before making another ad request.
+06-02 14:20:54.493  9939 32389 W Ads     : Not retrying to fetch app settings
+06-02 14:20:54.529  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=1 domain=com.google.android.gms.ads message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/3310587093. You must wait a few seconds before making another ad request.
+06-02 14:20:54.541  9939  9939 W AdManager: Native ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/4767072755. You must wait a few seconds before making another ad request.
+06-02 14:20:55.003  9939 32388 W Ads     : Not retrying to fetch app settings
+06-02 14:20:55.012  9939 32384 W Ads     : Not retrying to fetch app settings
+06-02 14:20:55.031  9939  9939 W AdManager: Interstitial ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/8371342086. You must wait a few seconds before making another ad request.
+06-02 14:20:55.514  9939  9939 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:20:55.610  9939  9939 W AdManager: Native ad failed to load: code=1 message=Error building request URL: Too many recently failed requests for ad unit ID: ca-app-pub-6765609171282681/4767072755. You must wait a few seconds before making another ad request.
+06-02 14:20:57.508  9939 10055 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:00.706  9939  9989 W VibeKeyProfiler: Slow Native Suggest: Total=8.98ms | Init=0.07ms | TrieExpand(x15)=8.88ms | Scoring=0.03ms | inputSize=1
+06-02 14:21:00.711  9939  9989 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.62ms | locales=1 | typedLen=0 | candidates=18
+06-02 14:21:00.984  2317  2317 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:00.986  2317  2317 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:00.986  2317  2317 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:00.986  2317  2317 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:00.988  2317  2317 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:00.988  2317  2317 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:00.988  2317  2317 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:00.988  2317  2317 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:01.231  2317  2317 E chromium: [0602/142101.230684:ERROR:third_party/crashpad/crashpad/util/process/process_memory_range.cc:75] read out of range
+06-02 14:21:01.502  9939  9989 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x767e978000 in tid 9989 (d), pid 9939 (AndroidUI)
+06-02 14:21:01.889  2361  2361 E DEBUG   : failed to read /proc/uptime: Permission denied
+06-02 14:21:02.713  9939 25001 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-02 14:21:02.713  9939 25001 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-02 14:21:03.051  2361  2361 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 14:21:03.051  2361  2361 F DEBUG   : keyProcess: 0
+06-02 14:21:03.051  2361  2361 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 14:21:03.051  2361  2361 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 14:21:03.051  2361  2361 F DEBUG   : Revision: '0'
+06-02 14:21:03.051  2361  2361 F DEBUG   : ABI: 'arm64'
+06-02 14:21:03.051  2361  2361 F DEBUG   : Timestamp: 2026-06-02 14:21:01.889039500-0400
+06-02 14:21:03.051  2361  2361 F DEBUG   : Process uptime: 0s
+06-02 14:21:03.051  2361  2361 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 14:21:03.051  2361  2361 F DEBUG   : pid: 9939, tid: 9989, name: d  >>> com.vibekey.keyboard <<<
+06-02 14:21:03.051  2361  2361 F DEBUG   : uid: 13891
+06-02 14:21:03.051  2361  2361 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x767e978000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x0  0000000000000000  x1  0000000000002705  x2  0000000000000007  x3  000000768a6d1da0
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x4  000000768a6d16a8  x5  000000768a6d16a8  x6  000000768a6d16a8  x7  0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 000000767e977f9d
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 0000007533182000  x19 0000000000000007
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x20 000000768a6d1da0  x21 00000000000026d3  x22 000000768a6d1d00  x23 0000000000000001
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x24 0000000080000000  x25 b4000075bb0a6fb0  x26 00000075ccb64024  x27 0000000000000001
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x28 00000075ccb645d8  x29 000000768a6d1d20
+06-02 14:21:03.051  2361  2361 F DEBUG   :     lr  0000007576c73da0  sp  000000768a6d1d00  pc  00000076790b8f34  pst 0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   : backtrace:
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #04 pc 00000000000b69b8  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::ShortcutListReadingUtils::getShortcutListSizeAndForwardPointer(latinime::ReadOnlyByteArrayView, int*)+0) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #05 pc 00000000000b2e04  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::ShortcutListPolicy::skipAllShortcuts(int*) const+32) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #06 pc 00000000000b6924  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+688) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #07 pc 00000000000b883c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #08 pc 00000000000b4ae0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #09 pc 00000000000b71e0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #10 pc 00000000000a7d0c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #11 pc 00000000000d3224  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+116) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #12 pc 00000000000c8a80  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #13 pc 000000000009fd58  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #14 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #15 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #16 pc 000000000022ef7e  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+546)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #18 pc 0000000000aa67ae  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.l.d+50)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #20 pc 0000000000aa57be  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.e.d+150)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #22 pc 000000000057ff10  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.h+216)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #24 pc 000000000057fa9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.g+384)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #25 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #26 pc 0000000000586c8a  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.k1.b+310)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #27 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #28 pc 0000000000aad660  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.b.l+1468)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #29 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #30 pc 0000000000582160  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.v.run+72)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #31 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #32 pc 0000000000aaa7e2  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.d.handleMessage+18)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #33 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-02 14:21:04.230  2389  2389 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:04.328  2389  2389 W f0      : Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+06-02 14:21:04.422  2389  2389 W u       : No editor info for this field. Bug?
+06-02 14:21:04.454  2389  2389 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[])
+06-02 14:21:04.461  2389  2389 W System  : ClassLoader referenced unknown path: 
+06-02 14:21:04.465  2389  2389 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=4009363210, found=860287709 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[/data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/base.apk*860287709]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]})
+06-02 14:21:04.523  2389  2389 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+06-02 14:21:04.523  2389  2389 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+06-02 14:21:04.560  2389  2389 E MultiApp.Impl: OplusMultiAppImpl
+06-02 14:21:04.640  2389  2612 W libc    : Access denied finding property "ro.vendor.api_level"
+06-02 14:21:04.646  2389  2389 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+06-02 14:21:04.702  2389  2537 W Ads     : Update ad debug logging enablement as false
+06-02 14:21:04.709  2389  2663 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:04.709  2389  2663 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:04.711  2389  2503 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:04.718  2389  2389 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-02 14:21:04.984  2389  2613 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-02 14:21:04.985  2389  2613 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+06-02 14:21:04.985  2389  2613 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-02 14:21:05.023  2389  2389 W View    : requestLayout() improperly called by android.widget.LinearLayout{6e15481 V.E...... ......ID 0,1973-1440,2923 #7f0a011b app:id/main_keyboard_frame} during layout: running second layout pass
+06-02 14:21:05.100  2389  2650 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-02 14:21:05.100  2389  2650 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-02 14:21:05.101  2389  2650 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:05.101  2389  2650 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:05.195  2389  2808 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-02 14:21:05.202  2389  2808 E GeckoLibLoad: Load sqlite start
+06-02 14:21:05.211  2389  2808 E GeckoLibLoad: Load sqlite done
+06-02 14:21:05.211  2389  2808 E GeckoLibLoad: Load nss start
+06-02 14:21:05.211  2389  2808 E GeckoLibLoad: Load nss done
+06-02 14:21:05.221  2389  2808 E GeckoLibLoad: Loaded libs in 9.422083ms total, 0ms(13ms) user, 8ms(20ms) system, 0(0) faults
+06-02 14:21:05.221  2389  2808 W GeckoThread: zerdatime 101308082 - runGecko
+06-02 14:21:05.301  2389  2808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:05.301  2389  2808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:05.301  2389  2808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:05.301  2389  2808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:05.357  2842  2842 E y.keyboard:tab: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:06.200  2912  2912 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:06.201  2912  2912 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:06.201  2912  2912 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:06.201  2912  2912 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:06.203  2912  2912 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:06.203  2912  2912 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:06.203  2912  2912 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:06.203  2912  2912 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:06.337  2389  2500 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x766528c392 in tid 2500 (d), pid 2389 (AndroidUI)
+06-02 14:21:06.578  2916  2916 E DEBUG   : failed to read /proc/uptime: Permission denied
+06-02 14:21:07.356  2916  2916 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 14:21:07.356  2916  2916 F DEBUG   : keyProcess: 0
+06-02 14:21:07.356  2916  2916 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 14:21:07.356  2916  2916 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 14:21:07.356  2916  2916 F DEBUG   : Revision: '0'
+06-02 14:21:07.356  2916  2916 F DEBUG   : ABI: 'arm64'
+06-02 14:21:07.356  2916  2916 F DEBUG   : Timestamp: 2026-06-02 14:21:06.578500384-0400
+06-02 14:21:07.356  2916  2916 F DEBUG   : Process uptime: 0s
+06-02 14:21:07.356  2916  2916 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 14:21:07.356  2916  2916 F DEBUG   : pid: 2389, tid: 2500, name: d  >>> com.vibekey.keyboard <<<
+06-02 14:21:07.356  2916  2916 F DEBUG   : uid: 13891
+06-02 14:21:07.356  2916  2916 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x766528c392
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x0  0000000000000000  x1  00000000000009c4  x2  0000000000000007  x3  000000768a7feda0
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x4  000000768a7fe6a8  x5  000000768a7fe6a8  x6  000000768a7fe6a8  x7  0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0000000000000100  x15 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 000000755f542000  x19 0000000000000007
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x20 000000768a7feda0  x21 0000000000000955  x22 000000768a7fed00  x23 0000000000000001
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x24 b400007414641f40  x25 b4000075cacb2390  x26 0000000000074680  x27 b40000741460d100
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x28 0000000000000000  x29 000000768a7fed20
+06-02 14:21:07.356  2916  2916 F DEBUG   :     lr  0000007576c73da0  sp  000000768a7fed00  pc  00000076790b8f34  pst 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   : backtrace:
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #04 pc 00000000000b623c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int*)+8) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #05 pc 00000000000b6b50  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+108) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #06 pc 00000000000d581c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #07 pc 00000000000d4918  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #08 pc 00000000000d3a9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #09 pc 000000000009fd58  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #10 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #11 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #12 pc 000000000022ef7e  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+546)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #13 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #14 pc 0000000000aa67ae  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.l.d+50)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #15 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #16 pc 0000000000aa57be  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.e.d+150)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #18 pc 000000000057ff10  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.h+216)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #20 pc 000000000057fa9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.g+384)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #22 pc 0000000000586cb0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.k1.b+348)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #24 pc 0000000000aad660  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.b.l+1468)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #25 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #26 pc 0000000000582160  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.v.run+72)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #27 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #28 pc 0000000000aaa7e2  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.d.handleMessage+18)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #29 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-02 14:21:07.680   676   676 W LlmEngineService: Severe memory pressure (15); evicting on-device LLM.
+06-02 14:21:11.546  2945  2945 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:11.690  2945  2945 W f0      : Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+06-02 14:21:11.774  2945  2945 W u       : No editor info for this field. Bug?
+06-02 14:21:11.812  2945  2945 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[])
+06-02 14:21:11.821  2945  2945 W System  : ClassLoader referenced unknown path: 
+06-02 14:21:11.824  2945  2945 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=4009363210, found=860287709 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[/data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/base.apk*860287709]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]})
+06-02 14:21:11.874  2945  2945 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+06-02 14:21:11.874  2945  2945 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+06-02 14:21:11.902  2945  2945 E MultiApp.Impl: OplusMultiAppImpl
+06-02 14:21:11.956  2945  3064 W libc    : Access denied finding property "ro.vendor.api_level"
+06-02 14:21:11.963  2945  2945 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+06-02 14:21:12.013  2945  3007 W Ads     : Update ad debug logging enablement as false
+06-02 14:21:12.015  2945  2945 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-02 14:21:12.022  2945  3110 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:12.022  2945  3110 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:12.023  2945  3023 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:21:12.263  2945  2945 W View    : requestLayout() improperly called by android.widget.LinearLayout{6d248f0 V.E...... ......ID 0,1973-1440,2923 #7f0a011b app:id/main_keyboard_frame} during layout: running second layout pass
+06-02 14:21:12.319  2945  3060 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-02 14:21:12.319  2945  3060 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+06-02 14:21:12.319  2945  3060 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-02 14:21:12.422  2945  3085 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-02 14:21:12.422  2945  3085 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-02 14:21:12.423  2945  3085 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:12.423  2945  3085 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:12.442  2945  3193 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-02 14:21:12.445  2945  3193 E GeckoLibLoad: Load sqlite start
+06-02 14:21:12.446  2945  3193 E GeckoLibLoad: Load sqlite done
+06-02 14:21:12.446  2945  3193 E GeckoLibLoad: Load nss start
+06-02 14:21:12.446  2945  3193 E GeckoLibLoad: Load nss done
+06-02 14:21:12.457  2945  3193 E GeckoLibLoad: Loaded libs in 10.467864ms total, 10ms(38ms) user, 0ms(13ms) system, 0(0) faults
+06-02 14:21:12.457  2945  3193 W GeckoThread: zerdatime 101315318 - runGecko
+06-02 14:21:12.512  2945  2945 W com.vibekey.keyboard: type=1400 audit(0.0:49972): avc: denied { bind } for comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 14:21:12.532  2945  3193 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:12.532  2945  3193 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:12.532  2945  3193 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:12.532  2945  3193 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:21:12.581  3244  3244 E y.keyboard:tab: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:16.178  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=17.78ms | Init=0.16ms | TrieExpand(x24)=17.59ms | Scoring=0.02ms | inputSize=30
+06-02 14:21:16.184  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.32ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:16.549  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=22.10ms | Init=0.19ms | TrieExpand(x36)=21.89ms | Scoring=0.02ms | inputSize=46
+06-02 14:21:16.558  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=31.41ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:16.637  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=21.86ms | Init=0.13ms | TrieExpand(x36)=21.71ms | Scoring=0.02ms | inputSize=46
+06-02 14:21:16.643  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=27.53ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:20.114  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.32ms | Init=0.14ms | TrieExpand(x11)=9.16ms | Scoring=0.02ms | inputSize=11
+06-02 14:21:20.797  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=10.73ms | Init=0.16ms | TrieExpand(x19)=10.56ms | Scoring=0.01ms | inputSize=53
+06-02 14:21:20.926  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=10.07ms | Init=0.18ms | TrieExpand(x19)=9.88ms | Scoring=0.02ms | inputSize=54
+06-02 14:21:21.039  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=10.30ms | Init=0.20ms | TrieExpand(x19)=10.09ms | Scoring=0.01ms | inputSize=55
+06-02 14:21:21.068  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.53ms | Init=0.15ms | TrieExpand(x19)=9.36ms | Scoring=0.02ms | inputSize=55
+06-02 14:21:21.908  2945  3365 E ibekey.keyboar: Attempt to load writable dex file: /data/user/0/com.vibekey.keyboard/app_pccache/5/8EBCAAEC2B76C0A33B03137E81AA4B249A0F4C11/pcam.jar
+06-02 14:21:21.912  2945  3375 W Ads     : Invoke Firebase method getInstance error.
+06-02 14:21:21.912  2945  3375 W Ads     : The Google Mobile Ads SDK will not integrate with Firebase. Admob/Firebase integration requires the latest Firebase SDK jar, but Firebase SDK is either missing or out of date
+06-02 14:21:21.912  2945  2945 W AdWorker(Defaul: type=1400 audit(0.0:49975): avc: granted { execute } for path="/data/data/com.vibekey.keyboard/app_pccache/5/8EBCAAEC2B76C0A33B03137E81AA4B249A0F4C11/pcam.jar" dev="dm-2" ino=789141 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:object_r:app_data_file:s0:c51,c271,c512,c768 tclass=file app=com.vibekey.keyboard
+06-02 14:21:21.921  2945  3362 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.CACHE
+06-02 14:21:22.000  2945  3376 W Ads     : Not retrying to fetch app settings
+06-02 14:21:22.002  2945  3389 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-02 14:21:22.024  2945  3007 W Ads     : Not retrying to fetch app settings
+06-02 14:21:22.369  2945  2945 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:22.517  2945  2945 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:22.522  2945  2945 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:24.082  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=8.11ms | Init=0.14ms | TrieExpand(x10)=7.95ms | Scoring=0.02ms | inputSize=10
+06-02 14:21:24.459  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=13.20ms | Init=0.17ms | TrieExpand(x29)=13.01ms | Scoring=0.02ms | inputSize=37
+06-02 14:21:24.464  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=19.08ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:24.791  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=16.68ms | Init=0.19ms | TrieExpand(x38)=16.47ms | Scoring=0.02ms | inputSize=52
+06-02 14:21:24.796  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=21.43ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:24.906  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=15.69ms | Init=0.16ms | TrieExpand(x38)=15.51ms | Scoring=0.02ms | inputSize=53
+06-02 14:21:24.912  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=20.83ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:25.021  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=18.62ms | Init=0.19ms | TrieExpand(x38)=18.42ms | Scoring=0.02ms | inputSize=54
+06-02 14:21:25.026  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.60ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:25.049  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=15.85ms | Init=0.18ms | TrieExpand(x38)=15.66ms | Scoring=0.02ms | inputSize=54
+06-02 14:21:25.054  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=21.32ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:26.671  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.63ms | Init=0.13ms | TrieExpand(x9)=9.48ms | Scoring=0.02ms | inputSize=9
+06-02 14:21:27.121  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.34ms | Init=0.12ms | TrieExpand(x20)=9.21ms | Scoring=0.02ms | inputSize=29
+06-02 14:21:27.422  2945  3441 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-02 14:21:27.442  2945  3441 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-02 14:21:27.442  2945  3441 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-02 14:21:27.534  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=16.82ms | Init=0.23ms | TrieExpand(x36)=16.57ms | Scoring=0.02ms | inputSize=54
+06-02 14:21:27.539  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=21.80ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:27.652  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=17.66ms | Init=0.26ms | TrieExpand(x36)=17.38ms | Scoring=0.02ms | inputSize=55
+06-02 14:21:27.657  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.37ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:27.728  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=15.45ms | Init=0.18ms | TrieExpand(x36)=15.24ms | Scoring=0.02ms | inputSize=55
+06-02 14:21:27.734  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=20.88ms | locales=1 | typedLen=0 | candidates=17
+06-02 14:21:29.907  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=10.18ms | Init=0.01ms | TrieExpand(x12)=10.16ms | Scoring=0.02ms | inputSize=3
+06-02 14:21:30.081  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.18ms | Init=0.10ms | TrieExpand(x15)=9.06ms | Scoring=0.02ms | inputSize=35
+06-02 14:21:30.385  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=24.14ms | Init=0.18ms | TrieExpand(x36)=23.94ms | Scoring=0.02ms | inputSize=54
+06-02 14:21:30.390  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=29.14ms | locales=1 | typedLen=0 | candidates=18
+06-02 14:21:37.393  2945  3560 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-02 14:21:37.554  2945  3552 W Ads     : Not retrying to fetch app settings
+06-02 14:21:37.564  2945  3541 W Ads     : Not retrying to fetch app settings
+06-02 14:21:37.856  2945  2945 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:37.992  2945  2945 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:38.025  2945  2945 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:45.281  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=11.51ms | Init=0.09ms | TrieExpand(x12)=11.31ms | Scoring=0.10ms | inputSize=3
+06-02 14:21:45.286  2945  2973 W VibeKeyProfiler: Slow Native Suggest: Total=11.67ms | Init=0.10ms | TrieExpand(x22)=11.56ms | Scoring=0.01ms | inputSize=3
+06-02 14:21:45.290  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.45ms | locales=3 | typedLen=0 | candidates=18 parallelWait=22.98ms
+06-02 14:21:45.516  2945  2969 W VibeKeyProfiler: Slow Native Suggest: Total=10.08ms | Init=0.06ms | TrieExpand(x20)=9.99ms | Scoring=0.03ms | inputSize=2
+06-02 14:21:45.520  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=16.36ms | locales=3 | typedLen=2 | candidates=18 parallelWait=16.23ms
+06-02 14:21:45.536  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=12.93ms | Init=0.18ms | TrieExpand(x4)=12.71ms | Scoring=0.04ms | inputSize=24
+06-02 14:21:45.538  2945  2973 W VibeKeyProfiler: Slow Native Suggest: Total=11.69ms | Init=0.11ms | TrieExpand(x4)=11.54ms | Scoring=0.04ms | inputSize=24
+06-02 14:21:45.544  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.92ms | locales=3 | typedLen=0 | candidates=18 parallelWait=23.53ms
+06-02 14:21:45.635  2945  2969 W VibeKeyProfiler: Slow Native Suggest: Total=9.83ms | Init=0.16ms | TrieExpand(x20)=9.63ms | Scoring=0.05ms | inputSize=2
+06-02 14:21:45.641  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=20.56ms | locales=3 | typedLen=2 | candidates=18 parallelWait=20.40ms
+06-02 14:21:45.652  2945  2973 W VibeKeyProfiler: Slow Native Suggest: Total=9.51ms | Init=0.13ms | TrieExpand(x6)=9.36ms | Scoring=0.02ms | inputSize=33
+06-02 14:21:50.471  2945  2988 W VibeKeyProfiler: Slow Native Suggest: Total=9.62ms | Init=0.05ms | TrieExpand(x15)=9.52ms | Scoring=0.05ms | inputSize=3
+06-02 14:21:50.477  2945  2988 W VibeKeyProfiler: Slow Kotlin Suggest: Total=16.32ms | locales=3 | typedLen=3 | candidates=18 parallelWait=15.94ms
+06-02 14:21:52.919  2945  3670 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-02 14:21:53.028  2945  3658 W Ads     : Not retrying to fetch app settings
+06-02 14:21:53.048  2945  3658 W Ads     : Not retrying to fetch app settings
+06-02 14:21:53.200  2945  2945 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:53.274  2945  2945 W View    : requestLayout() improperly called by android.widget.FrameLayout{d09c66a V.E...... ......ID 0,1677-1440,1857 #7f0a0087 app:id/browser_nav_footer_float} during layout: running second layout pass
+06-02 14:21:53.286  2945  2945 E GeckoView: Failed to attach WindowInsetsListener: 
+06-02 14:21:53.286  2945  2945 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.attachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onAttachedToWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:49)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.View.dispatchAttachedToWindow(View.java:20900)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3539)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewGroup.addViewInner(ViewGroup.java:5378)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5156)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5096)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.V(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:259)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.E0(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:64)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at c5.t.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:622)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at g7.y.onGlobalLayout(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:8)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:1061)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3407)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 14:21:53.286  2945  2945 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 14:21:53.305  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.329  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.334  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.339  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.342  3695  3695 E ey.keyboard:gp: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:53.342  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.343  2945  2945 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:53.348  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.352  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.365  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.371  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.382  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.387  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.399  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.403  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.403  3695  3721 E GeckoLibLoad: Load sqlite start
+06-02 14:21:53.404  3695  3721 E GeckoLibLoad: Load sqlite done
+06-02 14:21:53.404  3695  3721 E GeckoLibLoad: Load nss start
+06-02 14:21:53.404  3695  3721 E GeckoLibLoad: Load nss done
+06-02 14:21:53.414  3695  3721 E GeckoLibLoad: Loaded libs in 9.462917ms total, 9ms(9ms) user, 0ms(0ms) system, 0(0) faults
+06-02 14:21:53.414  3695  3721 W GeckoThread: zerdatime 101356275 - runGecko
+06-02 14:21:53.415  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.419  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.435  3695  3766 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-02 14:21:53.436  3695  3766 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-02 14:21:53.436  3695  3766 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:53.437  3695  3766 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:21:53.440  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.444  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.448  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.452  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.465  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.468  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.482  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.484  3244  3306 E GeckoLibLoad: Load sqlite start
+06-02 14:21:53.485  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.486  3244  3306 E GeckoLibLoad: Load sqlite done
+06-02 14:21:53.486  3244  3306 E GeckoLibLoad: Load nss start
+06-02 14:21:53.486  3244  3306 E GeckoLibLoad: Load nss done
+06-02 14:21:53.496  3244  3306 E GeckoLibLoad: Loaded libs in 9.951198ms total, 0ms(1ms) user, 4ms(7ms) system, 0(0) faults
+06-02 14:21:53.496  3244  3306 W GeckoThread: zerdatime 101356357 - runGecko
+06-02 14:21:53.499  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.506  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.513  3695  3715 E ey.keyboard:gp: ofbOpen failed with error=No such file or directory
+06-02 14:21:53.513  3695  3715 E ey.keyboard:gp: sysOpen failed with error=No such file or directory
+06-02 14:21:53.519  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.512  2945  2945 W com.vibekey.keyboard: type=1400 audit(0.0:49985): avc: denied { nlmsg_readpriv } for comm=536F636B657420546872656164 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 14:21:53.525  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.526  2945  2945 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:53.534  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.538  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.550  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.553  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.566  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.569  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.582  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.588  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.609  2945  2960 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:53.611  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.618  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.621  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.625  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.632  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.635  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.649  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.652  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.667  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.672  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.684  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.689  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.699  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.704  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.718  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.722  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.726  3982  3982 E .keyboard:tab2: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:53.732  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.735  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.751  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.754  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.766  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.769  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.782  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.785  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.787  3982  4030 E GeckoLibLoad: Load sqlite start
+06-02 14:21:53.788  3982  4030 E GeckoLibLoad: Load sqlite done
+06-02 14:21:53.788  3982  4030 E GeckoLibLoad: Load nss start
+06-02 14:21:53.788  3982  4030 E GeckoLibLoad: Load nss done
+06-02 14:21:53.798  3982  4030 E GeckoLibLoad: Loaded libs in 9.125625ms total, 8ms(9ms) user, 0ms(0ms) system, 0(0) faults
+06-02 14:21:53.798  3982  4030 W GeckoThread: zerdatime 101356659 - runGecko
+06-02 14:21:53.799  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.802  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.816  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.820  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.832  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.835  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.850  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.855  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.867  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.872  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.885  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.890  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.909  2945  3023 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:53.911  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.920  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.924  2945  3023 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:53.926  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.933  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.937  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.942  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.950  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.954  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.966  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.971  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:53.980  3982  4030 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:53.980  3982  4030 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:53.980  3982  4030 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:53.980  3982  4030 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:53.980  3982  4030 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:53.984  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:53.988  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.001  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.004  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.013  3982  4030 W Isolated Web Content: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/" line: 65}]
+06-02 14:21:54.016  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.019  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.033  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.036  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.050  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.054  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... .......D 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.068  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.071  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.083  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.088  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.101  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.105  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.092  2945  2945 W com.vibekey.keyboard: type=1400 audit(0.0:49986): avc: denied { nlmsg_readpriv } for comm=536F636B657420546872656164 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 14:21:54.126  2945  2960 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:54.127  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.133  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.136  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.149  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.152  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.167  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.168  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.184  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.186  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.190  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.200  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.208  2945  3627 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:54.237  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.247  2945  2945 E GeckoView: Failed to detach WindowInsetsListener: 
+06-02 14:21:54.247  2945  2945 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:25)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at t3.m.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:29)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 14:21:54.247  2945  2945 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 14:21:54.249  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.260  2945  3193 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:21:54.260  2945  3193 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:21:54.260  2945  3193 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:21:54.260  2945  3193 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:21:54.260  2945  3193 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:21:54.261  2945  3193 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:21:54.261  2945  3193 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:21:54.261  2945  3193 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:21:54.261  2945  3193 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:21:54.261  2945  3193 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:21:54.633  4137  4137 E .keyboard:tab3: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:54.693  4137  4166 E GeckoLibLoad: Load sqlite start
+06-02 14:21:54.696  4137  4166 E GeckoLibLoad: Load sqlite done
+06-02 14:21:54.696  4137  4166 E GeckoLibLoad: Load nss start
+06-02 14:21:54.696  4137  4166 E GeckoLibLoad: Load nss done
+06-02 14:21:54.722  4137  4166 E GeckoLibLoad: Loaded libs in 25.153802ms total, 6ms(10ms) user, 13ms(10ms) system, 0(0) faults
+06-02 14:21:54.722  4137  4166 W GeckoThread: zerdatime 101357583 - runGecko
+06-02 14:21:54.870  2945  2945 E GeckoView: Failed to attach WindowInsetsListener: 
+06-02 14:21:54.870  2945  2945 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.attachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onAttachedToWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:49)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.View.dispatchAttachedToWindow(View.java:20900)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3539)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewGroup.addViewInner(ViewGroup.java:5378)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5156)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5096)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.V(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:259)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.E0(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:64)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at c5.t.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:622)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at g7.y.onGlobalLayout(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:8)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:1061)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3407)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 14:21:54.870  2945  2945 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 14:21:54.887  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.908  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.911  3244  3306 W GeckoEditableChild: No editable parent
+06-02 14:21:54.912  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.915  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.920  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.921  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.930  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.936  2945  3627 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:54.937  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.942  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.952  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.958  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.968  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.974  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:54.986  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:54.991  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.003  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.008  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.018  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.026  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.035  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.041  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.048  4137  4166 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:55.048  4137  4166 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:55.048  4137  4166 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:55.048  4137  4166 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:55.048  4137  4166 W Isolated Web Content: [JavaScript Warning: "Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]
+06-02 14:21:55.049  4137  4166 W GeckoEditableChild: No editable parent
+06-02 14:21:55.051  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.056  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.068  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.074  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.074  4137  4166 W Isolated Web Content: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/" line: 65}]
+06-02 14:21:55.085  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.091  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.101  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.107  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.118  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.125  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.134  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.140  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.151  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.157  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.175  2945  2959 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:55.176  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.181  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.185  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.191  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.201  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.207  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.218  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.224  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.235  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.241  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.252  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.257  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.268  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.274  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.262  2945  2945 W com.vibekey.keyboard: type=1400 audit(0.0:49987): avc: denied { nlmsg_readpriv } for comm=536F636B657420546872656164 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 14:21:55.285  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.291  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.302  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.308  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.311  4137  4166 W Isolated Web Content: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/xjs/_/js/k=xjs.hm.en.FrGEQgohjYs.2019.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAgAAAAAgQAAAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAAAAAAAIiAAAAAAAAAAAAAAAEABAAABAAAAAAAABgAQAAAEEACAAQAAwAAAAAAAAAAAAAAAAAAECACAAAABAAA4A8AjAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAYAEAAEADAAAAEAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAgAAAAAAIAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAAAAEFAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAwAAAAAAEAAAAAAAAAAAAAAAAAADgAACAgAAAAAAAAgUAAgAAAAABAAuCBgCGaAgAAAAAAAAAAAAAAAAAAAA" line: 187}]
+06-02 14:21:55.318  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.324  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.335  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.340  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.352  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.356  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.368  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.373  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.385  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.387  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.401  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 14:21:55.406  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.408  2945  2960 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:21:55.442  2945  2945 E GeckoView: Failed to detach WindowInsetsListener: 
+06-02 14:21:55.442  2945  2945 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:25)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at t3.m.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:29)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 14:21:55.442  2945  2945 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 14:21:55.444  2945  2945 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{7b5f782 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 14:21:55.467  2945  3193 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:21:55.467  2945  3193 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:21:55.467  2945  3193 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:21:55.467  2945  3193 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:21:55.467  2945  3193 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:21:55.469  2945  3193 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 14:21:55.469  2945  3193 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 14:21:55.469  2945  3193 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 14:21:55.469  2945  3193 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 14:21:55.469  2945  3193 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 14:21:56.068  4333  4333 E .keyboard:tab1: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:56.131  4333  4365 E GeckoLibLoad: Load sqlite start
+06-02 14:21:56.132  4333  4365 E GeckoLibLoad: Load sqlite done
+06-02 14:21:56.132  4333  4365 E GeckoLibLoad: Load nss start
+06-02 14:21:56.132  4333  4365 E GeckoLibLoad: Load nss done
+06-02 14:21:56.141  4333  4365 E GeckoLibLoad: Loaded libs in 9.395261ms total, 8ms(9ms) user, 0ms(0ms) system, 0(0) faults
+06-02 14:21:56.142  4333  4365 W GeckoThread: zerdatime 101359003 - runGecko
+06-02 14:21:57.327  2945  3657 W Ads     : Not retrying to fetch app settings
+06-02 14:21:57.352  2945  2945 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-02 14:21:57.358  2945  3665 W Ads     : Not retrying to fetch app settings
+06-02 14:21:57.375  2945  3661 W Ads     : Not retrying to fetch app settings
+06-02 14:21:57.653  2945  2945 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:57.654  2945  2945 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:57.663  2945  3333 F libc    : Pointer tag for 0xffffffff was truncated, see 'https://source.android.com/devices/tech/debug/tagged-pointers'.
+06-02 14:21:57.795  2945  2945 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 14:21:57.885  4471  4471 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:57.886  4471  4471 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:57.886  4471  4471 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:57.886  4471  4471 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-02 14:21:57.887  4471  4471 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:57.887  4471  4471 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-02 14:21:57.887  4471  4471 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:57.887  4471  4471 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-02 14:21:57.944  4471  4471 E chromium: [0602/142157.944405:ERROR:third_party/crashpad/crashpad/util/process/process_memory_range.cc:75] read out of range
+06-02 14:21:59.221  4491  4491 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:21:59.546  4491  4491 W f0      : Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+06-02 14:21:59.805  4491  4491 W u       : No editor info for this field. Bug?
+06-02 14:21:59.925  4491  4491 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[])
+06-02 14:21:59.952  4491  4491 W System  : ClassLoader referenced unknown path: 
+06-02 14:21:59.962  4491  4491 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=4009363210, found=860287709 (DLC[];PCL[base.apk*4009363210]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[/data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/base.apk*860287709]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]})
+06-02 14:22:00.174  4491  4491 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+06-02 14:22:00.175  4491  4491 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+06-02 14:22:00.202  4491  4571 W Ads     : Update ad debug logging enablement as false
+06-02 14:22:00.232  4491  4491 E MultiApp.Impl: OplusMultiAppImpl
+06-02 14:22:00.299  4491  4491 W libc    : Access denied finding property "ro.vendor.api_level"
+06-02 14:22:00.301  4491  4491 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+06-02 14:22:00.377  4491  4651 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:22:00.378  4491  4651 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:22:00.379  4491  4585 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-02 14:22:00.387  4491  4491 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-02 14:22:00.649  4491  4612 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-02 14:22:00.649  4491  4612 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+06-02 14:22:00.649  4491  4612 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-02 14:22:00.674  4491  4491 W View    : requestLayout() improperly called by android.widget.LinearLayout{9b87e55 V.E...... ......ID 0,1973-1440,2923 #7f0a011b app:id/main_keyboard_frame} during layout: running second layout pass
+06-02 14:22:00.795  4491  4584 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:22:00.797  4491  4635 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-02 14:22:00.798  4491  4635 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-02 14:22:00.798  4491  4635 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:22:00.798  4491  4635 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-02 14:22:00.864  4491  4699 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-02 14:22:00.873  4491  4699 E GeckoLibLoad: Load sqlite start
+06-02 14:22:00.877  4491  4699 E GeckoLibLoad: Load sqlite done
+06-02 14:22:00.877  4491  4699 E GeckoLibLoad: Load nss start
+06-02 14:22:00.877  4491  4699 E GeckoLibLoad: Load nss done
+06-02 14:22:00.889  4491  4699 E GeckoLibLoad: Loaded libs in 11.287188ms total, 10ms(32ms) user, 0ms(0ms) system, 0(0) faults
+06-02 14:22:00.889  4491  4699 W GeckoThread: zerdatime 101363750 - runGecko
+06-02 14:22:00.932  4491  4491 W com.vibekey.keyboard: type=1400 audit(0.0:49991): avc: denied { bind } for comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 14:22:00.966  4491  4699 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:22:00.966  4491  4699 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:22:00.966  4491  4699 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:22:00.966  4491  4699 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-02 14:22:01.033  4755  4755 E .keyboard:tab3: Unknown bits set in runtime_flags: 0x40000000
+06-02 14:22:03.148  4491  4491 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-02 14:22:08.356  4491  4584 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 14:22:08.591  4491  4584 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+
+2026-06-02 14:21:59.546177 W f0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-02 14:21:59.597211 I startup: Starting com.vibekey.keyboard version 4.1.141 (4241) on Android 12 (SDK 31)
+2026-06-02 14:21:59.611867 I LatinIME: Hardware accelerated drawing: true
+2026-06-02 14:21:59.746163 I SymSpellProvider: Detected asset languages: []
+2026-06-02 14:21:59.752868 I NgramPredictor: Detected bigram asset languages: []
+2026-06-02 14:21:59.755564 I RecencyTracker: init loaded 0 language file(s)
+2026-06-02 14:21:59.757112 I AdaptiveTouchModel: Loaded touch model: 0 keys
+2026-06-02 14:21:59.758536 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-02 14:21:59.805572 W u: No editor info for this field. Bug?
+2026-06-02 14:21:59.806028 I c: loadSettings
+2026-06-02 14:21:59.836777 I p: resetDictionaries, force reloading main dictionary: false
+2026-06-02 14:21:59.877090 I NgramPredictor: Detected bigram asset languages: []
+2026-06-02 14:21:59.880381 I ConsentManager: UMP hydrate skipped: q6.k.getConsentInformation [class android.content.Context]
+2026-06-02 14:21:59.881324 I SymSpellProvider: Detected asset languages: []
+2026-06-02 14:21:59.881697 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-02 14:22:00.133561 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-02 14:22:00.139059 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-02 14:22:00.380414 I c: loadSettings
+2026-06-02 14:22:00.498638 I StickerImageManager: Loaded 1 NFT sticker images from disk
+2026-06-02 14:22:00.521410 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:00.521639 I c: loadSettings
+2026-06-02 14:22:00.771322 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:00.771397 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.091991 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.092099 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.592340 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.592561 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.092940 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.093193 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.889028 I LatinIME: requestHideSelf: 0
+2026-06-02 14:22:02.922549 I LatinIME: hideWindow
+2026-06-02 14:22:02.938105 I LatinIME: onFinishInputView
+2026-06-02 14:22:02.938375 I LatinIME: onWindowHidden
+2026-06-02 14:22:02.950904 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.951004 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.987227 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.987378 I u: InputType.TYPE_NULL is specified
+2026-06-02 14:22:02.987524 I c: loadSettings
+2026-06-02 14:22:03.345634 I LatinIME: requestHideSelf: 100
+2026-06-02 14:22:03.361555 I LatinIME: onFinishInput
+2026-06-02 14:22:03.420274 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:03.420378 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.733148 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.748305 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.753020 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.753127 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:05.251033 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:05.251162 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:06.713924 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:06.714055 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.213839 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.214087 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.249223 I SymSpellProvider: Built runtime SymSpell for de with 79985 words
+2026-06-02 14:22:07.249359 I p: Built runtime SymSpell for de with 80017 words
+2026-06-02 14:22:07.288969 I SymSpellProvider: Built runtime SymSpell for fr with 79962 words
+2026-06-02 14:22:07.289074 I p: Built runtime SymSpell for fr with 80022 words
+2026-06-02 14:22:07.446753 I SymSpellProvider: Built runtime SymSpell for en with 79998 words
+2026-06-02 14:22:07.446867 I p: Built runtime SymSpell for en with 80000 words
+2026-06-02 14:22:07.715035 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.715248 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.215516 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.215770 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.322838 I LatinIME: onFinishInput
+2026-06-02 14:22:09.776625 I LatinIME: onFinishInput
