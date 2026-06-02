@@ -1,0 +1,1154 @@
+--------- beginning of crash
+06-02 13:44:20.688   436  1522 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 1522 (launcher), pid 436 (AndroidUI)
+06-02 13:44:22.272  9865  9865 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 13:44:22.272  9865  9865 F DEBUG   : keyProcess: 0
+06-02 13:44:22.272  9865  9865 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 13:44:22.272  9865  9865 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 13:44:22.272  9865  9865 F DEBUG   : Revision: '0'
+06-02 13:44:22.272  9865  9865 F DEBUG   : ABI: 'arm64'
+06-02 13:44:22.272  9865  9865 F DEBUG   : Timestamp: 2026-06-02 13:44:20.918582528-0400
+06-02 13:44:22.272  9865  9865 F DEBUG   : Process uptime: 0s
+06-02 13:44:22.272  9865  9865 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 13:44:22.272  9865  9865 F DEBUG   : pid: 436, tid: 1522, name: launcher  >>> com.vibekey.keyboard <<<
+06-02 13:44:22.272  9865  9865 F DEBUG   : uid: 13891
+06-02 13:44:22.272  9865  9865 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+06-02 13:44:22.272  9865  9865 F DEBUG   : Cause: null pointer dereference
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x0  0000000000000000  x1  00000000000005f2  x2  000000000000000b  x3  000000766d603da0
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x4  0000007694d1c400  x5  0000007694d1c400  x6  0000007694d1c400  x7  0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000007696b4068c  x11 0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 00000075bb24b0f0  x15 00000076756011fc
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 00000074711fe000  x19 000000000000000b
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x20 000000766d603da0  x21 00000000000001b4  x22 000000766d603b90  x23 0000000000000001
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x24 0000007488642610  x25 00000075bb24c000  x26 0000007694d1d698  x27 0000007694d1c408
+06-02 13:44:22.272  9865  9865 F DEBUG   :     x28 0000000000000400  x29 000000766d603bb0
+06-02 13:44:22.272  9865  9865 F DEBUG   :     lr  0000007576c73da0  sp  000000766d603b90  pc  00000076790b8f34  pst 0000000000000000
+06-02 13:44:22.272  9865  9865 F DEBUG   : backtrace:
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #05 pc 0000000000006f94  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1148) (BuildId: 1d71636c1517ecf3fa421563ba6710f3)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #07 pc 00000000044f860c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #08 pc 00000000038cb360  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #09 pc 000000000394a4ac  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #10 pc 0000000003946cfc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #11 pc 0000000002f16118  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #12 pc 0000000002f1ef68  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #13 pc 0000000002f1e3e8  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #14 pc 00000000041b0ae4  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #15 pc 00000000041b0668  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #16 pc 00000000001dae5c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libnss3.so (BuildId: b089d343de37b8a21215387a791de798513aaf64)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #17 pc 000000000009e0bc  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libmozglue.so (BuildId: 8d82c5d136d7c01bbfb799da8ac843daefd5a4ec)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #18 pc 00000000000deb44  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 13:44:22.272  9865  9865 F DEBUG   :       #19 pc 000000000007b2fc  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 14:21:01.502  9939  9989 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x767e978000 in tid 9989 (d), pid 9939 (AndroidUI)
+06-02 14:21:03.051  2361  2361 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 14:21:03.051  2361  2361 F DEBUG   : keyProcess: 0
+06-02 14:21:03.051  2361  2361 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 14:21:03.051  2361  2361 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 14:21:03.051  2361  2361 F DEBUG   : Revision: '0'
+06-02 14:21:03.051  2361  2361 F DEBUG   : ABI: 'arm64'
+06-02 14:21:03.051  2361  2361 F DEBUG   : Timestamp: 2026-06-02 14:21:01.889039500-0400
+06-02 14:21:03.051  2361  2361 F DEBUG   : Process uptime: 0s
+06-02 14:21:03.051  2361  2361 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 14:21:03.051  2361  2361 F DEBUG   : pid: 9939, tid: 9989, name: d  >>> com.vibekey.keyboard <<<
+06-02 14:21:03.051  2361  2361 F DEBUG   : uid: 13891
+06-02 14:21:03.051  2361  2361 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x767e978000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x0  0000000000000000  x1  0000000000002705  x2  0000000000000007  x3  000000768a6d1da0
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x4  000000768a6d16a8  x5  000000768a6d16a8  x6  000000768a6d16a8  x7  0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 000000767e977f9d
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 0000007533182000  x19 0000000000000007
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x20 000000768a6d1da0  x21 00000000000026d3  x22 000000768a6d1d00  x23 0000000000000001
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x24 0000000080000000  x25 b4000075bb0a6fb0  x26 00000075ccb64024  x27 0000000000000001
+06-02 14:21:03.051  2361  2361 F DEBUG   :     x28 00000075ccb645d8  x29 000000768a6d1d20
+06-02 14:21:03.051  2361  2361 F DEBUG   :     lr  0000007576c73da0  sp  000000768a6d1d00  pc  00000076790b8f34  pst 0000000000000000
+06-02 14:21:03.051  2361  2361 F DEBUG   : backtrace:
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #04 pc 00000000000b69b8  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::ShortcutListReadingUtils::getShortcutListSizeAndForwardPointer(latinime::ReadOnlyByteArrayView, int*)+0) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #05 pc 00000000000b2e04  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::ShortcutListPolicy::skipAllShortcuts(int*) const+32) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #06 pc 00000000000b6924  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+688) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #07 pc 00000000000b883c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.051  2361  2361 F DEBUG   :       #08 pc 00000000000b4ae0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #09 pc 00000000000b71e0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #10 pc 00000000000a7d0c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #11 pc 00000000000d3224  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+116) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #12 pc 00000000000c8a80  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #13 pc 000000000009fd58  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #14 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #15 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #16 pc 000000000022ef7e  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+546)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #18 pc 0000000000aa67ae  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.l.d+50)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #20 pc 0000000000aa57be  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.e.d+150)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #22 pc 000000000057ff10  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.h+216)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #24 pc 000000000057fa9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.g+384)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #25 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #26 pc 0000000000586c8a  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.k1.b+310)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #27 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #28 pc 0000000000aad660  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.b.l+1468)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #29 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #30 pc 0000000000582160  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.v.run+72)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #31 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #32 pc 0000000000aaa7e2  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.d.handleMessage+18)
+06-02 14:21:03.052  2361  2361 F DEBUG   :       #33 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-02 14:21:06.337  2389  2500 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x766528c392 in tid 2500 (d), pid 2389 (AndroidUI)
+06-02 14:21:07.356  2916  2916 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-02 14:21:07.356  2916  2916 F DEBUG   : keyProcess: 0
+06-02 14:21:07.356  2916  2916 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-02 14:21:07.356  2916  2916 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-02 14:21:07.356  2916  2916 F DEBUG   : Revision: '0'
+06-02 14:21:07.356  2916  2916 F DEBUG   : ABI: 'arm64'
+06-02 14:21:07.356  2916  2916 F DEBUG   : Timestamp: 2026-06-02 14:21:06.578500384-0400
+06-02 14:21:07.356  2916  2916 F DEBUG   : Process uptime: 0s
+06-02 14:21:07.356  2916  2916 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-02 14:21:07.356  2916  2916 F DEBUG   : pid: 2389, tid: 2500, name: d  >>> com.vibekey.keyboard <<<
+06-02 14:21:07.356  2916  2916 F DEBUG   : uid: 13891
+06-02 14:21:07.356  2916  2916 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x766528c392
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x0  0000000000000000  x1  00000000000009c4  x2  0000000000000007  x3  000000768a7feda0
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x4  000000768a7fe6a8  x5  000000768a7fe6a8  x6  000000768a7fe6a8  x7  0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0000000000000100  x15 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 000000755f542000  x19 0000000000000007
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x20 000000768a7feda0  x21 0000000000000955  x22 000000768a7fed00  x23 0000000000000001
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x24 b400007414641f40  x25 b4000075cacb2390  x26 0000000000074680  x27 b40000741460d100
+06-02 14:21:07.356  2916  2916 F DEBUG   :     x28 0000000000000000  x29 000000768a7fed20
+06-02 14:21:07.356  2916  2916 F DEBUG   :     lr  0000007576c73da0  sp  000000768a7fed00  pc  00000076790b8f34  pst 0000000000000000
+06-02 14:21:07.356  2916  2916 F DEBUG   : backtrace:
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-02 14:21:07.356  2916  2916 F DEBUG   :       #04 pc 00000000000b623c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int*)+8) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #05 pc 00000000000b6b50  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+108) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #06 pc 00000000000d581c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #07 pc 00000000000d4918  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #08 pc 00000000000d3a9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #09 pc 000000000009fd58  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/lib/arm64/libjni_latinime.so (BuildId: 8d76756a997f3dfd1fecc1bfb186b1b8aa252cdd)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #10 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #11 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #12 pc 000000000022ef7e  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+546)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #13 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #14 pc 0000000000aa67ae  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.l.d+50)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #15 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #16 pc 0000000000aa57be  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (t7.e.d+150)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #18 pc 000000000057ff10  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.h+216)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #20 pc 000000000057fa9c  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.p.g+384)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #22 pc 0000000000586cb0  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.k1.b+348)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #24 pc 0000000000aad660  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.b.l+1468)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #25 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #26 pc 0000000000582160  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (n7.v.run+72)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #27 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #28 pc 0000000000aaa7e2  /data/app/~~o0IDpf5dZyI1QwCvAigHGA==/com.vibekey.keyboard-ND4J-sNbdy9txQXN6K2k8A==/oat/arm64/base.vdex (v7.d.handleMessage+18)
+06-02 14:21:07.357  2916  2916 F DEBUG   :       #29 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-02 14:21:57.663  2945  3333 F libc    : Pointer tag for 0xffffffff was truncated, see 'https://source.android.com/devices/tech/debug/tagged-pointers'.
+--------- beginning of main
+06-02 15:17:56.047  4491 21580 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-02 15:17:56.081  4491 21577 W Ads     : Not retrying to fetch app settings
+06-02 15:17:56.105  4491 21572 W Ads     : Not retrying to fetch app settings
+06-02 15:17:56.577  4491  4491 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:17:56.592  4491  4491 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:17:56.610  4491  4491 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:07.649  4491  4525 W VibeKeyProfiler: Slow Native Suggest: Total=8.79ms | Init=0.14ms | TrieExpand(x23)=8.51ms | Scoring=0.15ms | inputSize=1
+06-02 15:18:07.655  4491  4524 W VibeKeyProfiler: Slow Native Suggest: Total=14.89ms | Init=0.18ms | TrieExpand(x16)=14.63ms | Scoring=0.08ms | inputSize=1
+06-02 15:18:07.660  4491  4525 W VibeKeyProfiler: Slow Native Suggest: Total=9.49ms | Init=0.12ms | TrieExpand(x27)=9.30ms | Scoring=0.07ms | inputSize=1
+06-02 15:18:07.662  4491  4540 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.92ms | locales=3 | typedLen=1 | candidates=18 parallelWait=23.38ms
+06-02 15:18:08.525  4491  4525 W VibeKeyProfiler: Slow Native Suggest: Total=8.29ms | Init=0.01ms | TrieExpand(x16)=8.24ms | Scoring=0.03ms | inputSize=1
+06-02 15:18:08.768  4491  4540 W VibeKeyProfiler: Slow Native Suggest: Total=8.05ms | Init=3.21ms | TrieExpand(x5)=4.83ms | Scoring=0.02ms | inputSize=24
+06-02 15:18:08.777  4491  4540 W VibeKeyProfiler: Slow Kotlin Suggest: Total=17.04ms | locales=3 | typedLen=0 | candidates=18 parallelWait=16.91ms
+06-02 15:18:08.906  4491  4525 W VibeKeyProfiler: Slow Native Suggest: Total=8.15ms | Init=0.06ms | TrieExpand(x16)=8.06ms | Scoring=0.03ms | inputSize=3
+06-02 15:18:08.914  4491  4540 W VibeKeyProfiler: Slow Kotlin Suggest: Total=16.73ms | locales=3 | typedLen=3 | candidates=18 parallelWait=16.61ms
+06-02 15:18:10.762  4491  4491 E GeckoView: Failed to attach WindowInsetsListener: 
+06-02 15:18:10.762  4491  4491 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at org.mozilla.geckoview.GeckoView.attachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onAttachedToWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:49)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.View.dispatchAttachedToWindow(View.java:20900)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3539)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewGroup.addViewInner(ViewGroup.java:5378)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5156)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewGroup.addView(ViewGroup.java:5096)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.V(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:259)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.E0(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:64)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at c5.t.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:622)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at g7.y.onGlobalLayout(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:8)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:1061)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3407)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 15:18:10.762  4491  4491 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 15:18:10.794  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.816  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.820  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.822  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.826  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.831  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.840  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.847  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.856  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.864  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.873  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.881  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.890  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.898  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.907  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.915  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.920  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.932  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.935  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.948  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.951  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.965  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.967  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.981  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:10.985  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:10.998  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.009  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.014  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.018  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.032  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.036  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.048  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.052  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.065  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.073  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.084  4491  4585 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 15:18:11.085  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.090  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.100  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.104  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.114  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.117  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.132  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.137  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.149  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.155  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.166  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.169  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.182  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......I. 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.187  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.198  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.205  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.215  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.219  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.233  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.238  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.248  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.251  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.264  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.268  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.281  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.285  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ........ 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.286 14851 14881 W GeckoEditableChild: No editable parent
+06-02 15:18:11.298  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 V.E...... ......ID 0,0-1440,2040} during layout: running second layout pass
+06-02 15:18:11.305  4491  4585 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 15:18:11.333  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.352  4491  4491 E GeckoView: Failed to detach WindowInsetsListener: 
+06-02 15:18:11.352  4491  4491 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:1)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:25)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at t3.m.run(r8-map-id-85bb38a905de45152437ca334b351eb80adb24a621cdd65ea75e25d63ae7e63c:29)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-02 15:18:11.352  4491  4491 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-02 15:18:11.354  4491  4491 W View    : requestLayout() improperly called by helium314.keyboard.latin.panels.BrowserPanelView{776ea25 G.E...... ......ID 0,0-1440,2040} during second layout pass: posting in next frame
+06-02 15:18:11.371 14851 14881 W Isolated Web Content: [JavaScript Warning: "Preload of https://config.aps.amazon-adsystem.com/configs/3482 was ignored due to unknown “as” or “type” values, or non-matching “media” attribute." {file: "https://www.marketwatch.com/" line: 0}]
+06-02 15:18:11.387 14851 14881 W Isolated Web Content: [JavaScript Warning: "Layout was forced before the page was fully loaded. If stylesheets are not yet loaded this may cause a flash of unstyled content." {file: "https://www.marketwatch.com/" line: 0}]
+06-02 15:18:11.376  4491  4491 W com.vibekey.keyboard: type=1400 audit(0.0:52211): avc: denied { nlmsg_readpriv } for comm=536F636B657420546872656164 scontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tcontext=u:r:untrusted_app:s0:c51,c271,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-02 15:18:11.435  4491  4699 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 15:18:11.435  4491  4699 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 15:18:11.435  4491  4699 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 15:18:11.435  4491  4699 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 15:18:11.435  4491  4699 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 15:18:11.435 14851 14881 E Isolated Web Content: [JavaScript Error: "downloadable font: download failed (font-family: "Founders Grotesk Condensed" style:normal weight:400 stretch:100 src index:0): status=2152398850 source: https://www.marketwatch.com/fonts/foundersGrotesk/founders-grotesk-condensed-regular.woff2"]
+06-02 15:18:11.437  4491  4699 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-02 15:18:11.437  4491  4699 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-02 15:18:11.437  4491  4699 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-02 15:18:11.437  4491  4699 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:46:27
+06-02 15:18:11.437  4491  4699 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.sys.mjs:16:46
+06-02 15:18:11.627  4491 21817 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-02 15:18:11.647  4491 21816 W Ads     : Not retrying to fetch app settings
+06-02 15:18:11.656  4491 21804 W Ads     : Not retrying to fetch app settings
+06-02 15:18:12.050  4491  4491 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:12.053  4491  4491 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:12.069  4491  4491 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:12.238 21829 21829 E y.keyboard:tab: Unknown bits set in runtime_flags: 0x40000000
+06-02 15:18:12.304 21829 21846 E GeckoLibLoad: Load sqlite start
+06-02 15:18:12.305 21829 21846 E GeckoLibLoad: Load sqlite done
+06-02 15:18:12.305 21829 21846 E GeckoLibLoad: Load nss start
+06-02 15:18:12.305 21829 21846 E GeckoLibLoad: Load nss done
+06-02 15:18:12.345 21829 21846 E GeckoLibLoad: Loaded libs in 39.412344ms total, 9ms(7ms) user, 4ms(5ms) system, 13(13) faults
+06-02 15:18:12.345 21829 21846 W GeckoThread: zerdatime 104735206 - runGecko
+06-02 15:18:12.672  4491  4540 W VibeKeyProfiler: Slow Native Suggest: Total=8.26ms | Init=0.11ms | TrieExpand(x10)=8.13ms | Scoring=0.02ms | inputSize=4
+06-02 15:18:16.766  4491  4491 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-02 15:18:16.787  4491 21805 W Ads     : Not retrying to fetch app settings
+06-02 15:18:16.806  4491 21813 W Ads     : Not retrying to fetch app settings
+06-02 15:18:17.180  4491  4491 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:17.219  4491  4491 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:17.262  4491  4491 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+06-02 15:18:21.325  4491  4584 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-02 15:18:22.066  4491  4584 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+
+2026-06-02 14:21:59.546177 W f0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-02 14:21:59.597211 I startup: Starting com.vibekey.keyboard version 4.1.141 (4241) on Android 12 (SDK 31)
+2026-06-02 14:21:59.611867 I LatinIME: Hardware accelerated drawing: true
+2026-06-02 14:21:59.746163 I SymSpellProvider: Detected asset languages: []
+2026-06-02 14:21:59.752868 I NgramPredictor: Detected bigram asset languages: []
+2026-06-02 14:21:59.755564 I RecencyTracker: init loaded 0 language file(s)
+2026-06-02 14:21:59.757112 I AdaptiveTouchModel: Loaded touch model: 0 keys
+2026-06-02 14:21:59.758536 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-02 14:21:59.805572 W u: No editor info for this field. Bug?
+2026-06-02 14:21:59.806028 I c: loadSettings
+2026-06-02 14:21:59.836777 I p: resetDictionaries, force reloading main dictionary: false
+2026-06-02 14:21:59.877090 I NgramPredictor: Detected bigram asset languages: []
+2026-06-02 14:21:59.880381 I ConsentManager: UMP hydrate skipped: q6.k.getConsentInformation [class android.content.Context]
+2026-06-02 14:21:59.881324 I SymSpellProvider: Detected asset languages: []
+2026-06-02 14:21:59.881697 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-02 14:22:00.133561 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-02 14:22:00.139059 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-02 14:22:00.380414 I c: loadSettings
+2026-06-02 14:22:00.498638 I StickerImageManager: Loaded 1 NFT sticker images from disk
+2026-06-02 14:22:00.521410 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:00.521639 I c: loadSettings
+2026-06-02 14:22:00.771322 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:00.771397 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.091991 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.092099 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.592340 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:01.592561 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.092940 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.093193 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.889028 I LatinIME: requestHideSelf: 0
+2026-06-02 14:22:02.922549 I LatinIME: hideWindow
+2026-06-02 14:22:02.938105 I LatinIME: onFinishInputView
+2026-06-02 14:22:02.938375 I LatinIME: onWindowHidden
+2026-06-02 14:22:02.950904 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.951004 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.987227 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:02.987378 I u: InputType.TYPE_NULL is specified
+2026-06-02 14:22:02.987524 I c: loadSettings
+2026-06-02 14:22:03.345634 I LatinIME: requestHideSelf: 100
+2026-06-02 14:22:03.361555 I LatinIME: onFinishInput
+2026-06-02 14:22:03.420274 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:03.420378 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.733148 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.748305 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.753020 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:04.753127 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:05.251033 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:05.251162 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:06.713924 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:06.714055 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.213839 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.214087 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.249223 I SymSpellProvider: Built runtime SymSpell for de with 79985 words
+2026-06-02 14:22:07.249359 I p: Built runtime SymSpell for de with 80017 words
+2026-06-02 14:22:07.288969 I SymSpellProvider: Built runtime SymSpell for fr with 79962 words
+2026-06-02 14:22:07.289074 I p: Built runtime SymSpell for fr with 80022 words
+2026-06-02 14:22:07.446753 I SymSpellProvider: Built runtime SymSpell for en with 79998 words
+2026-06-02 14:22:07.446867 I p: Built runtime SymSpell for en with 80000 words
+2026-06-02 14:22:07.715035 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:07.715248 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.215516 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.215770 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-02 14:22:08.322838 I LatinIME: onFinishInput
+2026-06-02 14:22:09.776625 I LatinIME: onFinishInput
+2026-06-02 14:22:09.906494 I c: loadSettings
+2026-06-02 14:22:10.147640 I AdManager: MobileAds initialization complete
+2026-06-02 14:22:10.147842 I ConsentManager: UMP hydrate skipped: q6.k.getConsentInformation [class android.content.Context]
+2026-06-02 14:22:10.148006 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:22:10.769046 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:10.793492 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:10.828503 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:12.032904 I LatinIME: onFinishInput
+2026-06-02 14:22:12.706237 I LatinIME: onFinishInput
+2026-06-02 14:22:12.710670 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:12.710865 I c: loadSettings
+2026-06-02 14:22:14.181336 W VibeKeyProfiler: Slow Kotlin Suggest: Total=28.68ms | locales=3 | typedLen=3 | candidates=18 parallelWait=28.45ms
+2026-06-02 14:22:14.697592 I LatinIME: hideWindow
+2026-06-02 14:22:14.712043 I LatinIME: onFinishInputView
+2026-06-02 14:22:14.712722 I LatinIME: onWindowHidden
+2026-06-02 14:22:14.992540 I LatinIME: requestHideSelf: 100
+2026-06-02 14:22:15.079675 I LatinIME: onFinishInput
+2026-06-02 14:22:16.943362 I LatinIME: onFinishInput
+2026-06-02 14:22:16.996170 I LatinIME: onFinishInput
+2026-06-02 14:22:16.999181 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:16.999371 I c: loadSettings
+2026-06-02 14:22:20.166907 I LatinIME: hideWindow
+2026-06-02 14:22:20.189258 I LatinIME: onFinishInputView
+2026-06-02 14:22:20.190681 I LatinIME: onWindowHidden
+2026-06-02 14:22:20.495400 I LatinIME: requestHideSelf: 100
+2026-06-02 14:22:20.672330 I LatinIME: onFinishInput
+2026-06-02 14:22:21.869636 I LatinIME: onFinishInput
+2026-06-02 14:22:21.889068 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:21.889305 I c: loadSettings
+2026-06-02 14:22:24.344227 I LatinIME: onFinishInputView
+2026-06-02 14:22:24.344525 I LatinIME: onFinishInput
+2026-06-02 14:22:24.345692 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:22:24.345974 I c: loadSettings
+2026-06-02 14:22:25.114568 I LatinIME: Restarting input. Cursor position = 0,0
+2026-06-02 14:22:25.114829 I c: loadSettings
+2026-06-02 14:22:25.665876 I LatinIME: hideWindow
+2026-06-02 14:22:25.687065 I LatinIME: onFinishInputView
+2026-06-02 14:22:25.690354 I LatinIME: onWindowHidden
+2026-06-02 14:22:25.967547 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:22:25.987255 I LatinIME: requestHideSelf: 100
+2026-06-02 14:22:25.988009 I LatinIME: onFinishInput
+2026-06-02 14:22:26.519712 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:26.556850 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:26.557878 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:41.288744 I LatinIME: onFinishInput
+2026-06-02 14:22:41.526733 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:22:42.624118 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:42.694084 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:42.703388 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:57.631150 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:22:58.046092 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:58.239027 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:22:58.240385 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:13.056391 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:23:13.614931 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:13.787314 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:13.802474 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:28.623333 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:23:29.215223 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:29.322705 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:29.331164 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:44.223143 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:23:44.786051 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:44.967296 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:44.974923 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:23:59.792915 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:24:00.317052 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:00.490461 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:00.498671 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:15.325486 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:24:15.922052 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:16.091571 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:16.099840 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:30.927940 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:24:31.626422 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:31.705260 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:31.753197 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:36.331258 I LatinIME: onFinishInput
+2026-06-02 14:24:46.640637 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:24:47.318272 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:47.331426 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:47.342687 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:24:52.608466 I LatinIME: onFinishInput
+2026-06-02 14:25:02.322871 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:25:02.973663 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:02.995032 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:03.005578 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:18.000266 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:25:18.651533 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:18.661052 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:18.688117 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:33.659182 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:25:34.326105 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:34.336428 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:34.342839 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:49.332316 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:25:49.978008 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:49.985479 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:25:49.990042 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:05.009165 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:26:05.664261 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:05.672524 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:05.675518 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:20.689964 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:26:21.316721 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:21.324697 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:21.336175 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:36.339243 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:26:37.106234 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:37.112541 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:26:37.130213 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:27:03.108287 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:27:03.725526 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:27:03.732840 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:27:03.735256 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:29:31.622955 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:29:38.901853 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:29:38.916727 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:29:39.002345 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:29:54.009164 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:29:54.183783 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:29:54.207193 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:29:54.230112 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:29.138331 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:30:29.329790 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:29.341795 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:29.360798 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:44.376070 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:30:44.587181 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:44.622033 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:44.640354 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:59.628596 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:30:59.872223 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:59.887059 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:30:59.928062 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:31:14.923945 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:31:15.152140 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:31:15.193090 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:31:15.199797 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:34:09.607532 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:34:09.804089 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:34:09.940519 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:34:09.957697 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:35:44.258701 I LatinIME: onFinishInput
+2026-06-02 14:35:44.270900 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:35:44.272254 I c: loadSettings
+2026-06-02 14:35:45.743906 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:45.997265 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.030606 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.133206 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.216256 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:46.724208 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.724809 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.725204 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:46.725779 I c: loadSettings
+2026-06-02 14:35:46.845815 I c: loadSettings
+2026-06-02 14:35:46.876355 I c: loadSettings
+2026-06-02 14:35:46.976346 I c: loadSettings
+2026-06-02 14:35:46.990541 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:47.012965 I c: loadSettings
+2026-06-02 14:35:47.127469 I c: loadSettings
+2026-06-02 14:35:47.163661 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.164514 I c: loadSettings
+2026-06-02 14:35:47.260024 I c: loadSettings
+2026-06-02 14:35:47.273876 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.274292 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.300439 I c: loadSettings
+2026-06-02 14:35:47.439303 I c: loadSettings
+2026-06-02 14:35:47.452281 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:47.482578 I c: loadSettings
+2026-06-02 14:35:47.588357 I c: loadSettings
+2026-06-02 14:35:47.619528 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.632021 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.633057 I c: loadSettings
+2026-06-02 14:35:47.745973 I c: loadSettings
+2026-06-02 14:35:47.762166 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:47.787051 I c: loadSettings
+2026-06-02 14:35:47.914889 I c: loadSettings
+2026-06-02 14:35:47.939345 I c: loadSettings
+2026-06-02 14:35:48.079353 I c: loadSettings
+2026-06-02 14:35:48.092569 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:48.101591 I c: loadSettings
+2026-06-02 14:35:48.209755 I c: loadSettings
+2026-06-02 14:35:48.222879 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.248652 I c: loadSettings
+2026-06-02 14:35:48.347316 I c: loadSettings
+2026-06-02 14:35:48.361784 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.362232 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.383065 I c: loadSettings
+2026-06-02 14:35:48.483741 I c: loadSettings
+2026-06-02 14:35:48.532242 I c: loadSettings
+2026-06-02 14:35:48.622446 I c: loadSettings
+2026-06-02 14:35:48.653696 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:48.682456 I c: loadSettings
+2026-06-02 14:35:48.821463 I c: loadSettings
+2026-06-02 14:35:48.855625 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.866795 I c: loadSettings
+2026-06-02 14:35:48.978137 I c: loadSettings
+2026-06-02 14:35:48.991293 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.991606 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:48.995753 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:49.015988 I c: loadSettings
+2026-06-02 14:35:49.127230 I c: loadSettings
+2026-06-02 14:35:49.145516 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.146064 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.149487 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:49.185761 I c: loadSettings
+2026-06-02 14:35:49.305990 I c: loadSettings
+2026-06-02 14:35:49.321775 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.332924 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.333390 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.350558 I c: loadSettings
+2026-06-02 14:35:49.458443 I c: loadSettings
+2026-06-02 14:35:49.500646 I c: loadSettings
+2026-06-02 14:35:49.632934 I c: loadSettings
+2026-06-02 14:35:49.667133 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:49.686316 I c: loadSettings
+2026-06-02 14:35:49.829515 I c: loadSettings
+2026-06-02 14:35:49.879832 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.880293 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.884550 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:49.889317 I c: loadSettings
+2026-06-02 14:35:49.991757 I c: loadSettings
+2026-06-02 14:35:50.034341 I c: loadSettings
+2026-06-02 14:35:50.156674 I c: loadSettings
+2026-06-02 14:35:50.169067 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:50.201159 I c: loadSettings
+2026-06-02 14:35:50.303089 I c: loadSettings
+2026-06-02 14:35:50.337866 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:50.351410 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:50.352643 I c: loadSettings
+2026-06-02 14:35:50.444202 I c: loadSettings
+2026-06-02 14:35:50.454153 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:50.485587 I c: loadSettings
+2026-06-02 14:35:50.582798 I c: loadSettings
+2026-06-02 14:35:50.637994 I c: loadSettings
+2026-06-02 14:35:50.733877 I c: loadSettings
+2026-06-02 14:35:50.752082 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:50.787988 I c: loadSettings
+2026-06-02 14:35:50.906807 I c: loadSettings
+2026-06-02 14:35:50.919796 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:50.920311 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:50.952699 I c: loadSettings
+2026-06-02 14:35:51.046756 I c: loadSettings
+2026-06-02 14:35:51.058062 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:51.103201 I c: loadSettings
+2026-06-02 14:35:51.199679 I c: loadSettings
+2026-06-02 14:35:51.255505 I c: loadSettings
+2026-06-02 14:35:51.364080 I c: loadSettings
+2026-06-02 14:35:51.380224 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:51.394350 I c: loadSettings
+2026-06-02 14:35:51.509929 I c: loadSettings
+2026-06-02 14:35:51.575499 I c: loadSettings
+2026-06-02 14:35:51.677609 I c: loadSettings
+2026-06-02 14:35:51.690249 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:51.690578 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:51.690881 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:51.700117 I c: loadSettings
+2026-06-02 14:35:51.779309 I c: loadSettings
+2026-06-02 14:35:51.821041 I c: loadSettings
+2026-06-02 14:35:51.899356 I c: loadSettings
+2026-06-02 14:35:51.920246 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:51.954261 I c: loadSettings
+2026-06-02 14:35:52.081708 I c: loadSettings
+2026-06-02 14:35:52.093901 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.094264 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.094535 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.122144 I c: loadSettings
+2026-06-02 14:35:52.226963 I c: loadSettings
+2026-06-02 14:35:52.274936 I c: loadSettings
+2026-06-02 14:35:52.395720 I c: loadSettings
+2026-06-02 14:35:52.438337 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:35:52.445448 I c: loadSettings
+2026-06-02 14:35:52.589517 I c: loadSettings
+2026-06-02 14:35:52.639322 I c: loadSettings
+2026-06-02 14:35:52.773380 I c: loadSettings
+2026-06-02 14:35:52.787070 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.788812 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.821396 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:35:52.822779 I c: loadSettings
+2026-06-02 14:35:52.916701 I c: loadSettings
+2026-06-02 14:35:52.958076 I c: loadSettings
+2026-06-02 14:35:53.049634 I c: loadSettings
+2026-06-02 14:35:53.098775 I c: loadSettings
+2026-06-02 14:35:53.239656 I c: loadSettings
+2026-06-02 14:35:53.304064 I c: loadSettings
+2026-06-02 14:35:53.407576 I c: loadSettings
+2026-06-02 14:35:53.456476 I c: loadSettings
+2026-06-02 14:35:53.551429 I c: loadSettings
+2026-06-02 14:35:53.607248 I c: loadSettings
+2026-06-02 14:35:53.688658 I c: loadSettings
+2026-06-02 14:35:53.741231 I c: loadSettings
+2026-06-02 14:35:53.831119 I c: loadSettings
+2026-06-02 14:35:53.876640 I c: loadSettings
+2026-06-02 14:35:53.965021 I c: loadSettings
+2026-06-02 14:35:54.009148 I c: loadSettings
+2026-06-02 14:35:54.104862 I c: loadSettings
+2026-06-02 14:35:54.158811 I c: loadSettings
+2026-06-02 14:35:54.250299 I c: loadSettings
+2026-06-02 14:35:54.291698 I c: loadSettings
+2026-06-02 14:35:54.407113 I c: loadSettings
+2026-06-02 14:35:54.459752 I c: loadSettings
+2026-06-02 14:35:54.559313 I c: loadSettings
+2026-06-02 14:35:54.611357 I c: loadSettings
+2026-06-02 14:35:54.706958 I c: loadSettings
+2026-06-02 14:35:54.762302 I c: loadSettings
+2026-06-02 14:35:54.892685 I c: loadSettings
+2026-06-02 14:35:54.917771 I c: loadSettings
+2026-06-02 14:35:55.047018 I c: loadSettings
+2026-06-02 14:35:55.118335 I c: loadSettings
+2026-06-02 14:35:55.217457 I c: loadSettings
+2026-06-02 14:35:55.260607 I c: loadSettings
+2026-06-02 14:35:55.361133 I c: loadSettings
+2026-06-02 14:35:55.383522 I c: loadSettings
+2026-06-02 14:35:55.470464 I c: loadSettings
+2026-06-02 14:35:55.527582 I c: loadSettings
+2026-06-02 14:35:55.602701 I c: loadSettings
+2026-06-02 14:35:55.644501 I c: loadSettings
+2026-06-02 14:35:55.717127 I c: loadSettings
+2026-06-02 14:35:55.761685 I c: loadSettings
+2026-06-02 14:35:55.847746 I c: loadSettings
+2026-06-02 14:35:55.894389 I c: loadSettings
+2026-06-02 14:35:55.992826 I c: loadSettings
+2026-06-02 14:35:56.044996 I c: loadSettings
+2026-06-02 14:35:56.137563 I c: loadSettings
+2026-06-02 14:35:56.180131 I c: loadSettings
+2026-06-02 14:35:56.286906 I c: loadSettings
+2026-06-02 14:35:56.330906 I c: loadSettings
+2026-06-02 14:35:56.441668 I c: loadSettings
+2026-06-02 14:35:56.496069 I c: loadSettings
+2026-06-02 14:35:56.617100 I c: loadSettings
+2026-06-02 14:35:56.662933 I c: loadSettings
+2026-06-02 14:35:56.748360 I c: loadSettings
+2026-06-02 14:35:56.797564 I c: loadSettings
+2026-06-02 14:35:56.887650 I c: loadSettings
+2026-06-02 14:35:56.930288 I c: loadSettings
+2026-06-02 14:35:57.025114 I c: loadSettings
+2026-06-02 14:35:57.084220 I c: loadSettings
+2026-06-02 14:35:57.166875 I c: loadSettings
+2026-06-02 14:35:57.189473 I c: loadSettings
+2026-06-02 14:35:57.257203 I c: loadSettings
+2026-06-02 14:35:57.314472 I c: loadSettings
+2026-06-02 14:35:57.432230 I c: loadSettings
+2026-06-02 14:35:57.481308 I c: loadSettings
+2026-06-02 14:35:57.596779 I c: loadSettings
+2026-06-02 14:35:57.647485 I c: loadSettings
+2026-06-02 14:35:57.728724 I c: loadSettings
+2026-06-02 14:35:57.780521 I c: loadSettings
+2026-06-02 14:35:57.884389 I c: loadSettings
+2026-06-02 14:35:57.910194 I c: loadSettings
+2026-06-02 14:35:58.008960 I c: loadSettings
+2026-06-02 14:35:58.064489 I c: loadSettings
+2026-06-02 14:35:58.163198 I c: loadSettings
+2026-06-02 14:35:58.217258 I c: loadSettings
+2026-06-02 14:35:58.326147 I c: loadSettings
+2026-06-02 14:35:58.380829 I c: loadSettings
+2026-06-02 14:35:58.462984 I c: loadSettings
+2026-06-02 14:35:58.517272 I c: loadSettings
+2026-06-02 14:35:58.603531 I c: loadSettings
+2026-06-02 14:35:58.669986 I c: loadSettings
+2026-06-02 14:35:58.747913 I c: loadSettings
+2026-06-02 14:35:58.801171 I c: loadSettings
+2026-06-02 14:35:58.888286 I c: loadSettings
+2026-06-02 14:35:58.932071 I c: loadSettings
+2026-06-02 14:35:59.009763 I c: loadSettings
+2026-06-02 14:35:59.067138 I c: loadSettings
+2026-06-02 14:35:59.151825 I c: loadSettings
+2026-06-02 14:35:59.200526 I c: loadSettings
+2026-06-02 14:35:59.301937 I c: loadSettings
+2026-06-02 14:35:59.323950 I c: loadSettings
+2026-06-02 14:35:59.422524 I c: loadSettings
+2026-06-02 14:35:59.467120 I c: loadSettings
+2026-06-02 14:35:59.555914 I c: loadSettings
+2026-06-02 14:35:59.602631 I c: loadSettings
+2026-06-02 14:35:59.684835 I c: loadSettings
+2026-06-02 14:35:59.736303 I c: loadSettings
+2026-06-02 14:35:59.840276 I c: loadSettings
+2026-06-02 14:35:59.884371 I c: loadSettings
+2026-06-02 14:35:59.990286 I c: loadSettings
+2026-06-02 14:36:00.017333 I c: loadSettings
+2026-06-02 14:36:00.095357 I c: loadSettings
+2026-06-02 14:36:00.150356 I c: loadSettings
+2026-06-02 14:36:00.228394 I c: loadSettings
+2026-06-02 14:36:00.288050 I c: loadSettings
+2026-06-02 14:36:00.392511 I c: loadSettings
+2026-06-02 14:36:00.436052 I c: loadSettings
+2026-06-02 14:36:00.547053 I c: loadSettings
+2026-06-02 14:36:04.142591 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:04.151005 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:04.215033 I c: loadSettings
+2026-06-02 14:36:04.216055 I c: loadSettings
+2026-06-02 14:36:04.216587 I c: loadSettings
+2026-06-02 14:36:04.217026 I c: loadSettings
+2026-06-02 14:36:04.217442 I c: loadSettings
+2026-06-02 14:36:04.217848 I c: loadSettings
+2026-06-02 14:36:04.218293 I c: loadSettings
+2026-06-02 14:36:04.218712 I c: loadSettings
+2026-06-02 14:36:04.219168 I c: loadSettings
+2026-06-02 14:36:04.219598 I c: loadSettings
+2026-06-02 14:36:04.220050 I c: loadSettings
+2026-06-02 14:36:04.220492 I c: loadSettings
+2026-06-02 14:36:04.220948 I c: loadSettings
+2026-06-02 14:36:04.221408 I c: loadSettings
+2026-06-02 14:36:04.221826 I c: loadSettings
+2026-06-02 14:36:04.222356 I c: loadSettings
+2026-06-02 14:36:04.222802 I c: loadSettings
+2026-06-02 14:36:04.223208 I c: loadSettings
+2026-06-02 14:36:04.223616 I c: loadSettings
+2026-06-02 14:36:04.224006 I c: loadSettings
+2026-06-02 14:36:04.224401 I c: loadSettings
+2026-06-02 14:36:04.224791 I c: loadSettings
+2026-06-02 14:36:04.225195 I c: loadSettings
+2026-06-02 14:36:04.225582 I c: loadSettings
+2026-06-02 14:36:04.225972 I c: loadSettings
+2026-06-02 14:36:04.226361 I c: loadSettings
+2026-06-02 14:36:04.226775 I c: loadSettings
+2026-06-02 14:36:04.227187 I c: loadSettings
+2026-06-02 14:36:04.227594 I c: loadSettings
+2026-06-02 14:36:04.227995 I c: loadSettings
+2026-06-02 14:36:04.228395 I c: loadSettings
+2026-06-02 14:36:04.228797 I c: loadSettings
+2026-06-02 14:36:04.229207 I c: loadSettings
+2026-06-02 14:36:04.229605 I c: loadSettings
+2026-06-02 14:36:04.230007 I c: loadSettings
+2026-06-02 14:36:04.230407 I c: loadSettings
+2026-06-02 14:36:04.230812 I c: loadSettings
+2026-06-02 14:36:04.231225 I c: loadSettings
+2026-06-02 14:36:04.231625 I c: loadSettings
+2026-06-02 14:36:04.245797 I c: loadSettings
+2026-06-02 14:36:04.506152 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:04.506527 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.037130 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:06.212909 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.231249 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.262972 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.518012 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:06.707068 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.707836 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.717557 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:06.886948 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:07.086523 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.087143 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.125617 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.368524 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:07.548181 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.556552 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.566233 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:07.868291 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:08.046892 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.048260 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.049600 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.377361 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:08.555498 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.591873 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.605681 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:08.877775 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:09.057842 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.058438 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.069310 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.397238 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:09.586261 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.587590 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.604497 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:09.888295 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:10.040166 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.040913 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.041332 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.049266 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:10.191524 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.216793 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.221252 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.394209 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:10.534294 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.534950 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.535295 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.539655 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:10.612676 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.643555 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.668447 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:10.894046 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:11.007504 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.008122 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.039128 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:11.068452 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.172506 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.174476 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.420390 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:11.502668 I c: loadSettings
+2026-06-02 14:36:11.505137 I c: loadSettings
+2026-06-02 14:36:11.583364 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.583897 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.584368 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.600691 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:11.777789 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.794934 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.798797 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:11.927248 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:12.111852 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.124661 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.177124 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.412374 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:12.592434 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.593951 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.607380 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:12.913496 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:13.110185 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:13.113535 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:13.113938 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:14.110142 I c: loadSettings
+2026-06-02 14:36:14.113120 I c: loadSettings
+2026-06-02 14:36:15.067379 I c: loadSettings
+2026-06-02 14:36:15.069512 I c: loadSettings
+2026-06-02 14:36:16.028558 I c: loadSettings
+2026-06-02 14:36:16.031827 I c: loadSettings
+2026-06-02 14:36:19.365904 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:19.513396 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:19.715469 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:19.716239 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.250.191.2:443
+2026-06-02 14:36:23.531273 I c: loadSettings
+2026-06-02 14:36:34.624171 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:34.731539 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:34.982420 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:34.982748 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:38.287851 I LatinIME: hideWindow
+2026-06-02 14:36:38.342855 I LatinIME: onFinishInputView
+2026-06-02 14:36:38.345177 I LatinIME: onWindowHidden
+2026-06-02 14:36:38.598901 I LatinIME: onFinishInput
+2026-06-02 14:36:39.205436 I LatinIME: onFinishInput
+2026-06-02 14:36:49.862361 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:49.988027 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:36:50.197772 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:50.206311 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:36:54.767112 I LatinIME: onFinishInput
+2026-06-02 14:36:59.957626 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:36:59.957956 I c: loadSettings
+2026-06-02 14:37:01.537137 W VibeKeyProfiler: Slow Kotlin Suggest: Total=55.87ms | locales=3 | typedLen=1 | candidates=18 parallelWait=55.71ms
+2026-06-02 14:37:01.838158 W VibeKeyProfiler: Slow Kotlin Suggest: Total=27.50ms | locales=3 | typedLen=2 | candidates=18 parallelWait=22.38ms
+2026-06-02 14:37:05.078070 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:05.148307 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.40ms | locales=3 | typedLen=7 | candidates=18 parallelWait=18.16ms
+2026-06-02 14:37:05.197522 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:37:05.387472 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:05.387951 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:18.614147 W VibeKeyProfiler: Slow Kotlin Suggest: Total=24.85ms | locales=3 | typedLen=11 | candidates=18 parallelWait=24.63ms
+2026-06-02 14:37:19.110028 W VibeKeyProfiler: Slow Kotlin Suggest: Total=17.62ms | locales=3 | typedLen=10 | candidates=18 parallelWait=17.29ms
+2026-06-02 14:37:19.599705 W VibeKeyProfiler: Slow Kotlin Suggest: Total=28.08ms | locales=3 | typedLen=9 | candidates=18 parallelWait=27.85ms
+2026-06-02 14:37:20.134691 W VibeKeyProfiler: Slow Kotlin Suggest: Total=20.63ms | locales=3 | typedLen=8 | candidates=18 parallelWait=20.47ms
+2026-06-02 14:37:20.309703 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:20.394740 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:37:20.596652 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:20.596993 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Failed to connect to googleads.g.doubleclick.net/142.251.41.162:443
+2026-06-02 14:37:35.609129 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:37:35.808290 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:36.062044 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:36.071841 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:39.127495 I LatinIME: hideWindow
+2026-06-02 14:37:39.139842 I LatinIME: onFinishInputView
+2026-06-02 14:37:39.141041 I LatinIME: onWindowHidden
+2026-06-02 14:37:41.825172 I LatinIME: onFinishInput
+2026-06-02 14:37:42.671128 I LatinIME: onFinishInput
+2026-06-02 14:37:44.690961 I LatinIME: onFinishInput
+2026-06-02 14:37:47.113326 I LatinIME: onFinishInput
+2026-06-02 14:37:47.120069 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:37:47.120243 I c: loadSettings
+2026-06-02 14:37:50.444054 W VibeKeyProfiler: Slow Kotlin Suggest: Total=24.60ms | locales=3 | typedLen=1 | candidates=18 parallelWait=24.46ms
+2026-06-02 14:37:51.062400 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:37:51.264109 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:51.401006 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:51.403419 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:37:54.087649 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.09ms | locales=3 | typedLen=8 | candidates=18 parallelWait=17.85ms
+2026-06-02 14:37:55.432145 W VibeKeyProfiler: Slow Kotlin Suggest: Total=19.17ms | locales=3 | typedLen=4 | candidates=18 parallelWait=18.93ms
+2026-06-02 14:37:57.655107 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.19ms | locales=3 | typedLen=5 | candidates=18 parallelWait=17.96ms
+2026-06-02 14:38:01.229709 W VibeKeyProfiler: Slow Kotlin Suggest: Total=19.06ms | locales=3 | typedLen=8 | candidates=18 parallelWait=18.77ms
+2026-06-02 14:38:02.374231 W VibeKeyProfiler: Slow Kotlin Suggest: Total=19.10ms | locales=3 | typedLen=11 | candidates=18 parallelWait=18.51ms
+2026-06-02 14:38:06.402034 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:38:06.647657 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:06.764860 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:06.766133 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:07.999598 I LatinIME: onFinishInputView
+2026-06-02 14:38:08.000022 I LatinIME: onFinishInput
+2026-06-02 14:38:17.565374 I LatinIME: Starting input. Cursor position = 13,13
+2026-06-02 14:38:17.565630 I c: loadSettings
+2026-06-02 14:38:21.765974 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:38:22.049159 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:22.216629 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:22.225237 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:26.366087 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.66ms | locales=3 | typedLen=14 | candidates=18 parallelWait=23.38ms
+2026-06-02 14:38:29.515426 W VibeKeyProfiler: Slow Kotlin Suggest: Total=17.04ms | locales=3 | typedLen=14 | candidates=18 parallelWait=16.87ms
+2026-06-02 14:38:32.374283 W VibeKeyProfiler: Slow Kotlin Suggest: Total=29.49ms | locales=3 | typedLen=1 | candidates=18 parallelWait=29.27ms
+2026-06-02 14:38:32.610734 W VibeKeyProfiler: Slow Kotlin Suggest: Total=21.78ms | locales=3 | typedLen=2 | candidates=18 parallelWait=21.44ms
+2026-06-02 14:38:34.074850 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.59ms | locales=3 | typedLen=3 | candidates=18 parallelWait=18.45ms
+2026-06-02 14:38:35.055600 W VibeKeyProfiler: Slow Kotlin Suggest: Total=18.93ms | locales=3 | typedLen=2 | candidates=18 parallelWait=18.72ms
+2026-06-02 14:38:35.506064 I LatinIME: Restarting input. Cursor position = 0,0
+2026-06-02 14:38:37.228370 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:38:37.428263 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:37.616204 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:37.631643 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:52.625395 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:38:52.928581 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:52.958671 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:38:53.032404 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:07.973881 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:39:08.254842 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:08.269607 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:08.270002 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:23.264978 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:39:23.677965 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:23.694445 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:23.710697 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:25.067803 I LatinIME: onFinishInputView
+2026-06-02 14:39:25.068187 I LatinIME: onFinishInput
+2026-06-02 14:39:39.262247 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:39:39.730140 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:39.730809 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:39:39.779490 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:01.681375 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:40:02.603133 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:02.789822 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:02.794721 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:33.257501 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:40:33.618407 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:33.639148 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:40:33.645699 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:05.693666 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:41:06.320829 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:06.534903 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:06.543504 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:36.555943 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:41:36.737067 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:37.079410 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:37.086642 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:46.451598 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:41:46.454102 I c: loadSettings
+2026-06-02 14:41:51.029357 I LatinIME: hideWindow
+2026-06-02 14:41:51.037292 I LatinIME: onFinishInputView
+2026-06-02 14:41:51.038120 I LatinIME: onWindowHidden
+2026-06-02 14:41:51.061360 I LatinIME: hideWindow
+2026-06-02 14:41:51.883031 I LatinIME: requestHideSelf: 100
+2026-06-02 14:41:52.321757 I LatinIME: onFinishInput
+2026-06-02 14:41:53.542968 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:41:53.690910 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:53.967305 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:53.975037 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:41:54.118734 I LatinIME: onFinishInput
+2026-06-02 14:41:54.138068 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 14:41:54.138256 I c: loadSettings
+2026-06-02 14:41:56.980481 W VibeKeyProfiler: Slow Kotlin Suggest: Total=43.86ms | locales=3 | typedLen=1 | candidates=17 parallelWait=43.54ms
+2026-06-02 14:41:57.608832 I LatinIME: hideWindow
+2026-06-02 14:41:57.623541 I LatinIME: onFinishInputView
+2026-06-02 14:41:57.627409 I LatinIME: onWindowHidden
+2026-06-02 14:41:57.894798 I LatinIME: requestHideSelf: 100
+2026-06-02 14:41:59.972230 I LatinIME: onFinishInput
+2026-06-02 14:42:08.998844 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:42:09.215068 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:09.376296 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:09.406734 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:24.415310 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:42:24.636167 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:24.754858 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:24.793631 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:35.063468 I LatinIME: onFinishInput
+2026-06-02 14:42:39.758609 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:42:40.006361 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:40.119157 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:40.125194 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:44.547734 I LatinIME: onFinishInput
+2026-06-02 14:42:53.975189 I LatinIME: onFinishInput
+2026-06-02 14:42:55.153069 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:42:55.417364 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:55.528419 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:42:55.573698 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:43:00.303924 I LatinIME: onFinishInput
+2026-06-02 14:43:10.578695 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:43:10.874003 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:43:10.898940 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:43:10.921466 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:44:41.999729 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:44:44.795452 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:44:44.804611 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:44:45.181305 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:45:53.773610 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:45:54.019906 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:45:54.023323 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:45:54.290351 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:09.025625 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:46:09.282311 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:09.305765 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:09.441512 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:24.290046 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:46:24.500854 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:24.523256 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:24.616795 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:39.506433 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:46:39.759977 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:39.787949 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:46:39.820276 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:48:30.248837 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:48:30.492758 W AdManager: Rewarded load failed tier=PRIMARY code=0 domain=com.google.android.gms.ads message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:48:30.505291 W AdManager: Interstitial ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:48:30.539816 W AdManager: Native ad failed to load: code=0 message=Error while connecting to ad server: Unable to resolve host "googleads.g.doubleclick.net": No address associated with hostname
+2026-06-02 14:49:40.896492 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:49:41.436750 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:49:41.452986 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:49:41.456292 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:59:09.646730 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 14:59:31.589558 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:59:31.591778 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 14:59:31.599639 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:08:45.922777 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:08:46.909313 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:08:46.916552 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:08:46.925022 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:12:49.296673 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:12:51.928427 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:12:51.941407 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:12:51.949406 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:13:58.190583 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:13:59.082218 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:13:59.365398 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:13:59.372256 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:15:14.663768 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:15:15.281992 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:15:15.311821 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:15:15.350722 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:08.871701 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:17:09.331495 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:09.404164 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:09.412067 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:24.422432 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:17:25.238601 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:25.314105 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:25.330643 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:40.315377 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:17:40.940183 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:40.969138 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:40.971995 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:55.992687 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:17:56.577310 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:56.592570 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:17:56.610765 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:01.353605 I LatinIME: onFinishInput
+2026-06-02 15:18:05.617816 I LatinIME: onFinishInput
+2026-06-02 15:18:06.305791 I LatinIME: onFinishInput
+2026-06-02 15:18:06.319389 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-02 15:18:06.320584 I c: loadSettings
+2026-06-02 15:18:07.662143 W VibeKeyProfiler: Slow Kotlin Suggest: Total=23.92ms | locales=3 | typedLen=1 | candidates=18 parallelWait=23.38ms
+2026-06-02 15:18:08.777607 W VibeKeyProfiler: Slow Kotlin Suggest: Total=17.04ms | locales=3 | typedLen=0 | candidates=18 parallelWait=16.91ms
+2026-06-02 15:18:08.914219 W VibeKeyProfiler: Slow Kotlin Suggest: Total=16.73ms | locales=3 | typedLen=3 | candidates=18 parallelWait=16.61ms
+2026-06-02 15:18:11.578105 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:18:12.050557 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:12.053172 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:12.069283 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:13.480895 I QuotaManager: Unified AI quota schema v2 applied (calendar-day pool)
+2026-06-02 15:18:16.597155 I LatinIME: requestHideSelf: 0
+2026-06-02 15:18:16.626450 I LatinIME: hideWindow
+2026-06-02 15:18:16.631761 I LatinIME: onFinishInputView
+2026-06-02 15:18:16.632033 I LatinIME: onWindowHidden
+2026-06-02 15:18:16.692222 I AdManager: Rewarded load start tier=PRIMARY unit=3310587093 waterfall=false
+2026-06-02 15:18:16.705208 I u: InputType.TYPE_NULL is specified
+2026-06-02 15:18:16.705314 I c: loadSettings
+2026-06-02 15:18:17.052323 I LatinIME: requestHideSelf: 100
+2026-06-02 15:18:17.060665 I LatinIME: onFinishInput
+2026-06-02 15:18:17.180618 W AdManager: Rewarded load failed tier=PRIMARY code=3 domain=com.google.android.gms.ads message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:17.219307 W AdManager: Interstitial ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:17.262541 W AdManager: Native ad failed to load: code=3 message=Publisher data not found. <https://support.google.com/admob/answer/9905175#9>
+2026-06-02 15:18:20.944454 I LatinIME: onFinishInput
+2026-06-02 15:18:22.494832 I LatinIME: onFinishInput
