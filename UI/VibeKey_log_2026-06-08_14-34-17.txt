@@ -1,0 +1,1315 @@
+=== VibeKey 4.1.244 (4344) ===
+
+--------- beginning of system
+06-08 14:25:57.445 19020 19020 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of crash
+06-08 14:27:44.346 19020 19579 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x75dbd9a695 in tid 19579 (d), pid 19020 (AndroidUI)
+06-08 14:27:45.741 20783 20783 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-08 14:27:45.741 20783 20783 F DEBUG   : keyProcess: 0
+06-08 14:27:45.741 20783 20783 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-08 14:27:45.741 20783 20783 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-08 14:27:45.741 20783 20783 F DEBUG   : Revision: '0'
+06-08 14:27:45.741 20783 20783 F DEBUG   : ABI: 'arm64'
+06-08 14:27:45.741 20783 20783 F DEBUG   : Timestamp: 2026-06-08 14:27:44.673448663-0400
+06-08 14:27:45.741 20783 20783 F DEBUG   : Process uptime: 0s
+06-08 14:27:45.741 20783 20783 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-08 14:27:45.741 20783 20783 F DEBUG   : pid: 19020, tid: 19579, name: d  >>> com.vibekey.keyboard <<<
+06-08 14:27:45.741 20783 20783 F DEBUG   : uid: 14010
+06-08 14:27:45.741 20783 20783 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x75dbd9a695
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x0  0000000000000000  x1  0000000000004c7b  x2  0000000000000007  x3  000000766e3c3da0
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x4  000000766e3c36a8  x5  000000766e3c36a8  x6  000000766e3c36a8  x7  0000000000000000
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 00000075dbd6939e
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x16 000000757ca4b410  x17 00000076790b8f10  x18 00000074d8c32000  x19 0000000000000007
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x20 000000766e3c3da0  x21 0000000000004a4c  x22 000000766e3c3d00  x23 0000000000000001
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x24 0000007511edc000  x25 0000007511ed9f40  x26 0000007511ed9f74  x27 0000000000000001
+06-08 14:27:45.741 20783 20783 F DEBUG   :     x28 0000007511eda528  x29 000000766e3c3d20
+06-08 14:27:45.741 20783 20783 F DEBUG   :     lr  0000007576c73da0  sp  000000766e3c3d00  pc  00000076790b8f34  pst 0000000000000000
+06-08 14:27:45.741 20783 20783 F DEBUG   : backtrace:
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #01 pc 0000000004062d9c  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #02 pc 0000000004059518  /data/app/~~0vURfNRJhP5qOxDjXMAdJA==/com.google.android.webview-1jICq8A_gawMkQD3QY60ZA==/base.apk!libwebviewchromium.so (BuildId: 6830cf8493d489d274dd2200dc390799760c2507)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #05 pc 00000000000b8b34  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::Ver2PtNodeArrayReader::readPtNodeArrayInfoAndReturnIfValid(int, int*, int*) const+80) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #06 pc 00000000000b4ce8  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::nextPtNodeArray()+68) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #07 pc 00000000000b4c3c  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+432) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #08 pc 00000000000b7324  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #09 pc 00000000000a7d80  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+276) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #10 pc 00000000000d337c  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #11 pc 00000000000c8bd0  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #12 pc 000000000009fd88  /data/app/~~YKKIumvQFlDdy6alPNN7QQ==/com.vibekey.keyboard-IqGOZXmlatT5gs6W3BtQTA==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #13 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-08 14:27:45.741 20783 20783 F DEBUG   :       #14 pc 00000000020e20bc  /memfd:jit-cache (deleted)
+06-08 14:27:48.228 20800 20800 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-08 14:30:04.919 20800 24753 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-08 14:30:04.919 20800 24753 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-08 14:30:27.490 20800 24753 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-08 14:30:27.491 20800 24753 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-08 14:30:34.718 20800 20872 F libc    : Pointer tag for 0xffffffffffffffff was truncated, see 'https://source.android.com/devices/tech/debug/tagged-pointers'.
+06-08 14:30:38.471 25190 25190 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-08 14:31:04.767 25190 25665 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-08 14:31:04.767 25190 25665 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-08 14:31:38.426 25190 25665 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-08 14:31:38.426 25190 25665 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-08 14:31:59.092 25190 25665 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-08 14:31:59.092 25190 25665 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+06-08 14:32:25.598 25190 25190 E Ads     : JS: Uncaught TypeError: Cannot read properties of null (reading 's') (https://pagead2.googlesyndication.com/omsdk/releases/live/omsdk-v1.js:27)
+06-08 14:34:10.058 25190 25455 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-08 14:34:10.058 25190 25455 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-08 14:34:10.058 25190 25455 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-08 14:34:10.064 25190 25205 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-08 14:34:10.099 25190 25190 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-08 14:34:10.237 25190 25190 E GeckoView: Failed to detach WindowInsetsListener: 
+06-08 14:34:10.237 25190 25190 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-3d4107748dcb876a8cc7654cc3ddd23025db09139678200d2b74649a2a4386e2:1)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-3d4107748dcb876a8cc7654cc3ddd23025db09139678200d2b74649a2a4386e2:25)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at helium314.keyboard.latin.panels.ImeGeckoView.onDetachedFromWindow(r8-map-id-3d4107748dcb876a8cc7654cc3ddd23025db09139678200d2b74649a2a4386e2:1)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at a8.t0.run(r8-map-id-3d4107748dcb876a8cc7654cc3ddd23025db09139678200d2b74649a2a4386e2:1239)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-08 14:34:10.237 25190 25190 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-08 14:34:10.311 25190 25224 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 37,1ms
+06-08 14:34:10.311 25190 25224 W VkSuggestions: slow frame 37,1ms locales=3 typedLen=4 candidates=18 parallelWait=37,0ms
+06-08 14:34:10.317 25190 25224 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=jiga locale=pt
+06-08 14:34:10.721 25190 25440 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=4 chars
+06-08 14:34:10.755 19066 20172 I OnDeviceAssist: dispatch task=topic_tags in=4 chars engine=Ready
+06-08 14:34:10.756 19066 20172 I OnDeviceAssist: ▶ runSync task=topic_tags in=4 chars locale=pt
+06-08 14:34:10.763 19066 20172 I OnDeviceAssist: → llm task=topic_tags model=qwen2.5-0.5b-instruct-q4_0.gguf temp=0.22 maxTok=33
+06-08 14:34:11.682 25190 25190 I SpaceAssistPopup: ○ send ready=false outChars=0
+06-08 14:34:11.683 25190 25190 I VkPanels: ▶ open menu
+06-08 14:34:12.685 25190 25190 I VkTyping: ○ hidden
+06-08 14:34:12.706 19066 20172 W OnDeviceAssist: ✗ llm task=topic_tags 1948ms: llama_decode failed
+06-08 14:34:12.706 19066 24760 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=37 chars 1675ms
+06-08 14:34:12.706 19066 24760 W OnDeviceAssist: failed task=topic_tags 1954ms
+06-08 14:34:12.707 25190 25204 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 1987ms: llama_decode failed
+06-08 14:34:12.810 25190 25190 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-08 14:34:17.965 25190 25279 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-08 14:34:18.262 25190 25279 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+... (22 GeckoConsole SessionStore lines omitted)
+
+=== Feature activity (persisted across restarts) ===
+2026-06-08 14:25:54.893655 I VkFavorites: save card Bitcoin Vibe activate=false
+2026-06-08 14:25:54.965012 I VkFavorites: save card Doge Meme activate=false
+2026-06-08 14:25:55.030386 I VkFavorites: save card Ethereum Vibes activate=false
+2026-06-08 14:25:55.080386 I VkFavorites: save card India Popular City activate=false
+2026-06-08 14:25:55.159427 I VkFavorites: save card Miami Beach Crypto activate=false
+2026-06-08 14:25:55.228162 I VkFavorites: save card Nike Sneakers Crypto activate=false
+2026-06-08 14:25:55.278187 I VkFavorites: save card Pepe Meme Frog activate=false
+2026-06-08 14:25:55.336076 I VkFavorites: save card Times Square NFT activate=false
+2026-06-08 14:25:55.368755 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-06-08 14:26:00.753843 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:00.763510 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-08 14:26:00.842788 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:00.862517 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:26:03.761293 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:03.761575 I VkPanels: ▶ open menu
+2026-06-08 14:26:04.709482 I VkMultilingual: menu languages total=1
+2026-06-08 14:26:11.442785 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:11.443511 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:11.444471 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:11.444867 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:11.487654 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:11.487986 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:14.016293 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:14.016950 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:14.026195 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-08 14:26:14.044358 I VkSwipe: ○ gesture canceled
+2026-06-08 14:26:14.044724 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:15.770552 I VkMultilingual: menu languages total=3
+2026-06-08 14:26:17.578987 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 29,6ms
+2026-06-08 14:26:17.579521 W VkSuggestions: slow frame 29,6ms locales=2 typedLen=1 candidates=18 parallelWait=29,4ms
+2026-06-08 14:26:17.581492 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=n locale=pt
+2026-06-08 14:26:17.805709 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 8,6ms
+2026-06-08 14:26:17.807742 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=false top=ni locale=pt
+2026-06-08 14:26:17.966803 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 18,9ms
+2026-06-08 14:26:17.967221 W VkSuggestions: slow frame 18,9ms locales=2 typedLen=3 candidates=18 parallelWait=18,8ms
+2026-06-08 14:26:17.968584 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=nic locale=pt
+2026-06-08 14:26:18.185328 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 21,0ms
+2026-06-08 14:26:18.185779 W VkSuggestions: slow frame 21,0ms locales=2 typedLen=4 candidates=18 parallelWait=20,8ms
+2026-06-08 14:26:18.187163 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=nice locale=pt
+2026-06-08 14:26:18.732025 I VkAutocorrect: picked: nice
+2026-06-08 14:26:18.851629 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=nice locale=pt
+2026-06-08 14:26:19.464146 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 24,3ms
+2026-06-08 14:26:19.464556 W VkSuggestions: slow frame 24,3ms locales=2 typedLen=3 candidates=18 parallelWait=24,2ms
+2026-06-08 14:26:19.465554 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=nic locale=pt
+2026-06-08 14:26:19.779733 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=nice locale=pt
+2026-06-08 14:26:21.138583 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 16,9ms
+2026-06-08 14:26:21.138951 W VkSuggestions: slow frame 16,9ms locales=2 typedLen=1 candidates=18 parallelWait=16,8ms
+2026-06-08 14:26:21.139882 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-08 14:26:21.316937 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 13,3ms
+2026-06-08 14:26:21.317962 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=ho locale=pt
+2026-06-08 14:26:21.506370 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 11,9ms
+2026-06-08 14:26:21.507471 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=hok locale=pt
+2026-06-08 14:26:21.635901 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 21,1ms
+2026-06-08 14:26:21.636455 W VkSuggestions: slow frame 21,1ms locales=2 typedLen=4 candidates=18 parallelWait=20,9ms
+2026-06-08 14:26:21.638451 I VkAutocorrect: offered: hoka → hoka
+2026-06-08 14:26:21.638833 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=true top=hoka locale=pt
+2026-06-08 14:26:22.522966 I VkAutocorrect: picked: hoja
+2026-06-08 14:26:22.628615 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=hoja locale=pt
+2026-06-08 14:26:23.381563 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 9,6ms
+2026-06-08 14:26:23.383147 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=hoj locale=pt
+2026-06-08 14:26:23.644267 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 28,1ms
+2026-06-08 14:26:23.644719 W VkSuggestions: slow frame 28,1ms locales=2 typedLen=2 candidates=18 parallelWait=27,9ms
+2026-06-08 14:26:23.645840 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=ho locale=pt
+2026-06-08 14:26:24.151517 I VkSuggestions: decode typedLen=3 candidates=17 locales=2 8,7ms
+2026-06-08 14:26:24.152439 I VkSuggestions: strip composing typedLen=3 candidates=13 autocorrect=false top=hol locale=pt
+2026-06-08 14:26:24.324488 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 13,1ms
+2026-06-08 14:26:24.325837 I VkSuggestions: strip composing typedLen=4 candidates=12 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:24.491698 I VkAutocorrect: kept (typing): hola
+2026-06-08 14:26:24.594851 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hoja locale=pt
+2026-06-08 14:26:25.316004 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 15,8ms
+2026-06-08 14:26:25.348961 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false top=m locale=pt
+2026-06-08 14:26:25.478576 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 20,4ms
+2026-06-08 14:26:25.479117 W VkSuggestions: slow frame 20,4ms locales=2 typedLen=2 candidates=18 parallelWait=20,1ms
+2026-06-08 14:26:25.480464 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=ma locale=pt
+2026-06-08 14:26:25.762202 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 8,9ms
+2026-06-08 14:26:25.763322 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=mar locale=pt
+2026-06-08 14:26:26.006672 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 20,0ms
+2026-06-08 14:26:26.007029 W VkSuggestions: slow frame 20,0ms locales=2 typedLen=5 candidates=18 parallelWait=19,9ms
+2026-06-08 14:26:26.008428 I VkAutocorrect: offered: maria → maria
+2026-06-08 14:26:26.008725 I VkSuggestions: strip composing typedLen=5 candidates=14 autocorrect=true top=maria locale=pt
+2026-06-08 14:26:26.084990 I VkAutocorrect: committed (typing): maria → María
+2026-06-08 14:26:26.189055 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:26.892548 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:27.007041 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 14,7ms
+2026-06-08 14:26:27.008309 I VkSuggestions: strip composing typedLen=1 candidates=14 autocorrect=false top=c locale=pt
+2026-06-08 14:26:27.029580 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:27.144124 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 13,4ms
+2026-06-08 14:26:27.145489 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=co locale=pt
+2026-06-08 14:26:27.220672 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:27.335359 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 13,5ms
+2026-06-08 14:26:27.337032 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=com locale=pt
+2026-06-08 14:26:27.430975 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:27.548408 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 16,7ms
+2026-06-08 14:26:27.548758 W VkSuggestions: slow frame 16,7ms locales=2 typedLen=4 candidates=18 parallelWait=16,5ms
+2026-06-08 14:26:27.550534 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=como locale=pt
+2026-06-08 14:26:27.973508 I VkAutocorrect: kept (typing): como
+2026-06-08 14:26:27.974544 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:28.077739 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:28.333574 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:28.455542 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 21,5ms
+2026-06-08 14:26:28.455977 W VkSuggestions: slow frame 21,5ms locales=2 typedLen=1 candidates=18 parallelWait=21,1ms
+2026-06-08 14:26:28.457398 I VkAutocorrect: offered: e → e
+2026-06-08 14:26:28.457649 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=true top=e locale=pt
+2026-06-08 14:26:28.523477 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:28.633593 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 9,3ms
+2026-06-08 14:26:28.634826 I VkAutocorrect: offered: es → es
+2026-06-08 14:26:28.635141 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=true top=es locale=pt
+2026-06-08 14:26:28.750822 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:28.861551 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 10,3ms
+2026-06-08 14:26:28.863047 I VkSuggestions: strip composing typedLen=3 candidates=14 autocorrect=false top=est locale=pt
+2026-06-08 14:26:28.957884 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:29.084142 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 24,6ms
+2026-06-08 14:26:29.084462 W VkSuggestions: slow frame 24,6ms locales=2 typedLen=4 candidates=18 parallelWait=24,5ms
+2026-06-08 14:26:29.085647 I VkAutocorrect: offered: ests → ests
+2026-06-08 14:26:29.085907 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=true top=ests locale=pt
+2026-06-08 14:26:29.513171 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=20
+2026-06-08 14:26:29.517193 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:29.718688 I VkAutocorrect: picked: esta
+2026-06-08 14:26:29.826231 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:30.776373 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:30.776929 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:30.971365 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:31.109040 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 37,2ms
+2026-06-08 14:26:31.109611 W VkSuggestions: slow frame 37,2ms locales=2 typedLen=1 candidates=18 parallelWait=36,9ms
+2026-06-08 14:26:31.111404 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=t locale=pt
+2026-06-08 14:26:31.246271 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:31.366741 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 19,5ms
+2026-06-08 14:26:31.367254 W VkSuggestions: slow frame 19,5ms locales=2 typedLen=2 candidates=18 parallelWait=19,3ms
+2026-06-08 14:26:31.369391 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=false top=te locale=pt
+2026-06-08 14:26:31.779863 I VkAutocorrect: kept (typing): te
+2026-06-08 14:26:31.780803 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:31.884818 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:32.123456 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:32.258130 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 33,0ms
+2026-06-08 14:26:32.258643 W VkSuggestions: slow frame 33,0ms locales=2 typedLen=1 candidates=18 parallelWait=32,7ms
+2026-06-08 14:26:32.259834 I VkSuggestions: strip composing typedLen=1 candidates=15 autocorrect=false top=v locale=pt
+2026-06-08 14:26:32.448188 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:32.561559 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 12,2ms
+2026-06-08 14:26:32.563222 I VkAutocorrect: offered: ve → ve
+2026-06-08 14:26:32.563617 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=true top=ve locale=pt
+2026-06-08 14:26:32.647402 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:32.778433 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 29,9ms
+2026-06-08 14:26:32.779073 W VkSuggestions: slow frame 29,9ms locales=2 typedLen=3 candidates=18 parallelWait=29,7ms
+2026-06-08 14:26:32.781664 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=veo locale=pt
+2026-06-08 14:26:32.930584 I VkAutocorrect: kept (typing): veo
+2026-06-08 14:26:32.931160 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:33.035122 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=es
+2026-06-08 14:26:33.484734 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=28
+2026-06-08 14:26:33.485224 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:34.728449 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:34.729039 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:34.849784 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 13,2ms
+2026-06-08 14:26:34.850750 I VkSuggestions: strip composing typedLen=1 candidates=13 autocorrect=false top=w locale=es
+2026-06-08 14:26:34.893705 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:35.012645 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 17,2ms
+2026-06-08 14:26:35.013098 W VkSuggestions: slow frame 17,2ms locales=2 typedLen=2 candidates=18 parallelWait=17,0ms
+2026-06-08 14:26:35.016176 I VkAutocorrect: offered: wn → wn
+2026-06-08 14:26:35.016657 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=true top=wn locale=es
+2026-06-08 14:26:35.110928 I VkAutocorrect: committed (typing): wn → en
+2026-06-08 14:26:35.111892 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:35.216148 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=es
+2026-06-08 14:26:35.663904 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=31
+2026-06-08 14:26:35.664168 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:36.439234 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:36.439895 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:36.555621 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 16,1ms
+2026-06-08 14:26:36.556013 W VkSuggestions: slow frame 16,1ms locales=2 typedLen=1 candidates=18 parallelWait=16,0ms
+2026-06-08 14:26:36.556919 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=n locale=es
+2026-06-08 14:26:36.564499 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:36.672345 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 7,6ms
+2026-06-08 14:26:36.673562 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=ne locale=es
+2026-06-08 14:26:36.748762 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:36.857587 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 8,2ms
+2026-06-08 14:26:36.858687 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=new locale=es
+2026-06-08 14:26:36.890362 I VkAutocorrect: kept (typing): new
+2026-06-08 14:26:36.891144 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:36.994076 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=es
+2026-06-08 14:26:37.442552 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=35
+2026-06-08 14:26:37.442767 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:37.583597 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:37.703688 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 18,8ms
+2026-06-08 14:26:37.704035 W VkSuggestions: slow frame 18,8ms locales=2 typedLen=1 candidates=18 parallelWait=18,7ms
+2026-06-08 14:26:37.704886 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=y locale=es
+2026-06-08 14:26:37.823841 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:37.934214 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 9,6ms
+2026-06-08 14:26:37.935495 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=yo locale=es
+2026-06-08 14:26:37.949512 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:37.949930 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:38.057682 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 8,0ms
+2026-06-08 14:26:38.058771 I VkAutocorrect: offered: yor → yor
+2026-06-08 14:26:38.058977 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=true top=yor locale=es
+2026-06-08 14:26:38.074937 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:38.192979 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 16,7ms
+2026-06-08 14:26:38.193589 W VkSuggestions: slow frame 16,7ms locales=2 typedLen=4 candidates=18 parallelWait=16,2ms
+2026-06-08 14:26:38.196695 I VkAutocorrect: offered: yorm → yorm
+2026-06-08 14:26:38.197207 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=true top=yorm locale=es
+2026-06-08 14:26:38.629281 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=39
+2026-06-08 14:26:38.629641 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:39.293752 I VkAutocorrect: committed (typing): yorm → York
+2026-06-08 14:26:39.294751 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:39.295269 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:39.399040 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:39.849166 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=40
+2026-06-08 14:26:39.849626 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:40.566519 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:40.566903 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:40.682669 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 16,0ms
+2026-06-08 14:26:40.683672 I VkSuggestions: strip composing typedLen=1 candidates=15 autocorrect=false top=p locale=pt
+2026-06-08 14:26:40.740375 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:40.848797 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 8,7ms
+2026-06-08 14:26:40.849811 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=pr locale=pt
+2026-06-08 14:26:40.890006 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:41.006430 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 15,4ms
+2026-06-08 14:26:41.007548 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=pro locale=pt
+2026-06-08 14:26:41.070993 I VkAutocorrect: kept (typing): pro
+2026-06-08 14:26:41.071533 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:41.172996 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:41.191534 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:41.305962 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 14,9ms
+2026-06-08 14:26:41.307024 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=t locale=pt
+2026-06-08 14:26:41.323683 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:41.444667 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 20,4ms
+2026-06-08 14:26:41.445097 W VkSuggestions: slow frame 20,4ms locales=2 typedLen=2 candidates=18 parallelWait=20,3ms
+2026-06-08 14:26:41.446447 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=to locale=pt
+2026-06-08 14:26:41.878659 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=46
+2026-06-08 14:26:41.879144 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:42.315862 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:42.431299 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 15,1ms
+2026-06-08 14:26:42.432389 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=t locale=pt
+2026-06-08 14:26:42.490270 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:26:42.490990 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:42.590699 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:42.625799 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:42.918927 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:43.027957 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 8,9ms
+2026-06-08 14:26:43.029019 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false top=pron locale=pt
+2026-06-08 14:26:43.094681 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:43.198793 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 4,9ms
+2026-06-08 14:26:43.199936 I VkSuggestions: strip composing typedLen=5 candidates=14 autocorrect=false top=pront locale=pt
+2026-06-08 14:26:43.244424 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:43.349035 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 4,4ms
+2026-06-08 14:26:43.351147 I VkSuggestions: strip composing typedLen=6 candidates=14 autocorrect=false top=pronto locale=pt
+2026-06-08 14:26:43.799099 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=46
+2026-06-08 14:26:43.799556 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:43.963833 I VkAutocorrect: picked: pronto
+2026-06-08 14:26:44.069642 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:26:44.596554 I SpaceAssistPopup: ▶ generate tapped fieldChars=46
+2026-06-08 14:26:44.597407 I SpaceAssistPopup: ▶ generation start fieldChars=46 token=41486
+2026-06-08 14:26:44.598470 I SpaceAssistPopup: ▶ fetch start fieldChars=46 inFlight=false cached=false
+2026-06-08 14:26:44.613248 I OnDeviceAssist: ▶ assist_ipc task=grammar in=46 chars
+2026-06-08 14:26:46.213173 I OnDeviceAssist: ✓ assist (ime) task=grammar 1601ms in=46 out=44
+2026-06-08 14:26:46.228119 I SpaceAssistPopup: ✓ generation done out=44 preview=44 overlay=true 0ms
+2026-06-08 14:26:46.228462 I SpaceAssistPopup: → preview: Hola María, como te veo en New York, pronto.
+2026-06-08 14:26:46.229892 I SpaceAssistPopup: ▶ send ready=true outChars=44
+2026-06-08 14:26:46.234486 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1525
+2026-06-08 14:26:46.235001 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1525
+2026-06-08 14:26:46.235387 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1525
+2026-06-08 14:26:52.191075 I SpaceAssistPopup: ○ overlay hide: force_dismiss
+2026-06-08 14:26:52.191608 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:52.191852 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:26:52.203260 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 10,1ms
+2026-06-08 14:26:52.326110 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 15,2ms
+2026-06-08 14:26:52.340327 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 13,7ms
+2026-06-08 14:26:52.673068 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 11,5ms
+2026-06-08 14:26:52.688690 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 15,2ms
+2026-06-08 14:26:52.860538 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 14,3ms
+2026-06-08 14:26:52.883088 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 22,1ms
+2026-06-08 14:26:52.883384 W VkSuggestions: slow frame 22,1ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:26:53.035769 I VkSuggestions: decode typedLen=5 candidates=17 locales=2 10,5ms
+2026-06-08 14:26:53.057532 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 21,4ms
+2026-06-08 14:26:53.057829 W VkSuggestions: slow frame 21,4ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:26:53.074805 I VkSwipe: ✓ gesture points=61 decodedLen=4 candidates=17 top=high 883ms
+2026-06-08 14:26:53.560 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:53.560282 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:26:53.655016 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 9,4ms
+2026-06-08 14:26:53.666775 I VkSuggestions: decode typedLen=0 candidates=15 locales=1 11,4ms
+2026-06-08 14:26:53.777947 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 15,1ms
+2026-06-08 14:26:53.786518 I VkSuggestions: decode typedLen=0 candidates=15 locales=1 8,2ms
+2026-06-08 14:26:53.895269 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 14,4ms
+2026-06-08 14:26:53.910640 I VkSuggestions: decode typedLen=0 candidates=15 locales=1 15,0ms
+2026-06-08 14:26:54.297288 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 15,8ms
+2026-06-08 14:26:54.305090 I VkSuggestions: decode typedLen=0 candidates=15 locales=1 7,4ms
+2026-06-08 14:26:54.324698 I VkSwipe: ✓ gesture points=53 decodedLen=4 candidates=17 top=jiló 764ms
+2026-06-08 14:26:54.662082 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:54.662439 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:26:54.674861 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 9,6ms
+2026-06-08 14:26:54.798771 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 17,2ms
+2026-06-08 14:26:54.799094 W VkSuggestions: slow frame 17,2ms locales=2 typedLen=2 candidates=18 parallelWait=17,2ms
+2026-06-08 14:26:54.812308 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 12,9ms
+2026-06-08 14:26:55.028306 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 12,6ms
+2026-06-08 14:26:55.044709 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 16,0ms
+2026-06-08 14:26:55.285177 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 16,1ms
+2026-06-08 14:26:55.285547 W VkSuggestions: slow frame 16,1ms locales=2 typedLen=4 candidates=18 parallelWait=16,0ms
+2026-06-08 14:26:55.305294 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 19,4ms
+2026-06-08 14:26:55.305630 W VkSuggestions: slow frame 19,4ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:26:55.313941 I VkSwipe: ✓ gesture points=37 decodedLen=4 candidates=16 top=DSDM 651ms
+2026-06-08 14:26:55.563718 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:26:55.563953 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:26:55.703637 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 19,1ms
+2026-06-08 14:26:55.704047 W VkSuggestions: slow frame 19,1ms locales=2 typedLen=2 candidates=18 parallelWait=19,0ms
+2026-06-08 14:26:55.717177 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 12,8ms
+2026-06-08 14:26:55.918416 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 17,1ms
+2026-06-08 14:26:55.918798 W VkSuggestions: slow frame 17,1ms locales=2 typedLen=3 candidates=18 parallelWait=17,0ms
+2026-06-08 14:26:55.933240 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 14,2ms
+2026-06-08 14:26:56.133955 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 16,0ms
+2026-06-08 14:26:56.146930 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 12,6ms
+2026-06-08 14:26:56.352341 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 16,2ms
+2026-06-08 14:26:56.352685 W VkSuggestions: slow frame 16,2ms locales=2 typedLen=4 candidates=18 parallelWait=16,2ms
+2026-06-08 14:26:56.377426 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 24,5ms
+2026-06-08 14:26:56.377724 W VkSuggestions: slow frame 24,5ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:26:56.897240 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 15,9ms
+2026-06-08 14:26:56.922080 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 24,4ms
+2026-06-08 14:26:56.922513 W VkSuggestions: slow frame 24,4ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:26:56.934956 I VkSwipe: ✓ gesture points=102 decodedLen=7 candidates=14 top=híbrido 1371ms
+2026-06-08 14:26:57.970909 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.084970 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 13,4ms
+2026-06-08 14:26:58.086010 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-08 14:26:58.106051 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.216610 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 9,7ms
+2026-06-08 14:26:58.217419 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=hh locale=pt
+2026-06-08 14:26:58.274418 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.383125 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 8,8ms
+2026-06-08 14:26:58.384234 I VkSuggestions: strip composing typedLen=3 candidates=13 autocorrect=false top=hhh locale=pt
+2026-06-08 14:26:58.453631 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.549307 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.666178 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 10,7ms
+2026-06-08 14:26:58.667443 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false top=hhhdj locale=pt
+2026-06-08 14:26:58.732495 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:58.843143 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 3,8ms
+2026-06-08 14:26:58.844332 I VkSuggestions: strip composing typedLen=6 candidates=18 autocorrect=false top=hhhdji locale=pt
+2026-06-08 14:26:58.899552 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:59.009390 I VkSuggestions: decode typedLen=7 candidates=18 locales=2 3,1ms
+2026-06-08 14:26:59.010533 I VkSuggestions: strip composing typedLen=7 candidates=17 autocorrect=false top=hhhdjiu locale=pt
+2026-06-08 14:26:59.075424 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:59.178507 I VkSuggestions: decode typedLen=8 candidates=18 locales=2 3,1ms
+2026-06-08 14:26:59.180110 I VkSuggestions: strip composing typedLen=8 candidates=17 autocorrect=false top=hhhdjiuh locale=pt
+2026-06-08 14:26:59.224580 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:59.332118 I VkSuggestions: decode typedLen=9 candidates=18 locales=2 6,0ms
+2026-06-08 14:26:59.335217 I VkSuggestions: strip composing typedLen=9 candidates=19 autocorrect=false top=hhhdjiuhd locale=pt
+2026-06-08 14:26:59.780370 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=79
+2026-06-08 14:26:59.780901 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:26:59.865419 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:59.907192 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:26:59.957922 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:00.017715 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:00.071812 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:00.114376 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:00.163295 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:00.290309 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 26,0ms
+2026-06-08 14:27:00.290727 W VkSuggestions: slow frame 26,0ms locales=2 typedLen=2 candidates=18 parallelWait=25,9ms
+2026-06-08 14:27:00.291980 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=hh locale=pt
+2026-06-08 14:27:00.717076 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=72
+2026-06-08 14:27:00.717527 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:01.128974 I SpaceAssistPopup: ○ overlay hide: strip_inactive
+2026-06-08 14:27:01.662088 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:01.662484 I VkPanels: ▶ open ai_theme
+2026-06-08 14:27:02.512852 I VkPanels: ▶ open effects
+2026-06-08 14:27:02.593584 I VkEffects: ▶ panel tab=tint
+2026-06-08 14:27:04.817845 I VkEffects: → tab sound
+2026-06-08 14:27:05.627349 I VkEffects: set Som=typewriter
+2026-06-08 14:27:05.704174 I VkEffects: apply (panel)
+2026-06-08 14:27:06.078039 I VkEffects: set Tátil=medium
+2026-06-08 14:27:06.182157 I VkEffects: apply (panel)
+2026-06-08 14:27:08.590152 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 23,3ms
+2026-06-08 14:27:08.590631 W VkSuggestions: slow frame 23,3ms locales=2 typedLen=3 candidates=18 parallelWait=23,1ms
+2026-06-08 14:27:08.592127 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=hhi locale=pt
+2026-06-08 14:27:08.692272 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:08.822305 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 27,1ms
+2026-06-08 14:27:08.822629 W VkSuggestions: slow frame 27,1ms locales=2 typedLen=4 candidates=18 parallelWait=27,0ms
+2026-06-08 14:27:08.824143 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hhii locale=pt
+2026-06-08 14:27:08.900640 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:09.007099 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 5,5ms
+2026-06-08 14:27:09.008197 I VkSuggestions: strip composing typedLen=5 candidates=16 autocorrect=false top=hhiiy locale=pt
+2026-06-08 14:27:09.044474 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:09.151389 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 7,2ms
+2026-06-08 14:27:09.153726 I VkSuggestions: strip composing typedLen=6 candidates=18 autocorrect=false top=hhiiys locale=pt
+2026-06-08 14:27:09.591959 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:09.592499 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:27:09.627297 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 15,7ms
+2026-06-08 14:27:09.640813 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 13,1ms
+2026-06-08 14:27:09.736733 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 9,8ms
+2026-06-08 14:27:09.745695 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 8,6ms
+2026-06-08 14:27:09.853709 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 19,3ms
+2026-06-08 14:27:09.854035 W VkSuggestions: slow frame 19,3ms locales=2 typedLen=2 candidates=18 parallelWait=19,2ms
+2026-06-08 14:27:09.860381 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 6,1ms
+2026-06-08 14:27:10.021727 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 9,9ms
+2026-06-08 14:27:10.036330 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 14,3ms
+2026-06-08 14:27:10.224409 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 8,1ms
+2026-06-08 14:27:10.239693 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 14,9ms
+2026-06-08 14:27:10.248133 I VkSwipe: ✓ gesture points=52 decodedLen=3 candidates=17 top=kgf 655ms
+2026-06-08 14:27:10.561381 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:10.688690 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 16,0ms
+2026-06-08 14:27:10.688959 W VkSuggestions: slow frame 16,0ms locales=2 typedLen=1 candidates=18 parallelWait=15,9ms
+2026-06-08 14:27:10.689894 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-08 14:27:10.731316 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:10.850017 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 18,5ms
+2026-06-08 14:27:10.850401 W VkSuggestions: slow frame 18,5ms locales=2 typedLen=2 candidates=18 parallelWait=18,3ms
+2026-06-08 14:27:10.852136 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=de locale=pt
+2026-06-08 14:27:10.972329 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.101784 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 10,3ms
+2026-06-08 14:27:11.102874 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=deh locale=pt
+2026-06-08 14:27:11.155587 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.283213 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 12,1ms
+2026-06-08 14:27:11.284061 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=dehy locale=pt
+2026-06-08 14:27:11.331202 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.452827 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 6,9ms
+2026-06-08 14:27:11.453939 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false top=dehyy locale=pt
+2026-06-08 14:27:11.497935 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.600985 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 2,9ms
+2026-06-08 14:27:11.602039 I VkSuggestions: strip composing typedLen=6 candidates=18 autocorrect=false top=dehyye locale=pt
+2026-06-08 14:27:11.617391 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.719200 I VkSuggestions: decode typedLen=7 candidates=18 locales=2 2,4ms
+2026-06-08 14:27:11.720163 I VkSuggestions: strip composing typedLen=7 candidates=18 autocorrect=false top=dehyyej locale=pt
+2026-06-08 14:27:11.765188 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:11.898805 I VkSuggestions: decode typedLen=8 candidates=18 locales=2 3,2ms
+2026-06-08 14:27:11.900332 I VkSuggestions: strip composing typedLen=8 candidates=18 autocorrect=false top=dehyyejj locale=pt
+2026-06-08 14:27:11.956630 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:12.068464 I VkSuggestions: decode typedLen=9 candidates=18 locales=2 10,8ms
+2026-06-08 14:27:12.069953 I VkSuggestions: strip composing typedLen=9 candidates=19 autocorrect=false top=dehyyejjh locale=pt
+2026-06-08 14:27:12.108391 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:12.195632 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:12.308343 I VkSuggestions: decode typedLen=11 candidates=18 locales=2 12,4ms
+2026-06-08 14:27:12.310161 I VkSuggestions: strip composing typedLen=11 candidates=19 autocorrect=false top=dehyyejjheh locale=pt
+2026-06-08 14:27:12.751806 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=92
+2026-06-08 14:27:12.752385 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:12.966532 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.020431 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.057836 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.106486 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.160327 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.208036 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:27:13.208903 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.258274 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.310989 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.357935 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.421345 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.472088 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.528112 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.570762 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.611253 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.672872 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.730230 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.762693 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.814608 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.868738 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.915767 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:13.967601 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.040800 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.111714 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.138553 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.144419 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 30,5ms
+2026-06-08 14:27:14.144837 W VkSuggestions: slow frame 30,5ms locales=2 typedLen=6 candidates=18 parallelWait=30,4ms
+2026-06-08 14:27:14.146262 I VkSuggestions: strip composing typedLen=6 candidates=14 autocorrect=false top=híbrid locale=pt
+2026-06-08 14:27:14.177702 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.226413 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.278888 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.327188 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.389779 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.459428 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.484962 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.487210 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 25,8ms
+2026-06-08 14:27:14.487612 W VkSuggestions: slow frame 25,8ms locales=2 typedLen=3 candidates=18 parallelWait=25,7ms
+2026-06-08 14:27:14.489001 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=DSD locale=pt
+2026-06-08 14:27:14.535273 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.608657 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.676753 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.705444 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.713886 W VkSuggestions: slow frame 35,2ms locales=2 typedLen=3 candidates=18 parallelWait=35,0ms
+2026-06-08 14:27:14.716173 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=jil locale=pt
+2026-06-08 14:27:14.740710 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:14.875940 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 34,0ms
+2026-06-08 14:27:14.876595 W VkSuggestions: slow frame 34,0ms locales=2 typedLen=1 candidates=18 parallelWait=33,9ms
+2026-06-08 14:27:14.878202 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=j locale=pt
+2026-06-08 14:27:15.294346 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=53
+2026-06-08 14:27:15.294841 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:15.387074 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:15.487947 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=jiló locale=pt
+2026-06-08 14:27:15.556916 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:15.689712 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:15.802331 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 11,9ms
+2026-06-08 14:27:15.803412 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=hig locale=pt
+2026-06-08 14:27:15.832027 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:27:15.832708 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:15.946795 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 12,6ms
+2026-06-08 14:27:15.947791 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=hi locale=pt
+2026-06-08 14:27:15.974111 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:16.086938 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 13,1ms
+2026-06-08 14:27:16.087852 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-08 14:27:16.139357 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:16.242701 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=high locale=pt
+2026-06-08 14:27:16.694124 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=47
+2026-06-08 14:27:16.694513 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:16.855892 I SpaceAssistPopup: ○ overlay hide: force_dismiss
+2026-06-08 14:27:16.856234 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:16.856384 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:27:16.943404 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 18,7ms
+2026-06-08 14:27:16.943704 W VkSuggestions: slow frame 18,7ms locales=2 typedLen=2 candidates=18 parallelWait=18,6ms
+2026-06-08 14:27:16.954984 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 11,0ms
+2026-06-08 14:27:17.055114 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 14,0ms
+2026-06-08 14:27:17.063219 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 7,7ms
+2026-06-08 14:27:17.174959 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 15,5ms
+2026-06-08 14:27:17.187556 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 12,2ms
+2026-06-08 14:27:17.425143 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 14,7ms
+2026-06-08 14:27:17.437014 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 11,5ms
+2026-06-08 14:27:17.454129 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 8,4ms
+2026-06-08 14:27:17.476192 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 21,6ms
+2026-06-08 14:27:17.476600 W VkSuggestions: slow frame 21,6ms locales=1 typedLen=0 candidates=16
+2026-06-08 14:27:17.484464 I VkSwipe: ✓ gesture points=41 decodedLen=4 candidates=17 top=juge 628ms
+2026-06-08 14:27:18.163476 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:18.285594 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 16,9ms
+2026-06-08 14:27:18.285879 W VkSuggestions: slow frame 16,9ms locales=2 typedLen=1 candidates=18 parallelWait=16,8ms
+2026-06-08 14:27:18.286952 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-08 14:27:18.495818 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:18.627738 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 12,1ms
+2026-06-08 14:27:18.628604 I VkSuggestions: strip composing typedLen=2 candidates=13 autocorrect=false top=dj locale=pt
+2026-06-08 14:27:18.671433 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:18.814119 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 9,8ms
+2026-06-08 14:27:18.815061 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=djh locale=pt
+2026-06-08 14:27:18.880732 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:18.992388 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 10,6ms
+2026-06-08 14:27:18.993518 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false top=djhh locale=pt
+2026-06-08 14:27:19.004752 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:19.112596 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 6,4ms
+2026-06-08 14:27:19.113724 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false top=djhhe locale=pt
+2026-06-08 14:27:19.559022 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=57
+2026-06-08 14:27:19.559267 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:19.730687 I SpaceAssistPopup: ○ overlay hide: force_dismiss
+2026-06-08 14:27:19.731230 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:19.731497 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:27:19.832906 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 17,5ms
+2026-06-08 14:27:19.833392 W VkSuggestions: slow frame 17,5ms locales=2 typedLen=2 candidates=18 parallelWait=17,3ms
+2026-06-08 14:27:19.847458 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 13,8ms
+2026-06-08 14:27:19.945854 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 14,1ms
+2026-06-08 14:27:19.953139 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 6,9ms
+2026-06-08 14:27:20.113081 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 14,3ms
+2026-06-08 14:27:20.120161 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 6,7ms
+2026-06-08 14:27:20.316624 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 15,9ms
+2026-06-08 14:27:20.330902 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 13,9ms
+2026-06-08 14:27:20.343565 I VkSwipe: ✓ gesture points=47 decodedLen=11 candidates=18 top=agigantados 612ms
+2026-06-08 14:27:20.831951 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:20.933617 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-08 14:27:21.000836 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.143032 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.259773 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 9,8ms
+2026-06-08 14:27:21.260780 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false top=djhh locale=pt
+2026-06-08 14:27:21.293889 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.413877 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 10,0ms
+2026-06-08 14:27:21.414789 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=djh locale=pt
+2026-06-08 14:27:21.451726 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.562882 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 10,8ms
+2026-06-08 14:27:21.563787 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=false top=dj locale=pt
+2026-06-08 14:27:21.586155 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.700970 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 14,2ms
+2026-06-08 14:27:21.701738 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-08 14:27:21.751135 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:21.861266 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=djhhe locale=pt
+2026-06-08 14:27:21.903373 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:22.045915 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:22.155945 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 9,5ms
+2026-06-08 14:27:22.156858 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=jug locale=pt
+2026-06-08 14:27:22.186684 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:22.297061 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 10,1ms
+2026-06-08 14:27:22.298029 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=ju locale=pt
+2026-06-08 14:27:22.345894 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:22.461949 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 15,1ms
+2026-06-08 14:27:22.463001 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-08 14:27:22.502437 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:22.606016 I VkSuggestions: strip prediction typedLen=0 candidates=4 autocorrect=false top=high locale=pt
+2026-06-08 14:27:22.705350 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:23.260286 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=46
+2026-06-08 14:27:23.260717 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:23.606776 I VkAutocorrect: kept (typing): pronto
+2026-06-08 14:27:23.607351 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.017095 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:27:24.017802 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.134271 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=s locale=pt
+2026-06-08 14:27:24.155345 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.267028 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 10,4ms
+2026-06-08 14:27:24.268133 I VkSuggestions: strip composing typedLen=2 candidates=13 autocorrect=false top=sj locale=pt
+2026-06-08 14:27:24.308572 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.421337 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 11,5ms
+2026-06-08 14:27:24.422688 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=sjj locale=pt
+2026-06-08 14:27:24.495203 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.587785 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.697490 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 10,1ms
+2026-06-08 14:27:24.698713 I VkSuggestions: strip composing typedLen=5 candidates=17 autocorrect=false top=sjjwy locale=pt
+2026-06-08 14:27:24.760206 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:24.862517 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 2,7ms
+2026-06-08 14:27:24.863623 I VkSuggestions: strip composing typedLen=6 candidates=17 autocorrect=false top=sjjwyg locale=pt
+2026-06-08 14:27:24.909005 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.017794 I VkSuggestions: decode typedLen=7 candidates=18 locales=2 7,5ms
+2026-06-08 14:27:25.021297 I VkSuggestions: strip composing typedLen=7 candidates=19 autocorrect=false top=sjjwygs locale=pt
+2026-06-08 14:27:25.462751 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=54
+2026-06-08 14:27:25.463194 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:25.689334 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.733133 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.784483 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.834690 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.882955 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.934560 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:27:25.935687 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:25.996776 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:26.099916 I VkSuggestions: strip prediction typedLen=0 candidates=4 autocorrect=false top=high locale=pt
+2026-06-08 14:27:26.295869 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:26.851294 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=46
+2026-06-08 14:27:26.851753 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:27.532310 I SpaceAssistPopup: ▶ generate tapped fieldChars=46
+2026-06-08 14:27:27.533206 I SpaceAssistPopup: ▶ generation start fieldChars=46 token=669
+2026-06-08 14:27:27.533727 I SpaceAssistPopup: ▶ fetch start fieldChars=46 inFlight=false cached=false
+2026-06-08 14:27:27.549611 I OnDeviceAssist: ▶ assist_ipc task=grammar in=46 chars
+2026-06-08 14:27:29.070079 I OnDeviceAssist: ✓ assist (ime) task=grammar 1520ms in=46 out=44
+2026-06-08 14:27:29.104812 I SpaceAssistPopup: ✓ generation done out=44 preview=44 overlay=true 0ms
+2026-06-08 14:27:29.105030 I SpaceAssistPopup: → preview: Hola, María, como te veo en New York pronto.
+2026-06-08 14:27:29.106238 I SpaceAssistPopup: ▶ send ready=true outChars=44
+2026-06-08 14:27:29.119997 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1524
+2026-06-08 14:27:29.120506 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1524
+2026-06-08 14:27:29.120819 I SpaceAssistPopup: → preview layout textLen=44 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1524
+2026-06-08 14:27:30.823096 I SpaceAssistPopup: ○ overlay hide: force_dismiss
+2026-06-08 14:27:30.823388 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:30.823484 I VkPanels: ▶ open assist
+2026-06-08 14:27:30.842332 I OnDeviceAssist: ▶ panel open
+2026-06-08 14:27:34.127981 I OnDeviceAssist: ▶ tap task=tone_casual in=46 chars
+2026-06-08 14:27:34.129631 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=46 chars
+2026-06-08 14:27:35.578627 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 1449ms in=46 out=70
+2026-06-08 14:27:38.787635 I OnDeviceAssist: ▶ tap task=tone_pro in=46 chars
+2026-06-08 14:27:38.789336 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=46 chars
+2026-06-08 14:27:39.702472 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 913ms in=46 out=42
+2026-06-08 14:27:40.955995 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 49,1ms
+2026-06-08 14:27:40.956435 W VkSuggestions: slow frame 49,1ms locales=2 typedLen=6 candidates=18 parallelWait=48,9ms
+2026-06-08 14:27:40.958060 I VkSuggestions: decode typedLen=0 candidates=2 locales=2 0,5ms
+2026-06-08 14:27:40.959469 I VkSuggestions: strip composing typedLen=6 candidates=14 autocorrect=false top=pronto locale=pt
+2026-06-08 14:27:42.020304 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:42.020519 I VkPanels: ▶ open menu
+2026-06-08 14:27:47.820422 I VkMultilingual: reset main=pt-BR locales=[pt,fr,es] count=3
+2026-06-08 14:27:48.216179 I VkSwipe: ○ gesture canceled
+2026-06-08 14:27:48.226277 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-08 14:27:48.308704 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:27:48.322481 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:27:48.927938 I VkSuggestions: strip composing typedLen=8 candidates=1 autocorrect=false top=jjejsjuy locale=pt
+2026-06-08 14:27:49.127816 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=50 chars
+2026-06-08 14:27:51.497253 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:51.849362 I VkSuggestions: strip composing typedLen=9 candidates=1 autocorrect=false top=jjejsjuyj locale=pt
+2026-06-08 14:27:51.873729 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:51.897668 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.250373 I VkSuggestions: strip composing typedLen=11 candidates=1 autocorrect=false top=jjejsjuyjjh locale=pt
+2026-06-08 14:27:52.274832 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.307765 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.368624 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.563740 I VkSuggestions: decode typedLen=14 candidates=18 locales=3 30,8ms
+2026-06-08 14:27:52.564038 W VkSuggestions: slow frame 30,8ms locales=3 typedLen=14 candidates=18 parallelWait=30,6ms
+2026-06-08 14:27:52.566125 I VkSuggestions: strip composing typedLen=14 candidates=17 autocorrect=false top=jjejsjuyjjhshh locale=pt
+2026-06-08 14:27:52.669840 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.801771 I VkSuggestions: decode typedLen=15 candidates=18 locales=3 12,2ms
+2026-06-08 14:27:52.808202 I VkSuggestions: strip composing typedLen=15 candidates=17 autocorrect=false top=jjejsjuyjjhshhj locale=pt
+2026-06-08 14:27:52.841743 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:52.954950 I VkSuggestions: decode typedLen=16 candidates=18 locales=3 8,8ms
+2026-06-08 14:27:52.957135 I VkSuggestions: strip composing typedLen=16 candidates=17 autocorrect=false top=jjejsjuyjjhshhjj locale=pt
+2026-06-08 14:27:53.041673 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:53.154495 I VkSuggestions: decode typedLen=17 candidates=18 locales=3 10,7ms
+2026-06-08 14:27:53.156476 I VkSuggestions: strip composing typedLen=17 candidates=17 autocorrect=false top=jjejsjuyjjhshhjjd locale=pt
+2026-06-08 14:27:53.164035 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:53.315767 I VkSuggestions: decode typedLen=18 candidates=18 locales=3 30,1ms
+2026-06-08 14:27:53.315998 W VkSuggestions: slow frame 30,1ms locales=3 typedLen=18 candidates=18 parallelWait=30,0ms
+2026-06-08 14:27:53.317660 I VkSuggestions: strip composing typedLen=18 candidates=17 autocorrect=false top=jjejsjuyjjhshhjjdj locale=pt
+2026-06-08 14:27:53.335634 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:53.457121 I VkSuggestions: decode typedLen=19 candidates=18 locales=3 20,4ms
+2026-06-08 14:27:53.458494 W VkSuggestions: slow frame 20,4ms locales=3 typedLen=19 candidates=18 parallelWait=20,0ms
+2026-06-08 14:27:53.463690 I VkSuggestions: strip composing typedLen=19 candidates=17 autocorrect=false top=jjejsjuyjjhshhjjdjj locale=pt
+2026-06-08 14:27:53.642869 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 4515ms in=50 out=194
+2026-06-08 14:27:53.892313 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=61
+2026-06-08 14:27:53.892670 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:27:54.327931 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.383112 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:27:54.384335 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.422207 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.471308 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.523531 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.572079 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.622482 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.670341 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.729509 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.774371 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.831899 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.873214 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.925582 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:54.980071 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:55.030291 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:55.081044 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:55.192681 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 11,1ms
+2026-06-08 14:27:55.194636 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=jje locale=pt
+2026-06-08 14:27:55.330510 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:55.443193 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,9ms
+2026-06-08 14:27:55.445428 I VkSuggestions: strip composing typedLen=2 candidates=11 autocorrect=false top=jj locale=pt
+2026-06-08 14:27:55.599898 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:55.736959 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 36,0ms
+2026-06-08 14:27:55.737268 W VkSuggestions: slow frame 36,0ms locales=3 typedLen=1 candidates=18 parallelWait=35,8ms
+2026-06-08 14:27:55.738961 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-08 14:27:55.947586 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:56.787702 W VkSuggestions: slow frame 51,3ms locales=3 typedLen=1 candidates=18 parallelWait=51,1ms
+2026-06-08 14:27:56.789823 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=n locale=pt
+2026-06-08 14:27:57.067424 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:57.178350 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,8ms
+2026-06-08 14:27:57.180035 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=nk locale=pt
+2026-06-08 14:27:57.303827 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:57.444939 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 33,4ms
+2026-06-08 14:27:57.445285 W VkSuggestions: slow frame 33,4ms locales=3 typedLen=1 candidates=18 parallelWait=33,2ms
+2026-06-08 14:27:57.446987 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=n locale=pt
+2026-06-08 14:27:57.469523 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:57.601781 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:57.738201 W VkSuggestions: slow frame 20,9ms locales=3 typedLen=1 candidates=18 parallelWait=20,8ms
+2026-06-08 14:27:57.739618 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-08 14:27:57.770666 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:57.884537 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 12,3ms
+2026-06-08 14:27:57.885775 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=false top=dj locale=pt
+2026-06-08 14:27:57.962857 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:58.079248 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 15,0ms
+2026-06-08 14:27:58.081271 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=djj locale=pt
+2026-06-08 14:27:58.275463 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:58.393389 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 9,6ms
+2026-06-08 14:27:58.394574 I VkSuggestions: strip composing typedLen=2 candidates=14 autocorrect=false top=dj locale=pt
+2026-06-08 14:27:58.441904 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:58.559986 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 17,7ms
+2026-06-08 14:27:58.560239 W VkSuggestions: slow frame 17,7ms locales=3 typedLen=1 candidates=18 parallelWait=17,6ms
+2026-06-08 14:27:58.561046 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-08 14:27:58.603851 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:58.739355 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:27:58.751153 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 12,1ms
+2026-06-08 14:27:58.757173 I VkSuggestions: strip composing typedLen=6 candidates=14 autocorrect=false top=pronto locale=pt
+2026-06-08 14:27:59.423664 I VkAutocorrect: kept (typing): pronto
+2026-06-08 14:27:59.530119 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=pronto locale=pt
+2026-06-08 14:28:02.180800 I VkAutocorrect: picked: pronto
+2026-06-08 14:28:02.283748 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,7ms
+2026-06-08 14:28:05.894644 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:06.454148 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=49
+2026-06-08 14:28:06.454964 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:28:06.888748 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:06.892753 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 3,2ms
+2026-06-08 14:28:06.896905 I VkSuggestions: strip composing typedLen=6 candidates=13 autocorrect=false top=pronto locale=pt
+2026-06-08 14:28:07.451408 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=48
+2026-06-08 14:28:07.452329 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:28:08.143194 I SpaceAssistPopup: ▶ generate tapped fieldChars=48
+2026-06-08 14:28:08.144318 I SpaceAssistPopup: ▶ generation start fieldChars=48 token=6452
+2026-06-08 14:28:08.145567 I SpaceAssistPopup: ▶ fetch start fieldChars=48 inFlight=false cached=false
+2026-06-08 14:28:08.161602 I OnDeviceAssist: ▶ assist_ipc task=grammar in=48 chars
+2026-06-08 14:28:09.386527 I OnDeviceAssist: ✓ assist (ime) task=grammar 1225ms in=48 out=50
+2026-06-08 14:28:09.400155 I SpaceAssistPopup: ✓ generation done out=50 preview=50 overlay=true 0ms
+2026-06-08 14:28:09.400464 I SpaceAssistPopup: → preview: Hello María, how are you feeling in New York soon?
+2026-06-08 14:28:09.403178 I SpaceAssistPopup: ▶ send ready=true outChars=50
+2026-06-08 14:28:09.413598 I SpaceAssistPopup: → preview layout textLen=50 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1694
+2026-06-08 14:28:09.414217 I SpaceAssistPopup: → preview layout textLen=50 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1694
+2026-06-08 14:28:09.414694 I SpaceAssistPopup: → preview layout textLen=50 send=visible fieldW=1380 scrollW=1245 sendW=135 textSp=18,0 contentW=1694
+2026-06-08 14:28:10.865782 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:28:10.866435 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:10.989695 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 11,8ms
+2026-06-08 14:28:10.991729 I VkSuggestions: strip composing typedLen=7 candidates=16 autocorrect=false top=prontoj locale=pt
+2026-06-08 14:28:11.058070 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:11.162792 I VkSuggestions: decode typedLen=8 candidates=18 locales=3 2,8ms
+2026-06-08 14:28:11.166640 I VkSuggestions: strip composing typedLen=8 candidates=16 autocorrect=false top=prontojj locale=pt
+2026-06-08 14:28:11.309062 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:11.410615 I VkSuggestions: decode typedLen=9 candidates=18 locales=3 1,4ms
+2026-06-08 14:28:11.412203 I VkSuggestions: strip composing typedLen=9 candidates=17 autocorrect=false top=prontojjd locale=pt
+2026-06-08 14:28:11.748077 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:28:11.748675 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:28:11.838720 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 21,3ms
+2026-06-08 14:28:11.839061 W VkSuggestions: slow frame 21,3ms locales=3 typedLen=2 candidates=18 parallelWait=21,2ms
+2026-06-08 14:28:11.854401 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 15,0ms
+2026-06-08 14:28:11.945356 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 12,4ms
+2026-06-08 14:28:11.951359 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 5,5ms
+2026-06-08 14:28:12.175263 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 14,4ms
+2026-06-08 14:28:12.190326 I VkSuggestions: decode typedLen=0 candidates=14 locales=1 14,5ms
+2026-06-08 14:28:12.214262 I VkSwipe: ✓ gesture points=33 decodedLen=3 candidates=15 top=fgv 465ms
+2026-06-08 14:28:12.849597 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:28:12.850105 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:28:12.865838 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 12,2ms
+2026-06-08 14:28:13.209135 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 22,9ms
+2026-06-08 14:28:13.209942 W VkSuggestions: slow frame 22,9ms locales=3 typedLen=2 candidates=18 parallelWait=22,8ms
+2026-06-08 14:28:13.219283 I VkSuggestions: decode typedLen=0 candidates=3 locales=1 9,0ms
+2026-06-08 14:28:13.274993 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 15,5ms
+2026-06-08 14:28:13.280535 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 5,1ms
+2026-06-08 14:28:13.290696 I VkSwipe: ✓ gesture points=22 decodedLen=2 candidates=13 top=SF 440ms
+2026-06-08 14:28:13.872903 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:13.992173 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=fgv locale=pt
+2026-06-08 14:28:14.055063 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.208540 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.326391 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,0ms
+2026-06-08 14:28:14.327515 I VkSuggestions: strip composing typedLen=2 candidates=11 autocorrect=false top=fg locale=pt
+2026-06-08 14:28:14.346356 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.465911 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 19,1ms
+2026-06-08 14:28:14.466153 W VkSuggestions: slow frame 19,1ms locales=3 typedLen=1 candidates=18 parallelWait=19,0ms
+2026-06-08 14:28:14.466909 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=f locale=pt
+2026-06-08 14:28:14.504338 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.605879 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=fgv locale=pt
+2026-06-08 14:28:14.656711 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.798398 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:14.909233 I VkSuggestions: decode typedLen=8 candidates=18 locales=3 10,3ms
+2026-06-08 14:28:14.911163 I VkSuggestions: strip composing typedLen=8 candidates=16 autocorrect=false top=prontojj locale=pt
+2026-06-08 14:28:14.949427 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:15.062785 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 10,1ms
+2026-06-08 14:28:15.064392 I VkSuggestions: strip composing typedLen=7 candidates=16 autocorrect=false top=prontoj locale=pt
+2026-06-08 14:28:15.081158 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:28:15.211371 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 29,2ms
+2026-06-08 14:28:15.211890 W VkSuggestions: slow frame 29,2ms locales=3 typedLen=6 candidates=18 parallelWait=29,0ms
+2026-06-08 14:28:15.214941 I VkSuggestions: strip composing typedLen=6 candidates=13 autocorrect=false top=pronto locale=pt
+2026-06-08 14:28:15.636216 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=48
+2026-06-08 14:28:15.636537 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:28:16.376583 I SpaceAssistPopup: ○ overlay hide: strip_inactive
+2026-06-08 14:28:16.973408 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:28:16.973673 I VkPanels: ▶ open browser
+2026-06-08 14:28:16.998573 I VkBrowser: ▶ panel open incognito=false tabs=0 queryLen=0
+2026-06-08 14:28:17.015055 I VkBrowser: → load host=www.google.com
+2026-06-08 14:28:17.099179 I VkBrowser: → load host=www.google.com
+2026-06-08 14:28:17.099864 I VkBrowser: → load host=www.google.com
+2026-06-08 14:28:17.217407 I VkBrowser: → load host=www.google.com
+2026-06-08 14:28:17.474417 I VkBrowser: ✓ page host=www.google.com
+2026-06-08 14:28:17.538210 I VkBrowser: → load host=www.google.com
+2026-06-08 14:28:25.323716 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-08 14:28:25.404392 I VkVibeCards: ○ sticker skipped: no_active_cards
+2026-06-08 14:28:25.413862 I VkBrowser: → load host=cnn.com
+2026-06-08 14:28:27.806973 I VkBrowser: ✓ page host=www.cnn.com title=Breaking News, Latest News and Videos | …
+2026-06-08 14:28:31.650041 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-08 14:28:31.730988 I VkBrowser: → load host=foxnews.com
+2026-06-08 14:28:35.807681 I VkBrowser: ✓ page host=www.foxnews.com title=Fox News - Breaking News Updates | Lates…
+2026-06-08 14:28:39.635547 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-08 14:28:39.707226 I VkBrowser: → load host=eapn.com
+2026-06-08 14:28:41.351038 I VkBrowser: ✓ page host=eapn.com title=Latest News | EAPN - Executive Power New…
+2026-06-08 14:28:42.571599 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:28:42.571855 I VkPanels: ▶ open browser
+2026-06-08 14:28:42.580883 I VkBrowser: ▶ panel open incognito=false tabs=3 queryLen=0
+2026-06-08 14:28:52.755910 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-08 14:28:52.843348 I VkBrowser: → load host=espn.com
+2026-06-08 14:28:55.958253 I VkBrowser: ✓ page host=www.espn.com title=ESPN - Serving Sports Fans. Anytime. Any…
+2026-06-08 14:29:00.955885 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:00.956811 I VkPanels: ▶ open browser
+2026-06-08 14:29:00.967485 I VkBrowser: ▶ panel open incognito=false tabs=3 queryLen=0
+2026-06-08 14:29:19.292447 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-08 14:29:19.413684 I VkBrowser: → load host=rt.com
+2026-06-08 14:29:27.262215 I VkBrowser: ✓ page host=www.rt.com title=RT - Breaking News, Russia News, World N…
+2026-06-08 14:29:30.100299 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:30.100633 I VkPanels: ▶ open menu
+2026-06-08 14:29:32.293340 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 4,3ms
+2026-06-08 14:29:32.297482 I VkSuggestions: strip composing typedLen=7 candidates=12 autocorrect=false top=prontos locale=pt
+2026-06-08 14:29:32.304890 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:32.410826 I VkSuggestions: decode typedLen=8 candidates=18 locales=3 1,9ms
+2026-06-08 14:29:32.412611 I VkSuggestions: strip composing typedLen=8 candidates=13 autocorrect=false top=prontosj locale=pt
+2026-06-08 14:29:32.459235 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:32.563131 I VkSuggestions: decode typedLen=9 candidates=18 locales=3 2,6ms
+2026-06-08 14:29:32.564802 I VkSuggestions: strip composing typedLen=9 candidates=13 autocorrect=false top=prontosjj locale=pt
+2026-06-08 14:29:32.651242 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:32.752127 I VkSuggestions: decode typedLen=10 candidates=18 locales=3 1,2ms
+2026-06-08 14:29:32.753676 I VkSuggestions: strip composing typedLen=10 candidates=15 autocorrect=false top=prontosjjh locale=pt
+2026-06-08 14:29:32.801919 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:32.904973 I VkSuggestions: decode typedLen=11 candidates=3 locales=3 2,3ms
+2026-06-08 14:29:32.909378 I VkSuggestions: strip composing typedLen=11 candidates=4 autocorrect=false top=prontosjjhe locale=pt
+2026-06-08 14:29:33.210703 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:33.324187 I VkSuggestions: decode typedLen=10 candidates=18 locales=3 12,7ms
+2026-06-08 14:29:33.325537 I VkSuggestions: strip composing typedLen=10 candidates=14 autocorrect=false top=prontosjjh locale=pt
+2026-06-08 14:29:33.513755 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:33.641225 I VkSuggestions: decode typedLen=9 candidates=18 locales=3 11,7ms
+2026-06-08 14:29:33.642907 I VkSuggestions: strip composing typedLen=9 candidates=13 autocorrect=false top=prontosjj locale=pt
+2026-06-08 14:29:33.695106 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:33.806770 I VkSuggestions: decode typedLen=8 candidates=18 locales=3 11,7ms
+2026-06-08 14:29:33.808285 I VkSuggestions: strip composing typedLen=8 candidates=13 autocorrect=false top=prontosj locale=pt
+2026-06-08 14:29:33.846775 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:33.958690 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 11,6ms
+2026-06-08 14:29:33.960659 I VkSuggestions: strip composing typedLen=7 candidates=12 autocorrect=false top=prontos locale=pt
+2026-06-08 14:29:33.990964 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:34.105490 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 13,5ms
+2026-06-08 14:29:34.107411 I VkSuggestions: strip composing typedLen=6 candidates=13 autocorrect=false top=pronto locale=pt
+2026-06-08 14:29:34.547701 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=48
+2026-06-08 14:29:34.548261 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:29:35.072085 I SpaceAssistPopup: ○ overlay hide: strip_inactive
+2026-06-08 14:29:35.687679 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:35.687863 I VkPanels: ▶ open ai_theme
+2026-06-08 14:29:36.554716 I VkPanels: ▶ open favorites
+2026-06-08 14:29:36.918199 I VkEffects: reload anim=scale blur=562px glow=false stickers=true
+2026-06-08 14:29:45.134686 I VkFavorites: apply Twilight Texture Pill Keys
+2026-06-08 14:29:45.204499 I VkSwipe: ○ gesture canceled
+2026-06-08 14:29:45.206474 I VkSwipe: ○ gesture canceled
+2026-06-08 14:29:45.261980 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:47.724699 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:47.724919 I VkPanels: ▶ open menu
+2026-06-08 14:29:48.546047 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:29:48.546251 I VkPanels: ▶ open ai_theme
+2026-06-08 14:29:50.964710 I VkPanels: ▶ open favorites
+2026-06-08 14:29:53.464235 I VkVibeCards: ▶ activate Times Square NFT
+2026-06-08 14:29:53.472755 I VkVibeCards: loaded 1 cards (disk)
+2026-06-08 14:29:54.232581 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:29:54.885288 I VkTyping: ○ hidden
+2026-06-08 14:29:54.978468 I VkPanels: ▶ open favorites
+2026-06-08 14:29:56.490486 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:29:56.597977 I VkPanels: ▶ open favorites
+2026-06-08 14:29:57.446811 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=48 chars
+2026-06-08 14:29:58.188047 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:29:58.329556 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:29:58.392810 I VkTyping: ○ hidden
+2026-06-08 14:29:58.458650 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 1012ms: Assist prompt decode failed
+2026-06-08 14:29:58.896861 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=48
+2026-06-08 14:29:58.897279 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:29:59.659908 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:29:59.918630 W VkSuggestions: slow frame 32,4ms locales=3 typedLen=6 candidates=18 parallelWait=32,2ms
+2026-06-08 14:29:59.921123 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,6ms
+2026-06-08 14:30:01.849800 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:30:01.930713 I VkVibeCards: ○ sticker skipped: overlay_permission
+2026-06-08 14:30:02.028968 I SpaceAssistPopup: ○ overlay hide: typing
+2026-06-08 14:30:02.029420 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:02.094287 I VkTyping: ○ hidden
+2026-06-08 14:30:02.581362 I SpaceAssistPopup: ○ fetch skipped: field_too_short
+2026-06-08 14:30:16.320986 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:30:16.502103 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 3,9ms
+2026-06-08 14:30:16.504599 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,4ms
+2026-06-08 14:30:17.320048 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:30:17.401781 I VkVibeCards: press pool=1 shown=4
+2026-06-08 14:30:17.427214 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:17.475910 I VkTyping: ○ hidden
+2026-06-08 14:30:18.019195 I SpaceAssistPopup: ▶ generate prompt shown fieldChars=48
+2026-06-08 14:30:18.019675 I SpaceAssistPopup: ▶ overlay show: generate_prompt
+2026-06-08 14:30:19.079856 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:30:19.192103 I SpaceAssistPopup: ○ overlay hide: strip_inactive
+2026-06-08 14:30:20.602670 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:30:23.593968 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:30:23.594365 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:30:23.606899 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 11,6ms
+2026-06-08 14:30:23.742676 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 29,4ms
+2026-06-08 14:30:23.743029 W VkSuggestions: slow frame 29,4ms locales=3 typedLen=2 candidates=18 parallelWait=29,2ms
+2026-06-08 14:30:23.758759 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 15,3ms
+2026-06-08 14:30:23.828493 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 13,7ms
+2026-06-08 14:30:24.080398 I VkSuggestions: decode typedLen=3 candidates=17 locales=3 16,2ms
+2026-06-08 14:30:24.080707 W VkSuggestions: slow frame 16,2ms locales=3 typedLen=3 candidates=17 parallelWait=16,1ms
+2026-06-08 14:30:24.100765 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 19,8ms
+2026-06-08 14:30:24.101091 W VkSuggestions: slow frame 19,8ms locales=1 typedLen=0 candidates=16
+2026-06-08 14:30:24.198690 I VkSuggestions: decode typedLen=3 candidates=17 locales=3 17,2ms
+2026-06-08 14:30:24.199173 W VkSuggestions: slow frame 17,2ms locales=3 typedLen=3 candidates=17 parallelWait=17,1ms
+2026-06-08 14:30:24.207422 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 7,9ms
+2026-06-08 14:30:24.532063 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 14,5ms
+2026-06-08 14:30:24.540028 I VkSuggestions: decode typedLen=0 candidates=16 locales=1 7,4ms
+2026-06-08 14:30:24.558555 I VkSwipe: ✓ gesture points=59 decodedLen=4 candidates=14 top=jojo 964ms
+2026-06-08 14:30:24.729498 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:30:24.729760 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:30:24.742608 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 9,3ms
+2026-06-08 14:30:24.863939 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 14,9ms
+2026-06-08 14:30:24.876439 I VkSuggestions: decode typedLen=0 candidates=13 locales=1 12,1ms
+2026-06-08 14:30:25.297109 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 12,8ms
+2026-06-08 14:30:25.319540 I VkSwipe: ✓ gesture points=40 decodedLen=4 candidates=15 top=défi 590ms
+2026-06-08 14:30:26.664598 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:30:26.664809 I VkPanels: ▶ open ai_theme
+2026-06-08 14:30:34.573017 I VkThemes: ▶ tap generate ref=false descLen=12
+2026-06-08 14:30:34.715609 I VkTyping: ○ hidden
+2026-06-08 14:30:37.734269 I VkMultilingual: reset main=pt-BR locales=[pt,fr,es] count=3
+2026-06-08 14:30:38.454606 I VkSwipe: ○ gesture canceled
+2026-06-08 14:30:38.478416 I VkVibeCards: loaded 1 cards (disk)
+2026-06-08 14:30:38.562080 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:30:38.581893 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:30:38.769668 I VkTyping: ▶ open restart=true pkg=com.android.launcher inputType=589825
+2026-06-08 14:30:39.327891 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=fgv locale=pt
+2026-06-08 14:30:39.771129 I VkAutocorrect: picked: prontojjd
+2026-06-08 14:30:40.130940 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=prontojjd locale=pt
+2026-06-08 14:30:41.107334 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.131313 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.182771 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.238508 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.283777 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.333594 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.359420 I VkSuggestions: strip composing typedLen=8 candidates=2 autocorrect=false top=prontojj locale=pt
+2026-06-08 14:30:41.392080 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.443435 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.573264 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.591142 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.629208 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.674395 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=prontojjd locale=pt
+2026-06-08 14:30:41.684973 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.735721 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.786426 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:41.836246 I SpaceAssistPopup: ○ typing idle scheduled
+2026-06-08 14:30:42.887089 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:30:42.887313 I VkPanels: ▶ open ai_theme
+2026-06-08 14:30:54.627979 I VkThemes: ▶ tap generate ref=false descLen=12
+2026-06-08 14:30:54.763929 I VkTyping: ○ hidden
+2026-06-08 14:31:04.525315 I VkThemes: ▶ generate ref=false descLen=12
+2026-06-08 14:31:04.764340 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:31:06.498040 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:31:06.579779 I VkVibeCards: press pool=1 shown=4
+2026-06-08 14:31:07.343939 I VkThemes: ✓ generate 2818ms theme=Crypto Minimalist
+2026-06-08 14:31:07.504364 I VkThemes: apply theme=Crypto Minimalist (ai_generate)
+2026-06-08 14:31:07.506959 I VkSwipe: ○ gesture canceled
+2026-06-08 14:31:07.509 I VkSwipe: ○ gesture canceled
+2026-06-08 14:31:07.554031 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:31:07.731090 I VkFavorites: save theme Crypto Minimalist → SAVED
+2026-06-08 14:31:11.319738 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:31:12.513448 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:31:12.513734 I VkPanels: ▶ open ai_theme
+2026-06-08 14:31:28.265965 I VkVibeCards: ▶ tap generate promptLen=29 ref=false
+2026-06-08 14:31:28.420970 I VkTyping: ○ hidden
+2026-06-08 14:31:39.047076 I VkVibeCards: ▶ generate promptLen=29 ref=false
+2026-06-08 14:31:39.230965 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:31:41.050823 I VkVibeCards: loaded 2 cards (generate)
+2026-06-08 14:31:41.128943 I VkFavorites: save card Pepe Meme Frog In Miami activate=false
+2026-06-08 14:31:41.130978 I VkVibeCards: ✓ card ? 2084ms
+2026-06-08 14:31:42.167912 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:31:42.248480 I VkVibeCards: press pool=2 shown=4
+2026-06-08 14:31:43.846937 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:31:46.276670 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:31:46.276951 I VkPanels: ▶ open ai_theme
+2026-06-08 14:31:47.661527 I VkUpload: ▶ upload panel
+2026-06-08 14:31:47.661804 I VkPanels: ▶ open upload
+2026-06-08 14:31:48.527626 I VkUpload: ▶ upload tap mode=theme
+2026-06-08 14:31:48.577069 I VkUpload: ▶ picker mode=theme
+2026-06-08 14:31:49.078364 I VkTyping: ○ hidden
+2026-06-08 14:31:55.961562 I VkUpload: ✓ import mode=theme count=1
+2026-06-08 14:31:56.072117 I VkSwipe: ○ gesture canceled
+2026-06-08 14:31:56.168341 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:31:56.188778 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:31:57.932282 I VkVibeCards: enter effects=true overlay=true cards=true
+2026-06-08 14:31:58.015193 I VkVibeCards: press pool=2 shown=4
+2026-06-08 14:32:00.654370 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:32:00.654614 I VkPanels: ▶ open menu
+2026-06-08 14:32:01.615593 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:32:01.615850 I VkPanels: ▶ open ai_theme
+2026-06-08 14:32:03.350624 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:32:03.350888 I VkPanels: ▶ open menu
+2026-06-08 14:32:04.294309 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:32:04.294599 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-08 14:32:04.416232 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 35,0ms
+2026-06-08 14:32:04.416631 W VkSuggestions: slow frame 35,0ms locales=3 typedLen=2 candidates=18 parallelWait=34,8ms
+2026-06-08 14:32:04.433086 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 16,1ms
+2026-06-08 14:32:04.433382 W VkSuggestions: slow frame 16,1ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:32:04.746055 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 14,8ms
+2026-06-08 14:32:04.766706 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 20,2ms
+2026-06-08 14:32:04.766968 W VkSuggestions: slow frame 20,2ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:32:04.880031 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 14,5ms
+2026-06-08 14:32:04.889844 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 9,5ms
+2026-06-08 14:32:04.905876 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 14,2ms
+2026-06-08 14:32:04.933906 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 27,6ms
+2026-06-08 14:32:04.934145 W VkSuggestions: slow frame 27,6ms locales=1 typedLen=0 candidates=18
+2026-06-08 14:32:04.960063 I VkSwipe: ✓ gesture points=43 decodedLen=4 candidates=17 top=jiga 665ms
+2026-06-08 14:32:05.942164 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:32:05.942562 I VkPanels: ▶ open browser
+2026-06-08 14:32:05.950844 I VkBrowser: ▶ panel open incognito=false tabs=0 queryLen=0
+2026-06-08 14:32:05.993952 I VkBrowser: → load host=rt.com
+2026-06-08 14:32:05.994978 I VkBrowser: → load host=rt.com
+2026-06-08 14:32:06.163208 I VkBrowser: → load host=rt.com
+2026-06-08 14:32:06.308348 I VkBrowser: ✓ page host=rt.com
+2026-06-08 14:32:06.488587 I VkBrowser: → load host=rt.com
+2026-06-08 14:32:11.898847 I VkBrowser: ✓ page host=www.rt.com title=RT - Breaking News, Russia News, World N…
+2026-06-08 14:34:10.099164 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-08 14:34:10.311447 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 37,1ms
+2026-06-08 14:34:10.311763 W VkSuggestions: slow frame 37,1ms locales=3 typedLen=4 candidates=18 parallelWait=37,0ms
+2026-06-08 14:34:10.317449 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=jiga locale=pt
+2026-06-08 14:34:10.721319 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=4 chars
+2026-06-08 14:34:11.682968 I SpaceAssistPopup: ○ send ready=false outChars=0
+2026-06-08 14:34:11.683493 I VkPanels: ▶ open menu
+2026-06-08 14:34:12.685532 I VkTyping: ○ hidden
+2026-06-08 14:34:12.707613 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 1987ms: llama_decode failed
+... (9 VkEffects reload lines omitted)
+
+=== In-memory (current process) ===
+2026-06-08 14:30:37.401459 W g0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-08 14:30:37.465684 I startup: Starting com.vibekey.keyboard version 4.1.244 (4344) on Android 12 (SDK 31)
+2026-06-08 14:30:37.486476 I LatinIME: Hardware accelerated drawing: true
+2026-06-08 14:30:37.622148 I SymSpellProvider: Detected asset languages: [en]
+2026-06-08 14:30:37.627593 I NgramPredictor: Detected bigram asset languages: []
+2026-06-08 14:30:37.633006 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-08 14:30:37.635890 I NgramPredictor: Loaded 2 runtime bigram keys for pt
+2026-06-08 14:30:37.637808 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-08 14:30:37.638454 I NgramPredictor: Loaded 1 runtime trigram keys for pt
+2026-06-08 14:30:37.641140 I RecencyTracker: init loaded 2 language file(s)
+2026-06-08 14:30:37.643418 I AdaptiveTouchModel: Loaded touch model: 20 keys
+2026-06-08 14:30:37.645047 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-08 14:30:37.693017 W u: No editor info for this field. Bug?
+2026-06-08 14:30:37.693524 I c: loadSettings
+2026-06-08 14:30:37.725815 I p: resetDictionaries, force reloading main dictionary: false
+2026-06-08 14:30:37.822968 I NgramPredictor: Detected bigram asset languages: []
+2026-06-08 14:30:37.824236 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-08 14:30:37.824611 I NgramPredictor: Loaded 2 runtime bigram keys for pt
+2026-06-08 14:30:37.825018 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-08 14:30:37.825254 I NgramPredictor: Loaded 1 runtime trigram keys for pt
+2026-06-08 14:30:37.828333 I SymSpellProvider: Detected asset languages: [en]
+2026-06-08 14:30:37.830821 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-08 14:30:37.831857 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-08 14:30:38.036717 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-08 14:30:38.039711 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-08 14:30:38.447871 I c: loadSettings
+2026-06-08 14:30:38.478280 I StickerImageManager: Loaded 1 NFT sticker images from disk
+2026-06-08 14:30:38.581649 I LatinIME: Starting input. Cursor position = 9,9
+2026-06-08 14:30:38.582290 I c: loadSettings
+2026-06-08 14:30:38.598514 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-06-08 14:30:38.599251 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-06-08 14:30:38.599308 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+2026-06-08 14:30:38.769459 I LatinIME: Restarting input. Cursor position = 0,0
+2026-06-08 14:30:38.893601 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:38.893719 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:39.357570 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:39.357711 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:39.858959 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:39.859178 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:40.358740 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:40.358893 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:40.858808 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:40.859034 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:41.358744 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:41.358858 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:41.858681 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:41.858799 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:41.869872 I SymSpellProvider: Built runtime SymSpell for fr with 79961 words
+2026-06-08 14:30:41.869982 I p: Built runtime SymSpell for fr with 80000 words
+2026-06-08 14:30:42.359153 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:42.359271 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:42.909948 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:42.910071 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:42.917556 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:42.917659 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.400179 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.400404 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.414584 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.414794 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.900013 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.900168 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.914782 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:43.914934 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.155395 I c: loadSettings
+2026-06-08 14:30:44.399571 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.399697 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.415235 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.415331 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.899867 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.899992 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.914918 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:44.915024 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:45.400289 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:45.400437 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:45.901110 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:45.901231 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:46.400516 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:46.400658 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:46.901082 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:46.901177 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:47.006353 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-06-08 14:30:47.006443 I SymSpellProvider: SymSpell loaded for en with 82834 words
+2026-06-08 14:30:47.401261 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:47.401375 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:47.911758 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:47.912214 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-08 14:30:48.043884 I AdManager: MobileAds initialization complete
+2026-06-08 14:30:48.044087 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-08 14:30:48.044238 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-08 14:30:49.237247 I AdManager: Native ad loaded
+2026-06-08 14:30:49.270529 I AdManager: Interstitial ad loaded
+2026-06-08 14:30:49.416148 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-08 14:30:54.686076 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-08 14:30:54.762945 I LatinIME: hideWindow
+2026-06-08 14:30:54.763630 I LatinIME: onFinishInputView
+2026-06-08 14:30:54.763871 I LatinIME: onWindowHidden
+2026-06-08 14:30:54.797609 I LatinIME: onFinishInput
+2026-06-08 14:30:54.829214 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-08 14:30:55.150511 I LatinIME: onFinishInput
+2026-06-08 14:31:02.710949 I AdManager: User earned reward
+2026-06-08 14:31:02.711242 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-08 14:31:04.475421 I LatinIME: onFinishInput
+2026-06-08 14:31:04.507204 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-08 14:31:04.531071 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-08 14:31:04.699977 I LatinIME: onFinishInput
+2026-06-08 14:31:04.764060 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-08 14:31:04.764834 I c: loadSettings
+2026-06-08 14:31:05.557483 I AiApiHelper: Theme context cache created: cachedContents/ni76g6wcsjienznfz3ee3264jwsmlqt9p7dokj6p (expires 2026-06-09T18:31:06.508851072Z)
+2026-06-08 14:31:05.838210 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-08 14:31:07.501343 I KeyboardDesignEngine: Applied "Crypto Minimalist" [Crypto Minimalist] — full design theme
+2026-06-08 14:31:07.645030 I AdManager: Native ad view created
+2026-06-08 14:31:08.459488 I AdManager: Native ad loaded
+2026-06-08 14:31:28.324295 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-08 14:31:28.419985 I LatinIME: hideWindow
+2026-06-08 14:31:28.420607 I LatinIME: onFinishInputView
+2026-06-08 14:31:28.420870 I LatinIME: onWindowHidden
+2026-06-08 14:31:28.423156 I LatinIME: onFinishInput
+2026-06-08 14:31:28.506963 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-08 14:31:28.663551 I LatinIME: onFinishInput
+2026-06-08 14:31:36.225467 I AdManager: User earned reward
+2026-06-08 14:31:36.225768 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-08 14:31:39.012845 I LatinIME: onFinishInput
+2026-06-08 14:31:39.043116 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-08 14:31:39.048290 I StickerImageManager: Single Vibe Card NFT style=NEO_MANGA_COLLECTIBLE source=random
+2026-06-08 14:31:39.048526 I StickerImageManager: vibe_prompt kind=fresh style=NEO_MANGA_COLLECTIBLE userChars=29 totalLen=536 frameLen=132
+2026-06-08 14:31:39.048575 I StickerImageManager: Single Vibe Card: refHint=false, promptLen=536
+2026-06-08 14:31:39.048640 I StickerImageManager: Generating Vibe Card via Together model=black-forest-labs/FLUX.1-schnell (text prompt only)
+2026-06-08 14:31:39.048838 I AiApiHelper: generateFluxImage: model=black-forest-labs/FLUX.1-schnell, prompt length=536, refImages=0
+2026-06-08 14:31:39.053734 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-08 14:31:39.194507 I LatinIME: onFinishInput
+2026-06-08 14:31:39.230641 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-08 14:31:40.664286 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-08 14:31:40.945115 I AiApiHelper: generateFluxImage: decoded 60753 bytes from black-forest-labs/FLUX.1-schnell
+2026-06-08 14:31:41.050686 I StickerImageManager: Loaded 2 freshly generated stickers
+2026-06-08 14:31:49.011711 I LatinIME: hideWindow
+2026-06-08 14:31:49.077367 I LatinIME: onFinishInputView
+2026-06-08 14:31:49.078131 I LatinIME: onWindowHidden
+2026-06-08 14:31:49.122973 I LatinIME: onFinishInput
+2026-06-08 14:31:54.804680 I LatinIME: onFinishInput
+2026-06-08 14:31:55.166306 I LatinIME: onFinishInput
+2026-06-08 14:31:56.048688 I LatinIME: onFinishInput
+2026-06-08 14:31:56.188482 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-08 14:31:56.283793 I AdManager: Native ad view created
+2026-06-08 14:31:57.181428 I AdManager: Native ad loaded
+2026-06-08 14:32:23.634293 I LatinIME: onFinishInputView
+2026-06-08 14:32:23.634903 I LatinIME: onFinishInput
+2026-06-08 14:34:10.098804 I LatinIME: Starting input. Cursor position = 4,4
+2026-06-08 14:34:12.614501 I LatinIME: requestHideSelf: 0
+2026-06-08 14:34:12.680813 I LatinIME: hideWindow
+2026-06-08 14:34:12.685184 I LatinIME: onFinishInputView
+2026-06-08 14:34:12.685469 I LatinIME: onWindowHidden
+2026-06-08 14:34:12.715824 I u: InputType.TYPE_NULL is specified
+2026-06-08 14:34:13.241556 I LatinIME: requestHideSelf: 100
+2026-06-08 14:34:13.248507 I LatinIME: onFinishInput
+2026-06-08 14:34:17.598905 I LatinIME: onFinishInput
+2026-06-08 14:34:19.144833 I LatinIME: onFinishInput
+... (139 loadSettings lines omitted)
