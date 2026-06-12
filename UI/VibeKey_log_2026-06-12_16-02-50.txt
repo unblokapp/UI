@@ -1,0 +1,811 @@
+=== VibeKey 4.1.288 (4388) ===
+
+--------- beginning of system
+06-12 15:56:11.154 26799 26799 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of crash
+06-12 15:57:31.118 26799 26905 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6a00000057 in tid 26905 (ExecutorUtils), pid 26799 (AndroidUI)
+06-12 15:57:32.715 28761 28761 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-12 15:57:32.715 28761 28761 F DEBUG   : keyProcess: 0
+06-12 15:57:32.715 28761 28761 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-12 15:57:32.715 28761 28761 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-12 15:57:32.715 28761 28761 F DEBUG   : Revision: '0'
+06-12 15:57:32.715 28761 28761 F DEBUG   : ABI: 'arm64'
+06-12 15:57:32.715 28761 28761 F DEBUG   : Timestamp: 2026-06-12 15:57:31.349458845-0400
+06-12 15:57:32.715 28761 28761 F DEBUG   : Process uptime: 0s
+06-12 15:57:32.715 28761 28761 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-12 15:57:32.715 28761 28761 F DEBUG   : pid: 26799, tid: 26905, name: ExecutorUtils  >>> com.vibekey.keyboard <<<
+06-12 15:57:32.715 28761 28761 F DEBUG   : uid: 14060
+06-12 15:57:32.715 28761 28761 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6a00000057
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x0  0000000000000000  x1  0000000000006919  x2  000000000000000b  x3  000000768a6d1da0
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x4  0000007694d1c400  x5  0000007694d1c400  x6  0000007694d1c400  x7  0000000000000000
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000007696b4068c  x11 0000000000000000
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0000000000000000  x15 00000000ebad6a89
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000752b44a000  x19 000000000000000b
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x20 000000768a6d1da0  x21 00000000000068af  x22 000000768a6d1b90  x23 0000000000000001
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x24 00000075586cad5c  x25 000000755f2b3000  x26 0000007694d1d698  x27 0000007694d1c408
+06-12 15:57:32.715 28761 28761 F DEBUG   :     x28 0000000000000400  x29 000000768a6d1bb0
+06-12 15:57:32.715 28761 28761 F DEBUG   :     lr  0000007576cbabc8  sp  000000768a6d1b90  pc  00000076790b8f34  pst 0000000000000000
+06-12 15:57:32.715 28761 28761 F DEBUG   : backtrace:
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #05 pc 0000000000006f94  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1148) (BuildId: 1d71636c1517ecf3fa421563ba6710f3)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #07 pc 00000000000a3d58  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #08 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #09 pc 0000000000668b6c  /apex/com.android.art/lib64/libart.so (nterp_helper+1948) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #10 pc 0000000000228654  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/oat/arm64/base.vdex (com.android.inputmethod.latin.DicTraverseSession.a+16)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #11 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #12 pc 00000000002281ec  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.a+44)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #13 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #14 pc 0000000000228318  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.l+44)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #15 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #16 pc 0000000000adf6e2  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/oat/arm64/base.vdex (w7.g.run+242)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #17 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #18 pc 00000000009076ac  /data/app/~~_utEngSnZpKRi5hYpDKwXQ==/com.vibekey.keyboard-wTuVh2k5xSxJoPf3ADlUOg==/oat/arm64/base.vdex (b8.s0.run+276)
+06-12 15:57:32.715 28761 28761 F DEBUG   :       #19 pc 00000000022d2950  /memfd:jit-zygote-cache (deleted)
+06-12 15:57:35.564 28790 28790 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-12 15:57:49.954 28790 29084 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-12 15:57:49.954 28790 29084 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-12 15:58:33.609 28790 29084 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-12 15:58:33.609 28790 29084 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-12 15:59:09.091 28790 29084 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-12 15:59:09.092 28790 29084 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-12 15:59:45.839 28790 29084 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-12 15:59:45.839 28790 29084 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+06-12 16:01:07.111 28790 28790 W Choreographer: Frame time is 0.087448 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+06-12 16:01:07.221 28790 29451 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-12 16:01:07.223 28790 28935 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-12 16:01:07.223 28790 28935 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-12 16:01:07.223 28790 28935 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-12 16:01:07.228 28790 28790 E GeckoView: Failed to detach WindowInsetsListener: 
+06-12 16:01:07.228 28790 28790 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:1)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:25)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at helium314.keyboard.latin.panels.ImeGeckoView.onDetachedFromWindow(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:1)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at androidx.lifecycle.e0.run(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:1174)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.R(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:151)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at helium314.keyboard.latin.panels.BrowserPanelView.I0(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:73)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at i7.b0.r(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:149)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at i7.b0.S(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:17)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at helium314.keyboard.latin.LatinIME.onStartInputView(r8-map-id-30088c9936fb9cf89d3e765685af4327d9db3fad0c3d012b1ecf881772ac6088:427)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:2556)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:713)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInputWithToken(InputMethodService.java:743)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:199)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-12 16:01:07.228 28790 28790 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-12 16:01:07.255 28790 28790 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-12 16:01:07.481 28790 28824 W VkSuggestions: slow frame 30,6ms locales=3 typedLen=5 candidates=18 parallelWait=30,4ms
+06-12 16:01:07.484 28790 28824 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false top=sjhdj locale=pt
+06-12 16:01:08.405 26874 26902 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=47 chars 506ms
+06-12 16:01:09.146 28790 28816 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=14 chars
+06-12 16:01:09.155 26874 27883 I OnDeviceAssist: dispatch task=tone_pro in=14 chars engine=Ready
+06-12 16:01:09.155 26874 27883 I OnDeviceAssist: ▶ runSync task=tone_pro in=14 chars locale=pt
+06-12 16:01:09.156 26874 27883 I OnDeviceAssist: → llm task=tone_pro model=qwen2.5-0.5b-instruct-q4_0.gguf temp=0.45 maxTok=64
+06-12 16:01:10.539 26874 26901 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=47 chars 768ms
+06-12 16:01:10.539 26874 27883 I OnDeviceAssist: ✓ llm task=tone_pro 1383ms out=57 chars
+06-12 16:01:10.539 26874 27883 I OnDeviceAssist: done task=tone_pro 1385ms out=57 chars
+06-12 16:01:10.539 28790 29451 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 1393ms in=14 out=57
+06-12 16:01:28.086  1052  1052 E .keyboard:tab1: Unknown bits set in runtime_flags: 0x40000000
+06-12 16:01:28.279  1052  1070 E GeckoLibLoad: Load sqlite start
+06-12 16:01:28.282  1052  1070 E GeckoLibLoad: Load sqlite done
+06-12 16:01:28.283  1052  1070 E GeckoLibLoad: Load nss start
+06-12 16:01:28.283  1052  1070 E GeckoLibLoad: Load nss done
+06-12 16:01:28.311  1052  1070 E GeckoLibLoad: Loaded libs in 27.972917ms total, 19ms(24ms) user, 0ms(0ms) system, 2(2) faults
+06-12 16:01:28.312  1052  1070 W GeckoThread: zerdatime 971329177 - runGecko
+06-12 16:01:29.181 28790 28790 E Ads     : JS: Uncaught TypeError: Cannot read properties of null (reading 's') (https://pagead2.googlesyndication.com/omsdk/releases/live/omsdk-v1.js:27)
+06-12 16:01:29.182 28790 28790 E Ads     : JS: Uncaught TypeError: Cannot read properties of null (reading 's') (https://pagead2.googlesyndication.com/omsdk/releases/live/omsdk-v1.js:27)
+06-12 16:01:29.311 31023 31040 E Isolated Web Content: [JavaScript Error: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://zagent22.h-cdn.com/cmd/get_links_info?customer=foxnews&zone=gen&ver=1.165.211&url=https%3A%2F%2Fwww.foxnews.com%2F. (Reason: CORS request did not succeed). Status code: (null)."]
+06-12 16:01:30.326 31023 31040 E Isolated Web Content: [JavaScript Error: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://zagent878.h-cdn.com/cmd/get_links_info?customer=foxnews&zone=gen&ver=1.165.211&url=https%3A%2F%2Fwww.foxnews.com%2F. (Reason: CORS request did not succeed). Status code: (null)."]
+06-12 16:01:30.329 31023 31040 E Isolated Web Content: [JavaScript Error: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://zagent22.h-cdn.com/cmd/get_links_info?customer=foxnews&zone=gen&ver=1.165.211&url=https%3A%2F%2Fwww.foxnews.com%2F. (Reason: CORS request did not succeed). Status code: (null)."]
+06-12 16:02:24.504 28790 28790 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-12 16:02:25.100 28790 28816 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=14 chars
+06-12 16:02:25.116 26874 27883 I OnDeviceAssist: dispatch task=topic_tags in=14 chars engine=Ready
+06-12 16:02:25.116 26874 27883 I OnDeviceAssist: ▶ runSync task=topic_tags in=14 chars locale=pt
+06-12 16:02:25.117 26874 27883 I OnDeviceAssist: → llm task=topic_tags model=qwen2.5-0.5b-instruct-q4_0.gguf temp=0.22 maxTok=38
+06-12 16:02:26.726 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=8.37ms | Init=0.02ms | TrieExpand(x13)=8.29ms | Scoring=0.05ms | inputSize=4
+06-12 16:02:26.729 28790 28824 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 18,2ms
+06-12 16:02:26.729 28790 28824 W VkSuggestions: slow frame 18,2ms locales=3 typedLen=4 candidates=18 parallelWait=17,8ms
+06-12 16:02:26.734 28790 28824 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=sjhd locale=pt
+06-12 16:02:26.885 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=10.89ms | Init=0.15ms | TrieExpand(x13)=10.69ms | Scoring=0.05ms | inputSize=3
+06-12 16:02:26.886 28790 28824 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 34,8ms
+06-12 16:02:26.887 28790 28824 W VkSuggestions: slow frame 34,8ms locales=3 typedLen=3 candidates=18 parallelWait=34,5ms
+06-12 16:02:26.892 28790 28824 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=sjh locale=pt
+06-12 16:02:27.016 28790 28824 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,2ms
+06-12 16:02:27.017 28790 28824 I VkSuggestions: strip composing typedLen=2 candidates=10 autocorrect=false top=sj locale=pt
+06-12 16:02:27.259 28790 28824 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+06-12 16:02:27.615 26874 26902 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=47 chars 2206ms
+06-12 16:02:27.616 26874 27883 I OnDeviceAssist: ✓ llm task=topic_tags 2499ms out=99 chars
+06-12 16:02:27.616 26874 27883 I OnDeviceAssist: done task=topic_tags 2500ms out=99 chars
+06-12 16:02:27.617 28790 29451 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 2517ms in=14 out=99
+06-12 16:02:29.731 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=12.18ms | Init=0.20ms | TrieExpand(x18)=11.95ms | Scoring=0.03ms | inputSize=1
+06-12 16:02:29.740 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=8.52ms | Init=0.29ms | TrieExpand(x25)=8.20ms | Scoring=0.02ms | inputSize=1
+06-12 16:02:29.753 28790 28824 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 39,3ms
+06-12 16:02:29.754 28790 28824 W VkSuggestions: slow frame 39,3ms locales=3 typedLen=1 candidates=18 parallelWait=39,1ms
+06-12 16:02:29.755 28790 28824 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+06-12 16:02:29.959 28790 28824 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,2ms
+06-12 16:02:29.961 28790 28824 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=ho locale=pt
+06-12 16:02:30.136 28790 28824 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 11,4ms
+06-12 16:02:30.139 28790 28824 I VkSuggestions: strip composing typedLen=3 candidates=13 autocorrect=false top=hop locale=pt
+06-12 16:02:30.264 28790 28824 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 12,7ms
+06-12 16:02:30.267 28790 28824 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false top=hope locale=pt
+06-12 16:02:30.356 28790 28790 I VkAutocorrect: kept (typing): hope
+06-12 16:02:30.462 28790 28824 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hope locale=pt
+06-12 16:02:31.004 28790 28824 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 19,2ms
+06-12 16:02:31.004 28790 28824 W VkSuggestions: slow frame 19,2ms locales=3 typedLen=1 candidates=18 parallelWait=19,2ms
+06-12 16:02:31.005 28790 28824 I VkSuggestions: strip composing typedLen=1 candidates=15 autocorrect=false top=a locale=pt
+06-12 16:02:31.127 28790 28824 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 12,2ms
+06-12 16:02:31.128 28790 28824 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=al locale=pt
+06-12 16:02:31.287 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=8.43ms | Init=0.06ms | TrieExpand(x16)=8.33ms | Scoring=0.04ms | inputSize=3
+06-12 16:02:31.306 28790 28824 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 28,0ms
+06-12 16:02:31.306 28790 28824 W VkSuggestions: slow frame 28,0ms locales=3 typedLen=3 candidates=18 parallelWait=27,9ms
+06-12 16:02:31.308 28790 28824 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=all locale=pt
+06-12 16:02:31.426 28790 28790 I VkAutocorrect: kept (typing): all
+06-12 16:02:31.530 28790 28824 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hope locale=pt
+06-12 16:02:32.248 28790 28824 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 18,8ms
+06-12 16:02:32.248 28790 28824 W VkSuggestions: slow frame 18,8ms locales=3 typedLen=1 candidates=18 parallelWait=18,6ms
+06-12 16:02:32.249 28790 28824 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false top=i locale=pt
+06-12 16:02:32.372 28790 28824 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,1ms
+06-12 16:02:32.374 28790 28824 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=is locale=pt
+06-12 16:02:32.395 28790 28790 I VkAutocorrect: kept (typing): is
+06-12 16:02:32.618 28790 28824 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 16,9ms
+06-12 16:02:32.618 28790 28824 W VkSuggestions: slow frame 16,9ms locales=3 typedLen=1 candidates=18 parallelWait=16,8ms
+06-12 16:02:32.619 28790 28824 I VkSuggestions: strip composing typedLen=1 candidates=13 autocorrect=false top=w locale=pt
+06-12 16:02:32.775 28790 28824 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,7ms
+06-12 16:02:32.777 28790 28824 I VkSuggestions: strip composing typedLen=2 candidates=10 autocorrect=false top=we locale=pt
+06-12 16:02:32.900 28790 28824 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 10,7ms
+06-12 16:02:32.902 28790 28824 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=wel locale=pt
+06-12 16:02:33.059 28790 28824 W VibeKeyProfiler: Slow Native Suggest: Total=10.01ms | Init=0.14ms | TrieExpand(x11)=9.82ms | Scoring=0.05ms | inputSize=4
+06-12 16:02:33.083 28790 28824 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 34,1ms
+06-12 16:02:33.084 28790 28824 W VkSuggestions: slow frame 34,1ms locales=3 typedLen=4 candidates=18 parallelWait=34,0ms
+06-12 16:02:33.088 28790 28824 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false top=well locale=pt
+06-12 16:02:33.679 28790 28987 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=16 chars
+06-12 16:02:33.690 26874 27754 I OnDeviceAssist: dispatch task=tone_pro in=16 chars engine=Ready
+06-12 16:02:33.690 26874 27754 I OnDeviceAssist: ▶ runSync task=tone_pro in=16 chars locale=pt
+06-12 16:02:33.690 26874 27754 I OnDeviceAssist: → llm task=tone_pro model=qwen2.5-0.5b-instruct-q4_0.gguf temp=0.45 maxTok=64
+06-12 16:02:34.265 26874 27754 I OnDeviceAssist: ✓ llm task=tone_pro 574ms out=17 chars
+06-12 16:02:34.265 26874 27754 I OnDeviceAssist: done task=tone_pro 575ms out=17 chars
+06-12 16:02:34.265 28790 30167 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 585ms in=16 out=17
+06-12 16:02:34.312 26874 27754 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=47 chars 0ms
+06-12 16:02:38.797 28790 28824 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+06-12 16:02:41.225 28790 28790 I VkPanels: ▶ open menu
+06-12 16:02:42.058 28790 28790 I VkPanels: ▶ open menu
+06-12 16:02:42.560 28790 28790 I VkMultilingual: menu languages total=3
+06-12 16:02:44.153 28790 28790 I VkPanels: ▶ open menu
+06-12 16:02:47.877 28790 28790 I VkTyping: ○ hidden
+06-12 16:02:47.971 28790 28790 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-12 16:02:51.379 28790 28860 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+... (1 Gecko cookie/JS warnings omitted)
+... (747 GeckoConsole SessionStore lines omitted)
+
+=== Feature activity (persisted across restarts) ===
+2026-06-12 15:56:08.734833 I VkFavorites: save card Bitcoin Vibe activate=false
+2026-06-12 15:56:08.813100 I VkFavorites: save card Doge Meme activate=false
+2026-06-12 15:56:08.883368 I VkFavorites: save card Ethereum Vibes activate=false
+2026-06-12 15:56:08.934927 I VkFavorites: save card India Popular City activate=false
+2026-06-12 15:56:09.014356 I VkFavorites: save card Miami Beach Crypto activate=false
+2026-06-12 15:56:09.084197 I VkFavorites: save card Nike Sneakers Crypto activate=false
+2026-06-12 15:56:09.133267 I VkFavorites: save card Pepe Meme Frog activate=false
+2026-06-12 15:56:09.187678 I VkFavorites: save card Times Square NFT activate=false
+2026-06-12 15:56:09.253149 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-06-12 15:56:14.671017 I VkSwipe: ○ gesture canceled
+2026-06-12 15:56:14.695366 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-12 15:56:14.789031 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:56:16.144847 I VkPanels: ▶ open menu
+2026-06-12 15:56:16.861644 I VkMultilingual: menu languages total=1
+2026-06-12 15:56:25.155150 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-12 15:56:26.163069 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 26,8ms
+2026-06-12 15:56:26.163414 W VkSuggestions: slow frame 26,8ms locales=2 typedLen=1 candidates=18 parallelWait=26,6ms
+2026-06-12 15:56:26.165907 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-12 15:56:26.347229 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 13,2ms
+2026-06-12 15:56:26.348830 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=ho locale=pt
+2026-06-12 15:56:26.525836 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 12,3ms
+2026-06-12 15:56:26.530238 I VkAutocorrect: offered: hol → hol
+2026-06-12 15:56:26.530793 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=true top=hol locale=pt
+2026-06-12 15:56:26.702581 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 38,0ms
+2026-06-12 15:56:26.703212 W VkSuggestions: slow frame 38,0ms locales=2 typedLen=4 candidates=18 parallelWait=37,4ms
+2026-06-12 15:56:26.706395 I VkSuggestions: strip composing typedLen=4 candidates=12 autocorrect=false top=hola locale=pt
+2026-06-12 15:56:27.558728 I VkAutocorrect: kept (typing): hola
+2026-06-12 15:56:27.665998 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=hola locale=pt
+2026-06-12 15:56:28.233918 I VkSuggestions: decode typedLen=2 candidates=17 locales=2 11,1ms
+2026-06-12 15:56:28.235657 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=ma locale=pt
+2026-06-12 15:56:28.472794 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 15,8ms
+2026-06-12 15:56:28.477182 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=mar locale=pt
+2026-06-12 15:56:28.747357 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 26,5ms
+2026-06-12 15:56:28.747709 W VkSuggestions: slow frame 26,5ms locales=2 typedLen=5 candidates=18 parallelWait=26,2ms
+2026-06-12 15:56:28.749371 I VkAutocorrect: offered: maria → maria
+2026-06-12 15:56:28.749729 I VkSuggestions: strip composing typedLen=5 candidates=16 autocorrect=true top=maria locale=pt
+2026-06-12 15:56:28.789172 I VkAutocorrect: committed (typing): maria → María
+2026-06-12 15:56:28.895113 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=hola locale=pt
+2026-06-12 15:56:29.799503 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 16,6ms
+2026-06-12 15:56:29.799838 W VkSuggestions: slow frame 16,6ms locales=2 typedLen=2 candidates=18 parallelWait=16,4ms
+2026-06-12 15:56:29.803437 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=co locale=pt
+2026-06-12 15:56:29.994780 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 17,2ms
+2026-06-12 15:56:29.995146 W VkSuggestions: slow frame 17,2ms locales=2 typedLen=3 candidates=18 parallelWait=16,9ms
+2026-06-12 15:56:29.997095 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=com locale=pt
+2026-06-12 15:56:30.210221 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 17,2ms
+2026-06-12 15:56:30.210688 W VkSuggestions: slow frame 17,2ms locales=2 typedLen=4 candidates=18 parallelWait=16,9ms
+2026-06-12 15:56:30.213416 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false top=como locale=pt
+2026-06-12 15:56:30.341119 I VkAutocorrect: kept (typing): como
+2026-06-12 15:56:30.446951 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=pt
+2026-06-12 15:56:30.706784 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 15,4ms
+2026-06-12 15:56:30.708022 I VkAutocorrect: offered: e → e
+2026-06-12 15:56:30.708234 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=true top=e locale=pt
+2026-06-12 15:56:30.867039 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 8,5ms
+2026-06-12 15:56:30.868710 I VkAutocorrect: offered: es → es
+2026-06-12 15:56:30.868938 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=true top=es locale=pt
+2026-06-12 15:56:31.046309 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 13,6ms
+2026-06-12 15:56:31.047885 I VkSuggestions: strip composing typedLen=3 candidates=14 autocorrect=false top=est locale=pt
+2026-06-12 15:56:31.246573 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 9,8ms
+2026-06-12 15:56:31.248732 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false top=esta locale=pt
+2026-06-12 15:56:31.285594 I VkAutocorrect: kept (typing): esta
+2026-06-12 15:56:31.388960 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=pt
+2026-06-12 15:56:31.753269 I VkSuggestions: decode typedLen=1 candidates=17 locales=2 18,4ms
+2026-06-12 15:56:31.753632 W VkSuggestions: slow frame 18,4ms locales=2 typedLen=1 candidates=17 parallelWait=18,1ms
+2026-06-12 15:56:31.754883 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false top=t locale=pt
+2026-06-12 15:56:31.951004 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 12,9ms
+2026-06-12 15:56:31.952726 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=tu locale=pt
+2026-06-12 15:56:32.165910 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 16,0ms
+2026-06-12 15:56:32.168807 I VkAutocorrect: offered: tui → tui
+2026-06-12 15:56:32.169303 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=true top=tui locale=pt
+2026-06-12 15:56:33.609665 I VkAutocorrect: committed (typing): tui → Tuí
+2026-06-12 15:56:33.714289 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=pt
+2026-06-12 15:56:34.213228 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=tui locale=es
+2026-06-12 15:56:34.439282 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 11,1ms
+2026-06-12 15:56:34.440944 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=tu locale=es
+2026-06-12 15:56:35.298053 I VkAutocorrect: kept (typing): tu
+2026-06-12 15:56:35.401585 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=es
+2026-06-12 15:56:35.730346 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 20,3ms
+2026-06-12 15:56:35.730861 W VkSuggestions: slow frame 20,3ms locales=2 typedLen=1 candidates=18 parallelWait=20,2ms
+2026-06-12 15:56:35.732137 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=es
+2026-06-12 15:56:35.910470 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 16,1ms
+2026-06-12 15:56:35.910762 W VkSuggestions: slow frame 16,1ms locales=2 typedLen=2 candidates=18 parallelWait=15,9ms
+2026-06-12 15:56:35.911957 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=ho locale=es
+2026-06-12 15:56:36.141310 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 25,9ms
+2026-06-12 15:56:36.142071 W VkSuggestions: slow frame 25,9ms locales=2 typedLen=3 candidates=18 parallelWait=25,6ms
+2026-06-12 15:56:36.143963 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=hoy locale=es
+2026-06-12 15:56:36.878909 I VkAutocorrect: picked: hoy
+2026-06-12 15:56:36.989080 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=es
+2026-06-12 15:56:37.425797 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:56:37.444527 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 16,8ms
+2026-06-12 15:56:37.444757 W VkSuggestions: slow frame 16,8ms locales=2 typedLen=0 candidates=18 parallelWait=16,7ms
+2026-06-12 15:56:37.563762 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 17,8ms
+2026-06-12 15:56:37.564376 W VkSuggestions: slow frame 17,8ms locales=2 typedLen=2 candidates=18 parallelWait=17,7ms
+2026-06-12 15:56:37.576304 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 11,5ms
+2026-06-12 15:56:37.672244 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 8,9ms
+2026-06-12 15:56:37.673763 I VkSuggestions: decode typedLen=0 candidates=8 locales=2 1,1ms
+2026-06-12 15:56:37.923840 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 8,8ms
+2026-06-12 15:56:37.935412 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 11,2ms
+2026-06-12 15:56:38.036212 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 13,7ms
+2026-06-12 15:56:38.047868 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 11,2ms
+2026-06-12 15:56:38.231166 I VkSuggestions: decode typedLen=5 candidates=18 locales=2 14,2ms
+2026-06-12 15:56:38.243309 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 11,6ms
+2026-06-12 15:56:38.491615 I VkSuggestions: decode typedLen=6 candidates=18 locales=2 12,8ms
+2026-06-12 15:56:38.503662 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 11,4ms
+2026-06-12 15:56:38.534325 I VkSwipe: ✓ gesture points=66 decodedLen=3 candidates=17 top=hCG 1108ms
+2026-06-12 15:56:39.047263 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:56:39.185965 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 17,5ms
+2026-06-12 15:56:39.186551 W VkSuggestions: slow frame 17,5ms locales=2 typedLen=2 candidates=18 parallelWait=17,3ms
+2026-06-12 15:56:39.199301 I VkSuggestions: decode typedLen=0 candidates=17 locales=2 12,3ms
+2026-06-12 15:56:39.429698 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 11,8ms
+2026-06-12 15:56:39.441693 I VkSuggestions: decode typedLen=0 candidates=17 locales=2 11,5ms
+2026-06-12 15:56:39.611738 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 14,8ms
+2026-06-12 15:56:39.623468 I VkSuggestions: decode typedLen=0 candidates=17 locales=2 11,1ms
+2026-06-12 15:56:39.650580 I VkSwipe: ✓ gesture points=41 decodedLen=3 candidates=16 top=gtk 603ms
+2026-06-12 15:56:40.338046 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:56:40.865922 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 8,2ms
+2026-06-12 15:56:40.866995 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false top=hC locale=pt
+2026-06-12 15:56:41.052851 I VkSuggestions: decode typedLen=1 candidates=18 locales=2 27,4ms
+2026-06-12 15:56:41.053311 W VkSuggestions: slow frame 27,4ms locales=2 typedLen=1 candidates=18 parallelWait=27,2ms
+2026-06-12 15:56:41.054395 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-12 15:56:41.444223 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=hcg locale=pt
+2026-06-12 15:56:42.973728 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:56:42.996239 W OnDeviceAssist: ✗ assist (ime) task=grammar 23ms: Engine stopped
+2026-06-12 15:56:44.694880 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:56:47.497835 I OnDeviceAssist: ✓ assist (ime) task=grammar 2803ms in=27 out=112
+2026-06-12 15:56:52.149773 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:56:56.506531 I OnDeviceAssist: ✓ assist (ime) task=grammar 4356ms in=27 out=31
+2026-06-12 15:57:01.527798 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:57:02.902200 I OnDeviceAssist: ✓ assist (ime) task=grammar 1374ms in=27 out=31
+2026-06-12 15:57:08.909935 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:57:09.989736 I OnDeviceAssist: ✓ assist (ime) task=grammar 1080ms in=27 out=28
+2026-06-12 15:57:12.479242 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-12 15:57:13.720295 I OnDeviceAssist: ✓ assist (ime) task=grammar 1241ms in=27 out=28
+2026-06-12 15:57:17.148243 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:57:17.162776 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 13,0ms
+2026-06-12 15:57:17.293978 I VkSuggestions: decode typedLen=2 candidates=18 locales=2 25,2ms
+2026-06-12 15:57:17.294432 W VkSuggestions: slow frame 25,2ms locales=2 typedLen=2 candidates=18 parallelWait=25,0ms
+2026-06-12 15:57:17.308848 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 14,0ms
+2026-06-12 15:57:17.434624 I VkSuggestions: decode typedLen=3 candidates=18 locales=2 14,8ms
+2026-06-12 15:57:17.445564 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 10,5ms
+2026-06-12 15:57:17.564309 I VkSuggestions: decode typedLen=4 candidates=18 locales=2 18,1ms
+2026-06-12 15:57:17.564679 W VkSuggestions: slow frame 18,1ms locales=2 typedLen=4 candidates=18 parallelWait=17,9ms
+2026-06-12 15:57:17.575895 I VkSuggestions: decode typedLen=0 candidates=18 locales=2 10,9ms
+2026-06-12 15:57:17.596089 I VkSwipe: ✓ gesture points=28 decodedLen=3 candidates=18 top=chi 448ms
+2026-06-12 15:57:20.380099 I VkPanels: ▶ open menu
+2026-06-12 15:57:21.198764 I VkPanels: ▶ open ai_theme
+2026-06-12 15:57:29.910378 I VkThemes: ▶ tap generate ref=false descLen=5
+2026-06-12 15:57:30.392425 I VkTyping: ○ hidden
+2026-06-12 15:57:34.892790 I VkMultilingual: reset main=pt-BR locales=[pt,fr,es] count=3
+2026-06-12 15:57:35.561716 I VkSwipe: ○ gesture canceled
+2026-06-12 15:57:35.584010 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-12 15:57:35.686225 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:57:36.508437 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=27 chars
+2026-06-12 15:57:37.207132 I VkPanels: ▶ open ai_theme
+2026-06-12 15:57:39.743631 I VkThemes: ▶ tap generate ref=false descLen=5
+2026-06-12 15:57:39.940089 I VkTyping: ○ hidden
+2026-06-12 15:57:42.739246 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 6231ms in=27 out=136
+2026-06-12 15:57:57.811059 I VkThemes: ▶ generate ref=false descLen=5
+2026-06-12 15:57:58.022353 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:58:00.900528 I VkThemes: ✓ generate 3089ms theme=Arctic Frost
+2026-06-12 15:58:01.085637 I VkEffects: reload anim=scale blur=0px glow=false stickers=true
+2026-06-12 15:58:01.088342 I VkThemes: apply theme=Arctic Frost (ai_generate)
+2026-06-12 15:58:01.101966 I VkSwipe: ○ gesture canceled
+2026-06-12 15:58:01.106016 I VkSwipe: ○ gesture canceled
+2026-06-12 15:58:01.277702 I VkFavorites: save theme Arctic Frost → SAVED
+2026-06-12 15:58:03.616316 I VkPanels: ▶ open menu
+2026-06-12 15:58:07.208776 I VkMultilingual: menu languages total=3
+2026-06-12 15:58:08.969517 I VkPanels: ▶ open menu
+2026-06-12 15:58:11.065130 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:58:11.597500 I VkPanels: ▶ open assist
+2026-06-12 15:58:11.621226 I OnDeviceAssist: ▶ panel open
+2026-06-12 15:58:12.535798 I OnDeviceAssist: ▶ tap task=tone_casual in=27 chars
+2026-06-12 15:58:12.538047 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=30 chars
+2026-06-12 15:58:13.620627 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 1082ms in=30 out=37
+2026-06-12 15:58:16.637376 I OnDeviceAssist: ▶ tap task=tone_pro in=27 chars
+2026-06-12 15:58:16.639039 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=30 chars
+2026-06-12 15:58:17.481925 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 843ms in=30 out=27
+2026-06-12 15:58:19.654909 I OnDeviceAssist: ▶ tap task=tone_casual in=27 chars
+2026-06-12 15:58:19.657092 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=30 chars
+2026-06-12 15:58:20.434901 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 778ms in=30 out=28
+2026-06-12 15:58:22.426046 I OnDeviceAssist: ○ blocked task=tone_casual: quota_gate
+2026-06-12 15:58:23.608081 I VkTyping: ○ hidden
+2026-06-12 15:58:33.355383 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:58:34.576916 I VkPanels: ▶ open ai_theme
+2026-06-12 15:58:35.293015 I VkPanels: ▶ open effects
+2026-06-12 15:58:35.356365 I VkEffects: ▶ panel tab=tint
+2026-06-12 15:58:36.846970 I VkEffects: → tab sound
+2026-06-12 15:58:37.532870 I VkEffects: set Som=typewriter
+2026-06-12 15:58:37.612977 I VkEffects: apply (panel)
+2026-06-12 15:58:37.838432 I VkEffects: set Tátil=medium
+2026-06-12 15:58:37.931018 I VkEffects: apply (panel)
+2026-06-12 15:58:40.625905 I VkSuggestions: decode typedLen=2 candidates=17 locales=3 11,3ms
+2026-06-12 15:58:40.628710 I VkSuggestions: strip composing typedLen=2 candidates=13 autocorrect=false top=sj locale=pt
+2026-06-12 15:58:40.770835 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 12,9ms
+2026-06-12 15:58:40.773009 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=sjj locale=pt
+2026-06-12 15:58:41.030721 I VkSuggestions: decode typedLen=5 candidates=18 locales=3 17,5ms
+2026-06-12 15:58:41.031500 W VkSuggestions: slow frame 17,5ms locales=3 typedLen=5 candidates=18 parallelWait=17,2ms
+2026-06-12 15:58:41.035405 I VkSuggestions: strip composing typedLen=5 candidates=16 autocorrect=false top=sjjdh locale=pt
+2026-06-12 15:58:41.556991 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:58:41.587679 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 19,4ms
+2026-06-12 15:58:41.587977 W VkSuggestions: slow frame 19,4ms locales=3 typedLen=2 candidates=18 parallelWait=19,2ms
+2026-06-12 15:58:41.602083 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,8ms
+2026-06-12 15:58:41.706627 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 13,6ms
+2026-06-12 15:58:41.719419 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 12,3ms
+2026-06-12 15:58:41.835261 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 9,0ms
+2026-06-12 15:58:41.847492 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 11,8ms
+2026-06-12 15:58:41.992361 I VkSuggestions: decode typedLen=5 candidates=18 locales=3 13,5ms
+2026-06-12 15:58:42.004831 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 12,0ms
+2026-06-12 15:58:42.026893 I VkSwipe: ✓ gesture points=53 decodedLen=2 candidates=12 top=Hg 470ms
+2026-06-12 15:58:43.310659 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:58:43.864990 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 27,7ms
+2026-06-12 15:58:43.865356 W VkSuggestions: slow frame 27,7ms locales=3 typedLen=4 candidates=18 parallelWait=27,5ms
+2026-06-12 15:58:43.866979 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=sjjd locale=pt
+2026-06-12 15:58:44.046536 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 11,4ms
+2026-06-12 15:58:44.048189 I VkSuggestions: strip composing typedLen=3 candidates=14 autocorrect=false top=sjj locale=pt
+2026-06-12 15:58:44.203633 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,1ms
+2026-06-12 15:58:44.205160 I VkSuggestions: strip composing typedLen=2 candidates=11 autocorrect=false top=sj locale=pt
+2026-06-12 15:58:44.357953 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 24,5ms
+2026-06-12 15:58:44.358346 W VkSuggestions: slow frame 24,5ms locales=3 typedLen=1 candidates=18 parallelWait=24,3ms
+2026-06-12 15:58:44.360009 I VkSuggestions: strip composing typedLen=1 candidates=14 autocorrect=false top=s locale=pt
+2026-06-12 15:58:44.507900 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=sjjdh locale=pt
+2026-06-12 15:58:48.444991 W VkSuggestions: slow frame 58,1ms locales=3 typedLen=1 candidates=18 parallelWait=57,6ms
+2026-06-12 15:58:48.448221 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=s locale=pt
+2026-06-12 15:58:48.988966 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=sjjdh locale=pt
+2026-06-12 15:58:51.208311 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 25,9ms
+2026-06-12 15:58:51.208741 W VkSuggestions: slow frame 25,9ms locales=3 typedLen=4 candidates=18 parallelWait=25,7ms
+2026-06-12 15:58:51.210832 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hoyj locale=pt
+2026-06-12 15:58:51.410279 I VkSuggestions: decode typedLen=5 candidates=18 locales=3 14,0ms
+2026-06-12 15:58:51.414810 I VkSuggestions: strip composing typedLen=5 candidates=16 autocorrect=false top=hoyjj locale=pt
+2026-06-12 15:58:51.703004 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 6,7ms
+2026-06-12 15:58:51.706403 I VkSuggestions: strip composing typedLen=6 candidates=16 autocorrect=false top=hoyjjj locale=pt
+2026-06-12 15:58:51.915487 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 2,1ms
+2026-06-12 15:58:51.917623 I VkSuggestions: strip composing typedLen=7 candidates=17 autocorrect=false top=hoyjjjj locale=pt
+2026-06-12 15:58:52.073246 I VkSuggestions: decode typedLen=8 candidates=11 locales=3 2,5ms
+2026-06-12 15:58:52.076393 I VkSuggestions: strip composing typedLen=8 candidates=12 autocorrect=false top=hoyjjjjd locale=pt
+2026-06-12 15:58:53.023987 I VkSuggestions: decode typedLen=7 candidates=18 locales=3 12,6ms
+2026-06-12 15:58:53.025254 I VkSuggestions: strip composing typedLen=7 candidates=16 autocorrect=false top=hoyjjjj locale=pt
+2026-06-12 15:58:53.164069 I VkSuggestions: decode typedLen=6 candidates=18 locales=3 9,3ms
+2026-06-12 15:58:53.165593 I VkSuggestions: strip composing typedLen=6 candidates=16 autocorrect=false top=hoyjjj locale=pt
+2026-06-12 15:58:53.316217 I VkSuggestions: decode typedLen=5 candidates=18 locales=3 9,6ms
+2026-06-12 15:58:53.317575 I VkSuggestions: strip composing typedLen=5 candidates=16 autocorrect=false top=hoyjj locale=pt
+2026-06-12 15:58:53.460680 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 10,3ms
+2026-06-12 15:58:53.462551 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hoyj locale=pt
+2026-06-12 15:58:53.600133 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 9,7ms
+2026-06-12 15:58:53.601882 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,3ms
+2026-06-12 15:58:53.602676 I VkSuggestions: strip composing typedLen=3 candidates=14 autocorrect=false top=hoy locale=pt
+2026-06-12 15:58:53.750501 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,7ms
+2026-06-12 15:58:53.751695 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=ho locale=pt
+2026-06-12 15:58:53.925100 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 17,4ms
+2026-06-12 15:58:53.925346 W VkSuggestions: slow frame 17,4ms locales=3 typedLen=1 candidates=18 parallelWait=17,3ms
+2026-06-12 15:58:53.926042 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=h locale=pt
+2026-06-12 15:58:54.066391 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=hoy locale=pt
+2026-06-12 15:58:55.795431 I VkAutocorrect: kept (typing): tu
+2026-06-12 15:58:57.644115 I VkPanels: ▶ open assist
+2026-06-12 15:58:57.661167 I OnDeviceAssist: ▶ panel open
+2026-06-12 15:58:59.076833 I VkTyping: ○ hidden
+2026-06-12 15:59:00.259522 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:59:01.809961 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,6ms
+2026-06-12 15:59:04.184024 I OnDeviceAssist: ▶ assist_ipc task=grammar in=23 chars
+2026-06-12 15:59:05.478602 I OnDeviceAssist: ✓ assist (ime) task=grammar 1294ms in=23 out=25
+2026-06-12 15:59:10.571173 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=23 chars
+2026-06-12 15:59:11.399422 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 828ms in=23 out=25
+2026-06-12 15:59:14.734057 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=23 chars
+2026-06-12 15:59:18.924711 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 4191ms in=23 out=268
+2026-06-12 15:59:26.376309 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=23 chars
+2026-06-12 15:59:27.090611 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 714ms in=23 out=25
+2026-06-12 15:59:29.655687 I VkPanels: ▶ open ai_theme
+2026-06-12 15:59:35.568809 I VkThemes: ▶ tap generate ref=false descLen=5
+2026-06-12 15:59:35.832880 I VkTyping: ○ hidden
+2026-06-12 15:59:46.236356 I VkThemes: ▶ generate ref=false descLen=5
+2026-06-12 15:59:46.448144 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 15:59:47.058281 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=23 chars
+2026-06-12 15:59:47.817525 I VkThemes: ✓ generate 1581ms theme=Minimalist Swiss
+2026-06-12 15:59:48.082289 I VkThemes: apply theme=Minimalist Swiss (ai_generate)
+2026-06-12 15:59:48.084947 I VkSwipe: ○ gesture canceled
+2026-06-12 15:59:48.088779 I VkSwipe: ○ gesture canceled
+2026-06-12 15:59:48.294470 I VkFavorites: save theme Minimalist Swiss → SAVED
+2026-06-12 15:59:48.969215 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 15,8ms
+2026-06-12 15:59:48.970861 I VkSuggestions: decode typedLen=0 candidates=1 locales=3 0,3ms
+2026-06-12 15:59:48.971533 I VkSuggestions: strip composing typedLen=2 candidates=12 autocorrect=false top=di locale=pt
+2026-06-12 15:59:49.127338 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 25,6ms
+2026-06-12 15:59:49.127710 W VkSuggestions: slow frame 25,6ms locales=3 typedLen=3 candidates=18 parallelWait=25,5ms
+2026-06-12 15:59:49.128852 I VkSuggestions: strip composing typedLen=3 candidates=14 autocorrect=false top=dio locale=pt
+2026-06-12 15:59:49.710649 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:59:49.836475 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 2778ms in=23 out=90
+2026-06-12 15:59:49.843312 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 22,8ms
+2026-06-12 15:59:49.843592 W VkSuggestions: slow frame 22,8ms locales=3 typedLen=0 candidates=18 parallelWait=22,7ms
+2026-06-12 15:59:49.960833 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 15:59:49.983997 W VkSuggestions: slow frame 22,0ms locales=3 typedLen=0 candidates=18 parallelWait=21,8ms
+2026-06-12 15:59:50.184485 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 19,4ms
+2026-06-12 15:59:50.184828 W VkSuggestions: slow frame 19,4ms locales=3 typedLen=2 candidates=18 parallelWait=19,3ms
+2026-06-12 15:59:50.198488 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,3ms
+2026-06-12 15:59:50.297668 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 16,8ms
+2026-06-12 15:59:50.298006 W VkSuggestions: slow frame 16,8ms locales=3 typedLen=2 candidates=18 parallelWait=16,6ms
+2026-06-12 15:59:50.311136 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 12,8ms
+2026-06-12 15:59:50.577136 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 10,7ms
+2026-06-12 15:59:50.590336 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 12,8ms
+2026-06-12 15:59:50.776242 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 15,4ms
+2026-06-12 15:59:50.789648 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 12,9ms
+2026-06-12 15:59:50.800280 I VkSwipe: ✓ gesture points=49 decodedLen=4 candidates=15 top=gogo 839ms
+2026-06-12 15:59:51.551509 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:59:51.875553 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 13,7ms
+2026-06-12 15:59:51.876638 I VkSuggestions: strip composing typedLen=2 candidates=13 autocorrect=false top=di locale=pt
+2026-06-12 15:59:52.023172 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 18,5ms
+2026-06-12 15:59:52.023435 W VkSuggestions: slow frame 18,5ms locales=3 typedLen=1 candidates=18 parallelWait=18,4ms
+2026-06-12 15:59:52.024070 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false top=d locale=pt
+2026-06-12 15:59:53.565184 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 34,2ms
+2026-06-12 15:59:53.565712 W VkSuggestions: slow frame 34,2ms locales=3 typedLen=3 candidates=18 parallelWait=34,0ms
+2026-06-12 15:59:53.568365 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=hol locale=pt
+2026-06-12 15:59:54.028128 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:59:54.421384 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 20,2ms
+2026-06-12 15:59:54.421693 W VkSuggestions: slow frame 20,2ms locales=3 typedLen=1 candidates=18 parallelWait=20,1ms
+2026-06-12 15:59:54.422438 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-12 15:59:54.582497 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,6ms
+2026-06-12 15:59:54.583401 I VkSuggestions: strip composing typedLen=2 candidates=11 autocorrect=false top=hh locale=pt
+2026-06-12 15:59:54.749330 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 26,4ms
+2026-06-12 15:59:54.749787 W VkSuggestions: slow frame 26,4ms locales=3 typedLen=3 candidates=18 parallelWait=26,2ms
+2026-06-12 15:59:54.751732 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=hhe locale=pt
+2026-06-12 15:59:55.927478 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 15:59:57.514981 I VkPanels: ▶ open menu
+2026-06-12 15:59:59.930814 I VkPanels: ▶ open menu
+2026-06-12 16:00:02.504701 I VkBrowser: incognito on (menu_panel)
+2026-06-12 16:00:02.505383 I VkBrowser: privacy toast: Incógnito ativado: novas visitas não serão salvas no histórico · Reopen browser to apply
+2026-06-12 16:00:05.062732 I VkBrowser: incognito off (menu_panel)
+2026-06-12 16:00:05.063701 I VkBrowser: privacy toast: Modo anônimo desativado · Reopen browser to apply
+2026-06-12 16:00:05.749378 I VkBrowser: incognito on (menu_panel)
+2026-06-12 16:00:05.750559 I VkBrowser: privacy toast: Incógnito ativado: novas visitas não serão salvas no histórico · Reopen browser to apply
+2026-06-12 16:00:08.891227 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 45,4ms
+2026-06-12 16:00:08.891732 W VkSuggestions: slow frame 45,4ms locales=3 typedLen=1 candidates=18 parallelWait=45,1ms
+2026-06-12 16:00:08.893030 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-12 16:00:09.098876 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,7ms
+2026-06-12 16:00:09.100341 I VkSuggestions: strip composing typedLen=2 candidates=13 autocorrect=false top=jh locale=pt
+2026-06-12 16:00:09.253299 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 9,2ms
+2026-06-12 16:00:09.254758 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=jhh locale=pt
+2026-06-12 16:00:09.397680 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 11,5ms
+2026-06-12 16:00:09.398985 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false top=jhhd locale=pt
+2026-06-12 16:00:09.960084 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-12 16:00:10.010323 I VkSuggestions: decode typedLen=2 candidates=17 locales=3 15,5ms
+2026-06-12 16:00:10.024263 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,5ms
+2026-06-12 16:00:10.178588 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 15,5ms
+2026-06-12 16:00:10.192319 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,2ms
+2026-06-12 16:00:10.338958 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 10,0ms
+2026-06-12 16:00:10.352880 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,5ms
+2026-06-12 16:00:10.516984 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 10,4ms
+2026-06-12 16:00:10.530435 I VkSuggestions: decode typedLen=0 candidates=18 locales=3 13,0ms
+2026-06-12 16:00:10.540391 I VkSwipe: ✓ gesture points=48 decodedLen=3 candidates=18 top=chi 580ms
+2026-06-12 16:00:11.766785 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 45,1ms
+2026-06-12 16:00:11.767258 W VkSuggestions: slow frame 45,1ms locales=3 typedLen=1 candidates=18 parallelWait=44,8ms
+2026-06-12 16:00:11.769183 I VkSuggestions: strip composing typedLen=1 candidates=15 autocorrect=false top=s locale=pt
+2026-06-12 16:00:13.727069 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 28,7ms
+2026-06-12 16:00:13.727429 W VkSuggestions: slow frame 28,7ms locales=3 typedLen=2 candidates=18 parallelWait=28,4ms
+2026-06-12 16:00:13.728696 I VkSuggestions: strip composing typedLen=2 candidates=12 autocorrect=false top=sj locale=pt
+2026-06-12 16:00:13.917305 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 9,9ms
+2026-06-12 16:00:13.918854 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=sjh locale=pt
+2026-06-12 16:00:14.092998 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 9,9ms
+2026-06-12 16:00:14.094239 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false top=sjhd locale=pt
+2026-06-12 16:00:14.224699 I VkSuggestions: decode typedLen=5 candidates=18 locales=3 23,4ms
+2026-06-12 16:00:14.225188 W VkSuggestions: slow frame 23,4ms locales=3 typedLen=5 candidates=18 parallelWait=23,1ms
+2026-06-12 16:00:14.227313 I VkSuggestions: strip composing typedLen=5 candidates=17 autocorrect=false top=sjhdj locale=pt
+2026-06-12 16:00:15.371579 I VkPanels: ▶ open browser
+2026-06-12 16:00:15.382195 I VkBrowser: ▶ panel open incognito=true tabs=0 queryLen=0
+2026-06-12 16:00:15.399462 I VkBrowser: → load host=www.google.com
+2026-06-12 16:00:15.435666 I VkBrowser: → load host=www.google.com
+2026-06-12 16:00:15.436253 I VkBrowser: → load host=www.google.com
+2026-06-12 16:00:15.600764 I VkBrowser: → load host=www.google.com
+2026-06-12 16:00:15.855814 I VkBrowser: ✓ page host=www.google.com
+2026-06-12 16:00:15.921534 I VkBrowser: → load host=www.google.com
+2026-06-12 16:00:19.293758 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-12 16:00:19.374733 I VkVibeCards: ○ sticker skipped: no_active_cards
+2026-06-12 16:00:19.383945 I VkBrowser: → load host=cnn.com
+2026-06-12 16:00:21.176890 I VkBrowser: ✓ page host=www.cnn.com title=Breaking News, Latest News and Videos | …
+2026-06-12 16:00:25.390063 I VkVibeCards: enter effects=true overlay=true cards=false
+2026-06-12 16:00:25.503514 I VkBrowser: → load host=foxnews.com
+2026-06-12 16:00:27.375025 I VkPanels: ▶ open browser
+2026-06-12 16:00:27.387665 I VkBrowser: ▶ panel open incognito=true tabs=2 queryLen=0
+2026-06-12 16:00:27.419258 I VkBrowser: → load host=foxnews.com
+2026-06-12 16:00:27.607017 I VkBrowser: ✓ page host=www.foxnews.com title=Fox News - Breaking News Updates | Lates…
+2026-06-12 16:00:30.629578 I VkBrowser: ✓ page host=www.foxnews.com title=Fox News - Breaking News Updates | Lates…
+2026-06-12 16:01:07.255520 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 16:01:07.481862 W VkSuggestions: slow frame 30,6ms locales=3 typedLen=5 candidates=18 parallelWait=30,4ms
+2026-06-12 16:01:07.484393 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false top=sjhdj locale=pt
+2026-06-12 16:01:09.146882 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=14 chars
+2026-06-12 16:01:10.539914 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 1393ms in=14 out=57
+2026-06-12 16:02:24.504421 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-12 16:02:25.100328 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=14 chars
+2026-06-12 16:02:26.729595 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 18,2ms
+2026-06-12 16:02:26.729995 W VkSuggestions: slow frame 18,2ms locales=3 typedLen=4 candidates=18 parallelWait=17,8ms
+2026-06-12 16:02:26.734915 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=sjhd locale=pt
+2026-06-12 16:02:26.886655 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 34,8ms
+2026-06-12 16:02:26.887639 W VkSuggestions: slow frame 34,8ms locales=3 typedLen=3 candidates=18 parallelWait=34,5ms
+2026-06-12 16:02:26.892399 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=sjh locale=pt
+2026-06-12 16:02:27.016879 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 11,2ms
+2026-06-12 16:02:27.017852 I VkSuggestions: strip composing typedLen=2 candidates=10 autocorrect=false top=sj locale=pt
+2026-06-12 16:02:27.259082 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 16:02:27.617777 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 2517ms in=14 out=99
+2026-06-12 16:02:29.754006 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 39,3ms
+2026-06-12 16:02:29.754647 W VkSuggestions: slow frame 39,3ms locales=3 typedLen=1 candidates=18 parallelWait=39,1ms
+2026-06-12 16:02:29.755827 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-12 16:02:29.959466 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,2ms
+2026-06-12 16:02:29.961321 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=ho locale=pt
+2026-06-12 16:02:30.136272 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 11,4ms
+2026-06-12 16:02:30.139366 I VkSuggestions: strip composing typedLen=3 candidates=13 autocorrect=false top=hop locale=pt
+2026-06-12 16:02:30.264270 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 12,7ms
+2026-06-12 16:02:30.267563 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false top=hope locale=pt
+2026-06-12 16:02:30.356235 I VkAutocorrect: kept (typing): hope
+2026-06-12 16:02:30.462647 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hope locale=pt
+2026-06-12 16:02:31.004537 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 19,2ms
+2026-06-12 16:02:31.004833 W VkSuggestions: slow frame 19,2ms locales=3 typedLen=1 candidates=18 parallelWait=19,2ms
+2026-06-12 16:02:31.006025 I VkSuggestions: strip composing typedLen=1 candidates=15 autocorrect=false top=a locale=pt
+2026-06-12 16:02:31.127332 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 12,2ms
+2026-06-12 16:02:31.128780 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=al locale=pt
+2026-06-12 16:02:31.306343 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 28,0ms
+2026-06-12 16:02:31.306779 W VkSuggestions: slow frame 28,0ms locales=3 typedLen=3 candidates=18 parallelWait=27,9ms
+2026-06-12 16:02:31.308418 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=all locale=pt
+2026-06-12 16:02:31.426176 I VkAutocorrect: kept (typing): all
+2026-06-12 16:02:31.531027 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hope locale=pt
+2026-06-12 16:02:32.248226 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 18,8ms
+2026-06-12 16:02:32.248480 W VkSuggestions: slow frame 18,8ms locales=3 typedLen=1 candidates=18 parallelWait=18,6ms
+2026-06-12 16:02:32.249219 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false top=i locale=pt
+2026-06-12 16:02:32.372340 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,1ms
+2026-06-12 16:02:32.374999 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=is locale=pt
+2026-06-12 16:02:32.395848 I VkAutocorrect: kept (typing): is
+2026-06-12 16:02:32.618442 I VkSuggestions: decode typedLen=1 candidates=18 locales=3 16,9ms
+2026-06-12 16:02:32.618698 W VkSuggestions: slow frame 16,9ms locales=3 typedLen=1 candidates=18 parallelWait=16,8ms
+2026-06-12 16:02:32.619626 I VkSuggestions: strip composing typedLen=1 candidates=13 autocorrect=false top=w locale=pt
+2026-06-12 16:02:32.775801 I VkSuggestions: decode typedLen=2 candidates=18 locales=3 10,7ms
+2026-06-12 16:02:32.777652 I VkSuggestions: strip composing typedLen=2 candidates=10 autocorrect=false top=we locale=pt
+2026-06-12 16:02:32.900635 I VkSuggestions: decode typedLen=3 candidates=18 locales=3 10,7ms
+2026-06-12 16:02:32.902087 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false top=wel locale=pt
+2026-06-12 16:02:33.083524 I VkSuggestions: decode typedLen=4 candidates=18 locales=3 34,1ms
+2026-06-12 16:02:33.084084 W VkSuggestions: slow frame 34,1ms locales=3 typedLen=4 candidates=18 parallelWait=34,0ms
+2026-06-12 16:02:33.088967 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false top=well locale=pt
+2026-06-12 16:02:33.680069 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=16 chars
+2026-06-12 16:02:34.265558 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 585ms in=16 out=17
+2026-06-12 16:02:38.797201 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hCG locale=pt
+2026-06-12 16:02:41.225329 I VkPanels: ▶ open menu
+2026-06-12 16:02:42.058507 I VkPanels: ▶ open menu
+2026-06-12 16:02:42.560953 I VkMultilingual: menu languages total=3
+2026-06-12 16:02:44.153167 I VkPanels: ▶ open menu
+2026-06-12 16:02:47.877545 I VkTyping: ○ hidden
+... (1 VkEffects reload lines omitted)
+
+=== In-memory (current process) ===
+2026-06-12 15:57:34.437027 W f0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-12 15:57:34.496359 I startup: Starting com.vibekey.keyboard version 4.1.288 (4388) on Android 12 (SDK 31)
+2026-06-12 15:57:34.507821 I LatinIME: Hardware accelerated drawing: true
+2026-06-12 15:57:34.647759 I SymSpellProvider: Detected asset languages: [en]
+2026-06-12 15:57:34.653393 I NgramPredictor: Detected bigram asset languages: []
+2026-06-12 15:57:34.657231 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-12 15:57:34.660474 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-06-12 15:57:34.662549 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-12 15:57:34.666175 I AutocorrectRejectionTracker: Loaded 1 autocorrect rejection entries
+2026-06-12 15:57:34.669261 I RecencyTracker: init loaded 2 language file(s)
+2026-06-12 15:57:34.671365 I AdaptiveTouchModel: Loaded touch model: 14 keys
+2026-06-12 15:57:34.673078 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-12 15:57:34.853322 W c: onSharedPreferenceChanged called before loadSettings.
+2026-06-12 15:57:34.853567 I KeyboardDesignEngine: Bundled defaults/nike_sneaker_pixel_art.vktheme added to favorites
+2026-06-12 15:57:34.854468 W t: No editor info for this field. Bug?
+2026-06-12 15:57:34.854557 I c: loadSettings
+2026-06-12 15:57:34.885046 I o: resetDictionaries, force reloading main dictionary: false
+2026-06-12 15:57:34.958828 I NgramPredictor: Detected bigram asset languages: []
+2026-06-12 15:57:34.959896 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-12 15:57:34.960202 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-06-12 15:57:34.960536 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-12 15:57:34.968519 I SymSpellProvider: Detected asset languages: [en]
+2026-06-12 15:57:34.981690 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-12 15:57:34.983098 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-12 15:57:35.304175 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-12 15:57:35.305632 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-12 15:57:35.350285 I c: loadSettings
+2026-06-12 15:57:35.608508 I StickerImageManager: No sticker images on disk (empty cache confirmed)
+2026-06-12 15:57:35.685968 I LatinIME: Starting input. Cursor position = 29,29
+2026-06-12 15:57:35.686588 I c: loadSettings
+2026-06-12 15:57:35.964482 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:35.964578 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:36.333617 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:36.333907 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:36.833887 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:36.834121 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.249907 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.250038 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.333100 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.333196 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.716088 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.716221 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.833814 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:37.833922 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.216890 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.217020 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.332988 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.333096 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.717122 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.717258 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.848706 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:38.848806 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.704822 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.704939 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.704979 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.705011 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.784071 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-12 15:57:39.788834 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:39.939113 I LatinIME: hideWindow
+2026-06-12 15:57:39.939803 I LatinIME: onFinishInputView
+2026-06-12 15:57:39.940030 I LatinIME: onWindowHidden
+2026-06-12 15:57:39.945210 I LatinIME: onFinishInput
+2026-06-12 15:57:40.203821 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.203912 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.203942 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.204028 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.516141 I c: loadSettings
+2026-06-12 15:57:40.703548 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.703655 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.704912 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:40.705010 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:41.204603 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:41.204771 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:41.204823 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:41.204852 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:42.749602 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:42.749747 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:42.749804 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:42.749849 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:43.250197 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:43.250427 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:43.250534 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:43.250630 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:44.764394 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:44.764490 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:45.182047 I SymSpellProvider: Built runtime SymSpell for pt with 79999 words
+2026-06-12 15:57:45.182163 I o: Built runtime SymSpell for pt with 80022 words
+2026-06-12 15:57:45.265240 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:45.265503 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-12 15:57:45.480688 I AdManager: MobileAds initialization complete
+2026-06-12 15:57:45.480849 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-12 15:57:45.480941 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-12 15:57:46.920305 I SymSpellProvider: Built runtime SymSpell for es with 79999 words
+2026-06-12 15:57:46.920402 I o: Built runtime SymSpell for es with 80000 words
+2026-06-12 15:57:46.992031 I SymSpellProvider: Built runtime SymSpell for fr with 79961 words
+2026-06-12 15:57:46.992150 I o: Built runtime SymSpell for fr with 80000 words
+2026-06-12 15:57:47.608031 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-12 15:57:47.985064 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-12 15:57:48.089293 I LatinIME: onFinishInput
+2026-06-12 15:57:48.481401 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-06-12 15:57:48.481521 I SymSpellProvider: SymSpell loaded for en with 82834 words
+2026-06-12 15:57:55.980173 I AdManager: User earned reward
+2026-06-12 15:57:55.980434 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-12 15:57:57.761522 I LatinIME: onFinishInput
+2026-06-12 15:57:57.795933 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-12 15:57:57.823794 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-12 15:57:57.968012 I LatinIME: onFinishInput
+2026-06-12 15:57:58.022162 I LatinIME: Starting input. Cursor position = 29,29
+2026-06-12 15:57:58.022720 I c: loadSettings
+2026-06-12 15:57:58.674205 I AiApiHelper: Theme context cache created: cachedContents/o84kevx11bvbyx2zudvop3xambmkn9uh6ugk3bp2 (expires 2026-06-13T19:57:58.361261076Z)
+2026-06-12 15:57:59.348543 I AdManager: Interstitial ad loaded
+2026-06-12 15:57:59.513166 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-12 15:58:01.084261 I KeyboardDesignEngine: Applied "Arctic Frost" [Arctic Frost] — full design theme
+2026-06-12 15:58:01.914399 I AdManager: Native ad loaded
+2026-06-12 15:58:02.233055 I AdManager: Native ad view created
+2026-06-12 15:58:02.851382 I AdManager: Native ad loaded
+2026-06-12 15:58:11.615164 I QuotaManager: Unified AI quota schema v2 applied (calendar-day pool)
+2026-06-12 15:58:13.657229 I QuotaManager: Daily assist quota reset
+2026-06-12 15:58:23.533582 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-12 15:58:23.607155 I LatinIME: hideWindow
+2026-06-12 15:58:23.607747 I LatinIME: onFinishInputView
+2026-06-12 15:58:23.608001 I LatinIME: onWindowHidden
+2026-06-12 15:58:23.610284 I LatinIME: onFinishInput
+2026-06-12 15:58:23.683906 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-12 15:58:23.828824 I LatinIME: onFinishInput
+2026-06-12 15:58:31.375815 I AdManager: User earned reward
+2026-06-12 15:58:31.376011 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-12 15:58:33.154924 I LatinIME: onFinishInput
+2026-06-12 15:58:33.180051 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-12 15:58:33.205855 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-12 15:58:33.342324 I LatinIME: onFinishInput
+2026-06-12 15:58:33.355162 I LatinIME: Starting input. Cursor position = 30,30
+2026-06-12 15:58:34.682476 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-12 15:58:59.065068 I LatinIME: hideWindow
+2026-06-12 15:58:59.076001 I LatinIME: onFinishInputView
+2026-06-12 15:58:59.076694 I LatinIME: onWindowHidden
+2026-06-12 15:58:59.089357 I LatinIME: hideWindow
+2026-06-12 15:58:59.334299 I LatinIME: requestHideSelf: 100
+2026-06-12 15:59:00.259319 I LatinIME: Starting input. Cursor position = 30,30
+2026-06-12 15:59:35.605377 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-12 15:59:35.722507 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-12 15:59:35.831874 I LatinIME: hideWindow
+2026-06-12 15:59:35.832584 I LatinIME: onFinishInputView
+2026-06-12 15:59:35.832836 I LatinIME: onWindowHidden
+2026-06-12 15:59:35.835074 I LatinIME: onFinishInput
+2026-06-12 15:59:43.531599 I AdManager: User earned reward
+2026-06-12 15:59:43.531901 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-12 15:59:46.192999 I LatinIME: onFinishInput
+2026-06-12 15:59:46.227579 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-12 15:59:46.243515 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-12 15:59:46.405825 I LatinIME: onFinishInput
+2026-06-12 15:59:46.447878 I LatinIME: Starting input. Cursor position = 25,25
+2026-06-12 15:59:48.072385 I KeyboardDesignEngine: Applied "Minimalist Swiss" [Minimalist Swiss] — full design theme
+2026-06-12 15:59:48.226608 I AdManager: Native ad view created
+2026-06-12 15:59:48.365012 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-12 15:59:48.900059 I AdManager: Native ad loaded
+2026-06-12 16:00:54.241115 I LatinIME: onFinishInputView
+2026-06-12 16:00:54.241721 I LatinIME: onFinishInput
+2026-06-12 16:01:07.255301 I LatinIME: Starting input. Cursor position = 14,14
+2026-06-12 16:01:28.074547 I LatinIME: onFinishInputView
+2026-06-12 16:01:28.075532 I LatinIME: onFinishInput
+2026-06-12 16:02:24.504173 I LatinIME: Starting input. Cursor position = 14,14
+2026-06-12 16:02:47.791367 I LatinIME: requestHideSelf: 0
+2026-06-12 16:02:47.873216 I LatinIME: hideWindow
+2026-06-12 16:02:47.877191 I LatinIME: onFinishInputView
+2026-06-12 16:02:47.877470 I LatinIME: onWindowHidden
+2026-06-12 16:02:47.888048 I t: InputType.TYPE_NULL is specified
+2026-06-12 16:02:48.254043 I LatinIME: requestHideSelf: 100
+2026-06-12 16:02:48.257746 I LatinIME: onFinishInput
+2026-06-12 16:02:50.981351 I LatinIME: onFinishInput
+2026-06-12 16:02:52.443599 I LatinIME: onFinishInput
+... (106 loadSettings lines omitted)
