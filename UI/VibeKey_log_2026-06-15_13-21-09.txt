@@ -1,0 +1,1276 @@
+=== VibeKey 4.1.323 (4423) ===
+
+--------- beginning of system
+06-15 13:12:49.616 22416 22416 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of crash
+06-15 13:14:02.022 22416 22810 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6a00000050 in tid 22810 (ExecutorUtils), pid 22416 (AndroidUI)
+06-15 13:14:03.659 23513 23513 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:14:03.659 23513 23513 F DEBUG   : keyProcess: 0
+06-15 13:14:03.659 23513 23513 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:14:03.659 23513 23513 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:14:03.659 23513 23513 F DEBUG   : Revision: '0'
+06-15 13:14:03.659 23513 23513 F DEBUG   : ABI: 'arm64'
+06-15 13:14:03.659 23513 23513 F DEBUG   : Timestamp: 2026-06-15 13:14:02.240449013-0400
+06-15 13:14:03.659 23513 23513 F DEBUG   : Process uptime: 0s
+06-15 13:14:03.659 23513 23513 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:14:03.659 23513 23513 F DEBUG   : pid: 22416, tid: 22810, name: ExecutorUtils  >>> com.vibekey.keyboard <<<
+06-15 13:14:03.659 23513 23513 F DEBUG   : uid: 14096
+06-15 13:14:03.659 23513 23513 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6a00000050
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x0  0000000000000000  x1  000000000000591a  x2  000000000000000b  x3  000000766527bda0
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x4  0000007694d1c400  x5  0000007694d1c400  x6  0000007694d1c400  x7  0000000000000000
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000007696b4068c  x11 0000000000000000
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0000000000000000  x15 00000000ebad6a89
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 00000074a126a000  x19 000000000000000b
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x20 000000766527bda0  x21 0000000000005790  x22 000000766527bb90  x23 0000000000000001
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x24 000000752d928d5c  x25 0000007525583000  x26 0000007694d1d698  x27 0000007694d1c408
+06-15 13:14:03.659 23513 23513 F DEBUG   :     x28 0000000000000400  x29 000000766527bbb0
+06-15 13:14:03.659 23513 23513 F DEBUG   :     lr  0000007576cbabc8  sp  000000766527bb90  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:14:03.659 23513 23513 F DEBUG   : backtrace:
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #05 pc 0000000000006f94  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1148) (BuildId: 1d71636c1517ecf3fa421563ba6710f3)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #07 pc 00000000000a3d58  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #08 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #09 pc 0000000000668b6c  /apex/com.android.art/lib64/libart.so (nterp_helper+1948) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #10 pc 00000000002290ec  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.DicTraverseSession.a+16)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #11 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #12 pc 0000000000228c88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.a+44)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #13 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #14 pc 00000000002283a2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.m+38)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #15 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #16 pc 0000000000aeac52  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.g.run+230)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #17 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #18 pc 0000000000937644  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a8.z0.run+276)
+06-15 13:14:03.659 23513 23513 F DEBUG   :       #19 pc 00000000022d2950  /memfd:jit-zygote-cache (deleted)
+06-15 13:14:06.617 23643 23643 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:14:43.283 23643 24245 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 13:14:43.283 23643 24245 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-15 13:16:38.850 23643 24245 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 13:16:38.850 23643 24245 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-15 13:17:04.436 26692 26692 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:18:49.114 26692 28604 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 13:18:49.115 26692 28604 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-15 13:19:17.364 28883 28883 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:19:19.481 28883 28920 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665f22b3 in tid 28920 (d), pid 28883 (AndroidUI)
+06-15 13:19:20.933 29222 29222 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:19:20.933 29222 29222 F DEBUG   : keyProcess: 0
+06-15 13:19:20.933 29222 29222 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:19:20.933 29222 29222 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:19:20.933 29222 29222 F DEBUG   : Revision: '0'
+06-15 13:19:20.933 29222 29222 F DEBUG   : ABI: 'arm64'
+06-15 13:19:20.933 29222 29222 F DEBUG   : Timestamp: 2026-06-15 13:19:19.758978631-0400
+06-15 13:19:20.933 29222 29222 F DEBUG   : Process uptime: 0s
+06-15 13:19:20.933 29222 29222 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:19:20.933 29222 29222 F DEBUG   : pid: 28883, tid: 28920, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:19:20.933 29222 29222 F DEBUG   : uid: 14096
+06-15 13:19:20.933 29222 29222 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665f22b3
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x0  0000000000000000  x1  00000000000070f8  x2  0000000000000007  x3  00000076819deda0
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x4  00000076819de6a8  x5  00000076819de6a8  x6  00000076819de6a8  x7  0000000000000000
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 b4000075c0b4d388  x15 00000000358637bd
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 00000075296de000  x19 0000000000000007
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x20 00000076819deda0  x21 00000000000070d3  x22 00000076819ded00  x23 0000000000000001
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x24 b4000075c0c62200  x25 b4000075bb0a6190  x26 0000000000075080  x27 b4000075c0c5e4c0
+06-15 13:19:20.933 29222 29222 F DEBUG   :     x28 0000000000000000  x29 00000076819ded20
+06-15 13:19:20.933 29222 29222 F DEBUG   :     lr  0000007576cbabc8  sp  00000076819ded00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:19:20.933 29222 29222 F DEBUG   : backtrace:
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #05 pc 00000000000b6c2c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+112) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #06 pc 00000000000d598c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #07 pc 00000000000d4a88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #08 pc 00000000000d3c0c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #09 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #10 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #11 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #12 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #13 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #14 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #15 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #16 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #18 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #20 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #22 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #24 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #25 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #26 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #27 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #28 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #29 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #30 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #31 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #32 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #33 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #34 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:19:20.933 29222 29222 F DEBUG   :       #35 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:19:23.151 29279 29279 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:19:25.059 29279 29340 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665dd00e in tid 29340 (d), pid 29279 (AndroidUI)
+06-15 13:19:25.960 29572 29572 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:19:25.960 29572 29572 F DEBUG   : keyProcess: 0
+06-15 13:19:25.960 29572 29572 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:19:25.960 29572 29572 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:19:25.960 29572 29572 F DEBUG   : Revision: '0'
+06-15 13:19:25.960 29572 29572 F DEBUG   : ABI: 'arm64'
+06-15 13:19:25.960 29572 29572 F DEBUG   : Timestamp: 2026-06-15 13:19:25.256726546-0400
+06-15 13:19:25.960 29572 29572 F DEBUG   : Process uptime: 0s
+06-15 13:19:25.960 29572 29572 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:19:25.960 29572 29572 F DEBUG   : pid: 29279, tid: 29340, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:19:25.960 29572 29572 F DEBUG   : uid: 14096
+06-15 13:19:25.960 29572 29572 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665dd00e
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x0  0000000000000000  x1  000000000000729c  x2  0000000000000007  x3  000000768a7feda0
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x4  000000768a7fe6a8  x5  000000768a7fe6a8  x6  000000768a7fe6a8  x7  0000000000000000
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 00000076665dcfc6
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755e6b4000  x19 0000000000000007
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x20 000000768a7feda0  x21 000000000000725f  x22 000000768a7fed00  x23 0000000000000001
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x24 00000075dbdad8d8  x25 00000075dbdad9f0  x26 00000075dbdada24  x27 0000000000000001
+06-15 13:19:25.960 29572 29572 F DEBUG   :     x28 00000075dbdadfd8  x29 000000768a7fed20
+06-15 13:19:25.960 29572 29572 F DEBUG   :     lr  0000007576cbabc8  sp  000000768a7fed00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:19:25.960 29572 29572 F DEBUG   : backtrace:
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #04 pc 00000000000b67ac  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+120) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #05 pc 00000000000b8980  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #06 pc 00000000000b4b74  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #07 pc 00000000000b7324  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #08 pc 00000000000a7d54  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #09 pc 00000000000d337c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #10 pc 00000000000c8bd0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #11 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #12 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #13 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #14 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #15 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #16 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #18 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #20 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #22 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #24 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #25 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #26 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #27 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #28 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #29 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #30 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #31 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #32 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #33 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #34 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #35 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #36 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:19:25.960 29572 29572 F DEBUG   :       #37 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:19:27.816 29599 29599 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:19:30.649 29599 29639 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665fa104 in tid 29639 (d), pid 29599 (AndroidUI)
+06-15 13:19:32.178 29842 29842 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:19:32.178 29842 29842 F DEBUG   : keyProcess: 0
+06-15 13:19:32.178 29842 29842 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:19:32.178 29842 29842 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:19:32.178 29842 29842 F DEBUG   : Revision: '0'
+06-15 13:19:32.178 29842 29842 F DEBUG   : ABI: 'arm64'
+06-15 13:19:32.178 29842 29842 F DEBUG   : Timestamp: 2026-06-15 13:19:30.946374096-0400
+06-15 13:19:32.178 29842 29842 F DEBUG   : Process uptime: 0s
+06-15 13:19:32.178 29842 29842 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:19:32.178 29842 29842 F DEBUG   : pid: 29599, tid: 29639, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:19:32.178 29842 29842 F DEBUG   : uid: 14096
+06-15 13:19:32.178 29842 29842 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665fa104
+06-15 13:19:32.178 29842 29842 F DEBUG   :     x0  0000000000000000  x1  00000000000073c7  x2  0000000000000007  x3  000000768a7feda0
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x4  000000768a7fe6a8  x5  000000768a7fe6a8  x6  000000768a7fe6a8  x7  0000000000000000
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 00000076665dc39e
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755f5f4000  x19 0000000000000007
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x20 000000768a7feda0  x21 000000000000739f  x22 000000768a7fed00  x23 0000000000000001
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x24 00000075dbdb0000  x25 00000075dbdad9f0  x26 00000075dbdada24  x27 0000000000000001
+06-15 13:19:32.179 29842 29842 F DEBUG   :     x28 00000075dbdadfd8  x29 000000768a7fed20
+06-15 13:19:32.179 29842 29842 F DEBUG   :     lr  0000007576cbabc8  sp  000000768a7fed00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:19:32.179 29842 29842 F DEBUG   : backtrace:
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #05 pc 00000000000b8b34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Ver2PtNodeArrayReader::readPtNodeArrayInfoAndReturnIfValid(int, int*, int*) const+80) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #06 pc 00000000000b4ce8  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::nextPtNodeArray()+68) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #07 pc 00000000000b4c3c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+432) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #08 pc 00000000000b7324  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #09 pc 00000000000a7d54  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #10 pc 00000000000d337c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #11 pc 00000000000c8bd0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #12 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #13 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #14 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #15 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #16 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #17 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #18 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #19 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #20 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #21 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #22 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #23 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #24 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #25 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #26 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #27 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #28 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #29 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #30 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #31 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #32 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #33 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #34 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #35 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #36 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #37 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:19:32.179 29842 29842 F DEBUG   :       #38 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: FATAL EXCEPTION: DefaultDispatcher-worker-2
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: Process: com.vibekey.keyboard:llm_engine, PID: 28922
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: android.os.DeadObjectException
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:635)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at helium314.keyboard.latin.ai.engine.ILlmCallback$Stub$Proxy.onSuccess(r8-map-id-edd172feefc94365febb843888a53fb35f32a2999752866baa6b0216bcafabd7:18)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at helium314.keyboard.latin.ai.engine.LlmEngineService$binder$1$warmLoad$1.invokeSuspend(r8-map-id-edd172feefc94365febb843888a53fb35f32a2999752866baa6b0216bcafabd7:64)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at v8.a.resumeWith(r8-map-id-edd172feefc94365febb843888a53fb35f32a2999752866baa6b0216bcafabd7:9)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at o9.h0.run(r8-map-id-edd172feefc94365febb843888a53fb35f32a2999752866baa6b0216bcafabd7:115)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	at v9.a.run(r8-map-id-edd172feefc94365febb843888a53fb35f32a2999752866baa6b0216bcafabd7:118)
+06-15 13:19:32.975 28922 28943 E AndroidRuntime: 	Suppressed: t9.f: [p1{Cancelling}@b97899c, Dispatchers.Default]
+06-15 13:19:38.985 29896 29896 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:19:43.720 29896 29933 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665fdf4d in tid 29933 (d), pid 29896 (AndroidUI)
+06-15 13:19:44.723 30376 30376 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:19:44.723 30376 30376 F DEBUG   : keyProcess: 0
+06-15 13:19:44.723 30376 30376 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:19:44.723 30376 30376 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:19:44.723 30376 30376 F DEBUG   : Revision: '0'
+06-15 13:19:44.723 30376 30376 F DEBUG   : ABI: 'arm64'
+06-15 13:19:44.723 30376 30376 F DEBUG   : Timestamp: 2026-06-15 13:19:43.982404664-0400
+06-15 13:19:44.723 30376 30376 F DEBUG   : Process uptime: 0s
+06-15 13:19:44.723 30376 30376 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:19:44.723 30376 30376 F DEBUG   : pid: 29896, tid: 29933, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:19:44.723 30376 30376 F DEBUG   : uid: 14096
+06-15 13:19:44.723 30376 30376 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665fdf4d
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x0  0000000000000000  x1  00000000000074ed  x2  0000000000000007  x3  000000768a6d1da0
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x4  000000768a6d16a8  x5  000000768a6d16a8  x6  000000768a6d16a8  x7  0000000000000000
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 00000076665dc39e
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755e564000  x19 0000000000000007
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x20 000000768a6d1da0  x21 00000000000074c8  x22 000000768a6d1d00  x23 0000000000000001
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x24 00000075ccb51000  x25 00000075ccb4e9e0  x26 00000075ccb4ea24  x27 0000000000000001
+06-15 13:19:44.723 30376 30376 F DEBUG   :     x28 00000075ccb4efd8  x29 000000768a6d1d20
+06-15 13:19:44.723 30376 30376 F DEBUG   :     lr  0000007576cbabc8  sp  000000768a6d1d00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:19:44.723 30376 30376 F DEBUG   : backtrace:
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #05 pc 00000000000b8b34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Ver2PtNodeArrayReader::readPtNodeArrayInfoAndReturnIfValid(int, int*, int*) const+80) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #06 pc 00000000000b4ce8  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::nextPtNodeArray()+68) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #07 pc 00000000000b4c3c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+432) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #08 pc 00000000000b7324  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #09 pc 00000000000a7d54  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #10 pc 00000000000d337c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #11 pc 00000000000c8bd0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #12 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #13 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #14 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #15 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #16 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #17 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #18 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #19 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #20 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #21 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #22 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #23 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #24 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #25 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #26 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #27 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #28 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #29 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #30 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #31 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #32 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.723 30376 30376 F DEBUG   :       #33 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:19:44.724 30376 30376 F DEBUG   :       #34 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.724 30376 30376 F DEBUG   :       #35 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:19:44.724 30376 30376 F DEBUG   :       #36 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:44.724 30376 30376 F DEBUG   :       #37 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:19:44.724 30376 30376 F DEBUG   :       #38 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:19:46.545 30393 30393 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:19:50.777 30393 30441 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665f4162 in tid 30441 (d), pid 30393 (AndroidUI)
+06-15 13:19:52.054 30647 30647 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:19:52.054 30647 30647 F DEBUG   : keyProcess: 0
+06-15 13:19:52.054 30647 30647 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:19:52.054 30647 30647 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:19:52.054 30647 30647 F DEBUG   : Revision: '0'
+06-15 13:19:52.054 30647 30647 F DEBUG   : ABI: 'arm64'
+06-15 13:19:52.054 30647 30647 F DEBUG   : Timestamp: 2026-06-15 13:19:51.146696067-0400
+06-15 13:19:52.054 30647 30647 F DEBUG   : Process uptime: 0s
+06-15 13:19:52.054 30647 30647 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:19:52.054 30647 30647 F DEBUG   : pid: 30393, tid: 30441, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:19:52.054 30647 30647 F DEBUG   : uid: 14096
+06-15 13:19:52.054 30647 30647 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x76665f4162
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x0  0000000000000000  x1  00000000000076e9  x2  0000000000000007  x3  00000076879deda0
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x4  00000076879de6a8  x5  00000076879de6a8  x6  00000076879de6a8  x7  0000000000000000
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 000000000000001f  x15 00000076665dc39e
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755926a000  x19 0000000000000007
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x20 00000076879deda0  x21 00000000000076b9  x22 00000076879ded00  x23 0000000000000001
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x24 00000075cc17e000  x25 00000075cc17b9f0  x26 00000075cc17ba24  x27 0000000000000001
+06-15 13:19:52.054 30647 30647 F DEBUG   :     x28 00000075cc17bfd8  x29 00000076879ded20
+06-15 13:19:52.054 30647 30647 F DEBUG   :     lr  0000007576cbabc8  sp  00000076879ded00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:19:52.054 30647 30647 F DEBUG   : backtrace:
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #05 pc 00000000000b8b34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Ver2PtNodeArrayReader::readPtNodeArrayInfoAndReturnIfValid(int, int*, int*) const+80) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #06 pc 00000000000b4ce8  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::nextPtNodeArray()+68) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #07 pc 00000000000b4c3c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+432) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #08 pc 00000000000b7324  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #09 pc 00000000000a7d54  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #10 pc 00000000000d337c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #11 pc 00000000000c8bd0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #12 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #13 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #14 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #15 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #16 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #17 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #18 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #19 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #20 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #21 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #22 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #23 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #24 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #25 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #26 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #27 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #28 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #29 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #30 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #31 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #32 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #33 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #34 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #35 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #36 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #37 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:19:52.054 30647 30647 F DEBUG   :       #38 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:19:59.479 30686 30686 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:20:01.689 30686 30720 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7666610019 in tid 30720 (d), pid 30686 (AndroidUI)
+06-15 13:20:02.844 30931 30931 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:20:02.844 30931 30931 F DEBUG   : keyProcess: 0
+06-15 13:20:02.844 30931 30931 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:20:02.844 30931 30931 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:20:02.844 30931 30931 F DEBUG   : Revision: '0'
+06-15 13:20:02.844 30931 30931 F DEBUG   : ABI: 'arm64'
+06-15 13:20:02.844 30931 30931 F DEBUG   : Timestamp: 2026-06-15 13:20:01.935996271-0400
+06-15 13:20:02.845 30931 30931 F DEBUG   : Process uptime: 0s
+06-15 13:20:02.845 30931 30931 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:20:02.845 30931 30931 F DEBUG   : pid: 30686, tid: 30720, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:20:02.845 30931 30931 F DEBUG   : uid: 14096
+06-15 13:20:02.845 30931 30931 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7666610019
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x0  0000000000000000  x1  0000000000007800  x2  0000000000000007  x3  000000768da07da0
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x4  000000768da076a8  x5  000000768da076a8  x6  000000768da076a8  x7  0000000000000000
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 b400007414679808  x15 00000000358637bd
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755bb40000  x19 0000000000000007
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x20 000000768da07da0  x21 00000000000077de  x22 000000768da07d00  x23 0000000000000001
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x24 00000075dbdad7e8  x25 b4000075cb9e8490  x26 0000000000075080  x27 b40000741420d140
+06-15 13:20:02.845 30931 30931 F DEBUG   :     x28 0000000000000000  x29 000000768da07d20
+06-15 13:20:02.845 30931 30931 F DEBUG   :     lr  0000007576cbabc8  sp  000000768da07d00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:20:02.845 30931 30931 F DEBUG   : backtrace:
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #04 pc 00000000000b67ac  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+120) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #05 pc 00000000000b6d5c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetLeavingChildNode(latinime::DicNode const*, int, latinime::DicNodeVector*) const+140) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #06 pc 00000000000b6c70  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+180) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #07 pc 00000000000d598c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #08 pc 00000000000d4a88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #09 pc 00000000000d3c0c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #10 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #11 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #12 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #13 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #14 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #15 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #16 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #17 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #18 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #19 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #20 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #21 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #22 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #23 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #24 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #25 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #26 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #27 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #28 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #29 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #30 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #31 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #32 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #33 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #34 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #35 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:20:02.845 30931 30931 F DEBUG   :       #36 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:20:05.046 30947 30947 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of main
+06-15 13:20:12.798 30947 31025 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 13:20:14.290 30947 30947 I OnDeviceAssist: Removed unused Assist weights: Qwen2.5-0.5B-Instruct.IQ3_M.gguf (keeping qwen2.5-0.5b-instruct-q4_0.gguf)
+06-15 13:20:14.321 30947 31025 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 13:20:14.913 30947 31262 E ibekey.keyboar: Attempt to load writable dex file: /data/user/0/com.vibekey.keyboard/app_pccache/5/C571D7DB2E7379E33F5626D87812BBADE73E9BAD/pcam.jar
+06-15 13:20:14.930 30947 31164 W Ads     : Invoke Firebase method getInstance error.
+06-15 13:20:14.930 30947 31164 W Ads     : The Google Mobile Ads SDK will not integrate with Firebase. Admob/Firebase integration requires the latest Firebase SDK jar, but Firebase SDK is either missing or out of date
+06-15 13:20:14.935 30947 31257 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.CACHE
+06-15 13:20:15.044 30947 31275 W Ads     : Not retrying to fetch app settings
+06-15 13:20:15.045 30947 31275 W Ads     : Not retrying to fetch app settings
+06-15 13:20:15.046 30947 31295 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+06-15 13:20:16.469 30947 30947 E Ads     : JS: Refused to get unsafe header "X-Afma-Gcache-IsGcacheHit" (https://www.gstatic.com/mysidia/1481c091d9df379c2904f938e54fba0c.js?tag=addon/rewarded_video:435)
+06-15 13:20:16.635 30947 30947 E Ads     : JS: Refused to get unsafe header "X-Afma-Gcache-IsGcacheHit" (https://www.gstatic.com/mysidia/1481c091d9df379c2904f938e54fba0c.js?tag=addon/rewarded_video:435)
+06-15 13:20:16.728 30947 31040 W libc    : Access denied finding property "vendor.oplus.media.vpp.stutter"
+06-15 13:20:16.735 30947 31040 E MULTIMEDIAConfig: [getInt32:L80] Not find config, Returning default
+06-15 13:20:16.735 30947 31040 E MULTIMEDIAConfig: [getInt32:L80] Not find config, Returning default
+06-15 13:20:16.736 30947 31040 E OplusACodec: [OplusACodec:204] mSrOsieMMListCheckResult:0x0 mOsieVersion:1
+06-15 13:20:16.798 30947 31345 E OplusACodec: [GetVideoCodingTypeFromMime:L1162] mime:video/x-vnd.on2.vp9
+06-15 13:20:16.927 30947 31040 W cr_MediaCodecBridge: Releasing: OMX.qcom.video.decoder.vp9
+06-15 13:20:16.928 30947 31343 E ExtensionsLoader: freeAllBuffers: 13 buffers were freed while being dequeued!
+06-15 13:20:16.928 30947 31040 W cr_MediaCodecBridge: Codec released
+06-15 13:20:17.365 30947 31228 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 13:20:17.365 30947 31228 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-15 13:20:20.422 30947 31351 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-15 13:20:20.488 30947 31351 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-15 13:20:20.488 30947 31351 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.vibekey.keyboard cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+06-15 13:20:20.962 30947 30956 W ibekey.keyboar: Cleared Reference was only reachable from finalizer (only reported once)
+06-15 13:20:43.970 30947 31025 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 13:20:54.812 31608 31608 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:20:54.933 31608 31608 W i0      : Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+06-15 13:20:54.977 31649 31649 E oard:llm_engin: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:20:55.054 31608 31608 W t       : No editor info for this field. Bug?
+06-15 13:20:55.063 31608 31608 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+06-15 13:20:55.121 31608 31608 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*116719914]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[])
+06-15 13:20:55.157 31608 31608 W System  : ClassLoader referenced unknown path: 
+06-15 13:20:55.190 31608 31608 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=116719914, found=3444240068 (DLC[];PCL[base.apk*116719914]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[/data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/base.apk*3444240068]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]})
+06-15 13:20:55.640 31608 31608 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+06-15 13:20:55.640 31608 31608 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+06-15 13:20:55.669 31608 31705 W Ads     : Update ad debug logging enablement as false
+06-15 13:20:55.705 31608 31608 E MultiApp.Impl: OplusMultiAppImpl
+06-15 13:20:55.787 31608 31608 W libc    : Access denied finding property "ro.vendor.api_level"
+06-15 13:20:55.790 31608 31608 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+06-15 13:20:55.914 31608 31766 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:20:55.914 31608 31766 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:20:55.914 31608 31623 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:20:55.982 31608 31608 I VkSwipe : ○ gesture canceled
+06-15 13:20:55.985 31608 31608 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:20:56.004 31608 31608 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+06-15 13:20:56.107 31608 31608 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-15 13:20:56.285 31608 31736 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-15 13:20:56.286 31608 31736 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+06-15 13:20:56.286 31608 31736 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-15 13:20:56.291 31608 31608 W View    : requestLayout() improperly called by android.widget.LinearLayout{6a254f3 V.E...... ......ID 0,1868-1440,2818 #7f0a011c app:id/main_keyboard_frame} during layout: running second layout pass
+06-15 13:20:56.422 31608 31757 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-15 13:20:56.427 31608 31757 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-15 13:20:56.431 31608 31757 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-15 13:20:56.431 31608 31757 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-15 13:20:56.533 31608 31808 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-15 13:20:56.539 31608 31808 E GeckoLibLoad: Load sqlite start
+06-15 13:20:56.541 31608 31808 E GeckoLibLoad: Load sqlite done
+06-15 13:20:56.541 31608 31808 E GeckoLibLoad: Load nss start
+06-15 13:20:56.541 31810 31810 E ard:crashhelpe: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:20:56.541 31608 31808 E GeckoLibLoad: Load nss done
+06-15 13:20:56.560 31608 31808 E GeckoLibLoad: Loaded libs in 18.555937ms total, 0ms(14ms) user, 11ms(45ms) system, 3(3) faults
+06-15 13:20:56.561 31608 31808 W GeckoThread: zerdatime 1220897425 - runGecko
+06-15 13:20:56.629 31608 31608 W com.vibekey.keyboard: type=1400 audit(0.0:482321): avc: denied { bind } for comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-15 13:20:56.660 31608 31808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:20:56.661 31608 31808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:20:56.661 31608 31808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:20:56.661 31608 31808 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:20:56.714 31848 31848 E .keyboard:tab3: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482322): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482323): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482324): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482325): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482326): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:56.859 31649 31649 W DefaultDispatch: type=1400 audit(0.0:482327): avc: denied { read } for name="/" dev="dm-0" ino=2 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0 app=com.vibekey.keyboard
+06-15 13:20:57.732 31649 31667 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 880ms
+06-15 13:20:57.920 31608 31608 W b       : Suggestion generation timed out
+06-15 13:20:58.199 31897 31897 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-15 13:20:58.206 31897 31897 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-15 13:20:58.206 31897 31897 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-15 13:20:58.206 31897 31897 E libcrashpad_handler_trampoline.so: Opened libinputextensionsimpl.so
+06-15 13:20:58.219 31897 31897 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-15 13:20:58.220 31897 31897 E libcrashpad_handler_trampoline.so: createInstance(64bit) : createExtendedFactory
+06-15 13:20:58.220 31897 31897 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-15 13:20:58.220 31897 31897 E libcrashpad_handler_trampoline.so: Opened libsensorextimpl.so
+06-15 13:20:58.549 31608 31608 W b       : Suggestion generation timed out
+06-15 13:20:58.570 31608 31648 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7666610240 in tid 31648 (d), pid 31608 (AndroidUI)
+06-15 13:20:58.864 31906 31906 E DEBUG   : failed to read /proc/uptime: Permission denied
+06-15 13:20:59.016 31608 31608 W b       : Suggestion generation timed out
+06-15 13:20:59.284 31608 31608 I VkAutocorrect: kept (typing): hola
+06-15 13:20:59.736 31608 31608 W b       : Suggestion generation timed out
+06-15 13:21:00.051 31906 31906 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 13:21:00.051 31906 31906 F DEBUG   : keyProcess: 0
+06-15 13:21:00.051 31906 31906 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 13:21:00.052 31906 31906 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 13:21:00.052 31906 31906 F DEBUG   : Revision: '0'
+06-15 13:21:00.052 31906 31906 F DEBUG   : ABI: 'arm64'
+06-15 13:21:00.052 31906 31906 F DEBUG   : Timestamp: 2026-06-15 13:20:58.864135781-0400
+06-15 13:21:00.052 31906 31906 F DEBUG   : Process uptime: 0s
+06-15 13:21:00.052 31906 31906 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 13:21:00.052 31906 31906 F DEBUG   : pid: 31608, tid: 31648, name: d  >>> com.vibekey.keyboard <<<
+06-15 13:21:00.052 31906 31906 F DEBUG   : uid: 14096
+06-15 13:21:00.052 31906 31906 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7666610240
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x0  0000000000000000  x1  0000000000007ba0  x2  0000000000000007  x3  000000768a7feda0
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x4  0000000000000000  x5  0000000000000000  x6  0000000000000000  x7  0000000000000000
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x8  00000000000000f0  x9  db746b027190efc7  x10 0000000000004001  x11 0000000000000000
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 b4000075c49cfd08  x15 00000000358637bd
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x16 000000757caad3a8  x17 00000076790b8f10  x18 000000755fc74000  x19 0000000000000007
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x20 000000768a7feda0  x21 0000000000007b78  x22 000000768a7fed00  x23 0000000000000001
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x24 b400007412426000  x25 b4000075bb0a6190  x26 0000000000075080  x27 b40000741240da00
+06-15 13:21:00.052 31906 31906 F DEBUG   :     x28 0000000000000000  x29 000000768a7fed20
+06-15 13:21:00.052 31906 31906 F DEBUG   :     lr  0000007576cbabc8  sp  000000768a7fed00  pc  00000076790b8f34  pst 0000000000000000
+06-15 13:21:00.052 31906 31906 F DEBUG   : backtrace:
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #03 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #04 pc 00000000000b62f4  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+44) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #05 pc 00000000000b6c2c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+112) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #06 pc 00000000000d598c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #07 pc 00000000000d4a88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #08 pc 00000000000d3c0c  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #09 pc 000000000009fd88  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 13:21:00.052 31906 31906 F DEBUG   :       #10 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #11 pc 00000000006692dc  /apex/com.android.art/lib64/libart.so (nterp_helper+3852) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #12 pc 0000000000228a34  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.q+572)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #13 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #14 pc 00000000002287b2  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #15 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #16 pc 0000000000aeb686  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.k.d+50)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #17 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #18 pc 0000000000aea77e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (v7.e.d+70)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #19 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #20 pc 00000000005b5a2e  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.i+334)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #21 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #22 pc 00000000005b5390  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.h+392)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #23 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #24 pc 00000000005b51c0  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.o.g+112)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #25 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #26 pc 00000000005bd982  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.c+266)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #27 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #28 pc 00000000005bd800  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (p7.i1.b+2656)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #29 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #30 pc 0000000000af285a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #31 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #32 pc 00000000001a3d46  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (a5.a.run+102)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #33 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #34 pc 0000000000aef71a  /data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 13:21:00.053 31906 31906 F DEBUG   :       #35 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 13:21:01.337 31925 31925 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:21:01.455 31925 31925 W i0      : Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+06-15 13:21:01.570 31925 31925 W t       : No editor info for this field. Bug?
+06-15 13:21:01.578 31925 31925 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+06-15 13:21:01.610 31925 31925 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*116719914]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[])
+06-15 13:21:01.619 31925 31925 W System  : ClassLoader referenced unknown path: 
+06-15 13:21:01.624 31925 31925 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=116719914, found=3444240068 (DLC[];PCL[base.apk*116719914]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]} | DLC[];PCL[/data/app/~~FXSxSzxa0pgReaTfSMynTQ==/com.vibekey.keyboard-DPcily4mNnM5ab6d82hhaw==/base.apk*3444240068]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*3839736497]})
+06-15 13:21:01.689 31925 31925 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+06-15 13:21:01.689 31925 31925 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+06-15 13:21:01.725 31925 31983 W Ads     : Update ad debug logging enablement as false
+06-15 13:21:01.751 31925 31925 E MultiApp.Impl: OplusMultiAppImpl
+06-15 13:21:01.818 31925 31925 W libc    : Access denied finding property "ro.vendor.api_level"
+06-15 13:21:01.820 31925 31925 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+06-15 13:21:01.892 31925 32044 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:21:01.892 31925 32044 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:21:01.892 31925 31941 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+06-15 13:21:01.895 31925 31925 I VkSwipe : ○ gesture canceled
+06-15 13:21:01.897 31925 31925 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 13:21:01.913 31925 31925 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+06-15 13:21:02.002 31925 31925 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-15 13:21:02.138 31925 32019 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-15 13:21:02.141 31925 32019 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+06-15 13:21:02.141 31925 32019 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-15 13:21:02.168 31925 31925 W View    : requestLayout() improperly called by android.widget.LinearLayout{de577d6 V.E...... ......ID 0,1868-1440,2818 #7f0a011c app:id/main_keyboard_frame} during layout: running second layout pass
+06-15 13:21:02.293 31925 32037 W AudioCapabilities: Unsupported mime audio/ffmpeg
+06-15 13:21:02.293 31925 32037 W VideoCapabilities: Unsupported mime video/ffmpeg
+06-15 13:21:02.294 31925 32037 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-15 13:21:02.294 31925 32037 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+06-15 13:21:02.410 31925 32079 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-15 13:21:02.414 31925 32079 E GeckoLibLoad: Load sqlite start
+06-15 13:21:02.415 31925 32079 E GeckoLibLoad: Load sqlite done
+06-15 13:21:02.415 31925 32079 E GeckoLibLoad: Load nss start
+06-15 13:21:02.415 31925 32079 E GeckoLibLoad: Load nss done
+06-15 13:21:02.425 31925 32079 E GeckoLibLoad: Loaded libs in 9.533125ms total, 0ms(26ms) user, 6ms(9ms) system, 1(1) faults
+06-15 13:21:02.425 31925 32079 W GeckoThread: zerdatime 1220903290 - runGecko
+06-15 13:21:02.469 31925 31925 W com.vibekey.keyboard: type=1400 audit(0.0:482338): avc: denied { bind } for comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-15 13:21:02.502 31925 32079 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:21:02.502 31925 32079 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:21:02.502 31925 32079 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:21:02.502 31925 32079 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 13:21:02.556 32102 32102 E .keyboard:tab3: Unknown bits set in runtime_flags: 0x40000000
+06-15 13:21:02.696 31649 31898 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+06-15 13:21:03.248 31649 31668 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+06-15 13:21:03.777 31925 31925 I VkPanels: ▶ open menu
+06-15 13:21:04.803 31925 31925 I VkTyping: ○ hidden
+06-15 13:21:04.937 31925 31925 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-15 13:21:09.786 31925 31998 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 13:21:10.169 31925 31998 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 13:21:11.766 31925 32249 E ibekey.keyboar: Attempt to load writable dex file: /data/user/0/com.vibekey.keyboard/app_pccache/5/C571D7DB2E7379E33F5626D87812BBADE73E9BAD/pcam.jar
+06-15 13:21:11.779 31925 31925 W AdWorker(Defaul: type=1400 audit(0.0:482346): avc: granted { execute } for path="/data/data/com.vibekey.keyboard/app_pccache/5/C571D7DB2E7379E33F5626D87812BBADE73E9BAD/pcam.jar" dev="dm-2" ino=12066430 scontext=u:r:untrusted_app:s0:c0,c272,c512,c768 tcontext=u:object_r:app_data_file:s0:c0,c272,c512,c768 tclass=file app=com.vibekey.keyboard
+06-15 13:21:11.829 31925 31976 W Ads     : Invoke Firebase method getInstance error.
+06-15 13:21:11.829 31925 31976 W Ads     : The Google Mobile Ads SDK will not integrate with Firebase. Admob/Firebase integration requires the latest Firebase SDK jar, but Firebase SDK is either missing or out of date
+06-15 13:21:11.847 31925 32246 W ServiceBindIntentUtils: Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.CACHE
+
+=== Feature activity (persisted across restarts) ===
+2026-06-15 13:12:47.981640 I VkFavorites: save card Bitcoin Vibe activate=false
+2026-06-15 13:12:48.055715 I VkFavorites: save card Doge Meme activate=false
+2026-06-15 13:12:48.122606 I VkFavorites: save card Ethereum Vibes activate=false
+2026-06-15 13:12:48.176627 I VkFavorites: save card India Popular City activate=false
+2026-06-15 13:12:48.256197 I VkFavorites: save card Miami Beach Crypto activate=false
+2026-06-15 13:12:48.326586 I VkFavorites: save card Nike Sneakers Crypto activate=false
+2026-06-15 13:12:48.375064 I VkFavorites: save card Pepe Meme Frog activate=false
+2026-06-15 13:12:48.430256 I VkFavorites: save card Times Square NFT activate=false
+2026-06-15 13:12:48.506404 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-06-15 13:12:48.707857 I VkSetupWizard: loading path=none started=false active=false ready=false netWait=false
+2026-06-15 13:12:48.764857 I VkSetupWizard: loading path=none started=false active=false ready=false netWait=false
+2026-06-15 13:13:07.258853 I VkSwipe: ○ gesture canceled
+2026-06-15 13:13:07.280856 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 13:13:07.417103 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:13:08.746718 I VkPanels: ▶ open menu
+2026-06-15 13:13:09.351446 I VkMultilingual: menu languages total=1
+2026-06-15 13:13:16.627887 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:13:20.203247 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 14,7ms
+2026-06-15 13:13:20.205025 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 13:13:20.378926 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,8ms
+2026-06-15 13:13:20.380805 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jo locale=pt
+2026-06-15 13:13:20.693285 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 5,3ms
+2026-06-15 13:13:20.694741 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=jola locale=pt
+2026-06-15 13:13:21.610702 I VkAutocorrect: kept (typing): jola
+2026-06-15 13:13:21.728069 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=jola locale=pt
+2026-06-15 13:13:22.488025 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 8,3ms
+2026-06-15 13:13:22.490991 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=jol locale=pt
+2026-06-15 13:13:22.655235 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,6ms
+2026-06-15 13:13:22.657071 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jo locale=pt
+2026-06-15 13:13:22.807171 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,7ms
+2026-06-15 13:13:22.808171 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 13:13:23.004017 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=jola locale=pt
+2026-06-15 13:13:23.562722 W VkSuggestions: slow frame 19,7ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:13:23.563979 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:13:23.749530 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 6,9ms
+2026-06-15 13:13:23.750757 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:13:23.946019 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 7,1ms
+2026-06-15 13:13:23.947241 I VkAutocorrect: offered: hol → hol
+2026-06-15 13:13:23.947523 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hol locale=pt
+2026-06-15 13:13:24.072358 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 11,6ms
+2026-06-15 13:13:24.074497 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:24.443105 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:13:24.552592 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:25.139657 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,7ms
+2026-06-15 13:13:25.140615 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=m locale=pt
+2026-06-15 13:13:25.261310 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 11,3ms
+2026-06-15 13:13:25.262924 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ma locale=pt
+2026-06-15 13:13:25.466457 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 7,0ms
+2026-06-15 13:13:25.468026 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=mar locale=pt
+2026-06-15 13:13:25.725255 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 12,5ms
+2026-06-15 13:13:25.727691 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false top=maris locale=pt
+2026-06-15 13:13:25.847317 I VkAutocorrect: kept (typing): maris
+2026-06-15 13:13:25.952915 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:26.632491 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 25,8ms
+2026-06-15 13:13:26.633292 W VkSuggestions: slow frame 25,8ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:13:26.636371 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=mari locale=pt
+2026-06-15 13:13:27.426806 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 20,9ms
+2026-06-15 13:13:27.427369 W VkSuggestions: slow frame 20,9ms locales=1 typedLen=5 candidates=18
+2026-06-15 13:13:27.429861 I VkSuggestions: strip composing typedLen=5 candidates=17 autocorrect=false top=maria locale=pt
+2026-06-15 13:13:27.773608 I VkAutocorrect: kept (typing): maria
+2026-06-15 13:13:27.878225 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:28.255506 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,9ms
+2026-06-15 13:13:28.256834 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=co locale=pt
+2026-06-15 13:13:28.426055 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 8,9ms
+2026-06-15 13:13:28.427577 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=com locale=pt
+2026-06-15 13:13:28.610155 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 23,6ms
+2026-06-15 13:13:28.610633 W VkSuggestions: slow frame 23,6ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:13:28.612635 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=comi locale=pt
+2026-06-15 13:13:28.766719 I VkAutocorrect: kept (typing): comi
+2026-06-15 13:13:28.872193 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:30.688133 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 33,5ms
+2026-06-15 13:13:30.688981 W VkSuggestions: slow frame 33,5ms locales=1 typedLen=5 candidates=18
+2026-06-15 13:13:30.692245 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false top=comio locale=pt
+2026-06-15 13:13:31.473699 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 9,5ms
+2026-06-15 13:13:31.475071 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=comi locale=pt
+2026-06-15 13:13:31.668497 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 19,6ms
+2026-06-15 13:13:31.669075 W VkSuggestions: slow frame 19,6ms locales=1 typedLen=3 candidates=18
+2026-06-15 13:13:31.671296 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=com locale=pt
+2026-06-15 13:13:32.197294 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 22,5ms
+2026-06-15 13:13:32.197858 W VkSuggestions: slow frame 22,5ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:13:32.200112 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=como locale=pt
+2026-06-15 13:13:32.331132 I VkAutocorrect: kept (typing): como
+2026-06-15 13:13:32.433748 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:32.582748 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 16,3ms
+2026-06-15 13:13:32.583067 W VkSuggestions: slow frame 16,3ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:13:32.584291 I VkAutocorrect: offered: e → e
+2026-06-15 13:13:32.584473 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=true top=e locale=pt
+2026-06-15 13:13:32.806232 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,2ms
+2026-06-15 13:13:32.807374 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=es locale=pt
+2026-06-15 13:13:32.962785 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 12,6ms
+2026-06-15 13:13:32.964675 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=est locale=pt
+2026-06-15 13:13:33.206409 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 22,3ms
+2026-06-15 13:13:33.207023 W VkSuggestions: slow frame 22,3ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:13:33.209679 I VkAutocorrect: offered: ests → ests
+2026-06-15 13:13:33.210113 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=true top=ests locale=pt
+2026-06-15 13:13:33.314396 I VkAutocorrect: committed (typing): ests → está
+2026-06-15 13:13:33.420196 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:34.133317 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 12,4ms
+2026-06-15 13:13:34.134575 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=t locale=pt
+2026-06-15 13:13:34.321662 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 10,5ms
+2026-06-15 13:13:34.323592 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=tu locale=pt
+2026-06-15 13:13:34.518197 I VkAutocorrect: kept (typing): tu
+2026-06-15 13:13:34.623636 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:35.326688 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,3ms
+2026-06-15 13:13:35.327638 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 13:13:35.456491 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,1ms
+2026-06-15 13:13:35.457482 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jk locale=pt
+2026-06-15 13:13:35.640117 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 9,4ms
+2026-06-15 13:13:35.642197 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=jku locale=pt
+2026-06-15 13:13:36.427145 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 13:13:36.448769 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 17,8ms
+2026-06-15 13:13:36.449163 W VkSuggestions: slow frame 17,8ms locales=1 typedLen=0 candidates=18
+2026-06-15 13:13:36.557277 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 10,9ms
+2026-06-15 13:13:36.565056 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 7,2ms
+2026-06-15 13:13:36.660313 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,9ms
+2026-06-15 13:13:36.668086 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 7,3ms
+2026-06-15 13:13:36.674357 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,4ms
+2026-06-15 13:13:36.680419 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 5,7ms
+2026-06-15 13:13:36.689640 I VkSwipe: ✓ gesture points=17 decodedLen=2 candidates=18 top=gi 262ms
+2026-06-15 13:13:37.126774 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 13:13:37.260110 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 12,5ms
+2026-06-15 13:13:37.273638 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 13,1ms
+2026-06-15 13:13:37.560468 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 12,2ms
+2026-06-15 13:13:37.580420 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 19,4ms
+2026-06-15 13:13:37.580796 W VkSuggestions: slow frame 19,4ms locales=1 typedLen=0 candidates=18
+2026-06-15 13:13:37.804298 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 6,9ms
+2026-06-15 13:13:37.814789 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 10,0ms
+2026-06-15 13:13:38.020337 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 9,1ms
+2026-06-15 13:13:38.047167 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 26,3ms
+2026-06-15 13:13:38.047564 W VkSuggestions: slow frame 26,3ms locales=1 typedLen=0 candidates=18
+2026-06-15 13:13:38.061023 I VkSwipe: ✓ gesture points=67 decodedLen=5 candidates=18 top=uriel 934ms
+2026-06-15 13:13:38.379296 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 13:13:38.699109 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 6,3ms
+2026-06-15 13:13:38.723086 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 23,5ms
+2026-06-15 13:13:38.723400 W VkSuggestions: slow frame 23,5ms locales=1 typedLen=0 candidates=18
+2026-06-15 13:13:38.740579 I VkSwipe: ✓ gesture points=34 decodedLen=2 candidates=18 top=di 361ms
+2026-06-15 13:13:39.387456 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:40.243051 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 25,6ms
+2026-06-15 13:13:40.243941 W VkSuggestions: slow frame 25,6ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:13:40.246387 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=g locale=pt
+2026-06-15 13:13:40.484679 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=gi locale=pt
+2026-06-15 13:13:40.805509 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,3ms
+2026-06-15 13:13:40.806743 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jk locale=pt
+2026-06-15 13:13:40.984424 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 11,0ms
+2026-06-15 13:13:40.985581 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 13:13:41.257034 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=jku locale=pt
+2026-06-15 13:13:42.049639 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:13:42.188513 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 12,2ms
+2026-06-15 13:13:42.189691 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:13:42.381192 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 21,1ms
+2026-06-15 13:13:42.381928 W VkSuggestions: slow frame 21,1ms locales=1 typedLen=3 candidates=18
+2026-06-15 13:13:42.385022 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=hot locale=pt
+2026-06-15 13:13:43.881885 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 21,6ms
+2026-06-15 13:13:43.882490 W VkSuggestions: slow frame 21,6ms locales=1 typedLen=2 candidates=18
+2026-06-15 13:13:43.884887 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:13:44.466707 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 21,7ms
+2026-06-15 13:13:44.467563 W VkSuggestions: slow frame 21,7ms locales=1 typedLen=3 candidates=18
+2026-06-15 13:13:44.470188 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=hoy locale=pt
+2026-06-15 13:13:45.104927 I VkAutocorrect: picked: hoy
+2026-06-15 13:13:45.215994 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:13:46.324481 I VkPanels: ▶ open assist
+2026-06-15 13:13:46.347091 I OnDeviceAssist: ▶ panel open
+2026-06-15 13:13:48.452329 I OnDeviceAssist: ▶ tap task=tone_pro in=27 chars
+2026-06-15 13:13:48.455476 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=27 chars
+2026-06-15 13:13:49.353953 I OnDeviceAssist: ✓ assist (ime) task=tone_pro model=gemma-3-270m-it-qat-Q4_0.gguf 893ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:13:51.390382 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=27 chars
+2026-06-15 13:13:51.392012 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=27 chars
+2026-06-15 13:13:52.055955 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic model=gemma-3-270m-it-qat-Q4_0.gguf 663ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:13:54.661494 I OnDeviceAssist: ▶ tap task=tone_persuade in=27 chars
+2026-06-15 13:13:54.662974 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=27 chars
+2026-06-15 13:13:55.215790 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-qat-Q4_0.gguf 552ms in=27 out=31 inLang=es outLang=en lang=mismatch
+2026-06-15 13:13:59.005323 I OnDeviceAssist: ○ blocked task=concise: quota_gate
+2026-06-15 13:14:01.214864 I VkTyping: ○ hidden
+2026-06-15 13:14:05.909256 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:14:06.615858 I VkSwipe: ○ gesture canceled
+2026-06-15 13:14:06.637461 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 13:14:06.732449 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:14:07.102139 I VkTyping: ▶ open restart=true pkg=com.android.launcher inputType=589825
+2026-06-15 13:14:12.572654 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 12,9ms
+2026-06-15 13:14:12.575124 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:14:12.731688 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,0ms
+2026-06-15 13:14:12.735423 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:14:12.882596 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,7ms
+2026-06-15 13:14:12.883874 I VkAutocorrect: offered: hol → hol
+2026-06-15 13:14:12.884149 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hol locale=pt
+2026-06-15 13:14:13.019445 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 9,1ms
+2026-06-15 13:14:13.022037 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hola locale=pt
+2026-06-15 13:14:13.226570 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:14:13.329823 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 1,4ms
+2026-06-15 13:14:13.341229 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=maris locale=pt
+2026-06-15 13:14:14.541518 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 27,4ms
+2026-06-15 13:14:14.542483 W VkSuggestions: slow frame 27,4ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:14:14.545879 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=a locale=pt
+2026-06-15 13:14:14.973441 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=maris locale=pt
+2026-06-15 13:14:15.548805 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 17,2ms
+2026-06-15 13:14:15.549339 W VkSuggestions: slow frame 17,2ms locales=1 typedLen=2 candidates=18
+2026-06-15 13:14:15.551950 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ma locale=pt
+2026-06-15 13:14:15.717465 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,3ms
+2026-06-15 13:14:15.719224 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=mar locale=pt
+2026-06-15 13:14:15.967095 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 8,2ms
+2026-06-15 13:14:15.969421 I VkAutocorrect: offered: maria → maria
+2026-06-15 13:14:15.969804 I VkSuggestions: strip composing typedLen=5 candidates=17 autocorrect=true top=maria locale=pt
+2026-06-15 13:14:16.591666 I VkAutocorrect: committed (typing): maria → María
+2026-06-15 13:14:16.699649 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 13:14:17.549153 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,0ms
+2026-06-15 13:14:17.550477 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=co locale=pt
+2026-06-15 13:14:17.704435 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 10,2ms
+2026-06-15 13:14:17.706387 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=com locale=pt
+2026-06-15 13:14:17.934961 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 27,9ms
+2026-06-15 13:14:17.935394 W VkSuggestions: slow frame 27,9ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:14:17.937821 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=como locale=pt
+2026-06-15 13:14:18.463401 I VkAutocorrect: picked: como
+2026-06-15 13:14:18.565970 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,3ms
+2026-06-15 13:14:18.567607 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=está locale=pt
+2026-06-15 13:14:18.888456 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,4ms
+2026-06-15 13:14:18.889903 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false top=w locale=pt
+2026-06-15 13:14:19.087050 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,8ms
+2026-06-15 13:14:19.088936 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=wd locale=pt
+2026-06-15 13:14:19.227235 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,5ms
+2026-06-15 13:14:19.230128 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=wdt locale=pt
+2026-06-15 13:14:19.472673 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 8,0ms
+2026-06-15 13:14:19.476246 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=wdts locale=pt
+2026-06-15 13:14:19.654490 I VkAutocorrect: kept (typing): wdts
+2026-06-15 13:14:19.757726 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=como locale=pt
+2026-06-15 13:14:20.623684 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,1ms
+2026-06-15 13:14:20.625226 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=t locale=pt
+2026-06-15 13:14:20.825322 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 7,3ms
+2026-06-15 13:14:20.827227 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=tu locale=pt
+2026-06-15 13:14:21.017691 I VkAutocorrect: kept (typing): tu
+2026-06-15 13:14:21.119955 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=tu locale=pt
+2026-06-15 13:14:21.970297 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,4ms
+2026-06-15 13:14:21.972330 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=t locale=pt
+2026-06-15 13:14:22.100923 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=tu locale=pt
+2026-06-15 13:14:22.409343 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,4ms
+2026-06-15 13:14:22.410856 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=wdt locale=pt
+2026-06-15 13:14:22.562529 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,9ms
+2026-06-15 13:14:22.563809 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=wd locale=pt
+2026-06-15 13:14:22.729877 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 25,1ms
+2026-06-15 13:14:22.730378 W VkSuggestions: slow frame 25,1ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:14:22.731809 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=w locale=pt
+2026-06-15 13:14:23.024955 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=wdts locale=pt
+2026-06-15 13:14:23.501759 I VkAutocorrect: offered: e → e
+2026-06-15 13:14:23.502168 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=true top=e locale=pt
+2026-06-15 13:14:23.688263 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,7ms
+2026-06-15 13:14:23.690851 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ew locale=pt
+2026-06-15 13:14:23.942482 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 17,0ms
+2026-06-15 13:14:23.943325 W VkSuggestions: slow frame 17,0ms locales=1 typedLen=3 candidates=18
+2026-06-15 13:14:23.947159 I VkAutocorrect: offered: ewt → ewt
+2026-06-15 13:14:23.947755 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=ewt locale=pt
+2026-06-15 13:14:24.204712 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 13,4ms
+2026-06-15 13:14:24.207568 I VkAutocorrect: offered: ewta → ewta
+2026-06-15 13:14:24.208092 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=true top=ewta locale=pt
+2026-06-15 13:14:24.809038 I VkAutocorrect: picked: está
+2026-06-15 13:14:24.913005 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,5ms
+2026-06-15 13:14:24.914986 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=tu locale=pt
+2026-06-15 13:14:25.551387 I VkAutocorrect: picked: tu
+2026-06-15 13:14:25.657354 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=tu locale=pt
+2026-06-15 13:14:26.902005 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 8,4ms
+2026-06-15 13:14:26.903138 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:14:27.066292 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,1ms
+2026-06-15 13:14:27.067369 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:14:27.262821 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 15,2ms
+2026-06-15 13:14:27.266397 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=hoy locale=pt
+2026-06-15 13:14:28.607129 I VkAutocorrect: picked: hoy
+2026-06-15 13:14:28.716441 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=tu locale=es
+2026-06-15 13:14:29.152811 I VkPanels: ▶ open assist
+2026-06-15 13:14:29.177246 I OnDeviceAssist: ▶ panel open
+2026-06-15 13:14:32.272998 I OnDeviceAssist: ○ blocked task=tone_pro: quota_gate
+2026-06-15 13:14:33.279896 I VkTyping: ○ hidden
+2026-06-15 13:14:43.419386 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:14:44.762507 I VkPanels: ▶ open assist
+2026-06-15 13:14:44.783797 I OnDeviceAssist: ▶ panel open
+2026-06-15 13:14:46.510548 I OnDeviceAssist: ▶ tap task=tone_pro in=27 chars
+2026-06-15 13:14:46.513482 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=27 chars
+2026-06-15 13:14:47.187589 I OnDeviceAssist: ✓ assist (ime) task=tone_pro model=gemma-3-270m-it-qat-Q4_0.gguf 667ms in=27 out=40 inLang=es outLang=es lang=ok
+2026-06-15 13:14:50.191592 I OnDeviceAssist: ▶ tap task=concise in=27 chars
+2026-06-15 13:14:50.193431 I OnDeviceAssist: ▶ assist_ipc task=concise in=27 chars
+2026-06-15 13:14:50.768526 I OnDeviceAssist: ✓ assist (ime) task=concise model=gemma-3-270m-it-qat-Q4_0.gguf 574ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:14:52.255102 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=27 chars
+2026-06-15 13:14:52.256743 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=27 chars
+2026-06-15 13:14:52.884416 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic model=gemma-3-270m-it-qat-Q4_0.gguf 626ms in=27 out=37 inLang=es outLang=latin lang=weak
+2026-06-15 13:14:55.083583 I OnDeviceAssist: ▶ tap task=tone_persuade in=27 chars
+2026-06-15 13:14:55.092442 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=27 chars
+2026-06-15 13:14:55.659967 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-qat-Q4_0.gguf 566ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:14:57.384482 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=27 chars
+2026-06-15 13:14:57.386861 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=27 chars
+2026-06-15 13:14:57.928492 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic model=gemma-3-270m-it-qat-Q4_0.gguf 542ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:14:59.905112 I OnDeviceAssist: ▶ tap task=expand in=27 chars
+2026-06-15 13:14:59.906817 I OnDeviceAssist: ▶ assist_ipc task=expand in=27 chars
+2026-06-15 13:15:00.434448 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-qat-Q4_0.gguf 526ms in=27 out=31 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:03.284881 I OnDeviceAssist: ▶ tap task=expand in=27 chars
+2026-06-15 13:15:03.287645 I OnDeviceAssist: ▶ assist_ipc task=expand in=27 chars
+2026-06-15 13:15:03.875900 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-qat-Q4_0.gguf 587ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:15:08.927997 I OnDeviceAssist: ▶ tap task=work_email in=27 chars
+2026-06-15 13:15:08.929903 I OnDeviceAssist: ▶ assist_ipc task=work_email in=27 chars
+2026-06-15 13:15:10.180077 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-qat-Q4_0.gguf 1247ms in=27 out=167 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:14.374890 I OnDeviceAssist: ▶ tap task=expand in=27 chars
+2026-06-15 13:15:14.376371 I OnDeviceAssist: ▶ assist_ipc task=expand in=27 chars
+2026-06-15 13:15:14.942215 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-qat-Q4_0.gguf 565ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:15:16.955097 I OnDeviceAssist: ▶ tap task=work_email in=27 chars
+2026-06-15 13:15:16.956939 I OnDeviceAssist: ▶ assist_ipc task=work_email in=27 chars
+2026-06-15 13:15:17.777710 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-qat-Q4_0.gguf 819ms in=27 out=68 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:20.906742 I OnDeviceAssist: ▶ tap task=work_email in=27 chars
+2026-06-15 13:15:20.912633 I OnDeviceAssist: ▶ assist_ipc task=work_email in=27 chars
+2026-06-15 13:15:22.258297 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-qat-Q4_0.gguf 1343ms in=27 out=202 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:28.191528 I OnDeviceAssist: ▶ tap task=work_actions in=27 chars
+2026-06-15 13:15:28.193977 I OnDeviceAssist: ▶ assist_ipc task=work_actions in=27 chars
+2026-06-15 13:15:28.744443 I OnDeviceAssist: ✓ assist (ime) task=work_actions model=gemma-3-270m-it-qat-Q4_0.gguf 549ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:15:31.937319 I OnDeviceAssist: ▶ tap task=grammar in=27 chars
+2026-06-15 13:15:31.939387 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-15 13:15:32.452434 I OnDeviceAssist: ✓ assist (ime) task=grammar model=gemma-3-270m-it-qat-Q4_0.gguf 512ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:15:35.682121 I OnDeviceAssist: ▶ tap task=simplify in=27 chars
+2026-06-15 13:15:35.687913 I OnDeviceAssist: ▶ assist_ipc task=simplify in=27 chars
+2026-06-15 13:15:36.220349 I OnDeviceAssist: ✓ assist (ime) task=simplify model=gemma-3-270m-it-qat-Q4_0.gguf 531ms in=27 out=31 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:39.625144 I OnDeviceAssist: ▶ tap task=smart_reply in=27 chars
+2026-06-15 13:15:39.626880 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=27 chars
+2026-06-15 13:15:40.295917 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-qat-Q4_0.gguf 667ms in=27 out=49 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:44.451567 I OnDeviceAssist: ▶ tap task=simplify in=27 chars
+2026-06-15 13:15:44.452947 I OnDeviceAssist: ▶ assist_ipc task=simplify in=27 chars
+2026-06-15 13:15:45.001263 I OnDeviceAssist: ✓ assist (ime) task=simplify model=gemma-3-270m-it-qat-Q4_0.gguf 547ms in=27 out=30 inLang=es outLang=en lang=mismatch
+2026-06-15 13:15:48.161062 I OnDeviceAssist: ▶ tap task=smart_reply in=27 chars
+2026-06-15 13:15:48.162651 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=27 chars
+2026-06-15 13:15:48.827326 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-qat-Q4_0.gguf 664ms in=27 out=48 inLang=es outLang=es lang=ok
+2026-06-15 13:15:57.494696 I OnDeviceAssist: ▶ tap task=translate in=27 chars
+2026-06-15 13:15:57.510008 I OnDeviceAssist: ▶ assist_ipc task=translate in=27 chars
+2026-06-15 13:15:58.173105 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-qat-Q4_0.gguf 663ms in=27 out=16 inLang=skip outLang=skip lang=skip
+2026-06-15 13:16:00.139495 I OnDeviceAssist: ▶ tap task=tone_casual in=27 chars
+2026-06-15 13:16:00.141177 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=27 chars
+2026-06-15 13:16:00.841465 I OnDeviceAssist: ✓ assist (ime) task=tone_casual model=gemma-3-270m-it-qat-Q4_0.gguf 700ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:16:02.232248 I OnDeviceAssist: ▶ tap task=tone_direct in=27 chars
+2026-06-15 13:16:02.233919 I OnDeviceAssist: ▶ assist_ipc task=tone_direct in=27 chars
+2026-06-15 13:16:02.796127 I OnDeviceAssist: ✓ assist (ime) task=tone_direct model=gemma-3-270m-it-qat-Q4_0.gguf 560ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:16:05.285765 I OnDeviceAssist: ▶ tap task=bullets in=27 chars
+2026-06-15 13:16:05.287177 I OnDeviceAssist: ▶ assist_ipc task=bullets in=27 chars
+2026-06-15 13:16:06.325404 I OnDeviceAssist: ✓ assist (ime) task=bullets model=gemma-3-270m-it-qat-Q4_0.gguf 1037ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:16:08.567719 I OnDeviceAssist: ▶ tap task=summary in=27 chars
+2026-06-15 13:16:08.569723 I OnDeviceAssist: ▶ assist_ipc task=summary in=27 chars
+2026-06-15 13:16:09.192601 I OnDeviceAssist: ✓ assist (ime) task=summary model=gemma-3-270m-it-qat-Q4_0.gguf 623ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:16:11.558192 I OnDeviceAssist: ▶ tap task=work_slack in=27 chars
+2026-06-15 13:16:11.560010 I OnDeviceAssist: ▶ assist_ipc task=work_slack in=27 chars
+2026-06-15 13:16:12.141315 I OnDeviceAssist: ✓ assist (ime) task=work_slack model=gemma-3-270m-it-qat-Q4_0.gguf 581ms in=27 out=30 inLang=es outLang=en lang=mismatch
+2026-06-15 13:16:14.471222 I OnDeviceAssist: ▶ tap task=work_ooo in=27 chars
+2026-06-15 13:16:14.478683 I OnDeviceAssist: ▶ assist_ipc task=work_ooo in=27 chars
+2026-06-15 13:16:15.380328 I OnDeviceAssist: ✓ assist (ime) task=work_ooo model=gemma-3-270m-it-qat-Q4_0.gguf 900ms in=27 out=122 inLang=es outLang=es lang=ok
+2026-06-15 13:16:21.206493 I OnDeviceAssist: ▶ tap task=work_ooo in=27 chars
+2026-06-15 13:16:21.208833 I OnDeviceAssist: ▶ assist_ipc task=work_ooo in=27 chars
+2026-06-15 13:16:21.840305 I OnDeviceAssist: ✓ assist (ime) task=work_ooo model=gemma-3-270m-it-qat-Q4_0.gguf 630ms in=27 out=38 inLang=es outLang=es lang=ok
+2026-06-15 13:16:23.916802 I OnDeviceAssist: ▶ tap task=continue in=27 chars
+2026-06-15 13:16:23.918627 I OnDeviceAssist: ▶ assist_ipc task=continue in=27 chars
+2026-06-15 13:16:24.430651 I OnDeviceAssist: ✓ assist (ime) task=continue model=gemma-3-270m-it-qat-Q4_0.gguf 511ms in=27 out=24 inLang=es outLang=es lang=ok
+2026-06-15 13:16:28.836367 I VkTyping: ○ hidden
+2026-06-15 13:16:29.885373 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:16:30.484870 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=27 chars
+2026-06-15 13:16:30.510213 I VkTyping: ▶ open restart=true pkg=com.android.launcher inputType=589825
+2026-06-15 13:16:30.902085 W OnDeviceAssist: ✗ assist (ime) task=topic_tags model=gemma-3-270m-it-qat-Q4_0.gguf 417ms: Assist prompt decode failed
+2026-06-15 13:16:31.206584 I VkPanels: ▶ open menu
+2026-06-15 13:16:33.282744 I VkTyping: ○ hidden
+2026-06-15 13:16:40.992304 I OnDeviceAssist: Removed unused Assist weights: gemma-3-270m-it-qat-Q4_0.gguf (keeping gemma-3-270m-it-IQ4_NL.gguf)
+2026-06-15 13:17:03.522290 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:17:04.434546 I VkSwipe: ○ gesture canceled
+2026-06-15 13:17:04.452831 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 13:17:04.552932 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:17:06.180806 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 22,7ms
+2026-06-15 13:17:06.181214 W VkSuggestions: slow frame 22,7ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:17:06.182771 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,5ms
+2026-06-15 13:17:06.184574 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:17:06.414744 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 17,4ms
+2026-06-15 13:17:06.415090 W VkSuggestions: slow frame 17,4ms locales=1 typedLen=2 candidates=18
+2026-06-15 13:17:06.417997 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:17:06.578463 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 7,2ms
+2026-06-15 13:17:06.591132 I VkAutocorrect: offered: hol → hol
+2026-06-15 13:17:06.592193 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hol locale=pt
+2026-06-15 13:17:06.730168 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 7,6ms
+2026-06-15 13:17:06.732137 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hola locale=pt
+2026-06-15 13:17:06.846109 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:17:06.950697 I VkSuggestions: decode typedLen=0 candidates=2 locales=1 2,3ms
+2026-06-15 13:17:06.971606 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=María locale=pt
+2026-06-15 13:17:07.993210 I VkAutocorrect: picked: María
+2026-06-15 13:17:08.099076 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 1,2ms
+2026-06-15 13:17:08.103930 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=como locale=pt
+2026-06-15 13:17:08.747966 I VkAutocorrect: picked: como
+2026-06-15 13:17:08.850050 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=está locale=pt
+2026-06-15 13:17:09.577465 I VkAutocorrect: picked: está
+2026-06-15 13:17:09.680953 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=tu locale=pt
+2026-06-15 13:17:10.187064 I VkAutocorrect: picked: tu
+2026-06-15 13:17:10.292225 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=tu locale=pt
+2026-06-15 13:17:11.637745 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 7,1ms
+2026-06-15 13:17:11.639379 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:17:11.794706 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,0ms
+2026-06-15 13:17:11.804558 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:17:11.995364 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,0ms
+2026-06-15 13:17:11.996947 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=hoy locale=pt
+2026-06-15 13:17:12.902503 I VkAutocorrect: picked: hoy
+2026-06-15 13:17:13.007058 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=tu locale=es
+2026-06-15 13:17:13.981265 I VkPanels: ▶ open assist
+2026-06-15 13:17:14.017425 I OnDeviceAssist: ▶ panel open
+2026-06-15 13:17:16.347559 I OnDeviceAssist: ▶ tap task=tone_pro in=27 chars
+2026-06-15 13:17:16.349288 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=27 chars
+2026-06-15 13:17:17.404491 I OnDeviceAssist: ✓ assist (ime) task=tone_pro model=gemma-3-270m-it-IQ4_NL.gguf 1047ms in=27 out=18 inLang=es outLang=es lang=ok
+2026-06-15 13:17:20.668668 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=27 chars
+2026-06-15 13:17:20.671129 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=27 chars
+2026-06-15 13:17:21.306569 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic model=gemma-3-270m-it-IQ4_NL.gguf 634ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:24.178861 I OnDeviceAssist: ▶ tap task=tone_persuade in=27 chars
+2026-06-15 13:17:24.180281 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=27 chars
+2026-06-15 13:17:24.785094 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 603ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:26.793273 I OnDeviceAssist: ▶ tap task=concise in=27 chars
+2026-06-15 13:17:26.795453 I OnDeviceAssist: ▶ assist_ipc task=concise in=27 chars
+2026-06-15 13:17:27.411827 I OnDeviceAssist: ✓ assist (ime) task=concise model=gemma-3-270m-it-IQ4_NL.gguf 615ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:29.580050 I OnDeviceAssist: ▶ tap task=expand in=27 chars
+2026-06-15 13:17:29.581375 I OnDeviceAssist: ▶ assist_ipc task=expand in=27 chars
+2026-06-15 13:17:30.218206 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-IQ4_NL.gguf 635ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:32.575018 I OnDeviceAssist: ▶ tap task=work_email in=27 chars
+2026-06-15 13:17:32.576465 I OnDeviceAssist: ▶ assist_ipc task=work_email in=27 chars
+2026-06-15 13:17:33.764708 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-IQ4_NL.gguf 1185ms in=27 out=114 inLang=es outLang=en lang=mismatch
+2026-06-15 13:17:40.030739 I OnDeviceAssist: ▶ tap task=work_actions in=27 chars
+2026-06-15 13:17:40.032520 I OnDeviceAssist: ▶ assist_ipc task=work_actions in=27 chars
+2026-06-15 13:17:40.650486 I OnDeviceAssist: ✓ assist (ime) task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf 617ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:43.603061 I OnDeviceAssist: ▶ tap task=grammar in=27 chars
+2026-06-15 13:17:43.604893 I OnDeviceAssist: ▶ assist_ipc task=grammar in=27 chars
+2026-06-15 13:17:44.227005 I OnDeviceAssist: ✓ assist (ime) task=grammar model=gemma-3-270m-it-IQ4_NL.gguf 621ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:46.992505 I OnDeviceAssist: ▶ tap task=simplify in=27 chars
+2026-06-15 13:17:46.994243 I OnDeviceAssist: ▶ assist_ipc task=simplify in=27 chars
+2026-06-15 13:17:47.599110 I OnDeviceAssist: ✓ assist (ime) task=simplify model=gemma-3-270m-it-IQ4_NL.gguf 604ms in=27 out=30 inLang=es outLang=en lang=mismatch
+2026-06-15 13:17:49.729970 I OnDeviceAssist: ▶ tap task=smart_reply in=27 chars
+2026-06-15 13:17:49.731841 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=27 chars
+2026-06-15 13:17:50.404228 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 670ms in=27 out=39 inLang=es outLang=es lang=ok
+2026-06-15 13:17:52.753236 I OnDeviceAssist: ▶ tap task=subject in=27 chars
+2026-06-15 13:17:52.755013 I OnDeviceAssist: ▶ assist_ipc task=subject in=27 chars
+2026-06-15 13:17:53.376472 I OnDeviceAssist: ✓ assist (ime) task=subject model=gemma-3-270m-it-IQ4_NL.gguf 620ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:17:55.156376 I OnDeviceAssist: ▶ tap task=translate in=27 chars
+2026-06-15 13:17:55.158334 I OnDeviceAssist: ▶ assist_ipc task=translate in=27 chars
+2026-06-15 13:17:56.695251 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1537ms in=27 out=27 inLang=skip outLang=skip lang=skip
+2026-06-15 13:17:58.284637 I OnDeviceAssist: ▶ tap task=translate in=27 chars
+2026-06-15 13:17:58.286290 I OnDeviceAssist: ▶ assist_ipc task=translate in=27 chars
+2026-06-15 13:17:58.822658 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 536ms in=27 out=28 inLang=skip outLang=skip lang=skip
+2026-06-15 13:18:00.714561 I OnDeviceAssist: ▶ tap task=translate in=27 chars
+2026-06-15 13:18:00.716061 I OnDeviceAssist: ▶ assist_ipc task=translate in=27 chars
+2026-06-15 13:18:01.432034 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 716ms in=27 out=29 inLang=skip outLang=skip lang=skip
+2026-06-15 13:18:03.462216 I OnDeviceAssist: ▶ tap task=translate in=27 chars
+2026-06-15 13:18:03.472381 I OnDeviceAssist: ▶ assist_ipc task=translate in=27 chars
+2026-06-15 13:18:04.068422 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 596ms in=27 out=27 inLang=skip outLang=skip lang=skip
+2026-06-15 13:18:06.514897 I OnDeviceAssist: ▶ tap task=tone_casual in=27 chars
+2026-06-15 13:18:06.516703 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=27 chars
+2026-06-15 13:18:07.194624 I OnDeviceAssist: ✓ assist (ime) task=tone_casual model=gemma-3-270m-it-IQ4_NL.gguf 677ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:18:08.333544 I OnDeviceAssist: ▶ tap task=tone_direct in=27 chars
+2026-06-15 13:18:08.335085 I OnDeviceAssist: ▶ assist_ipc task=tone_direct in=27 chars
+2026-06-15 13:18:09.028919 I OnDeviceAssist: ✓ assist (ime) task=tone_direct model=gemma-3-270m-it-IQ4_NL.gguf 693ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:18:11.765358 I OnDeviceAssist: ▶ tap task=work_slack in=27 chars
+2026-06-15 13:18:11.767174 I OnDeviceAssist: ▶ assist_ipc task=work_slack in=27 chars
+2026-06-15 13:18:12.386403 I OnDeviceAssist: ✓ assist (ime) task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 618ms in=27 out=26 inLang=es outLang=es lang=ok
+2026-06-15 13:18:17.975614 I OnDeviceAssist: ▶ tap task=bullets in=27 chars
+2026-06-15 13:18:17.977534 I OnDeviceAssist: ▶ assist_ipc task=bullets in=27 chars
+2026-06-15 13:18:19.233599 I OnDeviceAssist: ✓ assist (ime) task=bullets model=gemma-3-270m-it-IQ4_NL.gguf 1255ms in=27 out=35 inLang=es outLang=es lang=ok
+2026-06-15 13:18:21.265772 I OnDeviceAssist: ▶ tap task=summary in=27 chars
+2026-06-15 13:18:21.267892 I OnDeviceAssist: ▶ assist_ipc task=summary in=27 chars
+2026-06-15 13:18:21.886088 I OnDeviceAssist: ✓ assist (ime) task=summary model=gemma-3-270m-it-IQ4_NL.gguf 618ms in=27 out=28 inLang=es outLang=es lang=ok
+2026-06-15 13:18:24.253022 I OnDeviceAssist: ▶ tap task=work_slack in=27 chars
+2026-06-15 13:18:24.254795 I OnDeviceAssist: ▶ assist_ipc task=work_slack in=27 chars
+2026-06-15 13:18:24.875899 I OnDeviceAssist: ✓ assist (ime) task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 620ms in=27 out=32 inLang=es outLang=es lang=ok
+2026-06-15 13:18:27.088877 I OnDeviceAssist: ▶ tap task=work_ooo in=27 chars
+2026-06-15 13:18:27.090374 I OnDeviceAssist: ▶ assist_ipc task=work_ooo in=27 chars
+2026-06-15 13:18:28.244847 I OnDeviceAssist: ✓ assist (ime) task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf 1154ms in=27 out=47 inLang=es outLang=thai lang=mismatch
+2026-06-15 13:18:32.191296 I OnDeviceAssist: ▶ tap task=de_cliche in=27 chars
+2026-06-15 13:18:32.193436 I OnDeviceAssist: ▶ assist_ipc task=de_cliche in=27 chars
+2026-06-15 13:18:32.737617 I OnDeviceAssist: ✓ assist (ime) task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf 543ms in=27 out=18 inLang=es outLang=es lang=ok
+2026-06-15 13:18:38.009903 I VkPanels: ▶ open menu
+2026-06-15 13:18:39.075454 I VkTyping: ○ hidden
+2026-06-15 13:18:48.375968 I OnDeviceAssist: Removed unused Assist weights: gemma-3-270m-it-IQ4_NL.gguf (keeping Qwen2.5-0.5B-Instruct.IQ3_M.gguf)
+2026-06-15 13:19:16.614059 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:17.362357 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:17.490004 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:19:20.351226 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:19:22.799365 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:23.149586 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:23.252777 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:19:27.511961 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:27.813968 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:27.923125 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:19:28.246750 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 20,7ms
+2026-06-15 13:19:28.247516 W VkSuggestions: slow frame 20,7ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:19:28.250634 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 1,0ms
+2026-06-15 13:19:28.258363 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false top=hola locale=pt
+2026-06-15 13:19:28.679469 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=4 chars
+2026-06-15 13:19:29.306527 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:19:29.476286 I VkSuggestions: decode typedLen=0 candidates=2 locales=1 3,9ms
+2026-06-15 13:19:29.501375 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=María locale=pt
+2026-06-15 13:19:31.474692 I VkAutocorrect: kept (typing): maria
+2026-06-15 13:19:38.454834 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:38.983148 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:39.068217 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:19:40.592327 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 19,1ms
+2026-06-15 13:19:40.592761 W VkSuggestions: slow frame 19,1ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:19:40.597314 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 2,5ms
+2026-06-15 13:19:40.600702 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 13:19:40.761820 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 5,9ms
+2026-06-15 13:19:40.763437 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 13:19:40.960446 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 6,6ms
+2026-06-15 13:19:40.965176 I VkAutocorrect: offered: hol → hol
+2026-06-15 13:19:40.967687 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hol locale=pt
+2026-06-15 13:19:41.109737 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 5,5ms
+2026-06-15 13:19:41.110806 I VkSuggestions: strip composing typedLen=4 candidates=16 autocorrect=false top=hola locale=pt
+2026-06-15 13:19:41.681465 I VkAutocorrect: picked: hola
+2026-06-15 13:19:41.794481 I VkSuggestions: decode typedLen=0 candidates=2 locales=1 1,3ms
+2026-06-15 13:19:41.801889 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=maria locale=pt
+2026-06-15 13:19:42.709256 I VkAutocorrect: picked: maria
+2026-06-15 13:19:42.818943 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=comi locale=pt
+2026-06-15 13:19:46.262808 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:46.542884 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:46.648078 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:19:46.988909 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 39,0ms
+2026-06-15 13:19:46.989277 W VkSuggestions: slow frame 39,0ms locales=1 typedLen=4 candidates=18
+2026-06-15 13:19:46.991011 I VkSuggestions: decode typedLen=0 candidates=2 locales=1 0,3ms
+2026-06-15 13:19:46.999486 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=como locale=pt
+2026-06-15 13:19:47.401697 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=15 chars
+2026-06-15 13:19:48.010827 I VkAutocorrect: kept (typing): como
+2026-06-15 13:19:48.395760 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,2ms
+2026-06-15 13:19:48.407096 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=está locale=pt
+2026-06-15 13:19:48.882829 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 40,5ms
+2026-06-15 13:19:48.883371 W VkSuggestions: slow frame 40,5ms locales=1 typedLen=1 candidates=18
+2026-06-15 13:19:48.887486 I VkAutocorrect: offered: e → e
+2026-06-15 13:19:48.888135 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=true top=e locale=pt
+2026-06-15 13:19:49.071722 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 13,1ms
+2026-06-15 13:19:49.073099 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false top=es locale=pt
+2026-06-15 13:19:49.298437 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 6,9ms
+2026-06-15 13:19:49.301056 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=false top=est locale=pt
+2026-06-15 13:19:49.493160 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 5,5ms
+2026-06-15 13:19:49.494657 I VkAutocorrect: offered: ests → ests
+2026-06-15 13:19:49.494950 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=true top=ests locale=pt
+2026-06-15 13:19:49.541462 I VkAutocorrect: committed (typing): ests → está
+2026-06-15 13:19:49.652028 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,5ms
+2026-06-15 13:19:49.654057 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=tu locale=pt
+2026-06-15 13:19:51.213511 I VkAutocorrect: kept (typing): tu
+2026-06-15 13:19:51.583909 I OnDeviceAssist: ✓ assist (ime) task=topic_tags model=Qwen2.5-0.5B-Instruct.IQ3_M.gguf 4180ms in=15 out=11 inLang=es outLang=latin lang=weak
+2026-06-15 13:19:59.000263 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:19:59.477835 I VkSwipe: ○ gesture canceled
+2026-06-15 13:19:59.582372 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:20:04.661884 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:20:05.044619 I VkSwipe: ○ gesture canceled
+2026-06-15 13:20:05.139351 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:20:06.448073 I VkPanels: ▶ open menu
+2026-06-15 13:20:07.324566 I VkTyping: ○ hidden
+2026-06-15 13:20:14.290740 I OnDeviceAssist: Removed unused Assist weights: Qwen2.5-0.5B-Instruct.IQ3_M.gguf (keeping qwen2.5-0.5b-instruct-q4_0.gguf)
+2026-06-15 13:20:55.063049 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:20:55.983015 I VkSwipe: ○ gesture canceled
+2026-06-15 13:20:56.107442 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:20:59.284837 I VkAutocorrect: kept (typing): hola
+2026-06-15 13:21:01.578950 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 13:21:01.895252 I VkSwipe: ○ gesture canceled
+2026-06-15 13:21:02.002067 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 13:21:03.777889 I VkPanels: ▶ open menu
+2026-06-15 13:21:04.803022 I VkTyping: ○ hidden
+... (9 VkEffects reload lines omitted)
+
+=== In-memory (current process) ===
+2026-06-15 13:21:01.455846 W i0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-15 13:21:01.474353 I startup: Starting com.vibekey.keyboard version 4.1.323 (4423) on Android 12 (SDK 31)
+2026-06-15 13:21:01.478297 I LatinIME: Hardware accelerated drawing: true
+2026-06-15 13:21:01.552466 I SymSpellProvider: Detected asset languages: [en]
+2026-06-15 13:21:01.553965 I NgramPredictor: Detected bigram asset languages: []
+2026-06-15 13:21:01.554790 I NgramPredictor: Loaded 2 runtime bigram keys for pt
+2026-06-15 13:21:01.555076 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-15 13:21:01.555434 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-15 13:21:01.555655 I NgramPredictor: Loaded 1 runtime trigram keys for pt
+2026-06-15 13:21:01.557005 I RecencyTracker: init loaded 1 language file(s)
+2026-06-15 13:21:01.558010 I AdaptiveTouchModel: Loaded touch model: 18 keys
+2026-06-15 13:21:01.558587 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-15 13:21:01.570402 W t: No editor info for this field. Bug?
+2026-06-15 13:21:01.570494 I c: loadSettings
+2026-06-15 13:21:01.577632 I o: resetDictionaries, force reloading main dictionary: false
+2026-06-15 13:21:01.595349 I NgramPredictor: Detected bigram asset languages: []
+2026-06-15 13:21:01.595866 I NgramPredictor: Loaded 2 runtime bigram keys for pt
+2026-06-15 13:21:01.596092 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-15 13:21:01.596313 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-15 13:21:01.596453 I NgramPredictor: Loaded 1 runtime trigram keys for pt
+2026-06-15 13:21:01.597173 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-15 13:21:01.597505 I SymSpellProvider: Detected asset languages: [en]
+2026-06-15 13:21:01.597602 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-15 13:21:01.673478 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-15 13:21:01.674907 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-15 13:21:01.890302 I c: loadSettings
+2026-06-15 13:21:01.915334 I StickerImageManager: No sticker images on disk (empty cache confirmed)
+2026-06-15 13:21:02.001799 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-15 13:21:02.002468 I c: loadSettings
+2026-06-15 13:21:02.362835 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:02.362943 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:02.591746 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:02.591859 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:03.091892 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:03.092107 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:03.592759 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:03.592897 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.093082 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.093223 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.593407 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.593519 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.716317 I LatinIME: requestHideSelf: 0
+2026-06-15 13:21:04.797086 I LatinIME: hideWindow
+2026-06-15 13:21:04.802746 I LatinIME: onFinishInputView
+2026-06-15 13:21:04.802969 I LatinIME: onWindowHidden
+2026-06-15 13:21:04.833339 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:04.833457 I t: InputType.TYPE_NULL is specified
+2026-06-15 13:21:04.833510 I c: loadSettings
+2026-06-15 13:21:05.142743 I LatinIME: requestHideSelf: 100
+2026-06-15 13:21:05.144572 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:05.144684 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:05.182574 I LatinIME: onFinishInput
+2026-06-15 13:21:05.643999 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:05.644112 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:06.144478 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:06.144591 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:06.249863 I SymSpellProvider: Built runtime SymSpell for es with 79999 words
+2026-06-15 13:21:06.249988 I o: Built runtime SymSpell for es with 80015 words
+2026-06-15 13:21:06.398900 I SymSpellProvider: Built runtime SymSpell for pt with 79999 words
+2026-06-15 13:21:06.399008 I o: Built runtime SymSpell for pt with 80022 words
+2026-06-15 13:21:06.643998 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:06.644105 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:07.151307 I c: loadSettings
+2026-06-15 13:21:07.157839 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:07.157914 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:07.665043 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:07.665165 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:08.164885 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:08.165044 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 13:21:09.468419 I LatinIME: onFinishInput
+2026-06-15 13:21:11.689787 I AdManager: MobileAds initialization complete
+2026-06-15 13:21:11.689970 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-15 13:21:11.690124 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-15 13:21:11.719727 I LatinIME: onFinishInput
+2026-06-15 13:21:11.775957 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-06-15 13:21:11.776280 I SymSpellProvider: SymSpell loaded for en with 82834 words
