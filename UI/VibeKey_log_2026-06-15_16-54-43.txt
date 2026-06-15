@@ -1,0 +1,814 @@
+=== VibeKey 4.1.329 (4429) ===
+
+--------- beginning of system
+06-15 16:50:05.328 25181 25181 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 16:50:16.463 25852 25852 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+--------- beginning of crash
+06-15 16:50:58.261 25852 26159 F libc    : Pointer tag for 0xffffffff was truncated, see 'https://source.android.com/devices/tech/debug/tagged-pointers'.
+06-15 16:51:01.326 26348 26348 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 16:51:15.449 26348 26515 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 16:51:15.449 26348 26515 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+06-15 16:51:37.053 26348 26383 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6700000051 in tid 26383 (d), pid 26348 (ibekey.keyboard)
+06-15 16:51:38.336 26704 26704 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-15 16:51:38.336 26704 26704 F DEBUG   : keyProcess: 0
+06-15 16:51:38.336 26704 26704 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-15 16:51:38.336 26704 26704 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-15 16:51:38.336 26704 26704 F DEBUG   : Revision: '0'
+06-15 16:51:38.336 26704 26704 F DEBUG   : ABI: 'arm64'
+06-15 16:51:38.336 26704 26704 F DEBUG   : Timestamp: 2026-06-15 16:51:37.254873772-0400
+06-15 16:51:38.336 26704 26704 F DEBUG   : Process uptime: 0s
+06-15 16:51:38.336 26704 26704 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-15 16:51:38.336 26704 26704 F DEBUG   : pid: 26348, tid: 26383, name: d  >>> com.vibekey.keyboard <<<
+06-15 16:51:38.336 26704 26704 F DEBUG   : uid: 14108
+06-15 16:51:38.336 26704 26704 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6700000051
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x0  0000007500000079  x1  000000766d32fe48  x2  b4000074deaf5800  x3  00000075cc5d9ba0
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x4  00000075e02164f8  x5  0000000800000005  x6  0000000000000000  x7  00000075cc5d86f0
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x8  0000006700000069  x9  db746b027190efc7  x10 0000000000000000  x11 b4000074deaf5800
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x12 00000075cc5d8708  x13 000000766d32fe49  x14 0000000000000000  x15 00000000ebad6a89
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x16 000000755f729cfc  x17 00000075cc5d9ae0  x18 0000007536ece000  x19 b4000074deaf5800
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x20 0000000000001130  x21 b4000074deaf6930  x22 0000007500000079  x23 0000006700000069
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x24 00000075dfe5f500  x25 00000075cc5d9bf0  x26 00000075cc5d9c08  x27 00000075cc5d9bf0
+06-15 16:51:38.336 26704 26704 F DEBUG   :     x28 00000075cc5d9af0  x29 00000075cc5d9aa0
+06-15 16:51:38.336 26704 26704 F DEBUG   :     lr  00000075dfac2104  sp  00000075cc5d9aa0  pc  000000755f729d5c  pst 0000000080000000
+06-15 16:51:38.336 26704 26704 F DEBUG   : backtrace:
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #00 pc 00000000000a3d5c  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #01 pc 00000000002c2100  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #02 pc 0000000000668b6c  /apex/com.android.art/lib64/libart.so (nterp_helper+1948) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #03 pc 000000000021f21c  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (com.android.inputmethod.latin.DicTraverseSession.a+16)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #04 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #05 pc 000000000021edb8  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.a+44)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #06 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #07 pc 0000000000ad717a  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (v7.k.a+22)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #08 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #09 pc 0000000000ad62da  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (v7.e.a+34)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #10 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #11 pc 0000000000591bcc  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (p7.r.b+52)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #12 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #13 pc 000000000059145e  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (p7.p.o+210)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #14 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #15 pc 000000000058f39c  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (p7.p.g+156)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #16 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #17 pc 00000000005974be  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (p7.j1.b+322)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #18 pc 0000000000669a28  /apex/com.android.art/lib64/libart.so (nterp_helper+5720) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #19 pc 0000000000ade1be  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (x7.b.m+1458)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #20 pc 0000000000669324  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #21 pc 0000000000592228  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (p7.v.run+72)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #22 pc 000000000066a144  /apex/com.android.art/lib64/libart.so (nterp_helper+7540) (BuildId: 7087b2f2160bfbf3335d54ba9779e325)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #23 pc 0000000000adb07e  /data/app/~~NB15Bl7H6icsgHAgR-dcEQ==/com.vibekey.keyboard-LRkeoGpB24SHh8MxhSh9PQ==/oat/arm64/base.vdex (x7.d.handleMessage+18)
+06-15 16:51:38.336 26704 26704 F DEBUG   :       #24 pc 000000000205b2d4  /memfd:jit-zygote-cache (deleted)
+06-15 16:51:40.156 26742 26742 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+06-15 16:52:06.146 26742 27149 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-15 16:52:06.146 26742 27149 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+06-15 16:52:11.319 25830 26903 I OnDeviceAssist: ✓ llm task=tone_direct model=gemma-3-270m-it-IQ4_NL.gguf 822ms out=29 chars inLang=es outLang=es lang=ok
+06-15 16:52:11.320 25830 26903 I OnDeviceAssist: done task=tone_direct model=gemma-3-270m-it-IQ4_NL.gguf 824ms out=29 chars
+06-15 16:52:11.320 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=tone_direct model=gemma-3-270m-it-IQ4_NL.gguf 839ms in=35 out=29 inLang=es outLang=es lang=ok
+06-15 16:52:14.269 26742 26742 I OnDeviceAssist: ▶ tap task=tone_persuade in=33 chars
+06-15 16:52:14.271 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=35 chars
+06-15 16:52:14.287 25830 26903 I OnDeviceAssist: dispatch task=tone_persuade in=35 chars engine=Ready
+06-15 16:52:14.287 25830 26903 I OnDeviceAssist: ▶ runSync task=tone_persuade in=35 chars locale=pt
+06-15 16:52:14.289 25830 26903 I OnDeviceAssist: → llm task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf temp=0.45 maxTok=64
+06-15 16:52:14.904 25830 26903 I OnDeviceAssist: ✓ llm task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 616ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:52:14.904 25830 26903 I OnDeviceAssist: done task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 618ms out=12 chars
+06-15 16:52:14.906 26742 26758 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 634ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:52:17.058 26742 26742 I OnDeviceAssist: ▶ tap task=tone_persuade in=33 chars
+06-15 16:52:17.060 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=35 chars
+06-15 16:52:17.074 25830 25847 I OnDeviceAssist: dispatch task=tone_persuade in=35 chars engine=Ready
+06-15 16:52:17.075 25830 25847 I OnDeviceAssist: ▶ runSync task=tone_persuade in=35 chars locale=pt
+06-15 16:52:17.076 25830 25847 I OnDeviceAssist: → llm task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf temp=0.45 maxTok=64
+06-15 16:52:17.706 25830 25847 I OnDeviceAssist: ✓ llm task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 631ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:52:17.706 25830 25847 I OnDeviceAssist: done task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 633ms out=12 chars
+06-15 16:52:17.707 26742 26758 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 647ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:52:19.102 26742 26742 I OnDeviceAssist: ▶ tap task=concise in=33 chars
+06-15 16:52:19.103 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=concise in=35 chars
+06-15 16:52:19.110 25830 25847 I OnDeviceAssist: dispatch task=concise in=35 chars engine=Ready
+06-15 16:52:19.110 25830 25847 I OnDeviceAssist: ▶ runSync task=concise in=35 chars locale=pt
+06-15 16:52:19.111 25830 25847 I OnDeviceAssist: → llm task=concise model=gemma-3-270m-it-IQ4_NL.gguf temp=0.35 maxTok=64
+06-15 16:52:22.121 25830 25847 I OnDeviceAssist: ✓ llm task=concise model=gemma-3-270m-it-IQ4_NL.gguf 3010ms out=25 chars inLang=es outLang=es lang=ok
+06-15 16:52:22.121 25830 25847 I OnDeviceAssist: done task=concise model=gemma-3-270m-it-IQ4_NL.gguf 3012ms out=25 chars
+06-15 16:52:22.122 26742 26758 I OnDeviceAssist: ✓ assist (ime) task=concise model=gemma-3-270m-it-IQ4_NL.gguf 3019ms in=35 out=25 inLang=es outLang=es lang=ok
+06-15 16:52:25.090 26742 26742 I OnDeviceAssist: ▶ tap task=bullets in=33 chars
+06-15 16:52:25.092 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=bullets in=35 chars
+06-15 16:52:25.105 25830 25847 I OnDeviceAssist: dispatch task=bullets in=35 chars engine=Ready
+06-15 16:52:25.105 25830 25847 I OnDeviceAssist: ▶ runSync task=bullets in=35 chars locale=pt
+06-15 16:52:25.106 25830 25847 I OnDeviceAssist: → llm task=bullets model=gemma-3-270m-it-IQ4_NL.gguf temp=0.35 maxTok=64
+06-15 16:52:25.813 25830 25847 W OnDeviceAssist: ↻ llm retry task=bullets: exact echo
+06-15 16:52:26.544 25830 25847 W OnDeviceAssist: ✗ llm task=bullets model=gemma-3-270m-it-IQ4_NL.gguf 1438ms: Model echoed input unchanged
+06-15 16:52:26.544 25830 25847 W OnDeviceAssist: failed task=bullets model=gemma-3-270m-it-IQ4_NL.gguf 1440ms
+06-15 16:52:26.545 26742 26757 W OnDeviceAssist: ✗ assist (ime) task=bullets model=gemma-3-270m-it-IQ4_NL.gguf 1453ms: Model echoed input unchanged
+06-15 16:52:26.548 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:52:28.494 26742 26742 I OnDeviceAssist: ▶ tap task=expand in=33 chars
+06-15 16:52:28.496 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=expand in=35 chars
+06-15 16:52:28.509 25830 26902 I OnDeviceAssist: dispatch task=expand in=35 chars engine=Ready
+06-15 16:52:28.510 25830 26902 I OnDeviceAssist: ▶ runSync task=expand in=35 chars locale=pt
+06-15 16:52:28.510 25830 26902 I OnDeviceAssist: → llm task=expand model=gemma-3-270m-it-IQ4_NL.gguf temp=0.45 maxTok=64
+06-15 16:52:30.026 25830 26902 I OnDeviceAssist: ✓ llm task=expand model=gemma-3-270m-it-IQ4_NL.gguf 1516ms out=226 chars inLang=es outLang=es lang=ok
+06-15 16:52:30.026 25830 26902 I OnDeviceAssist: done task=expand model=gemma-3-270m-it-IQ4_NL.gguf 1517ms out=226 chars
+06-15 16:52:30.030 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-IQ4_NL.gguf 1531ms in=35 out=226 inLang=es outLang=es lang=ok
+06-15 16:52:35.964 26742 28047 W Settings: Setting animator_duration_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only global URI.
+06-15 16:52:35.972 26742 28047 E GeckoLibLoad: Load sqlite start
+06-15 16:52:35.980 26742 28047 E GeckoLibLoad: Load sqlite done
+06-15 16:52:35.980 26742 28047 E GeckoLibLoad: Load nss start
+06-15 16:52:35.980 26742 28047 E GeckoLibLoad: Load nss done
+06-15 16:52:36.121 26742 28047 E GeckoLibLoad: Loaded libs in 140.281094ms total, 0ms(0ms) user, 25ms(26ms) system, 77(77) faults
+06-15 16:52:36.122 26742 28047 W GeckoThread: zerdatime 1233596986 - runGecko
+06-15 16:52:36.249 26742 26742 W com.vibekey.keyboard: type=1400 audit(0.0:494198): avc: denied { bind } for comm=4E65746C696E6B204D6F6E69746F72 scontext=u:r:untrusted_app:s0:c12,c272,c512,c768 tcontext=u:r:untrusted_app:s0:c12,c272,c512,c768 tclass=netlink_route_socket permissive=0 bug=b/155595000 app=com.vibekey.keyboard
+06-15 16:52:36.298 26742 28047 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Boolean;->value:Z (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 16:52:36.299 26742 28047 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Integer;->value:I (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 16:52:36.299 26742 28047 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Long;->value:J (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 16:52:36.299 26742 28047 E ibekey.keyboar: hiddenapi: Accessing hidden field Ljava/lang/Double;->value:D (runtime_flags=0, domain=core-platform, api=max-target-p) from Lorg/mozilla/gecko/GeckoThread; (domain=app, TargetSdkVersion=35) using JNI: denied
+06-15 16:52:36.335 28084 28084 E .keyboard:tab2: Unknown bits set in runtime_flags: 0x40000000
+06-15 16:52:36.883 26742 26742 I OnDeviceAssist: ▶ tap task=summary in=33 chars
+06-15 16:52:36.885 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=summary in=35 chars
+06-15 16:52:36.908 25830 26902 I OnDeviceAssist: dispatch task=summary in=35 chars engine=Ready
+06-15 16:52:36.908 25830 26902 I OnDeviceAssist: ▶ runSync task=summary in=35 chars locale=pt
+06-15 16:52:36.909 25830 26902 I OnDeviceAssist: → llm task=summary model=gemma-3-270m-it-IQ4_NL.gguf temp=0.35 maxTok=48
+06-15 16:52:37.875 25830 26902 I OnDeviceAssist: ✓ llm task=summary model=gemma-3-270m-it-IQ4_NL.gguf 966ms out=48 chars inLang=es outLang=latin lang=weak
+06-15 16:52:37.875 25830 26902 I OnDeviceAssist: done task=summary model=gemma-3-270m-it-IQ4_NL.gguf 967ms out=48 chars
+06-15 16:52:37.877 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=summary model=gemma-3-270m-it-IQ4_NL.gguf 991ms in=35 out=48 inLang=es outLang=latin lang=weak
+06-15 16:52:41.602 26742 26742 I OnDeviceAssist: ▶ tap task=work_email in=33 chars
+06-15 16:52:41.604 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=work_email in=35 chars
+06-15 16:52:41.615 25830 26902 I OnDeviceAssist: dispatch task=work_email in=35 chars engine=Ready
+06-15 16:52:41.615 25830 26902 I OnDeviceAssist: ▶ runSync task=work_email in=35 chars locale=pt
+06-15 16:52:41.616 25830 26902 I OnDeviceAssist: → llm task=work_email model=gemma-3-270m-it-IQ4_NL.gguf temp=0.4 maxTok=64
+06-15 16:52:42.723 25830 26902 I OnDeviceAssist: ✓ llm task=work_email model=gemma-3-270m-it-IQ4_NL.gguf 1107ms out=67 chars inLang=es outLang=es lang=ok
+06-15 16:52:42.723 25830 26902 I OnDeviceAssist: done task=work_email model=gemma-3-270m-it-IQ4_NL.gguf 1108ms out=67 chars
+06-15 16:52:42.724 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-IQ4_NL.gguf 1120ms in=35 out=67 inLang=es outLang=es lang=ok
+06-15 16:52:47.427 26742 26742 I OnDeviceAssist: ▶ tap task=work_slack in=33 chars
+06-15 16:52:47.430 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=work_slack in=35 chars
+06-15 16:52:47.446 25830 26902 I OnDeviceAssist: dispatch task=work_slack in=35 chars engine=Ready
+06-15 16:52:47.446 25830 26902 I OnDeviceAssist: ▶ runSync task=work_slack in=35 chars locale=pt
+06-15 16:52:47.447 25830 26902 I OnDeviceAssist: → llm task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf temp=0.4 maxTok=64
+06-15 16:52:48.167 25830 26902 I OnDeviceAssist: ✓ llm task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 720ms out=29 chars inLang=es outLang=es lang=ok
+06-15 16:52:48.167 25830 26902 I OnDeviceAssist: done task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 722ms out=29 chars
+06-15 16:52:48.170 26742 26757 I OnDeviceAssist: ✓ assist (ime) task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 738ms in=35 out=29 inLang=es outLang=es lang=ok
+06-15 16:52:50.373 26742 26742 I OnDeviceAssist: ▶ tap task=work_actions in=33 chars
+06-15 16:52:50.374 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=work_actions in=35 chars
+06-15 16:52:50.382 25830 26902 I OnDeviceAssist: dispatch task=work_actions in=35 chars engine=Ready
+06-15 16:52:50.383 25830 26902 I OnDeviceAssist: ▶ runSync task=work_actions in=35 chars locale=pt
+06-15 16:52:50.383 25830 26902 I OnDeviceAssist: → llm task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf temp=0.4 maxTok=64
+06-15 16:52:51.026 25830 26902 I OnDeviceAssist: ✓ llm task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf 643ms out=29 chars inLang=es outLang=es lang=ok
+06-15 16:52:51.026 25830 26902 I OnDeviceAssist: done task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf 644ms out=29 chars
+06-15 16:52:51.027 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf 652ms in=35 out=29 inLang=es outLang=es lang=ok
+06-15 16:52:53.563 26742 26742 I OnDeviceAssist: ▶ tap task=work_ooo in=33 chars
+06-15 16:52:53.564 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=work_ooo in=35 chars
+06-15 16:52:53.574 25830 26902 I OnDeviceAssist: dispatch task=work_ooo in=35 chars engine=Ready
+06-15 16:52:53.575 25830 26902 I OnDeviceAssist: ▶ runSync task=work_ooo in=35 chars locale=pt
+06-15 16:52:53.575 25830 26902 I OnDeviceAssist: → llm task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf temp=0.4 maxTok=64
+06-15 16:52:54.183 25830 26902 I OnDeviceAssist: ✓ llm task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf 608ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:52:54.184 25830 26902 I OnDeviceAssist: done task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf 610ms out=12 chars
+06-15 16:52:54.188 26742 26758 I OnDeviceAssist: ✓ assist (ime) task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf 619ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:52:57.638 26742 26742 I OnDeviceAssist: ▶ tap task=grammar in=33 chars
+06-15 16:52:57.640 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=grammar in=35 chars
+06-15 16:52:57.649 25830 26902 I OnDeviceAssist: dispatch task=grammar in=35 chars engine=Ready
+06-15 16:52:57.649 25830 26902 I OnDeviceAssist: ▶ runSync task=grammar in=35 chars locale=pt
+06-15 16:52:57.651 25830 26902 I OnDeviceAssist: ○ local grammar skipped: SymSpell unavailable for pt
+06-15 16:52:57.652 25830 26902 I OnDeviceAssist: → llm task=grammar model=gemma-3-270m-it-IQ4_NL.gguf temp=0.15 maxTok=48
+06-15 16:52:58.314 25830 26902 I OnDeviceAssist: ✓ llm task=grammar model=gemma-3-270m-it-IQ4_NL.gguf 662ms out=34 chars inLang=es outLang=es lang=ok
+06-15 16:52:58.314 25830 26902 I OnDeviceAssist: done task=grammar model=gemma-3-270m-it-IQ4_NL.gguf 666ms out=34 chars
+06-15 16:52:58.316 26742 26757 I OnDeviceAssist: ✓ assist (ime) task=grammar model=gemma-3-270m-it-IQ4_NL.gguf 675ms in=35 out=34 inLang=es outLang=es lang=ok
+06-15 16:53:02.374 26742 26742 I OnDeviceAssist: ▶ tap task=active_voice in=33 chars
+06-15 16:53:02.376 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=active_voice in=35 chars
+06-15 16:53:02.389 25830 26902 I OnDeviceAssist: dispatch task=active_voice in=35 chars engine=Ready
+06-15 16:53:02.389 25830 26902 I OnDeviceAssist: ▶ runSync task=active_voice in=35 chars locale=pt
+06-15 16:53:02.392 25830 26902 I OnDeviceAssist: → llm task=active_voice model=gemma-3-270m-it-IQ4_NL.gguf temp=0.25 maxTok=48
+06-15 16:53:03.047 25830 26902 I OnDeviceAssist: ✓ llm task=active_voice model=gemma-3-270m-it-IQ4_NL.gguf 658ms out=28 chars inLang=es outLang=es lang=ok
+06-15 16:53:03.047 25830 26902 I OnDeviceAssist: done task=active_voice model=gemma-3-270m-it-IQ4_NL.gguf 659ms out=28 chars
+06-15 16:53:03.048 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=active_voice model=gemma-3-270m-it-IQ4_NL.gguf 672ms in=35 out=28 inLang=es outLang=es lang=ok
+06-15 16:53:05.921 26742 26742 I OnDeviceAssist: ▶ tap task=simplify in=33 chars
+06-15 16:53:05.923 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=simplify in=35 chars
+06-15 16:53:05.929 25830 26902 I OnDeviceAssist: dispatch task=simplify in=35 chars engine=Ready
+06-15 16:53:05.929 25830 26902 I OnDeviceAssist: ▶ runSync task=simplify in=35 chars locale=pt
+06-15 16:53:05.930 25830 26902 I OnDeviceAssist: → llm task=simplify model=gemma-3-270m-it-IQ4_NL.gguf temp=0.25 maxTok=48
+06-15 16:53:06.572 25830 26902 I OnDeviceAssist: ✓ llm task=simplify model=gemma-3-270m-it-IQ4_NL.gguf 642ms out=28 chars inLang=es outLang=es lang=ok
+06-15 16:53:06.572 25830 26902 I OnDeviceAssist: done task=simplify model=gemma-3-270m-it-IQ4_NL.gguf 643ms out=28 chars
+06-15 16:53:06.574 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=simplify model=gemma-3-270m-it-IQ4_NL.gguf 649ms in=35 out=28 inLang=es outLang=es lang=ok
+06-15 16:53:09.162 26742 26742 I OnDeviceAssist: ▶ tap task=de_cliche in=33 chars
+06-15 16:53:09.164 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=de_cliche in=35 chars
+06-15 16:53:09.171 25830 26902 I OnDeviceAssist: dispatch task=de_cliche in=35 chars engine=Ready
+06-15 16:53:09.172 25830 26902 I OnDeviceAssist: ▶ runSync task=de_cliche in=35 chars locale=pt
+06-15 16:53:09.172 25830 26902 I OnDeviceAssist: → llm task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf temp=0.25 maxTok=48
+06-15 16:53:09.872 25830 26902 I OnDeviceAssist: ✓ llm task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf 700ms out=31 chars inLang=es outLang=es lang=ok
+06-15 16:53:09.872 25830 26902 I OnDeviceAssist: done task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf 700ms out=31 chars
+06-15 16:53:09.874 26742 27057 I OnDeviceAssist: ✓ assist (ime) task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf 709ms in=35 out=31 inLang=es outLang=es lang=ok
+06-15 16:53:12.901 26742 26742 I OnDeviceAssist: ▶ tap task=smart_reply in=33 chars
+06-15 16:53:12.903 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=35 chars
+06-15 16:53:12.914 25830 26902 I OnDeviceAssist: dispatch task=smart_reply in=35 chars engine=Ready
+06-15 16:53:12.914 25830 26902 I OnDeviceAssist: ▶ runSync task=smart_reply in=35 chars locale=pt
+06-15 16:53:12.915 25830 26902 I OnDeviceAssist: → llm task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf temp=0.45 maxTok=64
+06-15 16:53:13.497 25830 26902 I OnDeviceAssist: ✓ llm task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 582ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:53:13.497 25830 26902 I OnDeviceAssist: done task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 584ms out=12 chars
+06-15 16:53:13.498 26742 26757 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 595ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:53:15.731 26742 26742 I OnDeviceAssist: ▶ tap task=smart_reply in=33 chars
+06-15 16:53:15.733 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=35 chars
+06-15 16:53:15.746 25830 26902 I OnDeviceAssist: dispatch task=smart_reply in=35 chars engine=Ready
+06-15 16:53:15.746 25830 26902 I OnDeviceAssist: ▶ runSync task=smart_reply in=35 chars locale=pt
+06-15 16:53:15.747 25830 26902 I OnDeviceAssist: → llm task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf temp=0.45 maxTok=64
+06-15 16:53:16.336 25830 26902 I OnDeviceAssist: ✓ llm task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 589ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:53:16.336 25830 26902 I OnDeviceAssist: done task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 591ms out=12 chars
+06-15 16:53:16.337 26742 26757 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 604ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:53:18.460 26742 26742 I OnDeviceAssist: ▶ tap task=continue in=33 chars
+06-15 16:53:18.462 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=continue in=35 chars
+06-15 16:53:18.469 25830 26902 I OnDeviceAssist: dispatch task=continue in=35 chars engine=Ready
+06-15 16:53:18.469 25830 26902 I OnDeviceAssist: ▶ runSync task=continue in=35 chars locale=pt
+06-15 16:53:18.470 25830 26902 I OnDeviceAssist: → llm task=continue model=gemma-3-270m-it-IQ4_NL.gguf temp=0.55 maxTok=48
+06-15 16:53:19.253 25830 26902 I OnDeviceAssist: ✓ llm task=continue model=gemma-3-270m-it-IQ4_NL.gguf 783ms out=33 chars inLang=es outLang=es lang=ok
+06-15 16:53:19.253 25830 26902 I OnDeviceAssist: done task=continue model=gemma-3-270m-it-IQ4_NL.gguf 785ms out=33 chars
+06-15 16:53:19.255 26742 27057 I OnDeviceAssist: ✓ assist (ime) task=continue model=gemma-3-270m-it-IQ4_NL.gguf 792ms in=35 out=33 inLang=es outLang=es lang=ok
+06-15 16:53:21.174 26742 26742 I OnDeviceAssist: ▶ tap task=continue in=33 chars
+06-15 16:53:21.176 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=continue in=35 chars
+06-15 16:53:21.189 25830 26902 I OnDeviceAssist: dispatch task=continue in=35 chars engine=Ready
+06-15 16:53:21.189 25830 26902 I OnDeviceAssist: ▶ runSync task=continue in=35 chars locale=pt
+06-15 16:53:21.190 25830 26902 I OnDeviceAssist: → llm task=continue model=gemma-3-270m-it-IQ4_NL.gguf temp=0.55 maxTok=48
+06-15 16:53:21.911 25830 26902 I OnDeviceAssist: ✓ llm task=continue model=gemma-3-270m-it-IQ4_NL.gguf 721ms out=54 chars inLang=es outLang=es lang=ok
+06-15 16:53:21.911 25830 26902 I OnDeviceAssist: done task=continue model=gemma-3-270m-it-IQ4_NL.gguf 723ms out=54 chars
+06-15 16:53:21.912 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=continue model=gemma-3-270m-it-IQ4_NL.gguf 736ms in=35 out=54 inLang=es outLang=es lang=ok
+06-15 16:53:24.847 26742 26742 I OnDeviceAssist: ▶ tap task=subject in=33 chars
+06-15 16:53:24.849 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=subject in=35 chars
+06-15 16:53:24.863 26742 26742 W Choreographer: Frame time is 0.060696 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+06-15 16:53:24.868 25830 26902 I OnDeviceAssist: dispatch task=subject in=35 chars engine=Ready
+06-15 16:53:24.868 25830 26902 I OnDeviceAssist: ▶ runSync task=subject in=35 chars locale=pt
+06-15 16:53:24.869 25830 26902 I OnDeviceAssist: → llm task=subject model=gemma-3-270m-it-IQ4_NL.gguf temp=0.35 maxTok=48
+06-15 16:53:25.534 25830 26902 I OnDeviceAssist: ✓ llm task=subject model=gemma-3-270m-it-IQ4_NL.gguf 665ms out=11 chars inLang=es outLang=es lang=ok
+06-15 16:53:25.534 25830 26902 I OnDeviceAssist: done task=subject model=gemma-3-270m-it-IQ4_NL.gguf 666ms out=11 chars
+06-15 16:53:25.535 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=subject model=gemma-3-270m-it-IQ4_NL.gguf 686ms in=35 out=11 inLang=es outLang=es lang=ok
+06-15 16:53:27.318 26742 26742 I OnDeviceAssist: ▶ tap task=subject in=33 chars
+06-15 16:53:27.320 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=subject in=35 chars
+06-15 16:53:27.334 25830 26902 I OnDeviceAssist: dispatch task=subject in=35 chars engine=Ready
+06-15 16:53:27.334 25830 26902 I OnDeviceAssist: ▶ runSync task=subject in=35 chars locale=pt
+06-15 16:53:27.335 25830 26902 I OnDeviceAssist: → llm task=subject model=gemma-3-270m-it-IQ4_NL.gguf temp=0.35 maxTok=48
+06-15 16:53:27.924 25830 26902 I OnDeviceAssist: ✓ llm task=subject model=gemma-3-270m-it-IQ4_NL.gguf 589ms out=12 chars inLang=es outLang=es lang=ok
+06-15 16:53:27.924 25830 26902 I OnDeviceAssist: done task=subject model=gemma-3-270m-it-IQ4_NL.gguf 591ms out=12 chars
+06-15 16:53:27.925 26742 27185 I OnDeviceAssist: ✓ assist (ime) task=subject model=gemma-3-270m-it-IQ4_NL.gguf 605ms in=35 out=12 inLang=es outLang=es lang=ok
+06-15 16:53:31.086 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:53:31.868 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:31.870 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:31.877 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:31.877 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:31.882 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:32.484 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:53:33.173 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:53:33.657 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:53:34.196 25830 25847 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2318ms: Model echoed input unchanged
+06-15 16:53:34.196 25830 25847 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2320ms
+06-15 16:53:34.197 26742 26757 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2326ms: Model echoed input unchanged
+06-15 16:53:34.198 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:53:35.990 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:35.993 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:35.999 25830 26902 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:35.999 25830 26902 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:36.000 25830 26902 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:36.602 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:53:37.240 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:53:37.732 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:53:38.314 25830 26902 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2316ms: Model echoed input unchanged
+06-15 16:53:38.315 25830 26902 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2316ms
+06-15 16:53:38.317 26742 27057 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2322ms: Model echoed input unchanged
+06-15 16:53:38.321 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:53:40.994 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:53:41.843 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:41.845 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:41.858 25830 26902 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:41.859 25830 26902 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:41.860 25830 26902 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:42.545 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:53:43.317 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:53:43.985 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:53:44.668 25830 26902 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2809ms: Model echoed input unchanged
+06-15 16:53:44.668 25830 26902 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2810ms
+06-15 16:53:44.669 26742 27057 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2823ms: Model echoed input unchanged
+06-15 16:53:44.674 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:53:48.396 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:53:49.079 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:49.081 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:49.091 25830 26902 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:49.091 25830 26902 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:49.093 25830 26902 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:49.639 25830 26902 I OnDeviceAssist: ✓ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 547ms out=31 chars inLang=en outLang=en lang=ok
+06-15 16:53:49.639 25830 26902 I OnDeviceAssist: done task=translate model=gemma-3-270m-it-IQ4_NL.gguf 548ms out=31 chars
+06-15 16:53:49.640 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 558ms in=35 out=31 inLang=en outLang=en lang=ok
+06-15 16:53:53.016 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:53:53.772 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:53.774 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:53.779 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:53.779 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:53.781 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:54.342 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:53:54.952 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:53:55.405 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:53:55.862 25830 25847 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2083ms: Model echoed input unchanged
+06-15 16:53:55.862 25830 25847 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2084ms
+06-15 16:53:55.863 26742 27057 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2089ms: Model echoed input unchanged
+06-15 16:53:55.864 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:53:58.255 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:53:59.012 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:53:59.014 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:53:59.021 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:53:59.022 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:53:59.023 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:53:59.760 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:00.527 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:01.002 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:54:01.477 25830 25847 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2456ms: Model echoed input unchanged
+06-15 16:54:01.477 25830 25847 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2457ms
+06-15 16:54:01.478 26742 27057 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2463ms: Model echoed input unchanged
+06-15 16:54:01.481 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:54:02.322 26742 26742 W Choreographer: Frame time is 0.035833 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+06-15 16:54:04.217 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:54:04.906 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:04.909 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:04.916 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:04.916 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:04.918 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:05.449 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:06.060 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:06.508 25830 25847 I OnDeviceAssist: ✓ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1591ms out=26 chars inLang=es outLang=es lang=ok retry=yes
+06-15 16:54:06.509 25830 25847 I OnDeviceAssist: done task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1593ms out=26 chars
+06-15 16:54:06.511 26742 27057 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1600ms in=35 out=26 inLang=es outLang=es lang=ok
+06-15 16:54:09.793 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:54:12.263 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:12.265 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:12.277 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:12.277 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:12.278 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:12.891 25830 25847 I OnDeviceAssist: ✓ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 613ms out=47 chars inLang=fr outLang=fr lang=ok
+06-15 16:54:12.891 25830 25847 I OnDeviceAssist: done task=translate model=gemma-3-270m-it-IQ4_NL.gguf 615ms out=47 chars
+06-15 16:54:12.894 26742 27181 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 626ms in=35 out=47 inLang=fr outLang=fr lang=ok
+06-15 16:54:15.346 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:54:16.010 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:16.012 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:16.019 25830 25847 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:16.020 25830 25847 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:16.023 25830 25847 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:16.574 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:17.154 25830 25847 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:17.593 25830 25847 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1572ms: Translation did not match target language
+06-15 16:54:17.593 25830 25847 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1575ms
+06-15 16:54:17.594 26742 26757 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1582ms: Translation did not match target language
+06-15 16:54:17.595 26742 26742 W AiAssistPanel: On-device AI error: Translation did not match target language
+06-15 16:54:21.004 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:54:21.560 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:21.567 26742 26767 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:21.571 25830 26902 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:21.572 25830 26902 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:21.573 25830 26902 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:22.167 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:22.807 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:23.346 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:54:23.956 25830 26902 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2384ms: Model echoed input unchanged
+06-15 16:54:23.956 25830 26902 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2384ms
+06-15 16:54:23.956 26742 27181 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2389ms: Model echoed input unchanged
+06-15 16:54:23.959 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:54:26.336 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:26.338 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:26.352 25830 26902 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:26.353 25830 26902 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:26.353 25830 26902 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:26.956 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:27.588 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:28.079 25830 26902 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:54:28.590 25830 26902 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2237ms: Model echoed input unchanged
+06-15 16:54:28.590 25830 26902 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2237ms
+06-15 16:54:28.590 26742 27185 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2253ms: Model echoed input unchanged
+06-15 16:54:28.595 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:54:30.785 26742 26742 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+06-15 16:54:30.786 26742 26766 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+06-15 16:54:30.793 25830 26903 I OnDeviceAssist: dispatch task=translate in=35 chars engine=Ready
+06-15 16:54:30.793 25830 26903 I OnDeviceAssist: ▶ runSync task=translate in=35 chars locale=pt
+06-15 16:54:30.794 25830 26903 I OnDeviceAssist: → llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf temp=0.2 maxTok=70
+06-15 16:54:31.455 25830 26903 W OnDeviceAssist: ↻ llm retry task=translate: translate target mismatch
+06-15 16:54:32.237 25830 26903 W OnDeviceAssist: ↻ llm retry task=translate: translate direct layout
+06-15 16:54:32.790 25830 26903 W OnDeviceAssist: ↻ llm retry task=translate: translate source echo
+06-15 16:54:33.388 25830 26903 W OnDeviceAssist: ✗ llm task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2594ms: Model echoed input unchanged
+06-15 16:54:33.388 25830 26903 W OnDeviceAssist: failed task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2595ms
+06-15 16:54:33.388 26742 26758 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2602ms: Model echoed input unchanged
+06-15 16:54:33.391 26742 26742 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+06-15 16:54:38.066 26742 26742 I VkPanels: ▶ open menu
+06-15 16:54:39.193 26742 26742 I VkTyping: ○ hidden
+06-15 16:54:39.381 26742 26742 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-15 16:54:43.872 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-15 16:54:44.569 26742 26811 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+=== Feature activity (persisted across restarts) ===
+2026-06-15 16:50:02.716737 I VkFavorites: save card Bitcoin Vibe activate=false
+2026-06-15 16:50:02.786700 I VkFavorites: save card Doge Meme activate=false
+2026-06-15 16:50:02.853189 I VkFavorites: save card Ethereum Vibes activate=false
+2026-06-15 16:50:02.904267 I VkFavorites: save card India Popular City activate=false
+2026-06-15 16:50:02.985439 I VkFavorites: save card Miami Beach Crypto activate=false
+2026-06-15 16:50:03.055228 I VkFavorites: save card Nike Sneakers Crypto activate=false
+2026-06-15 16:50:03.105170 I VkFavorites: save card Pepe Meme Frog activate=false
+2026-06-15 16:50:03.162531 I VkFavorites: save card Times Square NFT activate=false
+2026-06-15 16:50:03.223708 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-06-15 16:50:03.365090 I VkSetupWizard: loading path=none started=false active=false ready=false netWait=false
+2026-06-15 16:50:15.990892 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-06-15 16:50:16.461618 I VkSwipe: ○ gesture canceled
+2026-06-15 16:50:16.482358 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 16:50:16.595246 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 16:50:18.701361 I VkPanels: ▶ open menu
+2026-06-15 16:50:19.202871 I VkMultilingual: menu languages total=1
+2026-06-15 16:50:27.931381 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,3ms
+2026-06-15 16:50:27.933073 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 16:50:28.159732 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 6,4ms
+2026-06-15 16:50:28.170983 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 16:50:28.373040 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 3,0ms
+2026-06-15 16:50:28.374200 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=hol locale=pt
+2026-06-15 16:50:28.520420 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 7,5ms
+2026-06-15 16:50:28.523279 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:29.070841 I VkAutocorrect: picked: hola
+2026-06-15 16:50:29.193359 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:32.388397 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,6ms
+2026-06-15 16:50:32.389626 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=a locale=pt
+2026-06-15 16:50:32.549084 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,1ms
+2026-06-15 16:50:32.550833 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=am locale=pt
+2026-06-15 16:50:32.850483 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 5,1ms
+2026-06-15 16:50:32.851957 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=ami locale=pt
+2026-06-15 16:50:33.057657 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 4,2ms
+2026-06-15 16:50:33.059414 I VkAutocorrect: offered: amig → amig
+2026-06-15 16:50:33.059719 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=true top=amig locale=pt
+2026-06-15 16:50:33.293111 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 4,1ms
+2026-06-15 16:50:33.294568 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false top=amiga locale=pt
+2026-06-15 16:50:33.370580 I VkAutocorrect: kept (typing): amiga
+2026-06-15 16:50:33.473603 I VkSuggestions: strip prediction typedLen=0 candidates=2 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:35.489106 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 13,0ms
+2026-06-15 16:50:35.493429 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ma locale=pt
+2026-06-15 16:50:35.728059 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 3,5ms
+2026-06-15 16:50:35.729846 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=mar locale=pt
+2026-06-15 16:50:35.986329 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 10,5ms
+2026-06-15 16:50:35.987819 I VkAutocorrect: offered: maria → maria
+2026-06-15 16:50:35.988156 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=true top=maria locale=pt
+2026-06-15 16:50:36.168377 I VkSuggestions: decode typedLen=6 candidates=18 locales=1 7,9ms
+2026-06-15 16:50:36.172951 I VkAutocorrect: offered: mariab → mariab
+2026-06-15 16:50:36.173555 I VkSuggestions: strip composing typedLen=6 candidates=19 autocorrect=true top=mariab locale=pt
+2026-06-15 16:50:37.233935 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 13,8ms
+2026-06-15 16:50:37.237380 I VkAutocorrect: offered: maria → maria
+2026-06-15 16:50:37.238035 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=true top=maria locale=pt
+2026-06-15 16:50:37.970988 I VkAutocorrect: picked: María
+2026-06-15 16:50:38.074754 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:38.784072 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 10,4ms
+2026-06-15 16:50:38.787516 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=co locale=pt
+2026-06-15 16:50:39.017504 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 4,2ms
+2026-06-15 16:50:39.019276 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=com locale=pt
+2026-06-15 16:50:39.224975 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 17,2ms
+2026-06-15 16:50:39.225653 W VkSuggestions: slow frame 17,2ms locales=1 typedLen=4 candidates=18
+2026-06-15 16:50:39.228849 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=como locale=pt
+2026-06-15 16:50:39.739607 I VkAutocorrect: kept (typing): como
+2026-06-15 16:50:39.842415 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:39.971682 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,3ms
+2026-06-15 16:50:39.972831 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false top=e locale=pt
+2026-06-15 16:50:40.178933 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,0ms
+2026-06-15 16:50:40.180495 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false top=es locale=pt
+2026-06-15 16:50:40.362435 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 9,9ms
+2026-06-15 16:50:40.365050 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=est locale=pt
+2026-06-15 16:50:40.616456 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 13,6ms
+2026-06-15 16:50:40.620809 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=esta locale=pt
+2026-06-15 16:50:40.851002 I VkAutocorrect: kept (typing): esta
+2026-06-15 16:50:40.954834 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:41.568932 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 12,4ms
+2026-06-15 16:50:41.571488 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=t locale=pt
+2026-06-15 16:50:41.755751 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 9,9ms
+2026-06-15 16:50:41.759692 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=tu locale=pt
+2026-06-15 16:50:42.048983 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 10,5ms
+2026-06-15 16:50:42.052020 I VkSuggestions: strip composing typedLen=3 candidates=19 autocorrect=false top=tub locale=pt
+2026-06-15 16:50:42.866673 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 9,7ms
+2026-06-15 16:50:42.870071 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=tu locale=pt
+2026-06-15 16:50:43.406725 I VkAutocorrect: kept (typing): tu
+2026-06-15 16:50:43.513025 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:43.901231 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,3ms
+2026-06-15 16:50:43.902169 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 16:50:44.046510 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 3,0ms
+2026-06-15 16:50:44.048021 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jo locale=pt
+2026-06-15 16:50:44.270132 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 19,2ms
+2026-06-15 16:50:44.270876 W VkSuggestions: slow frame 19,2ms locales=1 typedLen=3 candidates=18
+2026-06-15 16:50:44.274614 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=joy locale=pt
+2026-06-15 16:50:44.867386 I VkAutocorrect: picked: joy
+2026-06-15 16:50:44.972537 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:45.281644 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 3,3ms
+2026-06-15 16:50:45.283225 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jo locale=pt
+2026-06-15 16:50:45.522706 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,2ms
+2026-06-15 16:50:45.523638 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 16:50:45.645271 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=joy locale=pt
+2026-06-15 16:50:46.486566 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 16:50:46.672519 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 8,2ms
+2026-06-15 16:50:46.675033 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 16:50:46.923727 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 9,2ms
+2026-06-15 16:50:46.926590 I VkAutocorrect: offered: hoy → hoy
+2026-06-15 16:50:46.927224 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hoy locale=pt
+2026-06-15 16:50:48.191439 I VkAutocorrect: picked: hoy
+2026-06-15 16:50:48.298382 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:50:48.596238 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 16:50:48.602518 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 5,1ms
+2026-06-15 16:50:48.706074 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 6,7ms
+2026-06-15 16:50:48.925006 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 7,3ms
+2026-06-15 16:50:49.055782 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 5,5ms
+2026-06-15 16:50:49.172994 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 5,6ms
+2026-06-15 16:50:49.389609 W VkSuggestions: slow frame 21,3ms locales=1 typedLen=0 candidates=0
+2026-06-15 16:50:49.412658 I VkSwipe: ✓ gesture points=58 decodedLen=5 candidates=18 top=bicho 816ms
+2026-06-15 16:50:50.999346 I VkPanels: ▶ open assist
+2026-06-15 16:50:51.011171 I OnDeviceAssist: ▶ panel open
+2026-06-15 16:50:56.881801 I VkPanels: ▶ open menu
+2026-06-15 16:50:57.876610 I VkTyping: ○ hidden
+2026-06-15 16:51:00.739423 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 16:51:01.324004 I VkSwipe: ○ gesture canceled
+2026-06-15 16:51:01.343155 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 16:51:01.436665 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 16:51:04.702968 I VkPanels: ▶ open menu
+2026-06-15 16:51:05.440380 I VkTyping: ○ hidden
+2026-06-15 16:51:17.267727 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 16:51:18.643826 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 9,2ms
+2026-06-15 16:51:18.645472 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 16:51:18.857034 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 1,7ms
+2026-06-15 16:51:18.859451 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 16:51:19.053495 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 1,9ms
+2026-06-15 16:51:19.054883 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false top=hol locale=pt
+2026-06-15 16:51:19.173293 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 4,6ms
+2026-06-15 16:51:19.176002 I VkSuggestions: strip composing typedLen=4 candidates=17 autocorrect=false top=hola locale=pt
+2026-06-15 16:51:19.273892 I VkAutocorrect: kept (typing): hola
+2026-06-15 16:51:19.375252 I VkSuggestions: decode typedLen=0 candidates=1 locales=1 0,2ms
+2026-06-15 16:51:19.380169 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=amiga locale=pt
+2026-06-15 16:51:20.369968 I VkAutocorrect: picked: amiga
+2026-06-15 16:51:20.472738 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=María locale=pt
+2026-06-15 16:51:21.355792 I VkAutocorrect: picked: María
+2026-06-15 16:51:21.460558 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=como locale=pt
+2026-06-15 16:51:22.131939 I VkAutocorrect: picked: como
+2026-06-15 16:51:22.235398 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=esta locale=pt
+2026-06-15 16:51:22.950289 I VkAutocorrect: picked: esta
+2026-06-15 16:51:23.053950 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=tu locale=pt
+2026-06-15 16:51:23.710258 I VkAutocorrect: picked: tu
+2026-06-15 16:51:23.814136 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=joy locale=pt
+2026-06-15 16:51:24.601983 I VkAutocorrect: picked: joy
+2026-06-15 16:51:24.705519 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:51:25.650845 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 2,9ms
+2026-06-15 16:51:25.652377 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=jo locale=pt
+2026-06-15 16:51:25.909298 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 4,3ms
+2026-06-15 16:51:25.910577 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=j locale=pt
+2026-06-15 16:51:26.046497 I VkSuggestions: strip prediction typedLen=0 candidates=1 autocorrect=false top=joy locale=pt
+2026-06-15 16:51:26.854889 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 16:51:27.078902 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,8ms
+2026-06-15 16:51:27.080689 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=hi locale=pt
+2026-06-15 16:51:27.350576 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 6,0ms
+2026-06-15 16:51:27.352835 I VkAutocorrect: offered: hiy → hiy
+2026-06-15 16:51:27.353311 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hiy locale=pt
+2026-06-15 16:51:28.864179 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 3,8ms
+2026-06-15 16:51:28.865728 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=hi locale=pt
+2026-06-15 16:51:29.054092 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 9,0ms
+2026-06-15 16:51:29.056670 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=h locale=pt
+2026-06-15 16:51:29.584799 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 10,6ms
+2026-06-15 16:51:29.588506 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ho locale=pt
+2026-06-15 16:51:29.838636 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 9,3ms
+2026-06-15 16:51:29.842331 I VkAutocorrect: offered: hoy → hoy
+2026-06-15 16:51:29.843123 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=true top=hoy locale=pt
+2026-06-15 16:51:31.091914 I VkAutocorrect: picked: hoy
+2026-06-15 16:51:31.199645 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:51:31.737962 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 16:51:31.742787 I VkSuggestions: decode typedLen=0 candidates=18 locales=1 3,6ms
+2026-06-15 16:51:31.946380 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 4,0ms
+2026-06-15 16:51:31.970200 W VkSuggestions: slow frame 23,2ms locales=1 typedLen=0 candidates=0
+2026-06-15 16:51:32.214162 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 3,7ms
+2026-06-15 16:51:32.478728 I VkSuggestions: decode typedLen=5 candidates=18 locales=1 2,3ms
+2026-06-15 16:51:32.496529 W VkSuggestions: slow frame 17,3ms locales=1 typedLen=0 candidates=0
+2026-06-15 16:51:32.789926 W VkSuggestions: slow frame 17,1ms locales=1 typedLen=0 candidates=0
+2026-06-15 16:51:32.800935 I VkSwipe: ✓ gesture points=65 decodedLen=4 candidates=16 top=fiji 1063ms
+2026-06-15 16:51:34.872282 I VkAutocorrect: kept (typing): hoy
+2026-06-15 16:51:34.977954 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hoy locale=pt
+2026-06-15 16:51:35.561978 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 11,2ms
+2026-06-15 16:51:35.563151 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=i locale=pt
+2026-06-15 16:51:35.770409 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 1,9ms
+2026-06-15 16:51:35.772457 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ih locale=pt
+2026-06-15 16:51:35.944133 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 1,5ms
+2026-06-15 16:51:35.945363 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=ihh locale=pt
+2026-06-15 16:51:36.116017 I VkSuggestions: decode typedLen=4 candidates=18 locales=1 4,3ms
+2026-06-15 16:51:36.119538 I VkSuggestions: strip composing typedLen=4 candidates=18 autocorrect=false top=ihhd locale=pt
+2026-06-15 16:51:36.616360 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 16:51:36.769076 I VkSuggestions: decode typedLen=2 candidates=0 locales=1 0,5ms
+2026-06-15 16:51:37.950885 I VkSwipe: ▶ gesture started locale=pt-BR
+2026-06-15 16:51:39.833697 I VkMultilingual: reset main=pt-BR locales=[pt,es] count=2
+2026-06-15 16:51:40.154049 I VkSwipe: ○ gesture canceled
+2026-06-15 16:51:40.174257 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-06-15 16:51:40.271166 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 16:51:41.441158 I VkSuggestions: decode typedLen=3 candidates=18 locales=1 6,3ms
+2026-06-15 16:51:41.443678 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false top=ihh locale=pt
+2026-06-15 16:51:41.494447 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=37 chars
+2026-06-15 16:51:41.632763 I VkSuggestions: decode typedLen=2 candidates=18 locales=1 13,3ms
+2026-06-15 16:51:41.634646 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false top=ih locale=pt
+2026-06-15 16:51:41.761593 I VkSuggestions: decode typedLen=1 candidates=18 locales=1 7,5ms
+2026-06-15 16:51:41.763620 I VkSuggestions: strip composing typedLen=1 candidates=19 autocorrect=false top=i locale=pt
+2026-06-15 16:51:42.590538 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=hola locale=pt
+2026-06-15 16:51:43.091362 I VkPanels: ▶ open assist
+2026-06-15 16:51:43.121654 I OnDeviceAssist: ▶ panel open
+2026-06-15 16:51:43.419265 I OnDeviceAssist: ✓ assist (ime) task=topic_tags model=gemma-3-270m-it-IQ4_NL.gguf 1923ms in=37 out=10 inLang=es outLang=es lang=ok
+2026-06-15 16:51:44.717888 I OnDeviceAssist: ▶ tap task=tone_pro in=33 chars
+2026-06-15 16:51:44.721076 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=34 chars
+2026-06-15 16:51:45.475912 I OnDeviceAssist: ✓ assist (ime) task=tone_pro model=gemma-3-270m-it-IQ4_NL.gguf 755ms in=34 out=34 inLang=es outLang=es lang=ok
+2026-06-15 16:51:47.943126 I OnDeviceAssist: ▶ tap task=tone_casual in=33 chars
+2026-06-15 16:51:47.944737 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=34 chars
+2026-06-15 16:51:48.683914 I OnDeviceAssist: ✓ assist (ime) task=tone_casual model=gemma-3-270m-it-IQ4_NL.gguf 738ms in=34 out=29 inLang=es outLang=es lang=ok
+2026-06-15 16:51:50.713 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=33 chars
+2026-06-15 16:51:50.716146 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=34 chars
+2026-06-15 16:51:51.930741 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic model=gemma-3-270m-it-IQ4_NL.gguf 1214ms in=34 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:51:53.937937 I OnDeviceAssist: ○ blocked task=tone_diplomatic: quota_gate
+2026-06-15 16:51:56.143596 I VkTyping: ○ hidden
+2026-06-15 16:52:05.826523 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+2026-06-15 16:52:08.602871 I VkPanels: ▶ open assist
+2026-06-15 16:52:08.623215 I OnDeviceAssist: ▶ panel open
+2026-06-15 16:52:10.478948 I OnDeviceAssist: ▶ tap task=tone_direct in=33 chars
+2026-06-15 16:52:10.481234 I OnDeviceAssist: ▶ assist_ipc task=tone_direct in=35 chars
+2026-06-15 16:52:11.320897 I OnDeviceAssist: ✓ assist (ime) task=tone_direct model=gemma-3-270m-it-IQ4_NL.gguf 839ms in=35 out=29 inLang=es outLang=es lang=ok
+2026-06-15 16:52:14.269550 I OnDeviceAssist: ▶ tap task=tone_persuade in=33 chars
+2026-06-15 16:52:14.271288 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=35 chars
+2026-06-15 16:52:14.906953 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 634ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:52:17.058124 I OnDeviceAssist: ▶ tap task=tone_persuade in=33 chars
+2026-06-15 16:52:17.060567 I OnDeviceAssist: ▶ assist_ipc task=tone_persuade in=35 chars
+2026-06-15 16:52:17.707514 I OnDeviceAssist: ✓ assist (ime) task=tone_persuade model=gemma-3-270m-it-IQ4_NL.gguf 647ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:52:19.102230 I OnDeviceAssist: ▶ tap task=concise in=33 chars
+2026-06-15 16:52:19.103650 I OnDeviceAssist: ▶ assist_ipc task=concise in=35 chars
+2026-06-15 16:52:22.122494 I OnDeviceAssist: ✓ assist (ime) task=concise model=gemma-3-270m-it-IQ4_NL.gguf 3019ms in=35 out=25 inLang=es outLang=es lang=ok
+2026-06-15 16:52:25.090959 I OnDeviceAssist: ▶ tap task=bullets in=33 chars
+2026-06-15 16:52:25.092839 I OnDeviceAssist: ▶ assist_ipc task=bullets in=35 chars
+2026-06-15 16:52:26.545795 W OnDeviceAssist: ✗ assist (ime) task=bullets model=gemma-3-270m-it-IQ4_NL.gguf 1453ms: Model echoed input unchanged
+2026-06-15 16:52:28.494267 I OnDeviceAssist: ▶ tap task=expand in=33 chars
+2026-06-15 16:52:28.496356 I OnDeviceAssist: ▶ assist_ipc task=expand in=35 chars
+2026-06-15 16:52:30.030873 I OnDeviceAssist: ✓ assist (ime) task=expand model=gemma-3-270m-it-IQ4_NL.gguf 1531ms in=35 out=226 inLang=es outLang=es lang=ok
+2026-06-15 16:52:36.883109 I OnDeviceAssist: ▶ tap task=summary in=33 chars
+2026-06-15 16:52:36.885677 I OnDeviceAssist: ▶ assist_ipc task=summary in=35 chars
+2026-06-15 16:52:37.877332 I OnDeviceAssist: ✓ assist (ime) task=summary model=gemma-3-270m-it-IQ4_NL.gguf 991ms in=35 out=48 inLang=es outLang=latin lang=weak
+2026-06-15 16:52:41.602215 I OnDeviceAssist: ▶ tap task=work_email in=33 chars
+2026-06-15 16:52:41.604084 I OnDeviceAssist: ▶ assist_ipc task=work_email in=35 chars
+2026-06-15 16:52:42.724203 I OnDeviceAssist: ✓ assist (ime) task=work_email model=gemma-3-270m-it-IQ4_NL.gguf 1120ms in=35 out=67 inLang=es outLang=es lang=ok
+2026-06-15 16:52:47.427803 I OnDeviceAssist: ▶ tap task=work_slack in=33 chars
+2026-06-15 16:52:47.430470 I OnDeviceAssist: ▶ assist_ipc task=work_slack in=35 chars
+2026-06-15 16:52:48.170294 I OnDeviceAssist: ✓ assist (ime) task=work_slack model=gemma-3-270m-it-IQ4_NL.gguf 738ms in=35 out=29 inLang=es outLang=es lang=ok
+2026-06-15 16:52:50.373497 I OnDeviceAssist: ▶ tap task=work_actions in=33 chars
+2026-06-15 16:52:50.374858 I OnDeviceAssist: ▶ assist_ipc task=work_actions in=35 chars
+2026-06-15 16:52:51.027703 I OnDeviceAssist: ✓ assist (ime) task=work_actions model=gemma-3-270m-it-IQ4_NL.gguf 652ms in=35 out=29 inLang=es outLang=es lang=ok
+2026-06-15 16:52:53.563334 I OnDeviceAssist: ▶ tap task=work_ooo in=33 chars
+2026-06-15 16:52:53.564757 I OnDeviceAssist: ▶ assist_ipc task=work_ooo in=35 chars
+2026-06-15 16:52:54.189030 I OnDeviceAssist: ✓ assist (ime) task=work_ooo model=gemma-3-270m-it-IQ4_NL.gguf 619ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:52:57.638225 I OnDeviceAssist: ▶ tap task=grammar in=33 chars
+2026-06-15 16:52:57.640045 I OnDeviceAssist: ▶ assist_ipc task=grammar in=35 chars
+2026-06-15 16:52:58.316118 I OnDeviceAssist: ✓ assist (ime) task=grammar model=gemma-3-270m-it-IQ4_NL.gguf 675ms in=35 out=34 inLang=es outLang=es lang=ok
+2026-06-15 16:53:02.374347 I OnDeviceAssist: ▶ tap task=active_voice in=33 chars
+2026-06-15 16:53:02.376164 I OnDeviceAssist: ▶ assist_ipc task=active_voice in=35 chars
+2026-06-15 16:53:03.048328 I OnDeviceAssist: ✓ assist (ime) task=active_voice model=gemma-3-270m-it-IQ4_NL.gguf 672ms in=35 out=28 inLang=es outLang=es lang=ok
+2026-06-15 16:53:05.921325 I OnDeviceAssist: ▶ tap task=simplify in=33 chars
+2026-06-15 16:53:05.923135 I OnDeviceAssist: ▶ assist_ipc task=simplify in=35 chars
+2026-06-15 16:53:06.574755 I OnDeviceAssist: ✓ assist (ime) task=simplify model=gemma-3-270m-it-IQ4_NL.gguf 649ms in=35 out=28 inLang=es outLang=es lang=ok
+2026-06-15 16:53:09.162240 I OnDeviceAssist: ▶ tap task=de_cliche in=33 chars
+2026-06-15 16:53:09.164083 I OnDeviceAssist: ▶ assist_ipc task=de_cliche in=35 chars
+2026-06-15 16:53:09.874406 I OnDeviceAssist: ✓ assist (ime) task=de_cliche model=gemma-3-270m-it-IQ4_NL.gguf 709ms in=35 out=31 inLang=es outLang=es lang=ok
+2026-06-15 16:53:12.901302 I OnDeviceAssist: ▶ tap task=smart_reply in=33 chars
+2026-06-15 16:53:12.903197 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=35 chars
+2026-06-15 16:53:13.498614 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 595ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:53:15.731567 I OnDeviceAssist: ▶ tap task=smart_reply in=33 chars
+2026-06-15 16:53:15.733313 I OnDeviceAssist: ▶ assist_ipc task=smart_reply in=35 chars
+2026-06-15 16:53:16.337254 I OnDeviceAssist: ✓ assist (ime) task=smart_reply model=gemma-3-270m-it-IQ4_NL.gguf 604ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:53:18.460903 I OnDeviceAssist: ▶ tap task=continue in=33 chars
+2026-06-15 16:53:18.462489 I OnDeviceAssist: ▶ assist_ipc task=continue in=35 chars
+2026-06-15 16:53:19.255054 I OnDeviceAssist: ✓ assist (ime) task=continue model=gemma-3-270m-it-IQ4_NL.gguf 792ms in=35 out=33 inLang=es outLang=es lang=ok
+2026-06-15 16:53:21.174357 I OnDeviceAssist: ▶ tap task=continue in=33 chars
+2026-06-15 16:53:21.176103 I OnDeviceAssist: ▶ assist_ipc task=continue in=35 chars
+2026-06-15 16:53:21.912597 I OnDeviceAssist: ✓ assist (ime) task=continue model=gemma-3-270m-it-IQ4_NL.gguf 736ms in=35 out=54 inLang=es outLang=es lang=ok
+2026-06-15 16:53:24.847105 I OnDeviceAssist: ▶ tap task=subject in=33 chars
+2026-06-15 16:53:24.849303 I OnDeviceAssist: ▶ assist_ipc task=subject in=35 chars
+2026-06-15 16:53:25.536011 I OnDeviceAssist: ✓ assist (ime) task=subject model=gemma-3-270m-it-IQ4_NL.gguf 686ms in=35 out=11 inLang=es outLang=es lang=ok
+2026-06-15 16:53:27.318930 I OnDeviceAssist: ▶ tap task=subject in=33 chars
+2026-06-15 16:53:27.320752 I OnDeviceAssist: ▶ assist_ipc task=subject in=35 chars
+2026-06-15 16:53:27.925564 I OnDeviceAssist: ✓ assist (ime) task=subject model=gemma-3-270m-it-IQ4_NL.gguf 605ms in=35 out=12 inLang=es outLang=es lang=ok
+2026-06-15 16:53:31.868264 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:31.870910 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:53:34.197190 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2326ms: Model echoed input unchanged
+2026-06-15 16:53:35.990861 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:35.993557 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:53:38.318080 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2322ms: Model echoed input unchanged
+2026-06-15 16:53:41.843563 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:41.845950 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:53:44.669291 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2823ms: Model echoed input unchanged
+2026-06-15 16:53:49.079493 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:49.081508 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:53:49.640916 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 558ms in=35 out=31 inLang=en outLang=en lang=ok
+2026-06-15 16:53:53.772074 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:53.774181 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:53:55.863330 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2089ms: Model echoed input unchanged
+2026-06-15 16:53:59.012856 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:53:59.014931 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:01.478382 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2463ms: Model echoed input unchanged
+2026-06-15 16:54:04.906985 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:04.909294 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:06.511609 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1600ms in=35 out=26 inLang=es outLang=es lang=ok
+2026-06-15 16:54:12.263924 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:12.265894 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:12.895065 I OnDeviceAssist: ✓ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 626ms in=35 out=47 inLang=fr outLang=fr lang=ok
+2026-06-15 16:54:16.010717 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:16.012690 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:17.594181 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 1582ms: Translation did not match target language
+2026-06-15 16:54:21.560657 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:21.567265 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:23.956684 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2389ms: Model echoed input unchanged
+2026-06-15 16:54:26.336408 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:26.338400 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:28.590958 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2253ms: Model echoed input unchanged
+2026-06-15 16:54:30.785312 I OnDeviceAssist: ▶ tap task=translate in=33 chars
+2026-06-15 16:54:30.786739 I OnDeviceAssist: ▶ assist_ipc task=translate in=35 chars
+2026-06-15 16:54:33.388871 W OnDeviceAssist: ✗ assist (ime) task=translate model=gemma-3-270m-it-IQ4_NL.gguf 2602ms: Model echoed input unchanged
+2026-06-15 16:54:38.066145 I VkPanels: ▶ open menu
+2026-06-15 16:54:39.193357 I VkTyping: ○ hidden
+
+=== In-memory (current process) ===
+2026-06-15 16:51:39.678314 W j0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-15 16:51:39.703309 I startup: Starting com.vibekey.keyboard version 4.1.329 (4429) on Android 12 (SDK 31)
+2026-06-15 16:51:39.707490 I LatinIME: Hardware accelerated drawing: true
+2026-06-15 16:51:39.808127 I SymSpellProvider: Detected asset languages: [en]
+2026-06-15 16:51:39.810271 I NgramPredictor: Detected bigram asset languages: []
+2026-06-15 16:51:39.811065 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-06-15 16:51:39.811242 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-15 16:51:39.811383 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-15 16:51:39.812194 I RecencyTracker: init loaded 1 language file(s)
+2026-06-15 16:51:39.813228 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-15 16:51:39.825336 W u: No editor info for this field. Bug?
+2026-06-15 16:51:39.825440 I c: loadSettings
+2026-06-15 16:51:39.832552 I p: resetDictionaries, force reloading main dictionary: false
+2026-06-15 16:51:39.844961 I NgramPredictor: Detected bigram asset languages: []
+2026-06-15 16:51:39.845436 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-06-15 16:51:39.845653 I NgramPredictor: Loaded 1 runtime bigram keys for es
+2026-06-15 16:51:39.845877 I NgramPredictor: Loaded 1 runtime trigram keys for es
+2026-06-15 16:51:39.846221 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-15 16:51:39.846628 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-15 16:51:39.846915 I SymSpellProvider: Detected asset languages: [en]
+2026-06-15 16:51:39.915928 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-15 16:51:39.917075 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-15 16:51:39.944390 I c: loadSettings
+2026-06-15 16:51:40.176062 I StickerImageManager: No sticker images on disk (empty cache confirmed)
+2026-06-15 16:51:40.270941 I LatinIME: Starting input. Cursor position = 38,38
+2026-06-15 16:51:40.271577 I c: loadSettings
+2026-06-15 16:51:40.523832 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:40.523936 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:40.836616 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:40.836768 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:41.343718 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:41.343839 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:41.848958 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:41.849234 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:42.349276 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:42.349353 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:42.848923 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:42.849047 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:43.349549 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:43.349678 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:43.849592 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:43.849694 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:44.134700 I SymSpellProvider: Built runtime SymSpell for pt with 79999 words
+2026-06-15 16:51:44.134860 I p: Built runtime SymSpell for pt with 80022 words
+2026-06-15 16:51:44.351196 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:44.351477 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:44.851929 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:44.852156 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:45.352587 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:45.352753 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:45.488741 I QuotaManager: Daily assist quota reset
+2026-06-15 16:51:45.853370 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:45.853644 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:46.354968 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:46.355224 I AdManager: Ad preload deferred: MobileAds not initialized yet
+2026-06-15 16:51:49.918440 I AdManager: MobileAds initialization complete
+2026-06-15 16:51:49.918736 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-15 16:51:49.918881 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-15 16:51:50.634166 I AdManager: Native ad loaded
+2026-06-15 16:51:51.082301 I c: loadSettings
+2026-06-15 16:51:51.425422 I AdManager: Interstitial ad loaded
+2026-06-15 16:51:51.801705 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-15 16:51:54.371734 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-06-15 16:51:54.371852 I SymSpellProvider: SymSpell loaded for en with 82834 words
+2026-06-15 16:51:55.876580 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-15 16:51:55.989220 I AdManager: Rewarded fullscreen content visible tier=PRIMARY
+2026-06-15 16:51:56.142507 I LatinIME: hideWindow
+2026-06-15 16:51:56.143189 I LatinIME: onFinishInputView
+2026-06-15 16:51:56.143499 I LatinIME: onWindowHidden
+2026-06-15 16:51:56.350125 I LatinIME: onFinishInput
+2026-06-15 16:52:03.978175 I AdManager: User earned reward
+2026-06-15 16:52:03.978413 I AdGateActivity: Reward earned — deferred until fullscreen dismissed
+2026-06-15 16:52:05.624310 I LatinIME: onFinishInput
+2026-06-15 16:52:05.652901 I AdGateActivity: Rewarded flow complete — granting reward
+2026-06-15 16:52:05.681776 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-15 16:52:05.811391 I LatinIME: onFinishInput
+2026-06-15 16:52:05.826282 I LatinIME: Starting input. Cursor position = 34,34
+2026-06-15 16:52:05.826974 I c: loadSettings
+2026-06-15 16:52:06.907156 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-15 16:52:26.548750 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:53:34.198808 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:53:38.321055 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:53:44.674092 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:53:55.864812 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:54:01.481057 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:54:17.595482 W AiAssistPanel: On-device AI error: Translation did not match target language
+2026-06-15 16:54:23.959720 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:54:28.595500 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:54:33.391782 W AiAssistPanel: On-device AI error: Model echoed input unchanged
+2026-06-15 16:54:39.122962 I LatinIME: requestHideSelf: 0
+2026-06-15 16:54:39.173477 I LatinIME: hideWindow
+2026-06-15 16:54:39.193006 I LatinIME: onFinishInputView
+2026-06-15 16:54:39.193266 I LatinIME: onWindowHidden
+2026-06-15 16:54:39.232496 I u: InputType.TYPE_NULL is specified
+2026-06-15 16:54:39.557130 I LatinIME: requestHideSelf: 100
+2026-06-15 16:54:39.580212 I LatinIME: onFinishInput
+2026-06-15 16:54:43.526848 I LatinIME: onFinishInput
+2026-06-15 16:54:44.842303 I LatinIME: onFinishInput
+... (10 loadSettings lines omitted)
