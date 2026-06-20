@@ -1,0 +1,221 @@
+=== VibeKey 4.2.1 (4401) ===
+
+--------- beginning of crash
+06-20 08:30:37.292 29859 30461 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 30461 (launcher), pid 29859 (AndroidUI)
+06-20 08:30:39.125  6235  6235 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+06-20 08:30:39.125  6235  6235 F DEBUG   : keyProcess: 0
+06-20 08:30:39.125  6235  6235 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-20 08:30:39.125  6235  6235 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+06-20 08:30:39.125  6235  6235 F DEBUG   : Revision: '0'
+06-20 08:30:39.125  6235  6235 F DEBUG   : ABI: 'arm64'
+06-20 08:30:39.125  6235  6235 F DEBUG   : Timestamp: 2026-06-20 08:30:37.646882496-0400
+06-20 08:30:39.125  6235  6235 F DEBUG   : Process uptime: 0s
+06-20 08:30:39.125  6235  6235 F DEBUG   : Cmdline: com.vibekey.keyboard
+06-20 08:30:39.125  6235  6235 F DEBUG   : pid: 29859, tid: 30461, name: launcher  >>> com.vibekey.keyboard <<<
+06-20 08:30:39.125  6235  6235 F DEBUG   : uid: 14152
+06-20 08:30:39.125  6235  6235 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+06-20 08:30:39.125  6235  6235 F DEBUG   : Cause: null pointer dereference
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x0  0000000000000000  x1  00000000000076fd  x2  000000000000000b  x3  0000007bddfd9da0
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x4  0000007bd7c54400  x5  0000007bd7c54400  x6  0000007bd7c54400  x7  0000000000000000
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x8  00000000000000f0  x9  825cb746dda824a5  x10 0000007bfb86468c  x11 0000000000000000
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x12 00000000ffffffff  x13 0000000000000000  x14 0000007be292e608  x15 00000000119a7990
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x16 0000007ae24343a8  x17 0000007bda49ef10  x18 000000780f31c000  x19 000000000000000b
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x20 0000007bddfd9da0  x21 00000000000074a3  x22 0000007bddfd9b90  x23 0000000000000001
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x24 00000078274fe610  x25 0000007b2bc4ef80  x26 0000007bd7c55698  x27 0000007bd7c54408
+06-20 08:30:39.125  6235  6235 F DEBUG   :     x28 0000000000000400  x29 0000007bddfd9bb0
+06-20 08:30:39.125  6235  6235 F DEBUG   :     lr  0000007adc641bc8  sp  0000007bddfd9b90  pc  0000007bda49ef34  pst 0000000000000000
+06-20 08:30:39.125  6235  6235 F DEBUG   : backtrace:
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #00 pc 0000000000075f34  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+36) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #01 pc 00000000040a9bc4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #02 pc 00000000040a03c4  /data/app/~~-XGWjzmdoRrM1YaZYK883A==/com.google.android.webview-HvpxCmuUIjPsZ4yTEw8s4w==/base.apk!libwebviewchromium.so (BuildId: f447b77da2d76e8d4d133b66c727c3ae532b54bf)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #03 pc 000000000729d1dc  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #04 pc 0000000007721500  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #05 pc 00000000000070a0  /apex/com.android.art/lib64/libsigchain.so (art::SignalChain::Handler(int, siginfo*, void*)+1152) (BuildId: b6eee6262e0caa13108e99cc46dd5b5d)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #06 pc 0000000000000638  [vdso] (__kernel_rt_sigreturn+0)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #07 pc 00000000044f860c  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #08 pc 00000000038cb360  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #09 pc 000000000394a4ac  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #10 pc 0000000003946cfc  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #11 pc 0000000002f16118  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #12 pc 0000000002f1ef68  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #13 pc 0000000002f1e3e8  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #14 pc 00000000041b0ae4  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #15 pc 00000000041b0668  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libxul.so (BuildId: 4a35ccb91ce54a7d8afe95f435ee2ee2cc640e58)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #16 pc 00000000001dae5c  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libnss3.so (BuildId: b089d343de37b8a21215387a791de798513aaf64)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #17 pc 000000000009e0bc  /data/app/~~QBW8Tm7U-g0MjsEsY3EaYg==/com.vibekey.keyboard-T8kKaoQCbOcExQ4Agc5EFw==/lib/arm64/libmozglue.so (BuildId: 8d82c5d136d7c01bbfb799da8ac843daefd5a4ec)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #18 pc 00000000000deb44  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+264) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+06-20 08:30:39.125  6235  6235 F DEBUG   :       #19 pc 000000000007b2fc  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: bbbdeb7c87c74f1491f92c6e605095b0)
+--------- beginning of system
+06-20 12:50:14.043 16533 24706 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+06-20 12:50:14.044 16533 24706 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+06-20 13:02:13.032 16533 16533 W GeckoSession: No history entries found.
+06-20 13:02:13.722 16533 16738 E GeckoConsole: [JavaScript Error: "TypeError: can't access property "WindowEventDispatcher", win is null" {file: "resource://gre/modules/GeckoViewSessionStore.sys.mjs" line: 149}]
+06-20 13:02:13.722 16533 16738 E GeckoConsole: onTabStateUpdate@resource://gre/modules/GeckoViewSessionStore.sys.mjs:149:5
+06-20 13:02:13.722 16533 16738 E GeckoConsole: updateSessionStoreFromTabListener@resource://gre/modules/GeckoViewSessionStore.sys.mjs:243:10
+06-20 13:06:35.615 16533 16533 I VkTyping: ▶ open restart=false pkg=com.android.launcher inputType=589825
+06-20 13:06:35.692 16533 16533 I VkMemory: all_closing panel=none phase=panels java=148MB/384MB native=53MB
+06-20 13:06:35.709 16533 16533 W GeckoEventDispatcher: No listener for GeckoView:DismissClipboardPermissionRequest
+06-20 13:06:35.755 16533 16533 E GeckoView: Failed to detach WindowInsetsListener: 
+06-20 13:06:35.755 16533 16533 E GeckoView: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.Window android.app.Activity.getWindow()' on a null object reference
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at org.mozilla.geckoview.GeckoView.detachWindowInsetsListener(r8-map-id-d249a0473e02feef96b87e87d4f329d5b51ea685b5af2918b7ffbabff70b9846:1)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at org.mozilla.geckoview.GeckoView.onDetachedFromWindow(r8-map-id-d249a0473e02feef96b87e87d4f329d5b51ea685b5af2918b7ffbabff70b9846:25)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at helium314.keyboard.latin.panels.ImeGeckoView.onDetachedFromWindow(r8-map-id-d249a0473e02feef96b87e87d4f329d5b51ea685b5af2918b7ffbabff70b9846:1)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.view.View.dispatchDetachedFromWindow(View.java:20955)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:4014)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5660)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:5631)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.view.ViewGroup.removeView(ViewGroup.java:5562)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at a8.t0.run(r8-map-id-d249a0473e02feef96b87e87d4f329d5b51ea685b5af2918b7ffbabff70b9846:1198)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.os.Handler.handleCallback(Handler.java:938)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.os.Looper.loopOnce(Looper.java:233)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.os.Looper.loop(Looper.java:344)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at java.lang.reflect.Method.invoke(Native Method)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+06-20 13:06:35.755 16533 16533 E GeckoView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+06-20 13:06:36.524 16411 16437 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+06-20 13:06:36.582 16533 16533 I VkMemory: all_closing panel=none phase=panels java=151MB/384MB native=53MB
+06-20 13:06:36.587 16533 16533 W GeckoEventDispatcher: No listener for GeckoView:DismissClipboardPermissionRequest
+06-20 13:06:36.602 16533 16533 I VkPanels: ▶ open menu
+06-20 13:06:36.602 16533 16533 I VkMemory: open panel=menu phase=panel_open java=152MB/384MB native=53MB
+06-20 13:06:37.222 16533 16533 I VkMemory: all_closing panel=none phase=panels java=152MB/384MB native=54MB
+06-20 13:06:37.404 16533 16533 I VkTyping: ○ hidden
+06-20 13:06:37.404 16533 16533 I VkMemory: keyboard_hidden panel=none phase=ime_hidden java=154MB/384MB native=54MB
+06-20 13:06:37.531 16533 16533 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-20 13:06:38.522  3587  3619 W GeckoViewAutoFill[C]: Cannot perform autofill undefined
+06-20 13:06:41.034 16533 16626 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+06-20 13:06:42.828 16533 16626 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+... (57 GeckoConsole SessionStore lines omitted)
+... (1 GeckoEventDispatcher warnings omitted)
+
+=== Feature activity (persisted across restarts) ===
+2026-06-19 23:42:05.304190 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=41 chars
+2026-06-19 23:42:05.993160 I OnDeviceAssist: ▶ panel open
+2026-06-19 23:42:06.315924 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 1013ms: Assist prompt decode failed
+2026-06-19 23:42:07.375737 I OnDeviceAssist: ▶ tap task=tone_casual in=41 chars
+2026-06-19 23:42:07.383391 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=41 chars
+2026-06-19 23:42:09.184184 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 1801ms in=41 out=55
+2026-06-19 23:42:09.964288 I OnDeviceAssist: ▶ tap task=tone_pro in=41 chars
+2026-06-19 23:42:09.965918 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=41 chars
+2026-06-19 23:42:11.326673 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 1360ms in=41 out=38
+2026-06-19 23:42:12.092697 I OnDeviceAssist: ▶ tap task=tone_casual in=41 chars
+2026-06-19 23:42:12.093708 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=41 chars
+2026-06-19 23:42:13.587037 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 1492ms in=41 out=53
+2026-06-19 23:42:14.404442 I OnDeviceAssist: ○ blocked task=tone_casual: quota_gate
+2026-06-19 23:43:59.986518 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=41 chars
+2026-06-19 23:44:03.855730 I OnDeviceAssist: ✓ assist (ime) task=topic_tags 3870ms in=41 out=224
+2026-06-19 23:46:04.783305 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=35 chars
+2026-06-19 23:46:04.792209 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 9ms: Engine stopped
+2026-06-19 23:46:08.223408 I OnDeviceAssist: ▶ panel open
+2026-06-19 23:46:09.290412 I OnDeviceAssist: ▶ tap task=tone_pro in=35 chars
+2026-06-19 23:46:09.291888 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=35 chars
+2026-06-19 23:46:10.522261 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 1230ms in=35 out=45
+2026-06-19 23:46:11.319283 I OnDeviceAssist: ▶ tap task=tone_casual in=35 chars
+2026-06-19 23:46:11.320717 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=35 chars
+2026-06-19 23:46:12.992332 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 1671ms in=35 out=65
+2026-06-19 23:46:13.960801 I OnDeviceAssist: ▶ tap task=tone_diplomatic in=35 chars
+2026-06-19 23:46:13.965747 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=35 chars
+2026-06-19 23:46:15.367784 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic 1401ms in=35 out=40
+2026-06-19 23:46:16.234590 I OnDeviceAssist: ▶ tap task=tone_direct in=35 chars
+2026-06-19 23:46:16.237670 I OnDeviceAssist: ▶ assist_ipc task=tone_direct in=35 chars
+2026-06-19 23:46:17.426743 I OnDeviceAssist: ✓ assist (ime) task=tone_direct 1189ms in=35 out=46
+2026-06-20 09:14:34.504433 I OnDeviceAssist: ▶ assist_ipc task=topic_tags in=3 chars
+2026-06-20 09:14:36.041469 W OnDeviceAssist: ✗ assist (ime) task=topic_tags 1538ms: Assist prompt decode failed
+
+=== In-memory (current process) ===
+2026-06-20 09:14:52.749810 W f0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-06-20 09:14:52.766811 I startup: Starting com.vibekey.keyboard version 4.2.1 (4401) on Android 12 (SDK 31)
+2026-06-20 09:14:52.774903 I LatinIME: Hardware accelerated drawing: true
+2026-06-20 09:14:52.821376 I AiApiHelper: Using user-provided Gemini API key
+2026-06-20 09:14:52.860177 I SymSpellProvider: Detected asset languages: [en]
+2026-06-20 09:14:52.861657 I NgramPredictor: Detected bigram asset languages: []
+2026-06-20 09:14:52.864758 I NgramPredictor: Loaded 10 runtime bigram keys for pt
+2026-06-20 09:14:52.865333 I NgramPredictor: Loaded 8 runtime trigram keys for pt
+2026-06-20 09:14:52.868062 I RecencyTracker: init loaded 1 language file(s)
+2026-06-20 09:14:52.869191 I AdaptiveTouchModel: Loaded touch model: 26 keys
+2026-06-20 09:14:52.869869 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-06-20 09:14:52.883568 W t: No editor info for this field. Bug?
+2026-06-20 09:14:52.883673 I c: loadSettings
+2026-06-20 09:14:52.892776 I o: resetDictionaries, force reloading main dictionary: false
+2026-06-20 09:14:52.910658 I NgramPredictor: Detected bigram asset languages: []
+2026-06-20 09:14:52.911037 I NgramPredictor: Loaded 10 runtime bigram keys for pt
+2026-06-20 09:14:52.911229 I NgramPredictor: Loaded 8 runtime trigram keys for pt
+2026-06-20 09:14:52.912133 I SymSpellProvider: Detected asset languages: [en]
+2026-06-20 09:14:52.912722 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-20 09:14:52.913182 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-06-20 09:14:52.991061 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-06-20 09:14:52.992558 I LatinIME: ringer mode changed, zen_mode on: false
+2026-06-20 09:14:53.213254 I AdManager: MobileAds initialization complete
+2026-06-20 09:14:53.213617 I ConsentManager: UMP hydrate skipped: s6.k.getConsentInformation [class android.content.Context]
+2026-06-20 09:14:53.213938 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-06-20 09:14:53.225189 I c: loadSettings
+2026-06-20 09:14:53.365912 I StickerImageManager: Loaded 4 NFT sticker images from disk
+2026-06-20 09:14:53.452892 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 09:14:53.453175 I c: loadSettings
+2026-06-20 09:14:55.353009 I AdManager: Native ad loaded
+2026-06-20 09:14:55.874616 I AdManager: Native ad view created
+2026-06-20 09:14:55.900656 I AdManager: Interstitial ad loaded
+2026-06-20 09:14:56.419871 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-06-20 09:14:56.616663 I AdManager: Native ad loaded
+2026-06-20 09:14:56.811697 I c: loadSettings
+2026-06-20 09:14:56.817484 I c: loadSettings
+2026-06-20 09:14:56.844227 I o: resetDictionaries, force reloading main dictionary: false
+2026-06-20 09:14:59.157306 I SymSpellProvider: Built runtime SymSpell for it with 79998 words
+2026-06-20 09:14:59.157395 I o: Built runtime SymSpell for it with 80000 words
+2026-06-20 09:14:59.568666 I SymSpellProvider: Built runtime SymSpell for pt with 79999 words
+2026-06-20 09:14:59.568757 I o: Built runtime SymSpell for pt with 80022 words
+2026-06-20 09:15:01.397513 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-06-20 09:15:01.397617 I SymSpellProvider: SymSpell loaded for en with 82834 words
+2026-06-20 09:15:11.774685 I LatinIME: onFinishInputView
+2026-06-20 09:15:11.775086 I LatinIME: onFinishInput
+2026-06-20 09:15:16.272411 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 09:15:22.687824 I QuotaManager: Refilled unified AI free credits for new calendar day
+2026-06-20 09:15:46.492073 I LatinIME: onFinishInputView
+2026-06-20 09:15:46.492951 I LatinIME: onFinishInput
+2026-06-20 09:17:16.221166 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 09:17:32.852960 I LatinIME: onFinishInputView
+2026-06-20 09:17:32.853622 I LatinIME: onFinishInput
+2026-06-20 11:07:05.656671 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 11:07:12.233408 I LatinIME: hideWindow
+2026-06-20 11:07:12.254454 I LatinIME: onFinishInputView
+2026-06-20 11:07:12.255260 I LatinIME: onWindowHidden
+2026-06-20 11:07:13.040773 I LatinIME: requestHideSelf: 100
+2026-06-20 11:07:14.701017 I LatinIME: onFinishInput
+2026-06-20 11:07:16.128487 I LatinIME: onFinishInput
+2026-06-20 11:07:16.133197 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 11:07:35.209435 I LatinIME: onFinishInputView
+2026-06-20 11:07:35.209753 I LatinIME: onFinishInput
+2026-06-20 11:09:41.233828 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 11:10:00.947296 I LatinIME: onFinishInputView
+2026-06-20 11:10:00.947916 I LatinIME: onFinishInput
+2026-06-20 11:10:21.070054 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 11:10:28.290202 I o: resetDictionaries, force reloading main dictionary: false
+2026-06-20 11:10:32.980630 I LatinIME: onFinishInputView
+2026-06-20 11:10:32.981148 I LatinIME: onFinishInput
+2026-06-20 12:50:01.465789 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 12:50:03.999760 I LatinIME: hideWindow
+2026-06-20 12:50:04.021069 I LatinIME: onFinishInputView
+2026-06-20 12:50:04.021873 I LatinIME: onWindowHidden
+2026-06-20 12:50:04.072244 I LatinIME: hideWindow
+2026-06-20 12:50:04.864678 I LatinIME: onFinishInput
+2026-06-20 12:50:04.870841 I LatinIME: requestHideSelf: 100
+2026-06-20 12:50:10.528598 I LatinIME: onFinishInput
+2026-06-20 12:50:20.075968 I LatinIME: onFinishInput
+2026-06-20 12:56:52.079914 I LatinIME: onFinishInput
+2026-06-20 12:56:52.090638 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 12:57:07.088361 I LatinIME: onFinishInputView
+2026-06-20 12:57:07.088847 I LatinIME: onFinishInput
+2026-06-20 13:06:35.615056 I LatinIME: Starting input. Cursor position = 0,0
+2026-06-20 13:06:37.257550 I LatinIME: requestHideSelf: 0
+2026-06-20 13:06:37.400684 I LatinIME: hideWindow
+2026-06-20 13:06:37.404522 I LatinIME: onFinishInputView
+2026-06-20 13:06:37.404742 I LatinIME: onWindowHidden
+2026-06-20 13:06:37.440367 I t: InputType.TYPE_NULL is specified
+2026-06-20 13:06:37.800689 I LatinIME: requestHideSelf: 100
+2026-06-20 13:06:37.807834 I LatinIME: onFinishInput
+2026-06-20 13:06:41.785816 I LatinIME: onFinishInput
+2026-06-20 13:06:42.905785 I LatinIME: onFinishInput
+... (17 loadSettings lines omitted)
