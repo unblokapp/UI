@@ -1,0 +1,1233 @@
+--------- beginning of crash
+07-02 19:08:07.862 29229 29452 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6a00000050 in tid 29452 (ExecutorUtils), pid 29229 (ibekey.keyboard)
+07-02 19:08:08.910 29672 29672 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:08:08.910 29672 29672 F DEBUG   : keyProcess: 0
+07-02 19:08:08.910 29672 29672 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:08:08.910 29672 29672 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:08:08.910 29672 29672 F DEBUG   : Revision: '0'
+07-02 19:08:08.910 29672 29672 F DEBUG   : ABI: 'arm64'
+07-02 19:08:08.910 29672 29672 F DEBUG   : Timestamp: 2026-07-02 19:08:08.022620971-0400
+07-02 19:08:08.910 29672 29672 F DEBUG   : Process uptime: 0s
+07-02 19:08:08.910 29672 29672 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:08:08.910 29672 29672 F DEBUG   : pid: 29229, tid: 29452, name: ExecutorUtils  >>> com.vibekey.keyboard <<<
+07-02 19:08:08.910 29672 29672 F DEBUG   : uid: 14187
+07-02 19:08:08.910 29672 29672 F DEBUG   : signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6a00000050
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x0  0000006900000075  x1  0000007231385838  x2  b400007188e6d800  x3  0000000000000000
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x4  00000071a2e28676  x5  0000000000000002  x6  00000070cf346330  x7  00000070cf3462f0
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x8  0000006a00000068  x9  53ab40e7d1375020  x10 0000000000000000  x11 b400007188e6d800
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x12 00000070cf344dd8  x13 0000007231385839  x14 0000000000000005  x15 00000000ebad6a89
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x16 000000711d4e4cfc  x17 00000070cf3461b0  x18 00000070ca5da000  x19 b400007188e6d800
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x20 0000000000001130  x21 b400007188e6e930  x22 0000006900000075  x23 0000006a00000068
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x24 00000071a3719c40  x25 00000070cf3462c0  x26 b400007188f37a70  x27 b40000719a9ec800
+07-02 19:08:08.910 29672 29672 F DEBUG   :     x28 00000070cf3461c0  x29 00000070cf346170
+07-02 19:08:08.910 29672 29672 F DEBUG   :     lr  00000071a32b03a4  sp  00000070cf346170  pc  000000711d4e4d5c  pst 0000000020000000
+07-02 19:08:08.910 29672 29672 F DEBUG   : backtrace:
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #00 pc 00000000000a3d5c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #01 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #02 pc 000000000072c39c  /apex/com.android.art/lib64/libart.so (nterp_helper+780) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #03 pc 000000000022699e  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.DicTraverseSession.a+22)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #04 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #05 pc 00000000002266ce  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.a+50)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #06 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #07 pc 0000000000225bee  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.n+38)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #08 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #09 pc 000000000069a6f6  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.h.run+230)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #10 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #11 pc 0000000000217140  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (b8.r0.run+1028)
+07-02 19:08:08.910 29672 29672 F DEBUG   :       #12 pc 00000000022d0430  /memfd:jit-zygote-cache (deleted)
+--------- beginning of system
+07-02 19:08:11.178 29697 29697 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:08:25.335 29697 29967 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+07-02 19:08:25.335 29697 29967 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+07-02 19:08:55.627 29697 29967 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+07-02 19:08:55.627 29697 29967 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+07-02 19:10:44.929 30579 30579 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:13.147 31031 31031 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:20.595 31031 31065 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x722dc3542a in tid 31065 (e), pid 31031 (ibekey.keyboard)
+07-02 19:11:21.867 31360 31360 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:11:21.867 31360 31360 F DEBUG   : keyProcess: 0
+07-02 19:11:21.867 31360 31360 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:11:21.867 31360 31360 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:11:21.867 31360 31360 F DEBUG   : Revision: '0'
+07-02 19:11:21.867 31360 31360 F DEBUG   : ABI: 'arm64'
+07-02 19:11:21.867 31360 31360 F DEBUG   : Timestamp: 2026-07-02 19:11:20.870735689-0400
+07-02 19:11:21.867 31360 31360 F DEBUG   : Process uptime: 0s
+07-02 19:11:21.867 31360 31360 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:11:21.867 31360 31360 F DEBUG   : pid: 31031, tid: 31065, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:11:21.867 31360 31360 F DEBUG   : uid: 14187
+07-02 19:11:21.867 31360 31360 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x722dc3542a
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x0  000000722dc18069  x1  0000000000050d1d  x2  000000718a4da894  x3  000000718a4da8dc
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x4  b40000717e1ae8b0  x5  0000000000000000  x6  000000718a4da954  x7  000000718a4da810
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x8  0000000000000000  x9  0000000000050d1c  x10 000000000001d3c1  x11 000000000001d3c2
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x12 0000000000000068  x13 0000000000000001  x14 000000000000001f  x15 000000722dc182b4
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x16 000000711e98e980  x17 000000711e8ed2c8  x18 0000007129f04000  x19 000000718a4da8dc
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x20 000000718a4da8e0  x21 0000000000050d1d  x22 000000718a4dcf80  x23 000000718a4da924
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x24 000000718a4dcf80  x25 000000718a4da920  x26 000000718a4da954  x27 0000000000000001
+07-02 19:11:21.867 31360 31360 F DEBUG   :     x28 000000718a4daf08  x29 000000718a4da8a0
+07-02 19:11:21.867 31360 31360 F DEBUG   :     lr  000000711e8efb38  sp  000000718a4da890  pc  000000711e8ed2f8  pst 0000000020000000
+07-02 19:11:21.867 31360 31360 F DEBUG   : backtrace:
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #00 pc 00000000000b62f8  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+48) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #01 pc 00000000000b8b34  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Ver2PtNodeArrayReader::readPtNodeArrayInfoAndReturnIfValid(int, int*, int*) const+80) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #02 pc 00000000000b4ce8  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::nextPtNodeArray()+68) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #03 pc 00000000000b4c3c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+432) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #04 pc 00000000000b7324  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #05 pc 00000000000a7d54  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #06 pc 00000000000d337c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #07 pc 00000000000c8bd0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #08 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #09 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #10 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #11 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #12 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #13 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #14 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #15 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #16 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #17 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #18 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #19 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #20 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #21 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #22 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #23 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #24 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #25 pc 00000000005ff158  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.c+264)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #26 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #27 pc 00000000005fefcc  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+2796)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #28 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #29 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #30 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #31 pc 00000000005b87d4  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (i7.u.run+536)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #32 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #33 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:11:21.867 31360 31360 F DEBUG   :       #34 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:11:26.614 31394 31394 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:35.198 31394 31428 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7230691063 in tid 31428 (e), pid 31394 (ibekey.keyboard)
+07-02 19:11:36.172 31696 31696 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:11:36.172 31696 31696 F DEBUG   : keyProcess: 0
+07-02 19:11:36.172 31696 31696 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:11:36.172 31696 31696 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:11:36.172 31696 31696 F DEBUG   : Revision: '0'
+07-02 19:11:36.172 31696 31696 F DEBUG   : ABI: 'arm64'
+07-02 19:11:36.172 31696 31696 F DEBUG   : Timestamp: 2026-07-02 19:11:35.347396256-0400
+07-02 19:11:36.172 31696 31696 F DEBUG   : Process uptime: 0s
+07-02 19:11:36.172 31696 31696 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:11:36.172 31696 31696 F DEBUG   : pid: 31394, tid: 31428, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:11:36.172 31696 31696 F DEBUG   : uid: 14187
+07-02 19:11:36.172 31696 31696 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x7230691063
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x0  000000723065406c  x1  000000000004a8e8  x2  000000719f4dc834  x3  00000071262fdbbc
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x4  b4000070aea59f08  x5  000000719f4dcae8  x6  000000000001f46b  x7  000000000001f46b
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x8  0000000000000000  x9  000000000004a8e7  x10 000000000003cff7  x11 000000000003cff8
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x12 0000000000000001  x13 00000000ffffffec  x14 b4000070b38ba848  x15 00000000358637bd
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x16 000000712639e980  x17 00000071262fd2c8  x18 0000007129c68000  x19 000000719f4dc888
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x20 000000719f4dcaa0  x21 b400007188e6ac00  x22 000000000004a8e8  x23 000000719f4def80
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x24 b4000070aea59ec0  x25 b400007188e6ac10  x26 0000000000075080  x27 b4000070aea24400
+07-02 19:11:36.172 31696 31696 F DEBUG   :     x28 0000000000000000  x29 000000719f4dc840
+07-02 19:11:36.172 31696 31696 F DEBUG   :     lr  00000071262fdc30  sp  000000719f4dc830  pc  00000071262fd2f8  pst 0000000020000000
+07-02 19:11:36.172 31696 31696 F DEBUG   : backtrace:
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #00 pc 00000000000b62f8  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+48) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #01 pc 00000000000b6c2c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+112) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #02 pc 00000000000d598c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #03 pc 00000000000d4a88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #04 pc 00000000000d3c0c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #05 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #06 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #07 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #08 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #09 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #10 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #11 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #12 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #13 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #14 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #15 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #16 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #17 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #18 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #19 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #20 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #21 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #22 pc 00000000005ff158  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.c+264)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #23 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #24 pc 00000000005fefcc  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+2796)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #25 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #26 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #27 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #28 pc 00000000005b87d4  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (i7.u.run+536)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #29 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #30 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:11:36.172 31696 31696 F DEBUG   :       #31 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:11:38.393 31726 31726 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:40.700 31726 31760 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723066c162 in tid 31760 (e), pid 31726 (ibekey.keyboard)
+07-02 19:11:42.786 31955 31955 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:11:42.787 31955 31955 F DEBUG   : keyProcess: 0
+07-02 19:11:42.787 31955 31955 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:11:42.787 31955 31955 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:11:42.787 31955 31955 F DEBUG   : Revision: '0'
+07-02 19:11:42.787 31955 31955 F DEBUG   : ABI: 'arm64'
+07-02 19:11:42.787 31955 31955 F DEBUG   : Timestamp: 2026-07-02 19:11:41.003525212-0400
+07-02 19:11:42.787 31955 31955 F DEBUG   : Process uptime: 0s
+07-02 19:11:42.787 31955 31955 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:11:42.787 31955 31955 F DEBUG   : pid: 31726, tid: 31760, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:11:42.787 31955 31955 F DEBUG   : uid: 14187
+07-02 19:11:42.787 31955 31955 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723066c162
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x0  000000723065406c  x1  000000000004a8e8  x2  000000719f4dc834  x3  000000712b2fabbc
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x4  b4000070ae062e88  x5  000000719f4dcae8  x6  0000000000000065  x7  0000000000000065
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x8  0000000000000000  x9  000000000004a8e7  x10 00000000000180f6  x11 00000000000180f7
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x12 b4000070b4335138  x13 00000000ffffffec  x14 b4000070adef1808  x15 00000000358637bd
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x16 000000712b39b980  x17 000000712b2fa2c8  x18 0000007127832000  x19 000000719f4dc888
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x20 000000719f4dcaa0  x21 b400007188e61c00  x22 000000000004a8e8  x23 000000719f4def80
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x24 b4000070ae062e40  x25 b400007188e61c10  x26 0000000000075080  x27 b4000070ae05efc0
+07-02 19:11:42.787 31955 31955 F DEBUG   :     x28 0000000000000000  x29 000000719f4dc840
+07-02 19:11:42.787 31955 31955 F DEBUG   :     lr  000000712b2fac30  sp  000000719f4dc830  pc  000000712b2fa2f8  pst 0000000020000000
+07-02 19:11:42.787 31955 31955 F DEBUG   : backtrace:
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #00 pc 00000000000b62f8  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::getPtNodeArraySizeAndAdvancePosition(unsigned char const*, int, int*)+48) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #01 pc 00000000000b6c2c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::createAndGetAllChildDicNodes(latinime::DicNode const*, latinime::DicNodeVector*) const+112) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #02 pc 00000000000d598c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::processDicNodeAsOmission(latinime::DicTraverseSession*, latinime::DicNode*) const+84) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #03 pc 00000000000d4a88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::expandCurrentDicNodes(latinime::DicTraverseSession*) const+1732) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #04 pc 00000000000d3c0c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Suggest::getSuggestions(latinime::ProximityInfo*, void*, int*, int*, int*, int*, int*, int, float, latinime::SuggestionResults*) const+504) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #05 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #06 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #07 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #08 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #09 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #10 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #11 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #12 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #13 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #14 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #15 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #16 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #17 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #18 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #19 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #20 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #21 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #22 pc 00000000005ff158  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.c+264)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #23 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #24 pc 00000000005fefcc  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+2796)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #25 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #26 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #27 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #28 pc 00000000005b87d4  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (i7.u.run+536)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #29 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #30 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:11:42.787 31955 31955 F DEBUG   :       #31 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:11:44.567 31995 31995 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:53.164 31995 32043 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065500e in tid 32043 (e), pid 31995 (ibekey.keyboard)
+07-02 19:11:54.168 32375 32375 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:11:54.168 32375 32375 F DEBUG   : keyProcess: 0
+07-02 19:11:54.168 32375 32375 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:11:54.168 32375 32375 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:11:54.168 32375 32375 F DEBUG   : Revision: '0'
+07-02 19:11:54.168 32375 32375 F DEBUG   : ABI: 'arm64'
+07-02 19:11:54.168 32375 32375 F DEBUG   : Timestamp: 2026-07-02 19:11:53.345674895-0400
+07-02 19:11:54.168 32375 32375 F DEBUG   : Process uptime: 0s
+07-02 19:11:54.168 32375 32375 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:11:54.168 32375 32375 F DEBUG   : pid: 31995, tid: 32043, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:11:54.168 32375 32375 F DEBUG   : uid: 14187
+07-02 19:11:54.168 32375 32375 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065500e
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x0  000000723065406c  x1  0000000000000fa2  x2  000000000004a8e8  x3  b400007188e724c8
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x4  b400007188e724b0  x5  0000000000000000  x6  000000718ab1b814  x7  000000718ab1b810
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x8  000000718ab1b80c  x9  000000000004a8e7  x10 000000718ab1b808  x11 000000718ab1b818
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x12 0000000000002649  x13 0000000000000049  x14 000000000000001f  x15 0000007230654fc6
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x16 000000712b3b4ab0  x17 000000712b313734  x18 0000007126a28000  x19 000000718ab1df80
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x20 000000718ab1df80  x21 000000718ab1b7fc  x22 000000718ab1b800  x23 000000718ab1b804
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x24 000000718ab1b808  x25 000000718ab1b920  x26 000000718ab1b954  x27 0000000000000001
+07-02 19:11:54.168 32375 32375 F DEBUG   :     x28 000000718ab1bf08  x29 000000718ab1b760
+07-02 19:11:54.168 32375 32375 F DEBUG   :     lr  000000712b315984  sp  000000718ab1b750  pc  000000712b3137b0  pst 0000000020000000
+07-02 19:11:54.168 32375 32375 F DEBUG   : backtrace:
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #00 pc 00000000000b67b0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #01 pc 00000000000b8980  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #02 pc 00000000000b4b74  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #03 pc 00000000000b7324  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #04 pc 00000000000a7d54  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #05 pc 00000000000d337c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #06 pc 00000000000c8bd0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #07 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #08 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #09 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #10 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #11 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #12 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #13 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #14 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #15 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #16 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #17 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #18 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #19 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #20 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #21 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #22 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #23 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #24 pc 00000000005ff158  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.c+264)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #25 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #26 pc 00000000005fefcc  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+2796)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #27 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #28 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #29 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #30 pc 00000000005b87d4  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (i7.u.run+536)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #31 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #32 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:11:54.168 32375 32375 F DEBUG   :       #33 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:11:56.360 32389 32389 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:11:58.047 32389 32452 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065c000 in tid 32452 (e), pid 32389 (ibekey.keyboard)
+07-02 19:11:59.197 32663 32663 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:11:59.197 32663 32663 F DEBUG   : keyProcess: 0
+07-02 19:11:59.197 32663 32663 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:11:59.197 32663 32663 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:11:59.197 32663 32663 F DEBUG   : Revision: '0'
+07-02 19:11:59.197 32663 32663 F DEBUG   : ABI: 'arm64'
+07-02 19:11:59.197 32663 32663 F DEBUG   : Timestamp: 2026-07-02 19:11:58.263222289-0400
+07-02 19:11:59.197 32663 32663 F DEBUG   : Process uptime: 0s
+07-02 19:11:59.197 32663 32663 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:11:59.197 32663 32663 F DEBUG   : pid: 32389, tid: 32452, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:11:59.197 32663 32663 F DEBUG   : uid: 14187
+07-02 19:11:59.197 32663 32663 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065c000
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x0  000000723065406c  x1  0000000000007f93  x2  000000000004a8e8  x3  b40000717e0adb48
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x4  b40000717e0adb30  x5  0000000000000000  x6  000000719f4dc814  x7  000000719f4dc810
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x8  000000719f4dc80c  x9  000000723065bfff  x10 000000719f4dc818  x11 000000719f4dc818
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x12 000000712a2bd9d0  x13 0000000000000000  x14 000000000000001f  x15 000000723065ac08
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x16 000000712a3a2ab0  x17 000000712a301734  x18 000000712329c000  x19 0000000000000000
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x20 000000719f4def80  x21 000000719f4dc7fc  x22 000000719f4dc800  x23 000000719f4dc804
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x24 000000719f4dc808  x25 000000719f4dc920  x26 000000719f4dc954  x27 0000000000000001
+07-02 19:11:59.197 32663 32663 F DEBUG   :     x28 000000719f4dcf08  x29 000000719f4dc760
+07-02 19:11:59.197 32663 32663 F DEBUG   :     lr  000000712a303984  sp  000000719f4dc750  pc  000000712a3017d0  pst 0000000020000000
+07-02 19:11:59.197 32663 32663 F DEBUG   : backtrace:
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #00 pc 00000000000b67d0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+156) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #01 pc 00000000000b8980  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #02 pc 00000000000b4b74  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #03 pc 00000000000b7324  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #04 pc 00000000000a7d54  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #05 pc 00000000000d337c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #06 pc 00000000000c8bd0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #07 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #08 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #09 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #10 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #11 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #12 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #13 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #14 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #15 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #16 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #17 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #18 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #19 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #20 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #21 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #22 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #23 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #24 pc 00000000005ff158  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.c+264)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #25 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #26 pc 00000000005fefcc  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+2796)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #27 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #28 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #29 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #30 pc 00000000005b87d4  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (i7.u.run+536)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #31 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #32 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:11:59.197 32663 32663 F DEBUG   :       #33 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:12:01.099 32679 32679 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:12:09.675 32679 32713 F libc    : Fatal signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065c000 in tid 32713 (e), pid 32679 (ibekey.keyboard)
+07-02 19:12:10.742  1012  1012 F DEBUG   : Process name is com.vibekey.keyboard, not key_process
+07-02 19:12:10.742  1012  1012 F DEBUG   : keyProcess: 0
+07-02 19:12:10.742  1012  1012 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-02 19:12:10.742  1012  1012 F DEBUG   : Build fingerprint: 'OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202303230244:user/release-keys'
+07-02 19:12:10.742  1012  1012 F DEBUG   : Revision: '0'
+07-02 19:12:10.742  1012  1012 F DEBUG   : ABI: 'arm64'
+07-02 19:12:10.742  1012  1012 F DEBUG   : Timestamp: 2026-07-02 19:12:09.917658066-0400
+07-02 19:12:10.742  1012  1012 F DEBUG   : Process uptime: 0s
+07-02 19:12:10.742  1012  1012 F DEBUG   : Cmdline: com.vibekey.keyboard
+07-02 19:12:10.742  1012  1012 F DEBUG   : pid: 32679, tid: 32713, name: e  >>> com.vibekey.keyboard <<<
+07-02 19:12:10.742  1012  1012 F DEBUG   : uid: 14187
+07-02 19:12:10.742  1012  1012 F DEBUG   : signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0x723065c000
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x0  000000723065406c  x1  0000000000007f93  x2  000000000004a8e8  x3  b400007188eb3cc8
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x4  b400007188eb3cb0  x5  0000000000000000  x6  000000718ab0fb44  x7  000000718ab0fb40
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x8  000000718ab0fb3c  x9  000000723065bfff  x10 000000718ab0fb48  x11 000000718ab0fb48
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x12 000000712a2c39d0  x13 0000000000000000  x14 000000000000001f  x15 000000723065ac08
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x16 000000712a3a8ab0  x17 000000712a307734  x18 00000071212f6000  x19 0000000000000000
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x20 000000718ab11f80  x21 000000718ab0fb2c  x22 000000718ab0fb30  x23 000000718ab0fb34
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x24 000000718ab0fb38  x25 000000718ab0fc50  x26 000000718ab0fc84  x27 0000000000000001
+07-02 19:12:10.742  1012  1012 F DEBUG   :     x28 000000718ab10238  x29 000000718ab0fa90
+07-02 19:12:10.742  1012  1012 F DEBUG   :     lr  000000712a309984  sp  000000718ab0fa80  pc  000000712a3077d0  pst 0000000020000000
+07-02 19:12:10.742  1012  1012 F DEBUG   : backtrace:
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #00 pc 00000000000b67d0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTrieReadingUtils::readPtNodeInfo(unsigned char const*, int, int, latinime::DictionaryShortcutsStructurePolicy const*, latinime::DictionaryBigramsStructurePolicy const*, int const*, unsigned char*, int*, int*, int*, int*, int*, int*, int*)+156) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #01 pc 00000000000b8980  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Ver2ParticiaTrieNodeReader::fetchPtNodeParamsInBufferFromPtNodePos(int) const+140) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #02 pc 00000000000b4b74  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DynamicPtReadingHelper::getTerminalPtNodePositionOfWord(int const*, unsigned long, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #03 pc 00000000000b7324  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::PatriciaTriePolicy::getWordId(latinime::IntArrayView, bool) const+184) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #04 pc 00000000000a7d54  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::NgramContext::getWordId(latinime::DictionaryStructureWithBufferPolicy const*, int const*, int, bool, bool)+232) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #05 pc 00000000000d337c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::DicTraverseSession::init(latinime::Dictionary const*, latinime::NgramContext const*, latinime::SuggestOptions const*)+124) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #06 pc 00000000000c8bd0  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (latinime::Dictionary::getSuggestions(latinime::ProximityInfo*, latinime::DicTraverseSession*, int*, int*, int*, int*, int*, int, latinime::NgramContext const*, latinime::SuggestOptions const*, float, latinime::SuggestionResults*) const+104) (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #07 pc 000000000009fd88  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/lib/arm64/libjni_latinime.so (BuildId: f905dbd1a904967a994cf833116e517b05caa863)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #08 pc 00000000002b03a0  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+144) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #09 pc 000000000072c828  /apex/com.android.art/lib64/libart.so (nterp_helper+1944) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #10 pc 00000000002262d2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.r+614)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #11 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #12 pc 0000000000226026  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (com.android.inputmethod.latin.BinaryDictionary.d+2)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #13 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #14 pc 000000000069b194  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.l.d+84)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #15 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #16 pc 000000000069a07a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (r7.e.d+70)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #17 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #18 pc 00000000005f78f2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.l+362)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #19 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #20 pc 00000000005f719c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.k+252)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #21 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #22 pc 00000000005f703c  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.r.j+148)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #23 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #24 pc 00000000005fe616  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (l7.w0.b+310)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #25 pc 000000000072cb98  /apex/com.android.art/lib64/libart.so (nterp_helper+2824) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #26 pc 00000000006b2d9a  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.b.l+1458)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #27 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #28 pc 00000000006afe0e  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.c.run+58)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #29 pc 000000000072c884  /apex/com.android.art/lib64/libart.so (nterp_helper+2036) (BuildId: 1f156fc62660d075a8d675db850b95d5)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #30 pc 00000000006afed2  /data/app/~~MlTS9DXCbHDzkbYa45IHwA==/com.vibekey.keyboard-ni2j111XBk--P7qRiQbJww==/oat/arm64/base.vdex (t7.e.handleMessage+18)
+07-02 19:12:10.742  1012  1012 F DEBUG   :       #31 pc 000000000205a4f4  /memfd:jit-zygote-cache (deleted)
+07-02 19:12:16.282  1176  1176 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+07-02 19:12:30.844  1176  1660 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+07-02 19:12:30.844  1176  1660 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+07-02 19:12:38.485  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:12:38.485  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.N(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:49)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.K(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:3)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at i7.s0.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:10)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at i7.s0.b(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:51)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.s(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:91)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at e7.v.C(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:30)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.onStartInputView(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:911)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService.startViews(InputMethodService.java:2400)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService.showWindow(InputMethodService.java:2341)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.showSoftInput(InputMethodService.java:848)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.showSoftInputWithToken(InputMethodService.java:817)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:225)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:12:38.485  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:12:38.543  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:12:38.543  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:12:39.332 31066 31238 I OnDeviceAssist: warm ok model=Falcon-H1-Tiny-Multilingual-100M-Instruct-IQ4_NL.gguf ambient=40 chars 0ms
+07-02 19:12:39.734  1176  1220 W VkSuggestions: slow frame 20,5ms locales=2 typedLen=1 candidates=18 parallelWait=20,4ms
+07-02 19:12:39.736  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=pt
+07-02 19:12:39.922  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=true locale=pt
+07-02 19:12:40.098  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=true locale=pt
+07-02 19:12:40.239  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false locale=pt
+07-02 19:12:44.369  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false locale=pt
+07-02 19:12:44.542  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false locale=pt
+07-02 19:12:44.715  1176  1220 W VkSuggestions: slow frame 16,2ms locales=2 typedLen=4 candidates=18 parallelWait=15,9ms
+07-02 19:12:44.717  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+07-02 19:12:45.083  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=11.70ms | Init=0.24ms | TrieExpand(x15)=11.43ms | Scoring=0.03ms | inputSize=5
+07-02 19:12:45.089  1176  1220 W VkSuggestions: slow frame 23,9ms locales=2 typedLen=5 candidates=18 parallelWait=23,8ms
+07-02 19:12:45.092  1176  1220 I VkSuggestions: strip composing typedLen=5 candidates=15 autocorrect=true locale=pt
+07-02 19:12:45.375  1176  1220 I VkSuggestions: strip composing typedLen=6 candidates=18 autocorrect=true locale=pt
+07-02 19:12:45.536  1176  1220 I VkSuggestions: strip composing typedLen=7 candidates=19 autocorrect=false locale=pt
+07-02 19:12:45.726  1176  1220 I VkSuggestions: strip composing typedLen=8 candidates=18 autocorrect=false locale=pt
+07-02 19:12:45.898  1176  1220 I VkSuggestions: strip composing typedLen=9 candidates=18 autocorrect=false locale=pt
+07-02 19:12:46.056  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=14.76ms | Init=0.09ms | TrieExpand(x4)=14.63ms | Scoring=0.04ms | inputSize=10
+07-02 19:12:46.059  1176  1220 W VkSuggestions: slow frame 17,8ms locales=2 typedLen=10 candidates=18 parallelWait=17,7ms
+07-02 19:12:46.065  1176  1220 I VkSuggestions: strip composing typedLen=10 candidates=19 autocorrect=false locale=pt
+07-02 19:12:46.574  1176  1660 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+07-02 19:12:46.574  1176  1660 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+07-02 19:12:47.824  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+07-02 19:12:48.045  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false locale=pt
+07-02 19:12:48.693  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=11.75ms | Init=0.33ms | TrieExpand(x15)=11.37ms | Scoring=0.05ms | inputSize=4
+07-02 19:12:48.707  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=13.43ms | Init=0.13ms | TrieExpand(x22)=13.27ms | Scoring=0.03ms | inputSize=4
+07-02 19:12:48.716  1176  1220 W VkSuggestions: slow frame 34,6ms locales=2 typedLen=4 candidates=18 parallelWait=34,3ms
+07-02 19:12:48.720  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+07-02 19:12:49.136  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false locale=pt
+07-02 19:12:49.311  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+07-02 19:12:50.222  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=it
+07-02 19:12:50.387  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false locale=it
+07-02 19:12:50.552  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=9.05ms | Init=0.11ms | TrieExpand(x15)=8.90ms | Scoring=0.04ms | inputSize=3
+07-02 19:12:50.565  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=8.61ms | Init=0.04ms | TrieExpand(x12)=8.53ms | Scoring=0.05ms | inputSize=3
+07-02 19:12:50.568  1176  1220 W VkSuggestions: slow frame 25,0ms locales=2 typedLen=3 candidates=18 parallelWait=24,8ms
+07-02 19:12:50.570  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false locale=it
+07-02 19:12:51.425  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=pt
+07-02 19:12:51.595  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+07-02 19:12:51.751  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=pt
+07-02 19:12:51.942  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=8.41ms | Init=0.06ms | TrieExpand(x11)=8.32ms | Scoring=0.03ms | inputSize=4
+07-02 19:12:51.946  1176  1220 W VkSuggestions: slow frame 24,2ms locales=2 typedLen=4 candidates=18 parallelWait=23,9ms
+07-02 19:12:51.948  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=pt
+07-02 19:12:52.135  1176  1220 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false locale=pt
+07-02 19:12:52.305  1176  1220 I VkSuggestions: strip composing typedLen=6 candidates=19 autocorrect=false locale=pt
+07-02 19:12:53.449  1176  1220 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false locale=pt
+07-02 19:12:53.582  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=pt
+07-02 19:12:53.731  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=pt
+07-02 19:12:53.885  1176  1220 W VkSuggestions: slow frame 19,3ms locales=2 typedLen=2 candidates=18 parallelWait=18,8ms
+07-02 19:12:53.889  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+07-02 19:12:54.774  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=13.65ms | Init=0.31ms | TrieExpand(x16)=13.28ms | Scoring=0.05ms | inputSize=1
+07-02 19:12:54.788  1176  1220 W VkSuggestions: slow frame 27,8ms locales=2 typedLen=1 candidates=18 parallelWait=27,6ms
+07-02 19:12:54.789  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false locale=it
+07-02 19:12:54.977  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false locale=it
+07-02 19:12:55.135  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=9.54ms | Init=0.07ms | TrieExpand(x13)=9.42ms | Scoring=0.04ms | inputSize=3
+07-02 19:12:55.150  1176  1220 W VkSuggestions: slow frame 24,3ms locales=2 typedLen=3 candidates=18 parallelWait=24,1ms
+07-02 19:12:55.152  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=true locale=it
+07-02 19:12:55.299  1176  1176 I VkAutocorrect: committed (typing): veo → vero
+07-02 19:12:56.765  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false locale=it
+07-02 19:12:56.899  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false locale=it
+07-02 19:12:57.054  1176  1220 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=it
+07-02 19:12:57.248  1176  1220 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=it
+07-02 19:12:57.416  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=10.33ms | Init=0.18ms | TrieExpand(x19)=10.04ms | Scoring=0.03ms | inputSize=5
+07-02 19:12:57.417  1176  1220 W VkSuggestions: slow frame 19,2ms locales=2 typedLen=5 candidates=18 parallelWait=19,0ms
+07-02 19:12:57.420  1176  1220 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false locale=it
+07-02 19:12:58.668  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=10.04ms | Init=0.33ms | TrieExpand(x15)=9.69ms | Scoring=0.02ms | inputSize=1
+07-02 19:12:58.679  1176  1220 W VkSuggestions: slow frame 21,2ms locales=2 typedLen=1 candidates=18 parallelWait=21,0ms
+07-02 19:12:58.680  1176  1220 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false locale=it
+07-02 19:12:58.859  1176  1220 W VibeKeyProfiler: Slow Native Suggest: Total=14.39ms | Init=0.10ms | TrieExpand(x14)=14.22ms | Scoring=0.07ms | inputSize=2
+07-02 19:12:58.875  1176  1220 W VkSuggestions: slow frame 30,3ms locales=2 typedLen=2 candidates=18 parallelWait=30,0ms
+07-02 19:12:58.877  1176  1220 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=it
+07-02 19:13:00.026  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:00.026  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at e7.v.Q(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:21)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:2446)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at d8.u.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:40)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:00.026  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:00.063  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at l7.x.onLayoutChange(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:29)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23348)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at com.android.internal.policy.DecorView.onLayout(DecorView.java:873)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:3936)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3338)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:00.063  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:00.067  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:00.067  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:00.664 31066 31238 I OnDeviceAssist: warm ok model=Falcon-H1-Tiny-Multilingual-100M-Instruct-IQ4_NL.gguf ambient=40 chars 0ms
+07-02 19:13:01.098  1176  1578 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=39 chars
+07-02 19:13:01.121 31066 31238 I OnDeviceAssist: dispatch task=tone_casual in=39 chars engine=Ready
+07-02 19:13:01.122 31066 31238 I OnDeviceAssist: ▶ runSync task=tone_casual in=39 chars locale=pt
+07-02 19:13:01.151 31066 31238 I OnDeviceAssist: → llm task=tone_casual model=Falcon-H1-Tiny-Multilingual-100M-Instruct-IQ4_NL.gguf temp=0.45 maxTok=64
+07-02 19:13:01.698 31066 31238 I OnDeviceAssist: ✓ llm task=tone_casual 547ms out=30 chars
+07-02 19:13:01.699 31066 31238 I OnDeviceAssist: done task=tone_casual 578ms out=30 chars
+07-02 19:13:01.706  1176  1222 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 608ms in=39 out=30
+07-02 19:13:03.389  1176  1213 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=39 chars
+07-02 19:13:03.398 31066 31253 I OnDeviceAssist: dispatch task=tone_pro in=39 chars engine=Ready
+07-02 19:13:03.399 31066 31253 I OnDeviceAssist: ▶ runSync task=tone_pro in=39 chars locale=pt
+07-02 19:13:03.399 31066 31253 I OnDeviceAssist: → llm task=tone_pro model=Falcon-H1-Tiny-Multilingual-100M-Instruct-IQ4_NL.gguf temp=0.45 maxTok=64
+07-02 19:13:03.847 31066 31253 I OnDeviceAssist: ✓ llm task=tone_pro 448ms out=31 chars
+07-02 19:13:03.847 31066 31253 I OnDeviceAssist: done task=tone_pro 449ms out=31 chars
+07-02 19:13:03.848  1176  1193 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 458ms in=39 out=31
+07-02 19:13:05.830  1176  1578 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=39 chars
+07-02 19:13:05.834 31066 31238 I OnDeviceAssist: dispatch task=tone_diplomatic in=39 chars engine=Ready
+07-02 19:13:05.835 31066 31238 I OnDeviceAssist: ▶ runSync task=tone_diplomatic in=39 chars locale=pt
+07-02 19:13:05.835 31066 31238 I OnDeviceAssist: → llm task=tone_diplomatic model=Falcon-H1-Tiny-Multilingual-100M-Instruct-IQ4_NL.gguf temp=0.45 maxTok=64
+07-02 19:13:06.296 31066 31238 I OnDeviceAssist: ✓ llm task=tone_diplomatic 461ms out=34 chars
+07-02 19:13:06.296 31066 31238 I OnDeviceAssist: done task=tone_diplomatic 462ms out=34 chars
+07-02 19:13:06.296  1176  1193 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic 466ms in=39 out=34
+07-02 19:13:11.740  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:11.740  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at e7.v.I(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:17)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at h7.i.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:42)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:11.740  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:11.742  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at e7.v.I(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:118)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at h7.i.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:42)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:11.742  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:11.750  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at l7.x.onLayoutChange(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:29)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23348)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at com.android.internal.policy.DecorView.onLayout(DecorView.java:873)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:3936)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3338)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:11.750  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:11.753  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:11.753  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:12.489  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:1652)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:43)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:12.489  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:12.498  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:12.498  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:14.773  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at e7.v.I(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:17)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:1647)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:43)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:14.773  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:14.776  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at e7.v.I(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:118)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:1647)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:43)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:14.776  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:14.784  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:14.784  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:15.493  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:1652)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.suggestions.SuggestionStripView.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:43)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:15.493  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:15.503  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:15.503  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:18.629  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at e7.v.o(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:199)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at t7.b.v(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:35)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at t7.b.u(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:1512)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.l(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:36)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at e7.m.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:262)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at w7.q1.onClick(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:124)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.view.View.performClick(View.java:7488)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.view.View.performClickInternal(View.java:7464)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.view.View.access$3700(View.java:841)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.view.View$PerformClick.run(View.java:28911)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:18.629  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:18.675  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at l7.x.onLayoutChange(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:29)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23348)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1841)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at com.android.internal.policy.DecorView.onLayout(DecorView.java:873)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.View.layout(View.java:23330)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewGroup.layout(ViewGroup.java:6505)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:3936)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3338)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2305)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9133)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1232)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1029)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.Choreographer.doFrame(Choreographer.java:934)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1217)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:18.675  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:18.680  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:18.680  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:18.682  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at e7.v.v(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:204)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.LatinIME.hideWindow(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:37)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService.doHideWindow(InputMethodService.java:2441)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService.access$500(InputMethodService.java:307)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.hideSoftInput(InputMethodService.java:795)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.hideSoftInputWithToken(InputMethodService.java:757)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:232)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:18.682  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:18.749  1176  1176 W Settings: Setting transition_animation_scale has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+07-02 19:13:18.869  1176  1176 W LayerDrawable: Invalid drawable added to LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+07-02 19:13:18.869  1176  1176 W LayerDrawable: java.lang.RuntimeException
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$ChildDrawable.<init>(LayerDrawable.java:1857)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable$LayerState.<init>(LayerDrawable.java:1977)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.createConstantState(LayerDrawable.java:174)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.graphics.drawable.LayerDrawable.mutate(LayerDrawable.java:1782)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.d(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:355)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at l7.a0.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:232)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at androidx.lifecycle.e0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:275)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at helium314.keyboard.latin.InputView.c(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:38)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at e7.v.a(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:15)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at b8.r0.run(r8-map-id-f2425ebaef40332986feda51be9357e3a7ea73dec94cbb6b97fc953597e33e20:730)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.os.Handler.handleCallback(Handler.java:938)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.os.Looper.loopOnce(Looper.java:233)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.os.Looper.loop(Looper.java:344)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at java.lang.reflect.Method.invoke(Native Method)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+07-02 19:13:18.869  1176  1176 W LayerDrawable: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+07-02 19:13:23.448  1176  1305 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+07-02 19:13:23.950  1176  1305 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+
+2026-07-02 19:12:15.731102 W n0: Could not load system glide typing library jni_latinimegoogle: dlopen failed: library "libjni_latinimegoogle.so" not found
+2026-07-02 19:12:15.746740 I startup: Starting com.vibekey.keyboard version 4.1.186 (4286) on Android 12 (SDK 31)
+2026-07-02 19:12:15.750035 I LatinIME: Hardware accelerated drawing: true
+2026-07-02 19:12:15.805169 I SymSpellProvider: Detected asset languages: [en]
+2026-07-02 19:12:15.806455 I NgramPredictor: Detected bigram asset languages: []
+2026-07-02 19:12:15.807143 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-07-02 19:12:15.807842 I RecencyTracker: init loaded 1 language file(s)
+2026-07-02 19:12:15.808270 I AdaptiveTouchModel: Loaded touch model: 2 keys
+2026-07-02 19:12:15.808700 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-07-02 19:12:15.822234 W w: No editor info for this field. Bug?
+2026-07-02 19:12:15.822323 I c: loadSettings
+2026-07-02 19:12:15.829586 I r: resetDictionaries, force reloading main dictionary: false
+2026-07-02 19:12:15.830318 I VkMultilingual: reset main=pt-BR locales=[pt,it] count=2
+2026-07-02 19:12:15.848806 I NgramPredictor: Detected bigram asset languages: []
+2026-07-02 19:12:15.849223 I NgramPredictor: Loaded 1 runtime bigram keys for pt
+2026-07-02 19:12:15.849946 I SymSpellProvider: Detected asset languages: [en]
+2026-07-02 19:12:15.868185 I ConsentManager: UMP hydrate skipped: n6.k.getConsentInformation [class android.content.Context]
+2026-07-02 19:12:15.869476 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-07-02 19:12:16.026995 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-07-02 19:12:16.031381 I LatinIME: ringer mode changed, zen_mode on: false
+2026-07-02 19:12:16.261693 I AdManager: MobileAds initialization complete
+2026-07-02 19:12:16.261790 I ConsentManager: UMP hydrate skipped: n6.k.getConsentInformation [class android.content.Context]
+2026-07-02 19:12:16.261873 I AdManager: Rewarded load start tier=PRIMARY unit=5224354917 waterfall=false
+2026-07-02 19:12:16.276262 I c: loadSettings
+2026-07-02 19:12:16.280512 I VkSwipe: ○ gesture canceled
+2026-07-02 19:12:16.296734 I VkEffects: reload anim=scale blur=562px glow=true stickers=true
+2026-07-02 19:12:16.306760 I StickerImageManager: No sticker images on disk (empty cache confirmed)
+2026-07-02 19:12:16.378329 I LatinIME: Starting input. Cursor position = 0,0
+2026-07-02 19:12:16.378535 I c: loadSettings
+2026-07-02 19:12:18.016893 I AdManager: Native ad loaded
+2026-07-02 19:12:18.522586 I AdManager: Native ad view created
+2026-07-02 19:12:18.713526 I AdManager: Interstitial ad loaded
+2026-07-02 19:12:18.969001 I AdManager: Rewarded ad loaded tier=PRIMARY
+2026-07-02 19:12:19.522280 I AdManager: Native ad loaded
+2026-07-02 19:12:20.629708 I SymSpellProvider: Built runtime SymSpell for it with 79998 words
+2026-07-02 19:12:20.629795 I r: Built runtime SymSpell for it with 80017 words
+2026-07-02 19:12:20.753485 I LatinIME: requestHideSelf: 0
+2026-07-02 19:12:20.835649 I SymSpellProvider: Built runtime SymSpell for pt with 79999 words
+2026-07-02 19:12:20.835735 I r: Built runtime SymSpell for pt with 80022 words
+2026-07-02 19:12:20.836210 I LatinIME: hideWindow
+2026-07-02 19:12:20.839047 I LatinIME: onFinishInputView
+2026-07-02 19:12:20.839267 I LatinIME: onWindowHidden
+2026-07-02 19:12:20.878804 I w: InputType.TYPE_NULL is specified
+2026-07-02 19:12:20.878915 I c: loadSettings
+2026-07-02 19:12:21.108028 I LatinIME: requestHideSelf: 100
+2026-07-02 19:12:21.125174 I LatinIME: onFinishInput
+2026-07-02 19:12:22.314667 I c: loadSettings
+2026-07-02 19:12:23.545427 I LatinIME: onFinishInput
+2026-07-02 19:12:26.088070 I c: loadSettings
+2026-07-02 19:12:26.240935 I LatinIME: onFinishInput
+2026-07-02 19:12:29.997698 I LatinIME: onFinishInput
+2026-07-02 19:12:33.518653 I LatinIME: onFinishInput
+2026-07-02 19:12:33.525835 I LatinIME: Starting input. Cursor position = 0,0
+2026-07-02 19:12:33.526308 I c: loadSettings
+2026-07-02 19:12:33.869289 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-07-02 19:12:33.869378 I SymSpellProvider: SymSpell loaded for en with 82834 words
+2026-07-02 19:12:36.532808 I LatinIME: hideWindow
+2026-07-02 19:12:36.552964 I LatinIME: onFinishInputView
+2026-07-02 19:12:36.558253 I LatinIME: onWindowHidden
+2026-07-02 19:12:36.603236 I LatinIME: onFinishInput
+2026-07-02 19:12:38.343110 I LatinIME: onFinishInput
+2026-07-02 19:12:38.361183 I LatinIME: Starting input. Cursor position = 0,0
+2026-07-02 19:12:38.361425 I c: loadSettings
+2026-07-02 19:12:39.734881 W VkSuggestions: slow frame 20,5ms locales=2 typedLen=1 candidates=18 parallelWait=20,4ms
+2026-07-02 19:12:39.736712 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:39.922647 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=true locale=pt
+2026-07-02 19:12:40.098043 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=true locale=pt
+2026-07-02 19:12:40.239843 I VkSuggestions: strip composing typedLen=4 candidates=14 autocorrect=false locale=pt
+2026-07-02 19:12:44.369678 I VkSuggestions: strip composing typedLen=2 candidates=15 autocorrect=false locale=pt
+2026-07-02 19:12:44.542300 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false locale=pt
+2026-07-02 19:12:44.715233 W VkSuggestions: slow frame 16,2ms locales=2 typedLen=4 candidates=18 parallelWait=15,9ms
+2026-07-02 19:12:44.717792 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+2026-07-02 19:12:45.089378 W VkSuggestions: slow frame 23,9ms locales=2 typedLen=5 candidates=18 parallelWait=23,8ms
+2026-07-02 19:12:45.092619 I VkSuggestions: strip composing typedLen=5 candidates=15 autocorrect=true locale=pt
+2026-07-02 19:12:45.375673 I VkSuggestions: strip composing typedLen=6 candidates=18 autocorrect=true locale=pt
+2026-07-02 19:12:45.536320 I VkSuggestions: strip composing typedLen=7 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:45.726181 I VkSuggestions: strip composing typedLen=8 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:45.898025 I VkSuggestions: strip composing typedLen=9 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:46.059177 W VkSuggestions: slow frame 17,8ms locales=2 typedLen=10 candidates=18 parallelWait=17,7ms
+2026-07-02 19:12:46.065087 I VkSuggestions: strip composing typedLen=10 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:47.824311 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+2026-07-02 19:12:48.045931 I VkSuggestions: strip composing typedLen=3 candidates=15 autocorrect=false locale=pt
+2026-07-02 19:12:48.715867 W VkSuggestions: slow frame 34,6ms locales=2 typedLen=4 candidates=18 parallelWait=34,3ms
+2026-07-02 19:12:48.720250 I VkSuggestions: strip composing typedLen=4 candidates=15 autocorrect=false locale=pt
+2026-07-02 19:12:49.136164 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false locale=pt
+2026-07-02 19:12:49.311613 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:50.222546 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=it
+2026-07-02 19:12:50.386982 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false locale=it
+2026-07-02 19:12:50.568217 W VkSuggestions: slow frame 25,0ms locales=2 typedLen=3 candidates=18 parallelWait=24,8ms
+2026-07-02 19:12:50.570243 I VkSuggestions: strip composing typedLen=3 candidates=16 autocorrect=false locale=it
+2026-07-02 19:12:51.425908 I VkSuggestions: strip composing typedLen=1 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:51.595506 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:51.751366 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:51.946498 W VkSuggestions: slow frame 24,2ms locales=2 typedLen=4 candidates=18 parallelWait=23,9ms
+2026-07-02 19:12:51.948877 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:52.134984 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:52.305708 I VkSuggestions: strip composing typedLen=6 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:53.449778 I VkSuggestions: strip composing typedLen=5 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:53.581984 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=pt
+2026-07-02 19:12:53.731560 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:53.885494 W VkSuggestions: slow frame 19,3ms locales=2 typedLen=2 candidates=18 parallelWait=18,8ms
+2026-07-02 19:12:53.889089 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=pt
+2026-07-02 19:12:54.788282 W VkSuggestions: slow frame 27,8ms locales=2 typedLen=1 candidates=18 parallelWait=27,6ms
+2026-07-02 19:12:54.788999 I VkSuggestions: strip composing typedLen=1 candidates=17 autocorrect=false locale=it
+2026-07-02 19:12:54.977313 I VkSuggestions: strip composing typedLen=2 candidates=17 autocorrect=false locale=it
+2026-07-02 19:12:55.150278 W VkSuggestions: slow frame 24,3ms locales=2 typedLen=3 candidates=18 parallelWait=24,1ms
+2026-07-02 19:12:55.152548 I VkSuggestions: strip composing typedLen=3 candidates=17 autocorrect=true locale=it
+2026-07-02 19:12:55.299889 I VkAutocorrect: committed (typing): veo → vero
+2026-07-02 19:12:56.764976 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false locale=it
+2026-07-02 19:12:56.899828 I VkSuggestions: strip composing typedLen=2 candidates=16 autocorrect=false locale=it
+2026-07-02 19:12:57.054800 I VkSuggestions: strip composing typedLen=3 candidates=18 autocorrect=false locale=it
+2026-07-02 19:12:57.248660 I VkSuggestions: strip composing typedLen=4 candidates=19 autocorrect=false locale=it
+2026-07-02 19:12:57.417431 W VkSuggestions: slow frame 19,2ms locales=2 typedLen=5 candidates=18 parallelWait=19,0ms
+2026-07-02 19:12:57.420516 I VkSuggestions: strip composing typedLen=5 candidates=18 autocorrect=false locale=it
+2026-07-02 19:12:58.679640 W VkSuggestions: slow frame 21,2ms locales=2 typedLen=1 candidates=18 parallelWait=21,0ms
+2026-07-02 19:12:58.680617 I VkSuggestions: strip composing typedLen=1 candidates=16 autocorrect=false locale=it
+2026-07-02 19:12:58.875032 W VkSuggestions: slow frame 30,3ms locales=2 typedLen=2 candidates=18 parallelWait=30,0ms
+2026-07-02 19:12:58.877788 I VkSuggestions: strip composing typedLen=2 candidates=18 autocorrect=false locale=it
+2026-07-02 19:13:01.098401 I OnDeviceAssist: ▶ assist_ipc task=tone_casual in=39 chars
+2026-07-02 19:13:01.706439 I OnDeviceAssist: ✓ assist (ime) task=tone_casual 608ms in=39 out=30
+2026-07-02 19:13:01.749419 I QuotaManager: Daily assist quota reset
+2026-07-02 19:13:03.389286 I OnDeviceAssist: ▶ assist_ipc task=tone_pro in=39 chars
+2026-07-02 19:13:03.847976 I OnDeviceAssist: ✓ assist (ime) task=tone_pro 458ms in=39 out=31
+2026-07-02 19:13:05.830483 I OnDeviceAssist: ▶ assist_ipc task=tone_diplomatic in=39 chars
+2026-07-02 19:13:06.296571 I OnDeviceAssist: ✓ assist (ime) task=tone_diplomatic 466ms in=39 out=34
+2026-07-02 19:13:18.636126 I LatinIME: requestHideSelf: 0
+2026-07-02 19:13:18.681711 I LatinIME: hideWindow
+2026-07-02 19:13:18.685213 I LatinIME: onFinishInputView
+2026-07-02 19:13:18.685455 I LatinIME: onWindowHidden
+2026-07-02 19:13:18.694707 I w: InputType.TYPE_NULL is specified
+2026-07-02 19:13:18.694822 I c: loadSettings
+2026-07-02 19:13:18.892451 I LatinIME: onFinishInput
+2026-07-02 19:13:23.086807 I LatinIME: onFinishInput
+2026-07-02 19:13:24.501366 I LatinIME: onFinishInput
