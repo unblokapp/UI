@@ -1,0 +1,883 @@
+=== VibeKey 4.5.549 (4914) ===
+
+--------- beginning of crash
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: FATAL EXCEPTION: main
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: Process: com.vibekey.keyboard, PID: 20427
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.D(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:211)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.C(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:34)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.p(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:47)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1141)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.view.View.performClick(View.java:7488)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.view.View.access$3700(View.java:841)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:344)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 12:56:51.606 20427 20427 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: FATAL EXCEPTION: main
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: Process: com.vibekey.keyboard, PID: 22370
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.D(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:211)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.C(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:34)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.p(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:47)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1141)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.view.View.performClick(View.java:7488)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.view.View.access$3700(View.java:841)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:344)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 12:56:56.189 22370 22370 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: FATAL EXCEPTION: main
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: Process: com.vibekey.keyboard, PID: 22485
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.D(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:211)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.C(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:34)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.p(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:47)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1141)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.view.View.performClick(View.java:7488)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.view.View.access$3700(View.java:841)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:344)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 12:57:06.910 22485 22485 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: FATAL EXCEPTION: main
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: Process: com.vibekey.keyboard, PID: 22608
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.D(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:211)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.C(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:34)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.p(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:47)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1141)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.view.View.performClick(View.java:7488)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.view.View.access$3700(View.java:841)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:344)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 12:57:40.588 22608 22608 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+--------- beginning of system
+08-22 13:00:46.983 23065 24472 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+08-22 13:00:46.984 23065 24472 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+08-22 13:01:01.169 23065 24472 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+08-22 13:01:01.169 23065 24472 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+08-22 13:03:24.149 23065 24472 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+08-22 13:03:24.149 23065 24472 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+08-22 13:03:50.503 23065 24472 E ActivityThread: Failed to find provider info for com.oplus.statistics.provider
+08-22 13:03:50.503 23065 24472 E OplusStatistics--: IllegalArgumentException:java.lang.IllegalArgumentException: Unknown URL content://com.oplus.statistics.provider/track_event
+--------- beginning of main
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.d(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:9)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:38)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.G(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:85)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.b0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:93)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.view.View.performClick(View.java:7488)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.view.View.access$3700(View.java:841)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:33.182 23065 23065 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:33.184 23065 23065 I VkPanels: ▶ open effects
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: FATAL EXCEPTION: main
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: Process: com.vibekey.keyboard, PID: 23065
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.D(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:211)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.C(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:34)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.p(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:47)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at helium314.keyboard.latin.panels.AiThemePanelView.M0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1141)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at cc.i0.invoke(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at bc.a.onClick(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:84)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.view.View.performClick(View.java:7488)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7464)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.view.View.access$3700(View.java:841)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28911)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:33.260 23065 23065 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:34.757 26770 26770 E ibekey.keyboar: Unknown bits set in runtime_flags: 0x40000000
+08-22 13:11:35.196 26770 26770 I VkNgram : registered lang=vi,th source=bundled
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:35.286 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.s(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:58)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.onCreate(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:746)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4655)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.access$100(ActivityThread.java:254)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2203)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:35.287 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:35.303 26770 26770 I VkEffects: reload keyPress=glow popup=none popupFx=true blur=0px glow=true stickers=true fontScale=0,90
+08-22 13:11:35.305 26770 26800 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+08-22 13:11:35.357 26770 26800 I VkDictionaries: ▶ async reload main dicts locales=1
+08-22 13:11:35.364 26770 26800 I VkDictionaries: ✓ open main pt-BR
+08-22 13:11:35.365 26770 26800 I VkDictionaries: ✓ open emoji pt-BR
+08-22 13:11:35.365 26770 26800 I VkDictionaries: collection pt-BR dicts=2 emoji=true
+08-22 13:11:35.594 26770 26801 I VkLocaleAssets: ▶ startup download begin
+08-22 13:11:35.595 26770 26801 I VkStartupLoad: ▶ dictionary batch begin recentInstall=false
+08-22 13:11:35.596 26770 26801 I VkLocaleAssets: ▶ batch source=startup count=3 [pt-BR,en-US,es]
+08-22 13:11:35.627 26770 26801 I VkStartupLoad: ○ predictor preload deferred pt-BR
+08-22 13:11:35.630 26770 26801 I VkLocaleAssets: ○ ready pt-BR (cached)
+08-22 13:11:35.630 26770 26801 I VkStartupLoad: ○ locale gap 3000ms before en-US
+08-22 13:11:35.651 26770 26770 E ibekey.keyboar: ofbOpen failed with error=No such file or directory
+08-22 13:11:35.651 26770 26770 E ibekey.keyboar: sysOpen failed with error=No such file or directory
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.W0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:27)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.onInitializeInterface(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:9)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService.initialize(InputMethodService.java:1444)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.bindInput(InputMethodService.java:683)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:181)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:35.732 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:35.746 26770 26770 E OplusCustomizeRestrictionManager: sInstance is null, start a new sInstance
+08-22 13:11:35.870 26770 26801 I VkVibeCards: loaded 1 cards (disk)
+08-22 13:11:35.972 26770 26770 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+08-22 13:11:35.972 26770 26770 I SessionContext: bindEditorAndCapture pkg=com.android.launcher appContext=GENERAL ambientChars=40 sensitive=false threadKey=com.android.launcher:1:0
+08-22 13:11:35.973 26770 26770 I VkTyping: ▶ open restart=false pkg=len=20 inputType=589825
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:35.975 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.s(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:58)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.onStartInputView(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1061)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService.startViews(InputMethodService.java:2400)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService.showWindow(InputMethodService.java:2341)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.showSoftInput(InputMethodService.java:848)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.showSoftInputWithToken(InputMethodService.java:817)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:225)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:35.976 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:35.986 26770 26849 I VkDictionaries: ✓ open emoji pt-BR
+08-22 13:11:35.993 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:35.996 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:35.996 26770 26770 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+08-22 13:11:36.120 26770 26770 W View    : requestLayout() improperly called by android.widget.LinearLayout{9b7781e V.E...... ......ID 0,1838-1440,2818 #7f0b0143 app:id/main_keyboard_frame} during layout: running second layout pass
+08-22 13:11:36.275 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.354 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.387 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.407 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.426 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.442 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.449 26770 26770 E RichInputConnection: Unable to connect to the editor to retrieve text.
+08-22 13:11:36.449 26770 26770 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.d(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:9)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:38)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.G(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:85)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.b0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.panels.AiThemePanelView.a(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:52)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.P(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.O(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.J0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:83)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.internal.KeyboardState.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.internal.KeyboardState.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:29)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.W(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardSwitcher.n0(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:49)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME$UIHandler.handleMessage(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:141)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:36.456 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:36.697 26770 26770 I VkLocaleAssets: preload predictors pt-BR
+08-22 13:11:36.874 26770 26871 I VkNgram : model ready locale=pt-BR gen=1 166ms
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.d(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:9)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:38)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at cc.g.run(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:148)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:38.594 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:38.673 26770 26800 I VkStartupLoad: ○ predictor preload deferred en-US
+08-22 13:11:38.679 26770 26800 I VkLocaleAssets: ○ ready en-US (cached)
+08-22 13:11:38.679 26770 26800 I VkStartupLoad: ○ locale gap 3000ms before es
+08-22 13:11:46.583 26770 26800 I VkStartupLoad: ○ predictor preload deferred es
+08-22 13:11:46.586 26770 26800 I VkLocaleAssets: ○ ready es (cached)
+08-22 13:11:46.588 26770 26800 I VkLocaleAssets: ✓ batch source=startup locales=3 fetched=0
+08-22 13:11:46.591 26770 26800 I VkStartupLoad: ✓ dictionary batch done
+08-22 13:11:46.592 26770 26839 I VkStartupLoad: ▶ predictor preload flush count=3
+08-22 13:11:46.592 26770 26839 I VkLocaleAssets: preload predictors pt-BR
+08-22 13:11:46.595 26770 26800 I VkLocaleAssets: ✓ startup done locales=3 retries=0
+08-22 13:11:55.620 26770 26800 I VkLocaleAssets: preload predictors en-US
+08-22 13:11:55.709 26770 26909 I VkNgram : model ready locale=en-US gen=1 87ms
+08-22 13:11:56.826 26770 26770 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+08-22 13:11:56.826 26770 26770 I SessionContext: bindEditorAndCapture pkg=com.android.launcher appContext=GENERAL ambientChars=40 sensitive=false threadKey=com.android.launcher:1:0
+08-22 13:11:56.827 26770 26770 I OnDeviceLlmPrewarm: ambient priming immediate warm ambientChars=40
+08-22 13:11:56.828 26770 26770 I VkTyping: ▶ open restart=false pkg=len=20 inputType=589825
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.s(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:58)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.LatinIME.onStartInputView(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1061)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:2556)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:713)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInputWithToken(InputMethodService.java:743)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:199)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:56.830 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:56.964 26770 26770 I VkLocaleAssets: preload predictors pt-BR
+08-22 13:11:56.966 20461 20478 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+08-22 13:11:57.049 26770 26805 I VkNgram : merge locale=pt prev=len=0 preds=8 contextual=0 assets=true
+08-22 13:11:57.050 26770 26805 I VkNgram : unifiedRank locale=pt head=len=2 ghost=len=2 lmHead=len=2 slots=3 kenLm=true divergent=false
+08-22 13:11:57.050 26770 26805 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=len=2 locale=pt token=9 gen=0
+08-22 13:11:57.214 26770 26770 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+08-22 13:11:57.215 26770 26823 I OnDeviceLlmPrewarm: ambient recapture skip warm excerptDelta=0
+08-22 13:11:57.621 26770 26823 I VkLocaleAssets: preload predictors es
+08-22 13:11:57.698 26770 26909 I VkNgram : model ready locale=es gen=1 76ms
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.d(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:9)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.utils.FavoriteThemePreviewRenderer.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:38)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at cc.g.run(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:148)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:11:58.239 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:11:59.662 26770 26948 W ibekey.keyboar: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*1330995184]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*4107572224]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*4107572224]} | DLC[];PCL[])
+08-22 13:11:59.676 26770 26948 W System  : ClassLoader referenced unknown path: 
+08-22 13:11:59.700 26770 26948 W ibekey.keyboar: ClassLoaderContext classpath element checksum mismatch. expected=1330995184, found=605017966 (DLC[];PCL[base.apk*1330995184]{PCL[/system/framework/org.apache.http.legacy.jar*3034548894]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*4107572224]#PCL[/system/framework/com.android.location.provider.jar*3633238672]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798123]#PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*4107572224]} | DLC[];PCL[/data/app/~~fVNjGnN62SrvLrQl6aePjw==/com.vibekey.keyboard-e2H-31fX35cCi40U3U0xJA==/base.apk*605017966]{PCL[/apex/com.android.extservices/javalib/android.ext.adservices.jar*4107572224]})
+08-22 13:11:59.827 26770 26770 E MultiApp.Impl: OplusMultiAppImpl
+08-22 13:11:59.904 26770 26770 W libc    : Access denied finding property "ro.vendor.api_level"
+08-22 13:11:59.907 26770 26770 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+08-22 13:11:59.962 26770 26956 W Ads     : Update ad debug logging enablement as false
+08-22 13:11:59.966 26770 27021 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+08-22 13:11:59.966 26770 27021 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+08-22 13:11:59.966 26770 26786 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+08-22 13:11:59.972 26770 26997 W cr_media: BLUETOOTH_CONNECT permission is missing.
+08-22 13:11:59.972 26770 26997 W cr_media: getBluetoothAdapter() requires BLUETOOTH permission
+08-22 13:11:59.972 26770 26997 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+08-22 13:12:00.109 26770 27007 W AudioCapabilities: Unsupported mime audio/ffmpeg
+08-22 13:12:00.110 26770 27007 W VideoCapabilities: Unsupported mime video/ffmpeg
+08-22 13:12:00.110 26770 27007 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+08-22 13:12:00.110 26770 27007 W VideoCapabilities: Unrecognized profile/level 0/3 for video/mpeg2
+08-22 13:12:05.855 26770 26770 I VkTyping: ○ hidden
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: Failed to load theme 'Neon_Tokyo_alley Keyboard', falling back
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 46: Failed to parse int for input '4279369771' at path: $[0].color
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: JSON input: .....BACKGROUND","color":4279369771},{"name":"COLOR_KEYS","color".....
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.JsonExceptionsKt.JsonDecodingException(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:59)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.AbstractJsonLexer.fail$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:15)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeInt(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:39)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.IntSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeNullableSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.ColorSetting$$serializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:96)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:2)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.AbstractDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:11)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:33)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.encoding.CompositeDecoder.decodeSerializableElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.CollectionLikeSerializer.readElement(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:21)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.readElement$default(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:8)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.merge(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:67)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.internal.AbstractCollectionSerializer.deserialize(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:7)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:323)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at kotlinx.serialization.json.Json.decodeFromString(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:3)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.j(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:42)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.f(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1111)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.keyboard.KeyboardTheme$Companion.c(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:72)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.SettingsValues.<init>(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:1284)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.latin.settings.Settings.h(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:60)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at helium314.keyboard.settings.SettingsActivity.onCreate(r8-map-id-a2f60a0707af864b93ab0f7bdf357d1b7beca74207058f768f8f61a95413d0c5:73)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.Activity.performCreate(Activity.java:8129)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.Activity.performCreate(Activity.java:8109)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1344)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3749)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3942)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:109)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2345)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.os.Looper.loopOnce(Looper.java:233)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.os.Looper.loop(Looper.java:344)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at android.app.ActivityThread.main(ActivityThread.java:8212)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at java.lang.reflect.Method.invoke(Native Method)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:584)
+08-22 13:12:06.879 26770 26770 E KeyboardTheme: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+08-22 13:12:06.882 26770 26770 I VkSettings: ▶ activity open spellchecker=false
+08-22 13:12:07.122 26770 26770 I VkSettings: → screen settings
+08-22 13:12:08.374 26770 26770 I VkSettings: → screen ai_settings
+08-22 13:12:09.426 26770 26770 I VkSettings: → screen settings
+08-22 13:12:10.965 26770 26770 I VkSettings: → screen about
+08-22 13:12:11.063 26770 26828 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+08-22 13:12:12.058 26770 26828 E BLASTBufferQueue: BLASTBufferItemConsumer::onDisconnect()
+
+=== Feature activity (persisted across restarts) ===
+2026-08-22 12:28:40.108056 W VkSuggestions: slow frame 27,8ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:28:42.852656 W VkSuggestions: slow frame 17,2ms locales=1 typedLen=4 candidates=14
+2026-08-22 12:28:44.415904 W VkSuggestions: slow frame 20,0ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:28:50.201888 W VkSuggestions: slow frame 19,6ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:28:51.645515 W VkSuggestions: slow frame 27,5ms locales=1 typedLen=5 candidates=14
+2026-08-22 12:28:51.761660 W VkSuggestions: slow frame 20,7ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:50:04.389830 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 1119ms
+2026-08-22 12:50:37.200379 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 12:51:19.116011 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 492ms
+2026-08-22 12:55:11.538547 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 465ms
+2026-08-22 12:55:36.219701 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 447ms
+2026-08-22 12:55:44.426344 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=38 chars 0ms
+2026-08-22 12:55:51.169148 W VkSuggestions: slow frame 16,7ms locales=1 typedLen=4 candidates=14
+2026-08-22 12:56:14.802868 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 450ms
+2026-08-22 12:57:37.266527 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 12:59:11.143125 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 12:59:15.450955 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 12:59:27.456193 W VkSuggestions: slow frame 16,8ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:59:30.027763 W VkSuggestions: slow frame 16,0ms locales=1 typedLen=3 candidates=14
+2026-08-22 12:59:30.886743 W VkSuggestions: slow frame 16,9ms locales=1 typedLen=4 candidates=14
+2026-08-22 13:00:29.987499 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 1ms
+2026-08-22 13:00:46.183950 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 13:03:04.557567 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+2026-08-22 13:03:38.799494 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=45 chars 0ms
+2026-08-22 13:03:56.705583 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=39 chars 0ms
+2026-08-22 13:11:56.966769 I OnDeviceAssist: warm ok model=qwen2.5-0.5b-instruct-q4_0.gguf ambient=40 chars 0ms
+
+=== In-memory (current process) ===
+2026-08-22 13:11:34.965688 I VibeKeyAppCheck: App Check initialized (debug=false)
+2026-08-22 13:11:34.969738 I startup: Starting com.vibekey.keyboard version 4.5.549 (4914) on Android 12 (SDK 31)
+2026-08-22 13:11:34.974980 I LatinIME: Hardware accelerated drawing: true
+2026-08-22 13:11:35.015027 I AiApiHelper: Using VibeKey Firebase proxy for Gemini
+2026-08-22 13:11:35.015154 I AiApiHelper: Using VibeKey Firebase proxy for Together
+2026-08-22 13:11:35.062932 I SymSpellProvider: Detected asset languages: [de, hi, fi, pt, bg, bn, fr, hu, uk, sk, sl, id, ca, sv, el, en, it, es, cs, ar, vi, nb, th, pl, da, he, ro, nl, tr]
+2026-08-22 13:11:35.191705 I KenLmBridge: Bundled VkLM languages: [de, hi, fi, pt, bg, bn, fr, hu, uk, sk, sl, id, ca, sv, el, en, it, es, cs, ar, nb, pl, da, he, ro, nl, tr]
+2026-08-22 13:11:35.196279 I NgramPredictor: Bundled bigram languages: [vi, th]
+2026-08-22 13:11:35.196543 I VkNgram: registered lang=vi,th source=bundled
+2026-08-22 13:11:35.197898 I NgramPredictor: Available bigram languages (bundled+downloaded): [de, hi, fi, pt, bg, bn, fr, hu, uk, sk, sl, id, ca, sv, el, en, it, es, cs, ar, vi, th, nb, pl, da, he, ro, nl, tr]
+2026-08-22 13:11:35.203738 I NgramPredictor: Loaded 2 runtime bigram keys for pt
+2026-08-22 13:11:35.214916 I AutocorrectRejectionTracker: Loaded 1 autocorrect rejection entries
+2026-08-22 13:11:35.218854 I RecencyTracker: init loaded 1 language file(s)
+2026-08-22 13:11:35.223017 I AdaptiveTouchModel: Loaded touch model: 24 keys
+2026-08-22 13:11:35.224207 I ContactsSuggProvider: READ_CONTACTS permission not granted, skipping contacts load
+2026-08-22 13:11:35.278877 I InputAttributes: InputType.TYPE_NULL is specified
+2026-08-22 13:11:35.278995 I Settings: loadSettings
+2026-08-22 13:11:35.303626 I VkEffects: reload keyPress=glow popup=none popupFx=true blur=0px glow=true stickers=true fontScale=0,90
+2026-08-22 13:11:35.303864 I DictionaryFacilitator: resetDictionaries, force reloading main dictionary: false
+2026-08-22 13:11:35.305240 I VkMultilingual: reset main=pt-BR locales=[pt] count=1
+2026-08-22 13:11:35.357927 I VkDictionaries: ▶ async reload main dicts locales=1
+2026-08-22 13:11:35.364932 I VkDictionaries: ✓ open main pt-BR
+2026-08-22 13:11:35.365345 I VkDictionaries: ✓ open emoji pt-BR
+2026-08-22 13:11:35.365424 I VkDictionaries: collection pt-BR dicts=2 emoji=true
+2026-08-22 13:11:35.594357 I VkLocaleAssets: ▶ startup download begin
+2026-08-22 13:11:35.595870 I VkStartupLoad: ▶ dictionary batch begin recentInstall=false
+2026-08-22 13:11:35.596258 I VkLocaleAssets: ▶ batch source=startup count=3 [pt-BR,en-US,es]
+2026-08-22 13:11:35.602334 I LatinIME: ringer mode changed, zen_mode on: false
+2026-08-22 13:11:35.627512 I VkStartupLoad: ○ predictor preload deferred pt-BR
+2026-08-22 13:11:35.630185 I VkLocaleAssets: ○ ready pt-BR (cached)
+2026-08-22 13:11:35.630500 I VkStartupLoad: ○ locale gap 3000ms before en-US
+2026-08-22 13:11:35.727414 I Settings: loadSettings
+2026-08-22 13:11:35.870484 I StickerImageManager: Loaded 1 NFT sticker images from disk
+2026-08-22 13:11:35.870691 I VkVibeCards: loaded 1 cards (disk)
+2026-08-22 13:11:35.972681 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+2026-08-22 13:11:35.972796 I SessionContext: bindEditorAndCapture pkg=com.android.launcher appContext=GENERAL ambientChars=40 sensitive=false threadKey=com.android.launcher:1:0
+2026-08-22 13:11:35.972994 I AdManager: Ads marked suspended (fast, no WebView/OMID touch)
+2026-08-22 13:11:35.973692 I LatinIME: Starting input. Cursor position = 0,0
+2026-08-22 13:11:35.973867 I VkTyping: ▶ open restart=false pkg=len=20 inputType=589825
+2026-08-22 13:11:35.974150 I Settings: loadSettings
+2026-08-22 13:11:35.986447 I VkDictionaries: ✓ open emoji pt-BR
+2026-08-22 13:11:35.993243 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:35.996373 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:35.996519 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+2026-08-22 13:11:36.275805 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.354236 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.387617 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.407680 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.426877 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.442062 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.449595 E RichInputConnection: Unable to connect to the editor to retrieve text.
+2026-08-22 13:11:36.449761 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+2026-08-22 13:11:36.453045 I Settings: loadSettings
+2026-08-22 13:11:36.697545 I VkLocaleAssets: preload predictors pt-BR
+2026-08-22 13:11:36.873546 I KenLmBridge: Loaded VkLM for pt from /data/user/0/com.vibekey.keyboard/files/kenlm/pt.klm
+2026-08-22 13:11:36.873951 I NgramPredictor: Loaded VkLM-only model for pt in 166ms
+2026-08-22 13:11:36.874036 I VkNgram: model ready locale=pt-BR gen=1 166ms
+2026-08-22 13:11:38.088253 I AdManager: ensureLazyInit deferred (retry 1): imePickerFieldActive
+2026-08-22 13:11:38.589864 I Settings: loadSettings
+2026-08-22 13:11:38.673780 I VkStartupLoad: ○ predictor preload deferred en-US
+2026-08-22 13:11:38.679019 I VkLocaleAssets: ○ ready en-US (cached)
+2026-08-22 13:11:38.679234 I VkStartupLoad: ○ locale gap 3000ms before es
+2026-08-22 13:11:44.973589 I AdManager: ensureLazyInit deferred (retry 2): imePickerFieldActive
+2026-08-22 13:11:44.980186 I AdManager: resume-deferred fire suspended=false
+2026-08-22 13:11:46.163871 I SymSpellProvider: Loaded SymSpell .fdic for pt (238656 bytes)
+2026-08-22 13:11:46.164012 I SymSpellProvider: SymSpell loaded for pt with 50000 words (asset)
+2026-08-22 13:11:46.583805 I VkStartupLoad: ○ predictor preload deferred es
+2026-08-22 13:11:46.586181 I VkLocaleAssets: ○ ready es (cached)
+2026-08-22 13:11:46.588534 I VkLocaleAssets: ✓ batch source=startup locales=3 fetched=0
+2026-08-22 13:11:46.591857 I VkStartupLoad: ✓ dictionary batch done
+2026-08-22 13:11:46.592820 I VkStartupLoad: ▶ predictor preload flush count=3
+2026-08-22 13:11:46.592923 I VkLocaleAssets: preload predictors pt-BR
+2026-08-22 13:11:46.595104 I VkLocaleAssets: ✓ startup done locales=3 retries=0
+2026-08-22 13:11:55.620110 I VkLocaleAssets: preload predictors en-US
+2026-08-22 13:11:55.627817 I AdManager: ensureLazyInit deferred (retry 1): imePickerFieldActive
+2026-08-22 13:11:55.709661 I KenLmBridge: Loaded VkLM for en from /data/user/0/com.vibekey.keyboard/files/kenlm/en.klm
+2026-08-22 13:11:55.709761 I NgramPredictor: Loaded VkLM-only model for en in 87ms
+2026-08-22 13:11:55.709801 I VkNgram: model ready locale=en-US gen=1 87ms
+2026-08-22 13:11:56.814953 I LatinIME: onFinishInputView
+2026-08-22 13:11:56.815574 I LatinIME: onFinishInput
+2026-08-22 13:11:56.818377 I AdManager: Ads marked suspended (fast, no WebView/OMID touch)
+2026-08-22 13:11:56.818440 I LatinIME: IME handoff begun
+2026-08-22 13:11:56.826295 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+2026-08-22 13:11:56.826369 I SessionContext: bindEditorAndCapture pkg=com.android.launcher appContext=GENERAL ambientChars=40 sensitive=false threadKey=com.android.launcher:1:0
+2026-08-22 13:11:56.827549 I OnDeviceLlmPrewarm: ambient priming immediate warm ambientChars=40
+2026-08-22 13:11:56.828381 I LatinIME: Starting input. Cursor position = 0,0
+2026-08-22 13:11:56.828469 I VkTyping: ▶ open restart=false pkg=len=20 inputType=589825
+2026-08-22 13:11:56.964456 I VkLocaleAssets: preload predictors pt-BR
+2026-08-22 13:11:57.049356 I VkNgram: merge locale=pt prev=len=0 preds=8 contextual=0 assets=true
+2026-08-22 13:11:57.050461 I VkNgram: unifiedRank locale=pt head=len=2 ghost=len=2 lmHead=len=2 slots=3 kenLm=true divergent=false
+2026-08-22 13:11:57.050693 I VkSuggestions: strip prediction typedLen=0 candidates=3 autocorrect=false top=len=2 locale=pt token=9 gen=0
+2026-08-22 13:11:57.214192 I SessionContext: updateAmbientCapture sensitive=false ambientChars=40
+2026-08-22 13:11:57.215131 I OnDeviceLlmPrewarm: ambient recapture skip warm excerptDelta=0
+2026-08-22 13:11:57.621726 I VkLocaleAssets: preload predictors es
+2026-08-22 13:11:57.631084 I AdManager: ensureLazyInit deferred (retry 2): adsSuspendedForImeTransition
+2026-08-22 13:11:57.698047 I KenLmBridge: Loaded VkLM for es from /data/user/0/com.vibekey.keyboard/files/kenlm/es.klm
+2026-08-22 13:11:57.698155 I NgramPredictor: Loaded VkLM-only model for es in 76ms
+2026-08-22 13:11:57.698193 I VkNgram: model ready locale=es gen=1 76ms
+2026-08-22 13:11:59.118068 I SymSpellProvider: Loaded SymSpell .fdic for en (622345 bytes)
+2026-08-22 13:11:59.118165 I SymSpellProvider: SymSpell loaded for en with 82834 words (asset)
+2026-08-22 13:11:59.603605 I SymSpellProvider: Loaded SymSpell .fdic for es (237327 bytes)
+2026-08-22 13:11:59.603693 I SymSpellProvider: SymSpell loaded for es with 50000 words (asset)
+2026-08-22 13:11:59.641789 I AdManager: AdMob: publisher personalization DISABLED (non-personalized requests)
+2026-08-22 13:11:59.641972 I AdManager: AdMob: TEST MODE — Google sample app ID + sample unit IDs (rewarded/interstitial/native show test creatives, not billed)
+2026-08-22 13:11:59.768936 I AdManager: MobileAds.initialize scheduled — waiting for SDK + consent before loading ads
+2026-08-22 13:11:59.960435 I AdManager: MobileAds initialization complete
+2026-08-22 13:11:59.960559 I AdManager: Rewarded waterfall enabled=false primary=…5224354917 backup=…5224354917 floorTargetEcpm=3.0
+2026-08-22 13:11:59.996476 I App: WebView provider prewarmed
+2026-08-22 13:12:00.985812 I AdManager: resume-deferred fire suspended=false
+2026-08-22 13:12:05.791212 I LatinIME: hideWindow
+2026-08-22 13:12:05.799478 I AdManager: Ads marked suspended (fast, no WebView/OMID touch)
+2026-08-22 13:12:05.799637 I LatinIME: IME handoff begun
+2026-08-22 13:12:05.802574 I LatinIME: onFinishInputView
+2026-08-22 13:12:05.855901 I VkTyping: ○ hidden
+2026-08-22 13:12:05.860162 I LatinIME: After IME hidden: cleanup complete
+2026-08-22 13:12:06.036862 I LatinIME: requestHideSelf: 100
+2026-08-22 13:12:06.877272 I InputAttributes: InputType.TYPE_NULL is specified
+2026-08-22 13:12:06.882525 I VkSettings: ▶ activity open spellchecker=false
+2026-08-22 13:12:07.122468 I VkSettings: → screen settings
+2026-08-22 13:12:07.143470 I LatinIME: onFinishInput
+2026-08-22 13:12:08.374175 I VkSettings: → screen ai_settings
+2026-08-22 13:12:09.426864 I VkSettings: → screen settings
+2026-08-22 13:12:10.965116 I VkSettings: → screen about
+2026-08-22 13:12:12.279441 I LatinIME: onFinishInput
+2026-08-22 13:12:13.329299 I LatinIME: onFinishInput
+... (3 loadSettings lines omitted)
